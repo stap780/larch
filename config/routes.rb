@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   resources :kp_products
   resources :orders do
-    post :webhook_create
     resources :kps do
       collection do
         get '/:id/print1', action: 'print1', as: 'print1'
@@ -14,6 +13,7 @@ Rails.application.routes.draw do
     collection do
       post :delete_selected
       get :download
+      post :webhook_create
     end
   end
   resources :products do
