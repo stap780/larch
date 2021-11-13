@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :kp_products
   resources :orders do
+    post :webhook_create
     resources :kps do
       collection do
         get '/:id/print1', action: 'print1', as: 'print1'
