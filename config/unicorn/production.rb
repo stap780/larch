@@ -5,7 +5,7 @@ stderr_path "/var/www/#{app_name}/log/unicorn.log"
 stdout_path "/var/www/#{app_name}/log/unicorn.log"
 listen "/tmp/unicorn.#{app_name}.sock"
 worker_processes 8
-timeout 240
+timeout 360
 
 before_fork do |server, worker|
   old_pid = "/var/www/#{app_name}/current/tmp/pids/unicorn.pid.oldbin"
