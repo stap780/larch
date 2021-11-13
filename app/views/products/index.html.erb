@@ -16,6 +16,7 @@
   <%= search_form_for @search, {class: 'form-inline col-9 pl-0 pr-0'} do |f| %>
     <div class="input-group input-group-sm">
       <%= f.search_field :id_eq , placeholder: 'id', class: "form-control", style: "max-width: 180px;" %>
+      <%= f.search_field :sku_or_title_cont , placeholder: 'Sku или Title', class: "form-control", style: "max-width: 280px;" %>
       <%= button_tag(type: 'submit', :class => "btn btn-info") do %>
         <span class="oi oi-magnifying-glass"></span>
       <% end %>
@@ -37,7 +38,7 @@
       <th>Quantity</th>
       <th>Costprice</th>
       <th>Price</th>
-      <th colspan="2"></th>
+      <th colspan="1"></th>
     </tr>
   </thead>
 
@@ -45,13 +46,12 @@
     <% @products.each do |product| %>
     <tr id="items_table">
       <td><%= check_box_tag "product_ids[]", product.id %></td>
-        <td><%= product.sku %></td>
+        <td><%= link_to product.sku , edit_product_path(product)%></td>
         <td><%= product.title %></td>
         <td><%= product.desc %></td>
         <td><%= product.quantity %></td>
         <td><%= product.costprice %></td>
         <td><%= product.price %></td>
-        <td><%= link_to '<span class="oi oi-pencil"></span>'.html_safe, edit_product_path(product) %></td>
         <td><%= link_to '<span class="oi oi-trash"></span>'.html_safe, product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

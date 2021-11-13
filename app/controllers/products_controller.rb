@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
     # @products = Product.all
     @search = Product.ransack(params[:q])
     @search.sorts = 'id asc' if @search.sorts.empty?
-    @products = @search.result.paginate(page: params[:page], per_page: 30)
+    @products = @search.result.paginate(page: params[:page], per_page: 100)
   end
 
   # GET /products/1 or /products/1.json

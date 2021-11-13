@@ -5,8 +5,8 @@
   <div class="col-12 h3"><%= page_title %></div>
   <div class="col-5 row align-content-start">
     <%= f.input :number, as: :string, disabled: true, placeholder: "Номер заказа" , wrapper_html: { class: "col-3" } %>
-    <%= f.input :created_at, as: :date, html5: true, placeholder: "Дата", wrapper_html: { class: "col-4" } %>
-    <%= f.input :status, collection: Order::STATUS, prompt: "Статус", input_html: { class: "form-select" } , wrapper_html: { class: "col-3" } %>
+    <%= f.input :created_at, as: :date, html5: true, placeholder: "Дата", wrapper_html: { class: "col-5" } %>
+    <%= f.input :status, collection: Order::STATUS, prompt: "Статус", input_html: { class: "form-select" } , wrapper_html: { class: "col-4" } %>
     <%= f.association :client, prompt: "Клиент", input_html: { class: "form-select" }, wrapper_html: { class: "col-7 mt-3" } %>
     <%# f.association :company, prompt: "Компания", input_html: { class: "form-select" }, include_blank: true, selected: lambda { |company|  @order.client.companies.first.id if !@order.company_id.present? && @order.client.companies.present? }, wrapper_html: { class: "col-6 mt-3" } %>
     <%= f.association :company, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-7 mt-3" } %>
