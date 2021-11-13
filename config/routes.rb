@@ -1,0 +1,37 @@
+Rails.application.routes.draw do
+  resources :kp_products
+  resources :orders do
+    resources :kps do
+      collection do
+        get '/:id/print1', action: 'print1', as: 'print1'
+        get '/:id/print2', action: 'print2', as: 'print2'
+        get '/:id/print3', action: 'print3', as: 'print3'
+        get ':id/file_import', action: 'file_import', as: 'file_import'
+        post ':id/import', action: 'import', as: 'import'
+      end
+    end
+    collection do
+      post :delete_selected
+      get :download
+    end
+  end
+  resources :products do
+    collection do
+      post :delete_selected
+      delete '/:id/images/:image_id', action: 'delete_image', as: 'delete_image'
+    end
+  end
+  resources :companies do
+    collection do
+      delete '/:id/images/:image_id', action: 'delete_image', as: 'delete_image'
+    end
+  end
+  resources :clients
+  root to: 'visitors#index'
+  devise_for :users, controllers: {
+    registrations: 'users/registrations',
+    sessions: 'users/sessions',
+    passwords: 'users/passwords'
+  }
+  resources :users
+end

@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sku:</strong>
+  <%= @product.sku %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @product.title %>
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @product.desc %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @product.quantity %>
+</p>
+
+<p>
+  <strong>Costprice:</strong>
+  <%= @product.costprice %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+<% if @product.images.attached? %>
+  <strong>Images:</strong>
+  <% @product.images.each do |image| %>
+    <%= image_tag image.variant(:small) %>
+  <% end %>
+<% end %>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

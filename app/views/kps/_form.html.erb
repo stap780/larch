@@ -1,0 +1,51 @@
+
+<%= simple_form_for ([@order, @kp]) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="row">
+    <div class="col-12 h3"><%= page_title %></div>
+    <div class="col-6 row">
+    <%= f.input :vid, collection: Kp::VID, prompt: "Тип", selected: Kp::VID.first, input_html: { class: "form-select" } , wrapper_html: { class: "col-4" } %>
+    <%= f.input :status, collection: Kp::STATUS, prompt: "Статус", selected: Kp::STATUS.first, input_html: { class: "form-select" } , wrapper_html: { class: "col-4" } %>
+    <%= f.input :title %>
+</div>
+<div class="col-md-12 row">
+  <div class='links col-md-12 mt-3'>
+  <% if !@kp.new_record? %><%= link_to "Импорт файла", file_import_order_kps_path(@order, @kp), remote: 'true', id: 'file_import', 'data-bs-toggle' => "modal", 'data-bs-target' => '#modal-edit', class: 'btn btn-light btn-sm' %><% end %>
+  <%= link_to_add_association t('add_item'), f, :kp_products, 'data-association-insertion-node' => "#kp_products",
+                                                              'data-association-insertion-method' => "append",
+                                                              id: 'add_items' ,
+                                                              class: "btn btn-dark btn-sm"  %> <!--onclick: "addIdinvoice()",-->
+  </div>
+  <div class="col-md-10">
+  <table class="table table-hover" id="kp_products">
+    <thead>
+      <tr>
+        <th><%= t 'title' %></th>
+        <th><%= t 'quantity' %></th>
+        <th><%= t 'price' %></th>
+        <th><%= t 'sum' %></th>
+      <th></th>
+      </tr>
+    </thead>
+    <tbody>
+    <%= f.simple_fields_for :kp_products do |kp_product| %>
+       <%= render 'kp_product_fields', :f => kp_product %>
+    <% end %>
+    </tbody>
+  </table>
+
+  </div>
+    <div class="col-md-10 row justify-content-end">
+      <span class="col-1">Итого: </span><span class="col-2" id="kp-total"></span>
+      </div>
+
+</div>
+  <div class="row">
+  <div class="col-3 btn-group mt-5">
+    <%= f.button :submit, class: 'btn btn-success' %>
+    <%= link_to 'Назад', edit_order_path(@order), class: 'btn btn-outline-primary' %>
+  </div>
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+<%= form_tag import_order_kps_path, multipart: true do %>
+<div class="modal-body">
+	<%= file_field_tag :file , :class =>'import_file'%>
+</div>
+<div class="form-group mt-3">
+	<%= submit_tag "Импорт", class: "btn btn-primary" %>
+	<button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Отменить</button>
+</div>
+<div class="mt-4">
+  Пример файла <%=link_to "file_product_test.xls", "/file_product_test.xls"%> (Excel 2000/97 .xls)
+
+</div>
+<% end %>

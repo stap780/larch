@@ -1,0 +1,13 @@
+
+<div class="form-wrap">
+  <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), :html => { class: 'form-signin', method: :post }) do |f| %>
+  <h2 class="form-signin-heading"><%= t('.sign_up', :default => "Забыли пароль?") %></h2>
+  <%= render "devise/shared/error_messages", resource: resource %>
+  <%= f.input_field :email, autofocus: true , class: 'form-control', placeholder: "Email" %>
+  <%= f.submit t('.sign_up', :default => "Отправить инструкции"), class: 'btn btn-success' %>
+<% end %>
+<div class="form-sign-help">
+  <%= render "devise/shared/links" %>
+</div>
+
+</div>

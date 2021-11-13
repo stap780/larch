@@ -1,0 +1,59 @@
+<%= simple_form_for (@order) do |f| %>
+<%= f.error_notification %>
+<%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+<div class="row">
+  <div class="col-12 h3"><%= page_title %></div>
+  <div class="col-5 row align-content-start">
+    <%= f.input :number, as: :string, disabled: true, placeholder: "Номер заказа" , wrapper_html: { class: "col-3" } %>
+    <%= f.input :created_at, as: :date, html5: true, placeholder: "Дата", wrapper_html: { class: "col-4" } %>
+    <%= f.input :status, collection: Order::STATUS, prompt: "Статус", input_html: { class: "form-select" } , wrapper_html: { class: "col-3" } %>
+    <%= f.association :client, prompt: "Клиент", input_html: { class: "form-select" }, wrapper_html: { class: "col-7 mt-3" } %>
+    <%# f.association :company, prompt: "Компания", input_html: { class: "form-select" }, include_blank: true, selected: lambda { |company|  @order.client.companies.first.id if !@order.company_id.present? && @order.client.companies.present? }, wrapper_html: { class: "col-6 mt-3" } %>
+    <%= f.association :company, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-7 mt-3" } %>
+  </div>
+  <div class="col-7 row align-items-center">
+    <div class="col p-0 h4">Коммерческие предложения</div>
+    <%= link_to 'Создать', new_order_kp_path(@order), class: 'btn btn-dark col-3' if !@order.new_record?%>
+    <div class="col-12 mt-3 p-0">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Тип КП</th>
+            <th>Статус</th>
+            <th>Название</th>
+            <th>Дата</th>
+            <th>Кол-во товаров</th>
+            <th colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @order.kps.each do |kp| %>
+            <tr class="align-middle">
+              <td><%= kp.vid %></td>
+              <td><%= kp.status %></td>
+              <td><%= kp.title %></td>
+              <td><%= kp.created_at %></td>
+              <td><%= kp.kp_products.count %></td>
+              <td><%= link_to '<span class="oi oi-pencil"></span>'.html_safe, edit_order_kp_path(@order, kp) %></td>
+              <td class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="print_navbardrop" data-bs-toggle="dropdown"><i class="oi oi-print"></i></a>
+                <div class="dropdown-menu">
+                  <%= link_to "Распечатать КП1", print1_order_kps_path(@order, kp, :format => :pdf), {class: 'dropdown-item', target: '_blank'} %>
+                  <%= link_to "Распечатать КП2", print2_order_kps_path(@order, kp, :format => :pdf), {class: 'dropdown-item', target: '_blank'} %>
+                  <%= link_to "Распечатать КП3", print3_order_kps_path(@order, kp, :format => :pdf), {class: 'dropdown-item', target: '_blank'} %>
+                </div>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-3 btn-group mt-5">
+    <%= f.button :submit, class: 'btn btn-success' %>
+    <%= link_to 'Назад', orders_path, class: 'btn btn-outline-primary' %>
+  </div>
+</div>
+<% end %>

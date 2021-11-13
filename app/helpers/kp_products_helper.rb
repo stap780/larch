@@ -1,0 +1,2 @@
+module KpProductsHelper
+end

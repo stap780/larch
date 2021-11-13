@@ -1,0 +1,19 @@
+development:
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  database: #{Rails.application.class.parent_name.downcase}+'_development'
+  pool: 5
+  username: administrator
+  password:
+  template: template0
+
+test:
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  database: #{Rails.application.class.parent_name.downcase}+'_test'
+  pool: 5
+  username: administrator
+  password:
+  template: template0

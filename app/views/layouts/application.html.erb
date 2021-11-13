@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : Rails.application.class.parent_name.downcase %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : Rails.application.class.parent_name.downcase %>">
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+  </head>
+  <body>
+    <header>
+    <% if user_signed_in? %>  <%= render 'layouts/navigation' %> <% end %>
+    </header>
+    <main role="main" class="container-fluid">
+       <%= render 'layouts/messages' %>
+       <%= yield %>
+    </main>
+    <%= render partial: "/layouts/modal"%>
+  </body>
+</html>

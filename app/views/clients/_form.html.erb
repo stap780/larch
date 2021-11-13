@@ -1,0 +1,29 @@
+
+<%= simple_form_for(@client) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="row">
+    <div class="col row align-items-center justify-content-start">
+    <%= f.input :name, wrapper_html: { class: "col-4" } %>
+    <%= f.input :middlename, wrapper_html: { class: "col-4" } %>
+    <%= f.input :surname, wrapper_html: { class: "col-4" } %>
+    <%= f.input :phone, wrapper_html: { class: "col-4" } %>
+    <%= f.input :email, wrapper_html: { class: "col-6" } %>
+    <%= f.input :zip, wrapper_html: { class: "col-4" }  %>
+    <%= f.input :state, wrapper_html: { class: "col-4" } %>
+    <%= f.input :city, wrapper_html: { class: "col-4" } %>
+    <%= f.input :address, wrapper_html: { class: "col-12" } %>
+    </div>
+      <div class="col align-items-center">
+      <div class="h4">  Компании клиента  </div>
+      <%= f.association :companies, input_html: { multiple: false, class: "form-select "}%>
+    </div>
+</div>
+  <div class="row">
+  <div class="col-3 btn-group mt-5">
+    <%= f.button :submit, class: 'btn btn-success' %>
+    <%= link_to 'Назад', :back, class: 'btn btn-outline-primary' %>
+  </div>
+  </div>
+<% end %>

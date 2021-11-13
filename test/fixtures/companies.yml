@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  our_company: false
+  title: MyString
+  fulltitle: MyString
+  uraddress: MyString
+  factaddress: MyString
+  inn: 1
+  kpp: 1
+  ogrn: 1
+  okpo: 1
+  bik: 1
+  banktitle: MyString
+  bankaccount: 
+
+two:
+  our_company: false
+  title: MyString
+  fulltitle: MyString
+  uraddress: MyString
+  factaddress: MyString
+  inn: 1
+  kpp: 1
+  ogrn: 1
+  okpo: 1
+  bik: 1
+  banktitle: MyString
+  bankaccount: 

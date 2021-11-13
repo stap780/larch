@@ -1,0 +1,16 @@
+<% if !f.new_record? && f.images.present? %>
+<table class="image-table">
+  <body>
+  <% f.images.each do |image| %>
+  <tr>
+    <td data-image="<%= image.metadata %>">
+    <%= image_tag image.variant(combine_options: {auto_orient: true, thumbnail: '200x200^', gravity: 'center', extent: '200x200' }) %>
+    </td>
+    <td>
+    <%= link_to "Delete", delete_image_products_path(f.id, image.id), method: :delete, class: "btn btn-success delete-image", data: {confirm: "Are you sure?"}, remote: true %>
+    </td>
+  </tr>
+  <% end %>
+  </body>
+</table>
+<% end %>
