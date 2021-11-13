@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     collection do
       post :delete_selected
       get :download
-      post :webhook_create
+      post :webhook
     end
   end
   resources :products do
