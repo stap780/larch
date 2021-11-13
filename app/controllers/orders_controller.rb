@@ -81,7 +81,7 @@ class OrdersController < ApplicationController
   end
 
   def webhook
-    Order.one_order(params[:data])
+    Order.one_order(params)
     flash[:notice] = 'Order was successfully downloaded'
     redirect_to orders_path
   end
