@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:webhook_create]
   before_action :set_order, only: [:show, :edit, :update, :destroy]
 
   # GET /orders
@@ -75,8 +75,14 @@ class OrdersController < ApplicationController
 
 
   def download
-    @order = Order.download
+    Order.download
     flash[:notice] = 'Orders was successfully downloaded'
+    redirect_to orders_path
+  end
+
+  def webhook_create
+    Order.one_order(params[:data])
+    flash[:notice] = 'Order was successfully downloaded'
     redirect_to orders_path
   end
 

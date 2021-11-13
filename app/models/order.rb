@@ -17,19 +17,7 @@ class Order < ApplicationRecord
       when 200
         orders_data = JSON.parse(response)
         orders_data.each do |data|
-          number = data["number"]
-          order = Order.find_by_number(number)
-          if !order.present?
-            client = Client.api_get_create_client(data["client"])
-            order = Order.create(number: number, client_id: client.id, status: Order::STATUS.first)
-            kp = order.kps.create
-            Order.create_kp_products(kp.id, data["order_lines"])
-          else
-            # kp = order.kps.order(created_at: :asc).first
-            # Order.create_kp_products(kp.id, data["order_lines"])
-            puts "===> order present <==="
-          end
-
+          Order.one_order(data)
         end
       when 422
         puts "error 422 - не удалили товар"
@@ -44,6 +32,21 @@ class Order < ApplicationRecord
     end
 
     puts "end download product"
+  end
+
+  def self.one_order(data)
+    number = data["number"]
+    order = Order.find_by_number(number)
+    if !order.present?
+      client = Client.api_get_create_client(data["client"])
+      order = Order.create(number: number, client_id: client.id, status: Order::STATUS.first)
+      kp = order.kps.create
+      Order.create_kp_products(kp.id, data["order_lines"])
+    else
+      # kp = order.kps.order(created_at: :asc).first
+      # Order.create_kp_products(kp.id, data["order_lines"])
+      puts "===> order present <==="
+    end
   end
 
   def self.create_kp_products(kp_id, order_lines)
