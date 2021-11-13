@@ -20,6 +20,7 @@
 !/log/.keep
 !/tmp/.keep
 /z-help.txt
+/storage/*
 
 # Ignore Byebug command history file.
 .byebug_history

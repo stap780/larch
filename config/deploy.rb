@@ -38,9 +38,9 @@ lock "~> 3.16.0"
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
 set :branch, 'main'
-set :application, Rails.application.class.parent_name.downcase
-set :repo_url, 'git@github.com:stap780/'+Rails.application.class.parent_name.downcase+'.git'
-set :deploy_to, '/var/www/'+Rails.application.class.parent_name.downcase
+set :application, "adventer"
+set :repo_url, "git@github.com:stap780/#{fetch(:application)}.git"
+set :deploy_to, "/var/www/#{fetch(:application)}"
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
 set :format, :pretty
