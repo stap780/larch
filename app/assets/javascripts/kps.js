@@ -1,3 +1,25 @@
+//автокомплит init после вставки строки
+function initLine() {
+  var id;
+  var dataId;
+  //alert('hi');
+  $("#kp_products")
+    .on('cocoon:before-insert', function(e, insertedItem) {
+      var row = insertedItem;
+      //console.log(row.find.attr('id'));
+      console.log(row);
+      id = row.children('td').children([0]).children([0]).attr('id')
+      console.log(id);
+    })
+    .bind('railsAutocomplete.select', function(event, data) {
+      //console.log(data);
+      dataId = data.item.id;
+      dataValue = data.item.value;
+      $("input[id='" + id + "']").val(dataValue);
+      $("input[id = '" + id.replace("product_sku_title", "product_id") + "']").val(dataId);
+    });
+}
+
 // калькулятор по позициям и итого
 function calculate(val) {
   var table_lines = $('#kp_products tbody tr'); // это нужно чтобы ошибки не выскакивали в js
@@ -49,6 +71,16 @@ $(document).ready(function() {
       calculate();
     });
 
+  // автокомплит
+  $('.kp_kp_products_product_title input').bind('railsAutocomplete.select', function(event, data) {
+    /* Do something here */
+    //console.log($(this).attr('id'));
+    //console.log(event);
+    //console.log(data.item);
+    idNode = $(this).attr('id');
+    dataId = data.item.id;
+    $("input[id = '" + idNode.replace("product_sku_title", "product_id") + "']").val(dataId);
 
+  });
 
 });

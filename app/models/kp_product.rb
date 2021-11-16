@@ -7,5 +7,6 @@ class KpProduct < ApplicationRecord
   #validates :kp_id, uniqueness: true
 
 
+  delegate :sku_title, to: :product, prefix: true, allow_nil: true
 
 end

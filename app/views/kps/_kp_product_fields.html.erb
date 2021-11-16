@@ -1,5 +1,9 @@
 <tr class="nested-fields align-middle">
-  <td class="w-50"><%= f.association :product, label: false, collection: Product.all.map { |product| ["("+product.sku+") "+product.title, product.id, {data: {sku: product.sku}}] } %></td>
+  <td class="w-50">
+    <%# f.association :product, label: false, collection: Product.all.map { |product| ["("+product.sku+") "+product.title, product.id, {data: {sku: product.sku}}] } %>
+	<%= f.input :product_sku_title, as: :autocomplete, label: false, url: autocomplete_product_title_order_kps_path%>
+  <%= f.input :product_id, as: :hidden %>
+</td>
   <td><%= f.input :quantity, as: :integer, label: false, input_html: {min: "0" , onchange: "calculate(this.value)"}%></td>
   <td><%= f.input :price, as: :decimal, label: false, input_html: {min: "0", onchange: "calculate(this.value)"}%></td>
   <td><%= f.input :sum, as: :decimal, label: false, input_html: {min: "0", onchange: "calculate(this.value)"} %></td>

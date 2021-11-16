@@ -13,6 +13,8 @@
 
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui/widgets/autocomplete
+//= require autocomplete-rails
 //= require popper
 //= require bootstrap
 //= require cocoon
@@ -52,6 +54,7 @@ $(document).ready(function() {
   //   check_order();
   // }
 
+  // SELECT ALL //
   $('#selectAll').click(function() {
     if (this.checked) {
       $(':checkbox').each(function() {
@@ -65,14 +68,14 @@ $(document).ready(function() {
       $('#deleteAll').hide();
     }
   });
-
+  // SELECT ALL //
+  // DELETE ALL //
   $('#deleteAll').click(function() {
     // event.preventDefault();
     var array = [];
     $('#items_table :checked').each(function() {
       array.push($(this).val());
     });
-
     $.ajax({
       type: "POST",
       url: $(this).attr('href') + '.json',
@@ -92,9 +95,11 @@ $(document).ready(function() {
         console.log(jqXHR);
       }
     })
-
   });
+  // DELETE ALL //
 
-
+  $('.import_file').click(function() {
+    $('.import_file_submit').css('display', 'block');
+  });
 
 });

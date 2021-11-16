@@ -7,6 +7,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 5.1.0'
 
@@ -32,6 +33,7 @@ gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary', '~> 0.12.3.1'
 gem 'combine_pdf'
 gem 'ru_propisju'
+gem 'rails-jquery-autocomplete'
 
 
 gem 'bcrypt_pbkdf', '< 2.0', :require => false

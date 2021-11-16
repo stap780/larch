@@ -16,7 +16,7 @@
   <%= link_to_add_association t('add_item'), f, :kp_products, 'data-association-insertion-node' => "#kp_products",
                                                               'data-association-insertion-method' => "append",
                                                               id: 'add_items' ,
-                                                              class: "btn btn-dark btn-sm"  %> <!--onclick: "addIdinvoice()",-->
+                                                              class: "btn btn-dark btn-sm", onclick: "initLine()"  %>
   </div>
   <div class="col-md-10">
   <table class="table table-hover" id="kp_products">

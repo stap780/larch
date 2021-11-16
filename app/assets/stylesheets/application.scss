@@ -241,3 +241,43 @@ section {
  /* paginate style*/
 
 #deleteAll {display: none;}
+
+/* autocomplete style*/
+.ui-autocomplete {
+    background-clip: padding-box;
+    background-color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    float: left;
+    left: 0;
+    list-style: outside none none;
+    margin: 2px 0 0;
+    min-width: 160px;
+    padding: 4px 0;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    cursor: pointer;
+}
+.ui-autocomplete .ui-menu-item > a.ui-corner-all {
+    clear: both;
+    color: #555555;
+    display: block;
+    font-weight: normal;
+    line-height: 18px;
+    padding: 3px 15px;
+    white-space: nowrap;
+}
+.ui-widget-content .ui-state-focus {
+    background-color: #0088cc;
+    background-image: none;
+    border-radius: 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+.ui-helper-hidden-accessible { display:none; }
+/* end autocomplete style*/

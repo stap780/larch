@@ -3,8 +3,8 @@
 	<%= file_field_tag :file , :class =>'import_file'%>
 </div>
 <div class="form-group mt-3">
-	<%= submit_tag "Импорт", class: "btn btn-primary" %>
-	<button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Отменить</button>
+	<%= submit_tag "Импорт", class: "btn btn-primary import_file_submit", style: "display: none;"%>
+	<!-- <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Отменить</button> -->
 </div>
 <div class="mt-4">
   Пример файла <%=link_to "file_product_test.xls", "/file_product_test.xls"%> (Excel 2000/97 .xls)

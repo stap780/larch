@@ -2,6 +2,8 @@ class KpsController < ApplicationController
   before_action :authenticate_user!
   before_action :get_order
   before_action :set_kp, only: %i[show edit update destroy]
+  autocomplete :product, :title, :extra_data => [:id, :sku], :display_value => :sku_title, 'data-noMatchesLabel' => 'нет товара'
+
 
   # GET /kps
   def index

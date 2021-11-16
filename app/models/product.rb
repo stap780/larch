@@ -8,6 +8,10 @@ class Product < ApplicationRecord
   has_many_attached :images, dependent: :destroy
   accepts_nested_attributes_for :images_attachments, allow_destroy: true
 
+  def sku_title
+    "(#{self.sku}) #{self.title}"
+  end
+
   def self.download_ins_product(insid)
     url_product = Insales::Api::Base_url+"products/"+insid.to_s+".json"
     RestClient.get( url_product, :accept => :json, :content_type => "application/json") do |response, request, result, &block|
