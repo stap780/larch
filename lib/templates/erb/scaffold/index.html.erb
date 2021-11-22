@@ -12,7 +12,9 @@
 </div>
   <%%= search_form_for @search, {class: 'form-inline col-9 pl-0 pr-0'} do |f| %>
     <div class="input-group input-group-sm">
-      <%%= f.search_field :id_eq , placeholder: 'id', class: "form-control", style: "max-width: 180px;" %>
+      <% attributes.reject(&:password_digest?).each do |attribute| -%>
+      <%%= f.search_field :<%= attribute.name %>_eq , placeholder: '<%= attribute.name %>', class: "form-control", style: "max-width: 180px;" %>
+      <% end -%>
       <%%= button_tag(type: 'submit', :class => "btn btn-info") do %>
         <span class="oi oi-magnifying-glass"></span>
       <%% end %>

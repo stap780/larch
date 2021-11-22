@@ -5,6 +5,10 @@ class Client < ApplicationRecord
 
   validates :phone, phone: true, allow_blank: true
 
+  def full_name
+    "#{self.name}" "#{self.surname}"
+  end
+
   def self.api_get_create_client(client_data)
     data = {
       name: client_data["name"],

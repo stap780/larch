@@ -1,7 +1,4 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<head>
-<title><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></title>
-</head>
 <body>
   <style>
     	.navbar, .footer {display: none;}
@@ -35,7 +32,7 @@
 <center style='margin-top:40px'>
 <h3>Образец заполнения платежного поручения</h3>
 </center>
-<table class='borders_table' style='width:750px'>
+<table class='borders_table' style='width:750px;max-height:500px;'>
   <tr>
     <td width='150'>ИНН 772745849012</td>
     <td width='150'>КПП </td>

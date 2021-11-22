@@ -82,7 +82,19 @@ class KpsController < ApplicationController
       format.pdf do
           render :pdf => "КП1 #{@kp.id}",
                  :template => "kps/print1",
-                 :show_as_html => params.key?('debug')
+                 :show_as_html => params.key?('debug'),
+     						 :margin => { :top => 17, :bottom => 10 },
+     						 header:  {
+     						 		html: { template:'kps/print1_header'},
+     						 		:spacing => 3,
+     						 		locals: {}
+     						 		},
+     						 footer: {
+     							 html: { template:'kps/print1_footer'},
+     							 	:spacing => 3,
+     								locals: {}
+     								#right: '_______________________(подпись)                  _______________________(подпись)            [page] из [topage]'
+     								}
         end
     end
   end

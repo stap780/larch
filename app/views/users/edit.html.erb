@@ -6,7 +6,7 @@
   <div class="col-6">
     <%= f.input :name %>
     <%= f.input :email %>
-    <%= f.association :role %>
+    <%= f.association :role, input_html: { class: "form-select" } %>
     <%# f.input :ip %>
   </div>
 </div>
