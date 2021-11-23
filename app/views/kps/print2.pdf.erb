@@ -4,7 +4,7 @@
 <head>
 
   <%= wicked_pdf_stylesheet_link_tag "print2" %>
-  <%= wicked_pdf_stylesheet_link_tag "number_pages" %>
+  <%= wicked_pdf_javascript_include_tag "number_pages" %>
 
   <title><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></title>
 
