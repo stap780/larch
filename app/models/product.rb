@@ -12,6 +12,7 @@ class Product < ApplicationRecord
     "(#{self.sku}) #{self.title}"
   end
 
+
   def self.download_ins_product(insid)
     url_product = Insales::Api::Base_url+"products/"+insid.to_s+".json"
     RestClient.get( url_product, :accept => :json, :content_type => "application/json") do |response, request, result, &block|
@@ -67,5 +68,6 @@ class Product < ApplicationRecord
 	  	self[key] = value.squish if value.respond_to?("squish")
 	  end
 	end
+
 
 end
