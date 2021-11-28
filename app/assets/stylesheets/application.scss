@@ -282,3 +282,8 @@ section {
 }
 .ui-helper-hidden-accessible { display:none; }
 /* end autocomplete style*/
+/* pdf style*/
+div.alwaysbreak { page-break-before: always; }
+div.nobreak:before { clear:both; }
+div.nobreak { page-break-inside: avoid; }
+/* end pdf style*/
