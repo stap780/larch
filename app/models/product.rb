@@ -69,5 +69,10 @@ class Product < ApplicationRecord
 	  end
 	end
 
+  # def self.image_center_thumb_url(image)
+  #   variant = image.variant(combine_options: {auto_orient: true, thumbnail: '40x40', gravity: 'center', extent: '40x40' }).processed
+  #   Rails.application.routes.url_helpers.rails_representation_url(variant, only_path: true)
+  # end
+
 
 end

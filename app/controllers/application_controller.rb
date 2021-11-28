@@ -32,6 +32,10 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def active_storage_host
+    ActiveStorage::Current.host = request.base_url
+  end
+
 protected
 
 # If you have extra params to permit, append them to the sanitizer.
