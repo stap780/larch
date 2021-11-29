@@ -84,7 +84,7 @@ class KpsController < ApplicationController
           render :pdf => "КП1 #{@kp.id}",
                  :template => "kps/print1",
                  :show_as_html => params.key?('debug'),
-     						 :margin => { :top => 17, :bottom => 10 },
+     						 :margin => {top: 12, left: 5, right: 5, bottom: 15 },
      						 header:  {
      						 		html: { template:'kps/print1_header'},
      						 		:spacing => 3,
@@ -122,9 +122,16 @@ class KpsController < ApplicationController
     respond_to do |format|
       format.html
       format.pdf do
-          render :pdf => "КП2 #{@kp.id}",
-                 :template => "kps/print2",
-                 :show_as_html => params.key?('debug')
+          render pdf: "КП2 #{@kp.id}",
+                 template: "kps/print2",
+                 page_size: 'A4',
+                 orientation: "Portrait",
+                 show_as_html: params.key?('debug'),
+                 margin: {top: 12, left: 5, right: 5, bottom: 15},
+                 footer: {
+                   spacing: 5,
+                   right: 'Стр [page] из [topage]'
+                 }
         end
     end
   end
@@ -135,9 +142,15 @@ class KpsController < ApplicationController
     respond_to do |format|
       format.html
       format.pdf do
-          render :pdf => "КП3 #{@kp.id}",
-                 :template => "kps/print3",
-                 :show_as_html => params.key?('debug')
+              render pdf: "КП3 #{@kp.id}",
+                     page_size: 'A4',
+                     template: "kps/print3.html.erb",
+                     orientation: "Portrait",
+                     lowquality: true,
+                     zoom: 1,
+                     dpi: 75,
+                     show_as_html: params.key?('debug'),
+                     header: { right: 'Стр [page] из [topage]' }
         end
     end
   end

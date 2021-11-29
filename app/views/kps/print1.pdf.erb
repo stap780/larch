@@ -1,31 +1,12 @@
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <%= wicked_pdf_stylesheet_link_tag("print1") %>
+  <%= wicked_pdf_javascript_include_tag("number_pages") %>
+</head>
+
 <body>
-  <style>
-    	.navbar, .footer {display: none;}
-      body  {
-        font-size: 12px; color: #000;
-        background-color: #fff;
-        font-family: sans-serif;
-        margin: 30px;
-        width: 750px;
-      }
-      table { border-spacing: 0px; font-size: 12px; }
-      .clear {clear:both; margin:2px 0px; height:5px;}
-      .border {
-        border-bottom:1px solid black;
-        padding-bottom:0;
-       }
-      .accent {font-size: 13px; font-weight: bold;}
-      .bold {font-weight: bold;}
-      .borders_table {width: 100%; border-collapse: collapse;}
-      .borders_table, .borders_table  td, .products_table th {border: 1px solid #999; }
-      .page_break { display:block; clear:both; page-break-after:always; }
-      h2 {font-size:15px;}
-  </style>
 <div style='width:750px'>
-<p>
-<small><p>Счет действителен в течении 7 дней.</p></small>
-</p>
+  <%=  params.key?('debug') ? image_tag('/logo_little__200x70_.png') : wicked_pdf_image_tag("/logo_little__200x70_.png", :class =>'logo') %>
 
 <center style='margin-top:40px'>
 <h2><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></h2>
@@ -46,6 +27,7 @@
     <tr>
     	<th align='left'>№</th>
     		<th>Артикул</th>
+        <th>Фото</th>
     		<th>Наименование товара</th>
     		<th>Единица измерения</th>
     		<th>Количество</th>
@@ -54,10 +36,11 @@
     </tr>
   </thead>
   <tbody>
-    <% @kp.kp_products.each do |kp, index| %>
+    <% @kp.kp_products.each_with_index do |kp, i| %>
     <tr>
-      <td align='center'><%= index %></td>
+      <td align='center'><%= (i+1) %></td>
       <td align="center"><%= kp.product.sku %></td>
+      <td class="center"><%= image_tag wicked_image_active_storage_workaround(kp.product.images.first), style: "max-width:40px;" %></td>
       <td align="center"><%= kp.product.title %></td>
       <td align='center'>шт</td>
       <td align='center'><%= kp.quantity %></td>
@@ -86,10 +69,10 @@
 </td>
 </tr>
 <tr>
-<td align='right' width='120'>
+<td align='right' width='130'>
 <b>В том числе НДС</b>
 </td>
-<td align='right' width='80'>Без НДС</td>
+<td align='right' width='80'><%= (@kp.kp_products.sum(:sum).to_f.round(2)*100/118).to_f.round(2) %></td>
 </tr>
 <tr>
 <td align='right' width='120'>
@@ -113,9 +96,9 @@
 </p>
 <div style='height:60px; position:relative;'>
 	<span style='width:100px;display: inline-block;'>Поставщик</span>
-	<span style='border-bottom: 1px solid;'>Индивидуальный предприниматель</span>
+	<span style='border-bottom: 1px solid;'>Общество с ограниченной ответственностью</span>
 	<span style='border-bottom: 1px solid;margin-left:30px;'><%# wicked_pdf_image_tag("podpis.png", :height =>'60') %></span>
-	<span style='border-bottom: 1px solid;margin-left:30px;'>/ Эмексизов П.А./</span>
+	<span style='border-bottom: 1px solid;margin-left:30px;'>/ Иванов О.А./</span>
 </div>
 </div>
 </body>

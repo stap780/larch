@@ -1,0 +1,19 @@
+.print3 {
+  color: brown;
+}
+#header {
+  margin: 20px 0px;
+}
+#status {
+ position: absolute;
+ background: #fc0;
+ bottom: 0; right: 0;
+ padding: 10px; margin: 0;
+ display: none;
+ animation: _transparent 3s;
+ -webkit-animation: _transparent 3s;
+ -moz-animation: _transparent 3s;
+}
+.pdf_console_output {
+  display: none;
+}

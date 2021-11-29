@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <%= wicked_pdf_stylesheet_link_tag "print3" %>
+    <%= wicked_pdf_javascript_include_tag "number_pages" %>
+  </head>
+  <body class="print3" onload="loadPage()" onload="my_number_pages()" onload="number_pages()">
+    <p id="status">Страница загружена</p>
+    Page <span class="page"></span> of <span class="topage"></span>
+    <p id="pdf_console_output">pdf_console_output</p>
+    <div id="header">
+      <%=  params.key?('debug') ? image_tag('/logo_little__200x70_.png') : wicked_pdf_image_tag("/logo_little__200x70_.png", :class =>'logo') %>
+    </div>
+    <div id="content">
+      <%= yield %>
+    </div>
+  </body>
+</html>

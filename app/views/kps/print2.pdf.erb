@@ -2,42 +2,57 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <%= stylesheet_link_tag wicked_pdf_asset_base64("print2") %>
-  <%= javascript_include_tag wicked_pdf_asset_base64("number_pages") %>
+  <%= wicked_pdf_stylesheet_link_tag("print2") %>
+  <%= wicked_pdf_javascript_include_tag("number_pages") %>
   <title><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></title>
 </head>
-<body onload='number_pages'>
+<body onload="my_number_pages()">
+
 <div>
 
   <div class="wrapper">
-
-<%= wicked_pdf_image_tag("/logo_little__200x70_.png", :class =>'logo') %>
 
 		<table class="generalInfo">
 			<tbody>
 				<tr>
 				<th>Поставщик:</th>
-				<th>ООО "Адвентер"</th>
+				<td>ООО "Выборг Торг Техника"</td>
 				</tr>
 				<tr>
-				<td>Электронный адрес:</td>
-				<td>info@adventer.su</td>
+				<th>Адрес:</th>
+				<td>188800 Ленинградская обл, г Выборг, ул Штурма, д 5</td>
 				</tr>
 				<tr>
-				<td>Телефон:</td>
-				<td>8 800 550 13 14</td>
+				<th>Телефон:</th>
+				<td>(81378) 20581б 89213955526</td>
 				</tr>
 				<tr>
-				<td>Сайт:</td>
-				<td>https://adventer.su</td>
+				<th>Банк:</th>
+				<td>Ф. ОПЕРУ БАНКА ВТБ (ПАО) В САНКТ-ПЕТЕРБУРГЕ</td>
 				</tr>
 				<tr>
-				<th>Покупатель:</th>
-				<th></th>
+				<th>Р/С:</th>
+				<td>40702810362110000091</td>
 				</tr>
 				<tr>
-				<td>Телефон:</td>
-				<td><%= @client.phone %></td>
+				<th>К/С:</th>
+				<td>30101810200000000704</td>
+				</tr>
+				<tr>
+				<th>БИК:</th>
+				<td>044030704</td>
+				</tr>
+				<tr>
+				<th>ИНН:</th>
+				<td>4704058170</td>
+				</tr>
+				<tr>
+				<th>КПП:</th>
+				<td>470401001</td>
+				</tr>
+				<tr>
+				<th>ОГРН:</th>
+				<td>1044700883259</td>
 				</tr>
 			</tbody>
 		</table>
@@ -46,7 +61,6 @@
       <tr>
         <th>№</th>
         <th>Артикул</th>
-        <th>Фото</th>
         <th style="width: 220px;">Товар</th>
         <th>Ед.</th>
         <th>Цена</th>
@@ -59,12 +73,11 @@
         <tr>
           <td class="center"><%= (i+1) %></td>
           <td class="center"><%= kp[:sku] %></td>
-          <td class="center"><%= image_tag wicked_image_active_storage_workaround(kp[:image_url]), style: "max-width:40px;" %></td>
           <td><%= kp[:title] %></td>
           <td class="center">шт</td>
-          <td class="money"><%= kp[:price] %></td>
+          <td class="center"><%= kp[:price] %></td>
           <td class="center"><%= kp[:quantity] %></td>
-          <td class="money"><%= kp[:sum]%></td>
+          <td class="center"><%= kp[:sum]%></td>
           <td class="comment"></td>
         </tr>
       <% end %>

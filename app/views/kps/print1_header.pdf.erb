@@ -1,51 +1,16 @@
 <!DOCTYPE html >
 <html>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <head>
-	<style>
-	.body  {
-		font-size: 8px;
-		color: #000;
-		background-color: #fff;
-		font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
-		font-weight: bold;
-	}
-	</style>
-		<script type="text/javascript">
-			function my_number_pages() {
-
-		      var x=document.location.search.substring(1).split('&');
-					for (var i in x) {
-					var pagetype=x[i].split('=',2);
-						if(pagetype[0] == "page") {
-							pagenumber = Number(x[i].split('=', 2)[1])
-							if(pagenumber == 1 ){
-							document.getElementsByClassName("headerContent")[0].style.display = "none";
-							}
-/*
-							if(pagenumber == 2 ){
-							document.getElementsByClassName("headerContent")[0].style.display = "block";
-							}
-							if(pagenumber == 3 ){
-							document.getElementsByClassName("headerContent")[0].style.display = "block";
-							}
-							if(pagenumber == 4 ){
-							document.getElementsByClassName("headerContent")[0].style.display = "block";
-							}
-							if(pagenumber == 5 ){
-							document.getElementsByClassName("headerContent")[0].style.display = "block";
-							}
-*/
-						}
-						}
-		  }
-		</script>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<%= wicked_pdf_stylesheet_link_tag("print1") %>
+		<%= wicked_pdf_javascript_include_tag("number_pages") %>
     <title><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></title>
   </head>
-  <body onload="my_number_pages()">
+  <body onload="check_first_page()">
 	<div class="headerContent" style="text-align: right;font-size: 12px;">
 	   тестовый текст
-	    <hr />
+	</div>
+  <div id="pdf_console_output">
 	</div>
   </body>
 </html>

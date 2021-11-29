@@ -1,27 +1,8 @@
 <html>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <head>
-		<style>
-			.body  {
-			font-size: 8px;
-			color: #000;
-			background-color: #fff;
-			font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
-			font-weight: bold;
-			}
-		</style>
-    <script>
-      function number_pages() {
-        var vars={};
-        var x=document.location.search.substring(1).split('&');
-        for(var i in x) {var z=x[i].split('=',2);vars[z[0]] = decodeURIComponent(z[1]);}
-        var x=['frompage','topage','page','webpage','section','subsection','subsubsection'];
-        for(var i in x) {
-          var y = document.getElementsByClassName(x[i]);
-          for(var j=0; j<y.length; ++j) y[j].textContent = vars[x[i]];
-        }
-      }
-    </script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<%= wicked_pdf_stylesheet_link_tag("print1") %>
+<%= wicked_pdf_javascript_include_tag("number_pages") %>
   </head>
   <body onload="number_pages()">
 	  <div style="font-size: 12px;margin-bottom: 0px!important;">
