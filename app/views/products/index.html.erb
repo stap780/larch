@@ -1,19 +1,20 @@
-
-  <div class="row justify-content-center align-items-center mb-2">
-    <div class="col-3 row">
-  <div class="h3 col-md-12 p-0">Products <small>Всего - <%= Product.count %></small></div>
-  <div class="btn-group p-0" role="group" aria-label="Button group with nested dropdown">
-    <div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Действия</button>
-    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-    <%= link_to 'New Product', new_product_path, class: 'dropdown-item' %>
-    <%# link_to 'Создать заказ', edit_multi_case_iorder_cases_path, class: 'dropdown-item', id: 'edit_multi_case_iorder', remote: true, data: { toggle: 'modal', target: '#modal-edit' } %>
+<div class="row justify-content-center align-items-center mb-2">
+<div class="col-2 row">
+  <div class="h3 col-md-12 p-0">
+    <div class="h3">Products</div>
+    <div class="h6">Всего - <%= Product.count %></div>
+    <div class="btn-group p-0" role="group" aria-label="Button group with nested dropdown">
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Действия</button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <%= link_to 'New Product', new_product_path, class: 'dropdown-item' %>
+        </div>
+      </div>
     </div>
   </div>
-  </div>
-    </div>
+</div>
 
-  <%= search_form_for @search, {class: 'form-inline col-9 pl-0 pr-0'} do |f| %>
+  <%= search_form_for @search, {class: 'form-inline col-10 pl-0 pr-0'} do |f| %>
     <div class="input-group input-group-sm">
       <%= f.search_field :id_eq , placeholder: 'id', class: "form-control", style: "max-width: 180px;" %>
       <%= f.search_field :sku_or_title_cont , placeholder: 'Sku или Title', class: "form-control", style: "max-width: 280px;" %>
