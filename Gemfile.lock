@@ -298,7 +298,7 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rails-console
   capistrano-rvm
-  capistrano3-delayed-job
+  capistrano3-delayed-job (~> 1.0)
   capistrano3-unicorn
   cocoon
   combine_pdf
