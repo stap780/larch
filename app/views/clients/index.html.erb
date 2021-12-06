@@ -1,7 +1,8 @@
 
   <div class="row justify-content-center align-items-center mb-2">
     <div class="col-3 row">
-  <div class="h3 col-md-12 p-0">Clients <small>Всего - <%= Client.count %></small></div>
+  <div class="h3 col-md-12 p-0">Clients</div>
+  <div class="h6 col-md-12 p-0">Всего - <%= Client.count %></div>
   <div class="btn-group p-0" role="group" aria-label="Button group with nested dropdown">
     <div class="btn-group" role="group">
     <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Действия</button>
@@ -15,7 +16,7 @@
 
   <%= search_form_for @search, {class: 'form-inline col-9 pl-0 pr-0'} do |f| %>
     <div class="input-group input-group-sm">
-      <%= f.search_field :id_eq , placeholder: 'id', class: "form-control", style: "max-width: 180px;" %>
+      <%= f.search_field :name_cont , placeholder: 'Name', class: "form-control", style: "max-width: 180px;" %>
       <%= button_tag(type: 'submit', :class => "btn btn-info") do %>
         <span class="oi oi-magnifying-glass"></span>
       <% end %>

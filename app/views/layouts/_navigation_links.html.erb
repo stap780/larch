@@ -1,12 +1,12 @@
 <% if current_user.role.name != 'registered'%>
 <li class="nav-item <%= 'active' if current_page?(orders_path) %>'"><%= link_to 'Заказы', orders_path, class: 'nav-link' %></li>
+<li class="nav-item <%= 'active' if current_page?(clients_path) %>'"><%= link_to 'Клиенты', clients_path, class: 'nav-link' %></li>
+<li class="nav-item <%= 'active' if current_page?(companies_path) %>'"><%= link_to 'Компании', companies_path, class: 'nav-link' %></li>
+<li class="nav-item <%= 'active' if current_page?(products_path) %>'"><%= link_to 'Товары', products_path, class: 'nav-link' %></li>
 <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">Настройки</a>
   <div class="dropdown-menu">
     <a class="dropdown-item <%= 'active' if current_page?(users_path) %>" href="<%= users_path %>">Пользователи</a>
-    <a class="dropdown-item <%= 'active' if current_page?(clients_path) %>" href="<%= clients_path %>">Клиенты</a>
-    <a class="dropdown-item <%= 'active' if current_page?(companies_path) %>" href="<%= companies_path %>">Компании</a>
-    <a class="dropdown-item <%= 'active' if current_page?(products_path) %>" href="<%= products_path %>">Товары</a>
   </div>
 </li>
 <!-- <li class="nav-item <%# 'active' if current_page?(page_path('about')) %>'"><%# link_to 'About', page_path('about'), class: 'nav-link' %></li> -->

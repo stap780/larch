@@ -34,6 +34,7 @@ gem 'wkhtmltopdf-binary', '~> 0.12.3.1'
 gem 'combine_pdf'
 gem 'ru_propisju'
 gem 'rails-jquery-autocomplete'
+gem 'daemons'
 
 
 gem 'bcrypt_pbkdf', '< 2.0', :require => false
@@ -44,6 +45,7 @@ group :development do
   gem 'capistrano-rvm'
   gem 'capistrano3-unicorn'
   gem 'capistrano-rails-console'
+  gem 'capistrano3-delayed-job'
 
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
