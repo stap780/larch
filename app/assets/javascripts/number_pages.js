@@ -35,7 +35,7 @@ function number_pages() {
     for (var j = 0; j < y.length; ++j) y[j].textContent = vars[x[i]];
   }
   var pagenumber = vars['page']
-  if (pagenumber == 1) {
+  if (pagenumber == 1 || pagenumber == 2) {
     document.getElementsByClassName("headerContent")[0].style.display = "none";
     document.getElementsByClassName("footerContent")[0].style.display = "none";
   }

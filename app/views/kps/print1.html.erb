@@ -118,6 +118,9 @@
           </table>
       </div>
 
+      <center>
+        <h1><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></h1>
+      </center>
 
       <table  id="kp_items" border="0" cellspacing="0" cellpadding="0">
         <thead>
