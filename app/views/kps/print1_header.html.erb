@@ -1,4 +1,4 @@
-<!DOCTYPE html >
+<!doctype html>
 <html>
   <head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -6,11 +6,8 @@
 		<%= wicked_pdf_javascript_include_tag("number_pages") %>
     <title><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></title>
   </head>
-  <body onload="check_first_page()">
-	<div class="headerContent" style="text-align: right;font-size: 12px;">
-	   тестовый текст
-	</div>
-  <div id="pdf_console_output">
-	</div>
+  <body onload="number_pages()">
+  <div class="headerContent" style="margin-bottom: 20px;"><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></div>
+<!-- <p id="pdf_console_output" ></p> -->
   </body>
 </html>

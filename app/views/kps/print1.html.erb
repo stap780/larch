@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></title>
+    <%= wicked_pdf_stylesheet_link_tag("print1") %>
+    <%= wicked_pdf_javascript_include_tag("number_pages") %>
+  </head>
+  <body>
+    <header class="clearfix">
+        <div id="header-left-part">
+          <div class="logo-image">
+            <%=  params.key?('debug') ? image_tag('/logo_little__200x70_.png') : wicked_pdf_image_tag("/logo_little__200x70_.png") %>
+          </div>
+          <div class="header-left-part-bottom">
+            <table>
+              <thead>
+                <th><%=  params.key?('debug') ? image_tag('/kp_phone.png') : wicked_pdf_image_tag("/kp_phone.png") %></th>
+                <th>88005501314</th>
+                <th><%=  params.key?('debug') ? image_tag('/kp_email.png') : wicked_pdf_image_tag("/kp_email.png") %></th>
+                <th><a href="mailto:info@adventer.su">info@adventer.su</a></th>
+                <th><%=  params.key?('debug') ? image_tag('/kp_globus.png') : wicked_pdf_image_tag("/kp_globus.png") %></th>
+                <th>www.adventer.su</th>
+              </thead>
+            </table>
+          </div>
+        </div>
+        <div id="header-right-part">
+          <h4 class="name"><%= @our_company.fulltitle.camelize%></h4>
+          <div><%= @our_company.uraddress%></div>
+          <div>ИНН: <%= @our_company.inn%></div>
+          <div>КПП: <%= @our_company.kpp%></div>
+        </div>
+    </header>
+    <main>
+      <div class="first-block banner">
+        <table class="banner-text">
+          <td>
+            <h1>Коммерческое предложение</h1>
+            <h3>Группа компаний «Адвентер» благодарит Вас за проявленный интерес к нашей продукции. Предлагаем ознакомиться с нашим коммерческим предложением на следующей странице.</h3>
+          </td>
+        </table>
+      </div>
+
+      <div class="second-block clearfix">
+          <div class="second-block-left-part">
+            <div class="second-block-label">
+              Мы производим
+            </div>
+            <table>
+              <tr>
+                <th><%=  params.key?('debug') ? image_tag('/kp_mebel.png') : wicked_pdf_image_tag("/kp_mebel.png") %></th>
+                <th>мебель для ДОУ и школ</th>
+              </tr>
+              <tr>
+                <th><%=  params.key?('debug') ? image_tag('/kp_fotooboi.png') : wicked_pdf_image_tag("/kp_fotooboi.png") %></th>
+                <th>Фотообои, интерьерное оформление ДОУ и школ</th>
+              </tr>
+              <tr>
+                <th><%=  params.key?('debug') ? image_tag('/kp_stendi.png') : wicked_pdf_image_tag("/kp_stendi.png") %></th>
+                <th>стенды, таблички, наклейки</th>
+              </tr>
+              <tr>
+                <th><%=  params.key?('debug') ? image_tag('/kp_decor.png') : wicked_pdf_image_tag("/kp_decor.png") %></th>
+                <th>декорации, оформление уголков и зон в ДОУ и школах</th>
+              </tr>
+              <tr>
+                <th><%=  params.key?('debug') ? image_tag('/kp_decor.png') : wicked_pdf_image_tag("/kp_decor.png") %></th>
+                <th>уличное оборудование</th>
+              </tr>
+            </table>
+          </div>
+          <div class="second-block-right-part">
+            <div class="second-block-label">
+              Мы поставляем
+            </div>
+            <table>
+              <tr>
+                <th><%=  params.key?('debug') ? image_tag('/kp_mebel.png') : wicked_pdf_image_tag("/kp_mebel.png") %></th>
+                <th>уличное игровое оборудование</th>
+              </tr>
+              <tr>
+                <th><%=  params.key?('debug') ? image_tag('/kp_fotooboi.png') : wicked_pdf_image_tag("/kp_fotooboi.png") %></th>
+                <th>посуда и хоз товары</th>
+              </tr>
+              <tr>
+                <th><%=  params.key?('debug') ? image_tag('/kp_stendi.png') : wicked_pdf_image_tag("/kp_stendi.png") %></th>
+                <th>игровое развивающее оборудование</th>
+              </tr>
+              <tr>
+                <th><%=  params.key?('debug') ? image_tag('/kp_decor.png') : wicked_pdf_image_tag("/kp_decor.png") %></th>
+                <th>интерактивное оборудование</th>
+              </tr>
+              <tr>
+                <th><%=  params.key?('debug') ? image_tag('/kp_decor.png') : wicked_pdf_image_tag("/kp_decor.png") %></th>
+                <th>оснащение для классов</th>
+              </tr>
+            </table>
+          </div>
+      </div>
+      <div class="third-block clearfix">
+          <table>
+            <td>
+              <table class="third-block-img1">
+                <td>Работаем по 44-ФЗ и 223-ФЗ</td>
+              </table>
+            </td>
+            <td>
+              <table  class="third-block-img2">
+                <td>Доставка по всей России</td>
+              </table>
+            </td>
+            <td>
+              <table  class="third-block-img3">
+                <td>Гарантии и сертификаты</td>
+              </table>
+            </td>
+          </table>
+      </div>
+
+
+      <table  id="kp_items" border="0" cellspacing="0" cellpadding="0">
+        <thead>
+          <tr class="kp_items_header">
+            <th class="no">№</th>
+              <th class="desc">Артикул</th>
+              <th class="desc">Фото</th>
+              <th class="desc">Наименование товара</th>
+              <th class="qty">Единица измерения</th>
+              <th class="qty">Количество</th>
+              <th class="unit">Цена</th>
+              <th class="total">Сумма</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @kp.kp_products.each_with_index do |kp, i| %>
+          <tr>
+            <td class="no"><%= (i+1) %></td>
+            <td class="desc"><%= kp.product.sku %></td>
+            <td class="desc"><%= image_tag wicked_image_active_storage_workaround(kp.product.images.first), style: "max-width:40px;" %></td>
+            <td class="desc"><%= kp.product.title %></td>
+            <td class="qty">шт</td>
+            <td class="qty"><%= kp.quantity %></td>
+            <td class="unit"><%= kp.price %></td>
+            <td class="total"><%= kp.sum.to_f.round(2)%></td>
+          </tr>
+          <% end %>
+
+      </table>
+      <div id="thanks">Thank you!</div>
+      <div id="notices">
+        <div>NOTICE:</div>
+        <div class="notice">A finance charge of 1.5% will be made on unpaid balances after 30 days.</div>
+      </div>
+    </main>
+  </body>
+</html>

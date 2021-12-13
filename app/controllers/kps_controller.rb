@@ -76,22 +76,24 @@ class KpsController < ApplicationController
 
   def print1
     @kp = Kp.find(params[:id])
-    puts @kp.present?
+    # puts @kp.present?
+    @our_company = Company.where(our_company: true).first
     @company = @kp.order.company
     respond_to do |format|
       format.html
       format.pdf do
           render :pdf => "КП1 #{@kp.id}",
-                 :template => "kps/print1",
+                 :template => "kps/print1.html.erb",
                  :show_as_html => params.key?('debug'),
-     						 :margin => {top: 12, left: 5, right: 5, bottom: 15 },
+     						 :margin => {top: 15, left: 0, right: 0, bottom: 20 },
      						 header:  {
-     						 		html: { template:'kps/print1_header'},
-     						 		:spacing => 3,
-     						 		locals: {}
+     						 		html: { template:'kps/print1_header.html.erb'},
+     						 		spacing: 3
+     						 		# locals: {},
+                    # right: 'Стр [page] из [topage]'
      						 		},
      						 footer: {
-     							 html: { template:'kps/print1_footer'},
+     							 html: { template:'kps/print1_footer.html.erb'},
      							 	:spacing => 3,
      								locals: {}
      								#right: '_______________________(подпись)                  _______________________(подпись)            [page] из [topage]'

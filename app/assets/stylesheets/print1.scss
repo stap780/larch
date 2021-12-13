@@ -1,54 +1,345 @@
-.body {
-  font-size: 8px;
-  color: #000;
-  font-family: 'Gill Sans','lucida grande', helvetica, arial, sans-serif;
-  font-weight: bold;
-  margin: 30px;
-  width: 750px;
+
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('/Century_Gothic.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'Century Gothic Regular';
+  src: url('/CenturyGothic.eot');
+  src: url('/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+    url('/CenturyGothic.woff') format('woff'),
+    url('/CenturyGothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.footer,
-.navbar {
-  display: none;
-}
-
-.clear {
+.clearfix:after {
+  content: "";
+  display: table;
   clear: both;
-  margin: 2px 0;
-  height: 5px;
 }
 
-.border {
-  border-bottom: 1px solid black;
-  padding-bottom: 0;
+a {
+  color: #0087C3;
+  text-decoration: none;
 }
 
-.accent {
-  font-size: 13px;
-  font-weight: bold;
+header {
+  padding: 0px 0px 10px 0;
+  margin-bottom: 10px;
+  // border-bottom: 1px solid #AAAAAA;
 }
 
-.bold {
-  font-weight: bold;
+#header-left-part {
+  float: left;
+  margin-top: 8px;
+  width: 100%;
+  max-width: 55%;
 }
 
-.borders_table {
+#header-left-part .logo-image img {
+  height: 70px;
+}
+
+#header-right-part {
+  float: right;
+  text-align: left;
+  width: 100%;
+  max-width: 45%;
+}
+
+#details {
+  margin-bottom: 50px;
+}
+
+#client {
+  padding-left: 6px;
+  border-left: 6px solid #0087C3;
+  float: left;
+}
+
+#client .to {
+  color: #777777;
+}
+
+h2.name {
+  font-size: 1.4em;
+  font-weight: normal;
+  margin: 0;
+}
+
+#invoice {
+  float: right;
+  text-align: right;
+}
+
+#invoice h1 {
+  color: #0087C3;
+  font-size: 2.4em;
+  line-height: 1em;
+  font-weight: normal;
+  margin: 0  0 10px 0;
+}
+
+#invoice .date {
+  font-size: 1.1em;
+  color: #777777;
+}
+
+table {
   width: 100%;
   border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
 }
 
-.borders_table,
-.borders_table td,
-.products_table th {
-  border: 1px solid #999;
+table th,
+table td {
+  padding: 20px;
+  background: #EEEEEE;
+  text-align: center;
 }
 
-.page_break {
+table th {
+  // white-space: nowrap;
+  font-weight: normal;
+}
+
+table td {
+  text-align: right;
+}
+
+table td h3{
+  color: #57B223;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin: 0 0 0.2em 0;
+}
+
+table .no {
+  color: #FFFFFF;
+  font-size: 1.6em;
+  background: #57B223;
+}
+
+table .desc {
+  text-align: left;
+}
+
+table .unit {
+  background: #DDDDDD;
+}
+
+table .qty {
+}
+
+table .total {
+  background: #57B223;
+  color: #FFFFFF;
+}
+
+table td.unit,
+table td.qty,
+table td.total {
+  font-size: 1.2em;
+}
+
+table tbody tr:last-child td {
+  border: none;
+}
+
+table tfoot td {
+  padding: 10px 20px;
+  background: #FFFFFF;
+  border-bottom: none;
+  font-size: 1.2em;
+  white-space: nowrap;
+  border-top: 1px solid #AAAAAA;
+}
+
+table tfoot tr:first-child td {
+  border-top: none;
+}
+
+table tfoot tr:last-child td {
+  color: #57B223;
+  font-size: 1.4em;
+  border-top: 1px solid #57B223;
+
+}
+
+table tfoot tr td:first-child {
+  border: none;
+}
+
+#thanks{
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+#notices{
+  padding-left: 6px;
+  border-left: 6px solid #0087C3;
+}
+
+#notices .notice {
+  font-size: 1.2em;
+}
+
+footer {
+  color: #777777;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #AAAAAA;
+  padding: 8px 0;
+  text-align: center;
+}
+.relative {
+  position: relative;
   display: block;
-  clear: both;
-  page-break-after: always;
+}
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.inline {
+    display: inline-block;
+    }
+.h-20 {height: 20px;}
+.h-25 {height: 25px;}
+.ml-5 {margin-left: 5px;}
+.mr-5 {margin-right: 5px;}
+.header-left-part-bottom table{
+    width: 90%;
+}
+.header-left-part-bottom table th {
+    padding: 5px 2px 5px 0;
+    background: white;
+    font-size: 12px;
+    text-align: left;
+}
+.first-block {
+
+}
+.banner {
+    width: 100%;
+    height: 100%;
+    // background-image: url("/Podpisanie_dogovora_Image.png");
+    // background-repeat: no-repeat;
+    // background-position: 0% 0%;
+    // background-size: 100% 100%;
+    padding: 8rem 0rem;
+    // min-height: 320px;
+    background: url("/Podpisanie_dogovora_Image.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 3rem;
+}
+table.banner-text {
+  margin-bottom: 0px;
+}
+table.banner-text td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+  background: transparent;
+  border-bottom: none;
+  color: white;
+}
+table.banner-text h3 {
+  color: white;
+}
+.second-block-left-part {
+  width: 49%;
+  float: left;
+  margin-right: 10px;
+}
+.second-block-right-part {
+  width: 49%;
+  float: left;
+}
+.second-block-left-part table th, .second-block-right-part table th {
+  padding-right: 5px;
+  padding-top: 0px;
+  padding-bottom: 2px;
+  background: white;
+  font-size: 15px;
+  text-align: left;
+}
+.second-block-label {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.second-block table img {
+  max-width: 25px;
+}
+.third-block {
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+}
+.third-block table td {
+  padding: 30px;
+//   padding-top: 0px;
+//   padding-bottom: 2px;
+  background: transparent;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+.third-block-img1{
+  background: url("/kp_Background1.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 100% 100%;
+}
+.third-block-img2 {
+  background: url("/kp_Background2.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 100% 100%;
+}
+.third-block-img3 {
+  background: url("/kp_Background3.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 100% 100%;
 }
 
-h2 {
-  font-size: 15px;
+.footer-banner {
+  display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 0;
+    background: url("/kp_footer_back.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    // margin-bottom: 3rem;
 }
+.footer-left-part {
+  width: 80%;
+  float:left;
+}
+.footer-right-part {
+  width: 20%;
+  float: right;
+}
+table.footer-banner-text {
+  margin-bottom: 0px;
+}
+table.footer-banner-text th {
+  text-align: left;
+  vertical-align: middle;
+  background: transparent;
+  border-bottom: none;
+  color: white;
+  padding-right: 5px;
+  padding-top: 0px;
+  padding-bottom: 2px;
+  font-size: 14px;
+}
+.footer-right-part img {max-width: 120px;}
