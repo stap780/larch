@@ -11,16 +11,17 @@
 <div>
 
   <div class="wrapper">
+		<h4 class="name"><%= @our_company.fulltitle.camelize%></h4>
 
 		<table class="generalInfo">
 			<tbody>
 				<tr>
 				<th>Поставщик:</th>
-				<td>ООО "Выборг Торг Техника"</td>
+				<td><%= @our_company.fulltitle.camelize%></td>
 				</tr>
 				<tr>
 				<th>Адрес:</th>
-				<td>188800 Ленинградская обл, г Выборг, ул Штурма, д 5</td>
+				<td><%= @our_company.uraddress%></td>
 				</tr>
 				<tr>
 				<th>Телефон:</th>
@@ -28,31 +29,27 @@
 				</tr>
 				<tr>
 				<th>Банк:</th>
-				<td>Ф. ОПЕРУ БАНКА ВТБ (ПАО) В САНКТ-ПЕТЕРБУРГЕ</td>
+				<td><%= @our_company.banktitle%></td>
 				</tr>
 				<tr>
 				<th>Р/С:</th>
-				<td>40702810362110000091</td>
-				</tr>
-				<tr>
-				<th>К/С:</th>
-				<td>30101810200000000704</td>
+				<td><%= @our_company.bankaccount%></td>
 				</tr>
 				<tr>
 				<th>БИК:</th>
-				<td>044030704</td>
+				<td><%= @our_company.bik%></td>
 				</tr>
 				<tr>
 				<th>ИНН:</th>
-				<td>4704058170</td>
+				<td><%= @our_company.inn%></td>
 				</tr>
 				<tr>
 				<th>КПП:</th>
-				<td>470401001</td>
+				<td><%= @our_company.kpp%></td>
 				</tr>
 				<tr>
 				<th>ОГРН:</th>
-				<td>1044700883259</td>
+				<td> <%= @our_company.ogrn%></td>
 				</tr>
 			</tbody>
 		</table>
@@ -69,7 +66,7 @@
         <th>Комментарий</th>
       </tr>
 
-      <% @kp_products_data.each_with_index do |kp, i| %>
+      <% @kp_products.each_with_index do |kp, i| %>
         <tr>
           <td class="center"><%= (i+1) %></td>
           <td class="center"><%= kp[:sku] %></td>

@@ -1,9 +1,14 @@
 class Order < ApplicationRecord
   belongs_to :client
   belongs_to :company
+  belongs_to :companykp1, :class_name => 'Company', foreign_key: "companykp1_id"
+	belongs_to :companykp2, :class_name => 'Company', foreign_key: "companykp2_id"
+  belongs_to :companykp3, :class_name => 'Company', foreign_key: "companykp3_id"
   has_many :kps, dependent: :destroy
   validates :number, presence: true, uniqueness: true
   validates :client_id, presence: true
+
+  delegate :title, to: :company, prefix: true, allow_nil: true
 
   STATUS = ["Новый", "В работе","Проверяем", "Отправлен", "Отменена"]
 

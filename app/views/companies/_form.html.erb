@@ -14,17 +14,18 @@
     <%= f.input :fulltitle %>
     <%= f.input :uraddress %>
     <%= f.input :factaddress %>
-    <%= f.input :bik, input_html: { onchange: "myBikFunction(this.value)" } %>
-    <%= f.input :banktitle %>
-    <%= f.input :bankaccount %>
-</div>
-<% if  @company.our_company == true  and current_user.admin?%>
-<div class="col-6 row align-content-start">
-  <div class="col-12 mb-3 h3">Images</div>
-  <%= f.input :images, as: :file, label: false, :input_html => { :multiple => true } %>
-  <%= render '/layouts/image_form', :f => @company %>
-  </div>
-<% end %>
+    </div>
+    <div class="col-6 row align-content-start">
+      <div class="col-12 mt-3 mb-3 h3">Банк</div>
+      <%= f.input :bik, input_html: { onchange: "myBikFunction(this.value)" } %>
+      <%= f.input :banktitle %>
+      <%= f.input :bankaccount %>
+      <% if  @company.our_company == true  and current_admin %>
+        <div class="col-12 mt-3 mb-3 h3">Images</div>
+        <%= f.input :images, as: :file, label: false, :input_html => { :multiple => true } %>
+        <%= render '/layouts/image_form', :f => @company %>
+      <% end %>
+    </div>
 </div>
   <div class="row">
   <div class="col-3 btn-group mt-5">

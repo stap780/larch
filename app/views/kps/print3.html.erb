@@ -1,19 +1,104 @@
-<!doctype html>
+<!DOCTYPE html >
 <html>
-  <head>
-    <meta charset='utf-8' />
-    <%= wicked_pdf_stylesheet_link_tag "print3" %>
-    <%= wicked_pdf_javascript_include_tag "number_pages" %>
-  </head>
-  <body class="print3" onload="loadPage()" onload="my_number_pages()" onload="number_pages()">
-    <p id="status">Страница загружена</p>
-    Page <span class="page"></span> of <span class="topage"></span>
-    <p id="pdf_console_output">pdf_console_output</p>
-    <div id="header">
-      <%=  params.key?('debug') ? image_tag('/logo_little__200x70_.png') : wicked_pdf_image_tag("/logo_little__200x70_.png", :class =>'logo') %>
-    </div>
-    <div id="content">
-      <%= yield %>
-    </div>
-  </body>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <%= wicked_pdf_stylesheet_link_tag("print2") %>
+  <%= wicked_pdf_javascript_include_tag("number_pages") %>
+  <title><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></title>
+</head>
+<body onload="my_number_pages()">
+  <!-- <p id="status">Страница загружена</p>
+  Page <span class="page"></span> of <span class="topage"></span>
+  <p id="pdf_console_output">pdf_console_output</p>
+  <div id="header">
+    <%#  params.key?('debug') ? image_tag('/logo_little__200x70_.png') : wicked_pdf_image_tag("/logo_little__200x70_.png", :class =>'logo') %>
+  </div>
+<div> -->
+
+  <div class="wrapper">
+
+		<table class="generalInfo">
+			<tbody>
+				<tr>
+				<th>Поставщик:</th>
+				<td><%= @our_company.fulltitle.camelize%></td>
+				</tr>
+				<tr>
+				<th>Адрес:</th>
+				<td><%= @our_company.uraddress%></td>
+				</tr>
+				<tr>
+				<th>Телефон:</th>
+				<td>(81378) 20581б 89213955526</td>
+				</tr>
+				<tr>
+				<th>Банк:</th>
+				<td><%= @our_company.banktitle%></td>
+				</tr>
+				<tr>
+				<th>Р/С:</th>
+				<td><%= @our_company.bankaccount%></td>
+				</tr>
+				<tr>
+				<th>БИК:</th>
+				<td><%= @our_company.bik%></td>
+				</tr>
+				<tr>
+				<th>ИНН:</th>
+				<td><%= @our_company.inn%></td>
+				</tr>
+				<tr>
+				<th>КПП:</th>
+				<td><%= @our_company.kpp%></td>
+				</tr>
+				<tr>
+				<th>ОГРН:</th>
+				<td> <%= @our_company.ogrn%></td>
+				</tr>
+			</tbody>
+		</table>
+    <center><h1><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></h1></h1></center>
+    <table class="itemsInfo">
+      <tr>
+        <th>№</th>
+        <th>Артикул</th>
+        <th style="width: 220px;">Товар</th>
+        <th>Ед.</th>
+        <th>Цена</th>
+        <th>Кол-во</th>
+        <th>Сумма</th>
+        <th>Комментарий</th>
+      </tr>
+
+      <% @kp_products.each_with_index do |kp, i| %>
+        <tr>
+          <td class="center"><%= (i+1) %></td>
+          <td class="center"><%= kp[:sku] %></td>
+          <td><%= kp[:title] %></td>
+          <td class="center">шт</td>
+          <td class="center"><%= kp[:price] %></td>
+          <td class="center"><%= kp[:quantity] %></td>
+          <td class="center"><%= kp[:sum]%></td>
+          <td class="comment"></td>
+        </tr>
+      <% end %>
+
+    </table>
+
+    <div class="summary">Итого:&nbsp;&nbsp;<%= @kp.kp_products.sum(:sum)%> руб</div>
+
+    <p>Всего наименований <%= @kp.kp_products.count%>, на сумму <%= RuPropisju.rublej(@kp.kp_products.sum(:sum))%></p>
+
+		<table class="signs">
+			<tr>
+				<td>
+				Отпустил___________________________________
+				</td>
+			</tr>
+		</table>
+
+  </div>
+
+</div>
+</body>
 </html>

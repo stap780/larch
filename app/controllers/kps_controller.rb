@@ -14,6 +14,13 @@ class KpsController < ApplicationController
     @kps = @search.result.paginate(page: params[:page], per_page: 30)
   end
 
+  def index_all
+    # @kps = Kp.all
+    @search = Kp.ransack(params[:q])
+    @search.sorts = 'id asc' if @search.sorts.empty?
+    @kps = @search.result.paginate(page: params[:page], per_page: 30)
+  end
+
   # GET /kps/1
   def show; end
 
@@ -77,7 +84,7 @@ class KpsController < ApplicationController
   def print1
     @kp = Kp.find(params[:id])
     # puts @kp.present?
-    @our_company = Company.where(our_company: true).first
+    @our_company = @kp.order.companykp1
     @company = @kp.order.company
     respond_to do |format|
       format.html
@@ -106,6 +113,7 @@ class KpsController < ApplicationController
     @kp = Kp.find(params[:id])
     @client = @kp.order.client
     @company = @kp.order.company
+    @our_company = @kp.order.companykp2
     @kp_products_data = []
     @kp.kp_products.each do |kp|
       data = {
@@ -119,13 +127,14 @@ class KpsController < ApplicationController
             }
       @kp_products_data << data
     end
+    @kp_products = @kp_products_data.sort_by{ |hsh| hsh[:title] }
 
     # puts @kp_products_data
     respond_to do |format|
       format.html
       format.pdf do
           render pdf: "КП2 #{@kp.id}",
-                 template: "kps/print2",
+                 template: "kps/print2.html.erb",
                  page_size: 'A4',
                  orientation: "Portrait",
                  show_as_html: params.key?('debug'),
@@ -141,6 +150,21 @@ class KpsController < ApplicationController
   def print3
     @kp = Kp.find(params[:id])
     @company = @kp.order.company
+    @our_company = @kp.order.companykp3
+    @kp_products_data = []
+    @kp.kp_products.each do |kp|
+      data = {
+              sku: kp.product.sku,
+              # image_url: rails_representation_url(kp.product.images.first.variant(combine_options: {auto_orient: true, thumbnail: '40x40', gravity: 'center', extent: '40x40' }).processed, only_path: true),
+              image_url: kp.product.images.first,
+              title: kp.product.title,
+              price: kp.price,
+              quantity: kp.quantity,
+              sum: kp.sum.to_f.round(2)
+            }
+      @kp_products_data << data
+    end
+    @kp_products = @kp_products_data.sort_by{ |hsh| hsh[:sku] }
     respond_to do |format|
       format.html
       format.pdf do
@@ -151,8 +175,8 @@ class KpsController < ApplicationController
                      lowquality: true,
                      zoom: 1,
                      dpi: 75,
-                     show_as_html: params.key?('debug'),
-                     header: { right: 'Стр [page] из [topage]' }
+                     show_as_html: params.key?('debug')
+                     #header: { right: 'Стр [page] из [topage]' }
         end
     end
   end
@@ -174,7 +198,7 @@ class KpsController < ApplicationController
   private
 
   def get_order
-    @order = Order.find(params[:order_id])
+    @order = Order.find(params[:order_id]) if params[:order_id].present?
   end
 
   # Use callbacks to share common setup or constraints between actions.
@@ -184,6 +208,6 @@ class KpsController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def kp_params
-    params.require(:kp).permit(:vid, :status, :title, :order_id, kp_products_attributes: %i[id quantity price sum product_id _destroy])
+    params.require(:kp).permit(:vid, :status, :title, :order_id, :extra, kp_products_attributes: %i[id quantity price sum product_id _destroy])
   end
 end

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :kp_products
+  get 'kps', to: 'kps#index_all'
   resources :orders do
     resources :kps do
       collection do
@@ -15,6 +16,7 @@ Rails.application.routes.draw do
       post :delete_selected
       get :download
       post :webhook
+      get :autocomplete_company_title
     end
   end
   resources :products do

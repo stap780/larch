@@ -22,6 +22,7 @@ function initLine() {
 
 // калькулятор по позициям и итого
 function calculate(val) {
+  console.log(val);
   var table_lines = $('#kp_products tbody tr'); // это нужно чтобы ошибки не выскакивали в js
   if (table_lines.length >= 1) {
     for (var i = 0; i < table_lines.length; i++) {
@@ -30,7 +31,7 @@ function calculate(val) {
       var quantity = row.cells[1].firstChild.firstChild.value;
       var price = row.cells[2].firstChild.firstChild.value;
       var sum = quantity * price;
-      row.cells[3].firstChild.firstChild.value = sum.toFixed(2);;
+      row.cells[3].firstChild.firstChild.value = sum.toFixed(2);
     };
     var rows = $("tr.nested-fields:visible");
     var tot = 0;
@@ -70,6 +71,22 @@ $(document).ready(function() {
 
       calculate();
     });
+  // пересчет суммы при изменении поля extra
+  $("#kp_extra").on('change', function() {
+    var extraValue = $(this).val();
+    var table_lines = $('#kp_products tbody tr');
+    var value = (extraValue / table_lines.length).toFixed(2);
+    if (table_lines.length >= 1) {
+      for (var i = 0; i < table_lines.length; i++) {
+        var row = table_lines[i];
+        //console.log(row);
+        var price = row.cells[2].firstChild.firstChild.value;
+        var newPrice = parseInt(price) + parseInt(value);
+        row.cells[2].firstChild.firstChild.value = newPrice.toFixed(2);
+      };
+    }
+    calculate();
+  });
 
   // автокомплит
   $('.kp_kp_products_product_title input').bind('railsAutocomplete.select', function(event, data) {

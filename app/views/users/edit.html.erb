@@ -9,6 +9,23 @@
     <%= f.association :role, input_html: { class: "form-select" } %>
     <%# f.input :ip %>
   </div>
+  <div class="col-6">
+    <% if current_admin %>
+      <div class="col-12 mt-3 mb-3 h3">Images</div>
+      <%= f.input :avatar, as: :file, label: false%>
+      <div class="image-table row justify-content-between mt-3">
+        <div class="col-6 row align-items-center mt-1">
+          <div class="col-9" data-image="<%# @user.avatar.metadata %>">
+          <%# image_tag @user.image.variant(combine_options: {auto_orient: true, thumbnail: '160x160', gravity: 'center', extent: '160x160' }) %>
+          <%= image_tag @user.avatar_thumbnail %>
+          </div>
+          <div class="col-3">
+          <%= link_to "Delete", delete_image_products_path(@user.id, @user.avatar.id), method: :delete, class: "btn btn-success delete-image", data: {confirm: "Are you sure?"}, remote: true if @user.avatar.attached? %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
 
   <div class="col-3 btn-group mt-5">
