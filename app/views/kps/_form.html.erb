@@ -5,16 +5,17 @@
 
   <div class="row">
     <div class="col-12 h3"><%= page_title %></div>
-    <div class="col-6 row">
-    <%= f.input :vid, collection: Kp::VID, prompt: "Тип", selected: Kp::VID.first, input_html: { class: "form-select" } , wrapper_html: { class: "col-4" } %>
-    <%= f.input :status, collection: Kp::STATUS, prompt: "Статус", selected: Kp::STATUS.first, input_html: { class: "form-select" } , wrapper_html: { class: "col-4" } %>
+    <div class="col-10 row">
+    <%= f.input :vid, collection: Kp::VID, prompt: "Тип", selected: Kp::VID.first, input_html: { class: "form-select" } , wrapper_html: { class: "col-2" } %>
+    <%= f.input :status, collection: Kp::STATUS, prompt: "Статус", selected: Kp::STATUS.first, input_html: { class: "form-select" } , wrapper_html: { class: "col-2" } %>
     <%= f.input :title, wrapper_html: { class: "col-8" } %>
-    <%= f.input :extra, wrapper_html: { class: "col-4" }, input_html: {min: "0"}%>
+    <%= f.input :comment, as: :text, wrapper_html: { class: "col-8" } %>
+    <%= f.input :extra, wrapper_html: { class: "col-4" }, input_html: {min: "0"} %>
 </div>
 <div class="col-md-12 row">
   <div class='links col-md-12 mt-3'>
   <% if !@kp.new_record? %><%= link_to "Импорт файла", file_import_order_kps_path(@order, @kp), remote: 'true', id: 'file_import', 'data-bs-toggle' => "modal", 'data-bs-target' => '#modal-edit', class: 'btn btn-light btn-sm' %><% end %>
-  <%= link_to_add_association t('add_item'), f, :kp_products, 'data-association-insertion-node' => "#kp_products",
+  <%= link_to_add_association "Добавить позицию", f, :kp_products, 'data-association-insertion-node' => "#kp_products",
                                                               'data-association-insertion-method' => "append",
                                                               id: 'add_items' ,
                                                               class: "btn btn-dark btn-sm", onclick: "initLine()"  %>
@@ -46,7 +47,8 @@
   <div class="row">
   <div class="col-3 btn-group mt-5">
     <%= f.button :submit, class: 'btn btn-success' %>
-    <%= link_to 'Назад', edit_order_path(@order), class: 'btn btn-outline-primary' %>
+    <%# link_to 'Назад', edit_order_path(@order), class: 'btn btn-outline-primary' %>
+    <%= link_to 'Назад', :back, class: 'btn btn-outline-primary' %>
   </div>
   </div>
 <% end %>

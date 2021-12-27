@@ -22,11 +22,14 @@
   <thead>
     <tr class="bg-success">
       <th><%= check_box_tag 'selectAll', value: 'selectAll'%></th>
+      <th>Order</th>
       <th>Vid</th>
       <th>Status</th>
       <th>Title</th>
-      <th>Order</th>
-      <th colspan="3"></th>
+      <th>Кол-во т.</th>
+      <th>Сумма</th>
+      <th>Comment</th>
+      <th colspan="1"></th>
     </tr>
   </thead>
 
@@ -34,10 +37,14 @@
     <% @kps.each do |kp| %>
       <tr id="items_table">
         <td><%= check_box_tag "kp_ids[]", kp.id %></td>
+        <td><%= kp.order.number %></td>
         <td><%= kp.vid %></td>
         <td><%= kp.status %></td>
         <td><%= kp.title %></td>
-        <td><%= kp.order.number %></td>
+        <td><%= kp.kp_products.count %></td>
+        <td><%= kp.kp_products.sum(:sum) %></td>
+        <td><%= kp.comment %></td>
+        <td><%= link_to '<span class="oi oi-pencil"></span>'.html_safe, edit_order_kp_path(kp.order, kp) %></td>
         <!-- <td><%# link_to '<span class="oi oi-eye"></span>'.html_safe, [@order] %></td>
         <td><%# link_to '<span class="oi oi-pencil"></span>'.html_safe, edit_order_kp_path(@order, kp) %></td>
         <td><%# link_to '<span class="oi oi-trash"></span>'.html_safe, [@order, kp], method: :delete, data: { confirm: 'Are you sure?' } %></td> -->

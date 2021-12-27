@@ -7,6 +7,7 @@ class Order < ApplicationRecord
   has_many :kps, dependent: :destroy
   validates :number, presence: true, uniqueness: true
   validates :client_id, presence: true
+  before_validation :set_our_companies
 
   delegate :title, to: :company, prefix: true, allow_nil: true
 
@@ -74,6 +75,14 @@ class Order < ApplicationRecord
 
       kp.kp_products.create(quantity: data[:quantity], price:  data[:price], sum:  data[:sum], product_id:  product_id )
     end
+  end
+
+  private
+
+  def set_our_companies
+    self.companykp1_id = Company.our.first.id
+    self.companykp2_id = Company.our.first.id
+    self.companykp3_id = Company.our.first.id
   end
 
 end

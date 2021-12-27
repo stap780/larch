@@ -18,7 +18,7 @@ class KpsController < ApplicationController
     # @kps = Kp.all
     @search = Kp.ransack(params[:q])
     @search.sorts = 'id asc' if @search.sorts.empty?
-    @kps = @search.result.paginate(page: params[:page], per_page: 30)
+    @kps = @search.result.paginate(page: params[:page], per_page: 100)
   end
 
   # GET /kps/1
@@ -208,6 +208,6 @@ class KpsController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def kp_params
-    params.require(:kp).permit(:vid, :status, :title, :order_id, :extra, kp_products_attributes: %i[id quantity price sum product_id _destroy])
+    params.require(:kp).permit(:vid, :status, :title, :order_id, :extra, :comment, kp_products_attributes: %i[id quantity price sum product_id _destroy])
   end
 end

@@ -12,20 +12,6 @@ class Kp < ApplicationRecord
   VID = ["Начальное","Основное"]
   STATUS = ["Новый", "В работе","Отправлен", "Завершен", "Отменен"]
 
-
-  def set_status_vid
-    self.status = Kp::STATUS.first if new_record?
-    self.vid = Kp::VID.first if new_record?
-  end
-
-  def set_title
-    if !self.order.present?
-      self.title = "Коммерческое предложение "+self.order_id.to_s if new_record?
-    else
-      self.title = "Коммерческое предложение "+self.order_id.to_s+"/"+self.order.kps.count.to_s if new_record?
-    end
-  end
-
   def self.import(file, order, kp)
 		puts 'импорт файла '+Time.now.to_s
     kp = Kp.find_by_id(kp)
@@ -61,6 +47,22 @@ class Kp < ApplicationRecord
 	    else raise "Unknown file type: #{file.original_filename}"
 	    end
 	end
+
+  private
+
+  def set_status_vid
+    self.status = Kp::STATUS.first if new_record?
+    self.vid = Kp::VID.first if new_record?
+  end
+
+  def set_title
+    if !self.order.present?
+      self.title = "Коммерческое предложение "+self.order_id.to_s if new_record?
+    else
+      self.title = "Коммерческое предложение "+self.order_id.to_s+"/"+self.order.kps.count.to_s if new_record?
+    end
+  end
+
 
 
 end
