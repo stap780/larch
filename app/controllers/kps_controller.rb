@@ -17,8 +17,8 @@ class KpsController < ApplicationController
   def index_all
     # @kps = Kp.all
     @search = Kp.ransack(params[:q])
-    @search.sorts = 'id asc' if @search.sorts.empty?
-    @kps = @search.result.paginate(page: params[:page], per_page: 100)
+    @search.sorts = 'order_number desc' if @search.sorts.empty?
+    @kps = @search.result.includes(:order, :kp_products).paginate(page: params[:page], per_page: 100)
   end
 
   # GET /kps/1

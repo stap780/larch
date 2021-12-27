@@ -5,7 +5,8 @@
   </div>
   <%= search_form_for @search, {class: 'form-inline col-9 pl-0 pr-0'} do |f| %>
     <div class="input-group input-group-sm">
-      <%= f.collection_select :order_id_eq, Order.all.order('number ASC'), "id", "number", {prompt: 'order number'} , {class: "form-select", style: "max-width: 150px;"} %>
+      <%# f.collection_select :order_id_eq, Order.all.order('number DESC'), "id", "number", {prompt: 'order number'} , {class: "form-select", style: "max-width: 150px;"} %>
+      <%= f.search_field :order_number_eq, placeholder: 'Номер заказа', class: "form-control", style: "max-width: 150px;"%>
       <%= f.select :vid_eq, Kp::VID, {prompt: 'vid'} , {class: "form-select", style: "max-width: 150px;"} %>
       <%= f.select :status_eq, Kp::STATUS, {prompt: 'status'} , {class: "form-select", style: "max-width: 150px;"} %>
       <%= button_tag(type: 'submit', :class => "btn btn-info") do %>
@@ -22,7 +23,7 @@
   <thead>
     <tr class="bg-success">
       <th><%= check_box_tag 'selectAll', value: 'selectAll'%></th>
-      <th>Order</th>
+      <th><%= sort_link(@search, :order_number, 'Order', default_order: :asc) %></th>
       <th>Vid</th>
       <th>Status</th>
       <th>Title</th>
