@@ -4,7 +4,7 @@ class KpsController < ApplicationController
   before_action :active_storage_host
   before_action :get_order
   before_action :set_kp, only: %i[show edit update destroy]
-  autocomplete :product, :title, :extra_data => [:id, :sku], :display_value => :sku_title, 'data-noMatchesLabel' => 'нет товара'
+  autocomplete :product, :title, :extra_data => [:id, :sku, :price], :display_value => :sku_title, 'data-noMatchesLabel' => 'нет товара'
 
   # GET /kps
   def index
@@ -47,8 +47,19 @@ class KpsController < ApplicationController
     end
   end
 
+
   # PATCH/PUT /kps/1
   def update
+    params[:kp][:kp_products_attributes].each do |k,v|
+      if !v["product_id"].present?
+        # puts 'not present'
+        # puts v["product_sku_title"]
+        product = Product.find_or_create_by(title: v["product_sku_title"], quantity: v["quantity"], price:  v["price"], sku: v["product_sku_title"].gsub(' ','_'))
+        # puts product.id.to_s
+        v["product_id"] = product.id
+      end
+    end
+
     respond_to do |format|
       if @kp.update(kp_params)
         format.html { redirect_to edit_order_path(@order), notice: 'Kp was successfully updated.' }
@@ -208,6 +219,6 @@ class KpsController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def kp_params
-    params.require(:kp).permit(:vid, :status, :title, :order_id, :extra, :comment, kp_products_attributes: %i[id quantity price sum product_id _destroy])
+    params.require(:kp).permit(:vid, :status, :title, :order_id, :extra, :comment, kp_products_attributes:[:id,:quantity,:price,:sum,:product_id,:_destroy])
   end
 end

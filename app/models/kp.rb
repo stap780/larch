@@ -5,9 +5,9 @@ class Kp < ApplicationRecord
   accepts_nested_attributes_for :kp_products, reject_if: :all_blank, allow_destroy: true
   has_many :products, :through => :kp_products
 
-  before_validation :set_status_vid
-  after_initialize :set_title
   validates :order_id, presence: true
+  after_initialize :set_status_vid
+  after_initialize :set_title
 
   VID = ["Начальное","Основное"]
   STATUS = ["Новый", "В работе","Отправлен", "Завершен", "Отменен"]

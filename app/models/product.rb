@@ -9,7 +9,7 @@ class Product < ApplicationRecord
   accepts_nested_attributes_for :images_attachments, allow_destroy: true
 
   def sku_title
-    "(#{self.sku}) #{self.title}"
+    "#{self.title}" # было так -  "#{self.title} (#{self.sku}) " - убрал чтобы не заморачиваться с правкаим кода в форме КП (потом если найду время)
   end
 
 
@@ -62,6 +62,8 @@ class Product < ApplicationRecord
     response = Net::HTTP.get_response(URI.parse(ascii_url))
     StringIO.new(response.body)
   end
+
+  private
 
   def normalize_data_white_space
 	  self.attributes.each do |key, value|
