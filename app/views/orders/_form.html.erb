@@ -28,26 +28,32 @@
             <th>Название</th>
             <th>Дата</th>
             <th>Кол-во товаров</th>
-            <th colspan="2"></th>
+            <th>Сумма</th>
+            <th colspan="4"></th>
           </tr>
         </thead>
         <tbody>
-          <% @order.kps.each do |kp| %>
+          <% @order.kps.order('created_at' => 'asc' ).each do |kp| %>
             <tr class="align-middle">
               <td><%= kp.vid %></td>
               <td><%= kp.status %></td>
               <td><%= kp.title %></td>
               <td><%= kp.created_at %></td>
               <td><%= kp.kp_products.count %></td>
+              <td><%= kp.kp_products.sum(:sum) %></td>
               <td><%= link_to '<span class="oi oi-pencil"></span>'.html_safe, edit_order_kp_path(@order, kp) %></td>
+              <td><%= link_to '<span class="oi oi-file"></span>'.html_safe, copy_order_kps_path(@order, kp) %></td>
               <td class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="print_navbardrop" data-bs-toggle="dropdown"><i class="oi oi-print"></i></a>
                 <div class="dropdown-menu">
-                  <%= link_to "Распечатать КП1", print1_order_kps_path(@order, kp, :format => :pdf), {class: 'dropdown-item', target: '_blank'} %>
-                  <%= link_to "Распечатать КП2", print2_order_kps_path(@order, kp, :format => :pdf), {class: 'dropdown-item', target: '_blank'} %>
-                  <%= link_to "Распечатать КП3", print3_order_kps_path(@order, kp, :format => :pdf), {class: 'dropdown-item', target: '_blank'} %>
+                  <%= link_to "КП1", print1_order_kps_path(@order, kp, :format => :pdf), {class: 'dropdown-item', target: '_blank'} %>
+                  <%= link_to "КП2", print2_order_kps_path(@order, kp, :format => :pdf), {class: 'dropdown-item', target: '_blank'} %>
+                  <%= link_to "КП2 ранд", print2_order_kps_path(@order, kp, :format => :pdf, type: 'random'), {class: 'dropdown-item', target: '_blank'} %>
+                  <%= link_to "КП3", print3_order_kps_path(@order, kp, :format => :pdf), {class: 'dropdown-item', target: '_blank'} %>
+                  <%= link_to "КП3 ранд", print3_order_kps_path(@order, kp, :format => :pdf, type: 'random'), {class: 'dropdown-item', target: '_blank'} %>
                 </div>
               </td>
+              <td><%= link_to '<span class="oi oi-trash"></span>'.html_safe, [@order, kp], method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>
           <% end %>
         </tbody>

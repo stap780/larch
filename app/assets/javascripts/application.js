@@ -98,8 +98,8 @@ $(document).ready(function() {
   });
   // DELETE ALL //
 
-  $('.import_file').click(function() {
-    $('.import_file_submit').css('display', 'block');
-  });
+  // $('#file').click(function() {
+  //   $('.import_file_submit').css('display', 'block');
+  // });
 
 });

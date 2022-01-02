@@ -1,0 +1,2 @@
+<% headers = ['sku','title','quantity','price'] %>
+<%= CSV.generate_line(headers, force_quotes: true).html_safe %><% @kp.kp_products.each do |ic| %><%= CSV.generate_line([ic.product.sku, ic.product.title, ic.quantity, ic.price ], force_quotes: true).html_safe%><% end %>

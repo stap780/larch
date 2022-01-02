@@ -14,10 +14,10 @@
 </div>
 <div class="col-md-12 row">
   <div class='links col-md-12 mt-3'>
-  <% if !@kp.new_record? %><%= link_to "Импорт файла", file_import_order_kps_path(@order, @kp), remote: 'true', id: 'file_import', 'data-bs-toggle' => "modal", 'data-bs-target' => '#modal-edit', class: 'btn btn-light btn-sm' %><% end %>
+  <% if !@kp.new_record? %><%= link_to '<span class="oi oi-cloud-download"></span>'.html_safe, file_export_order_kps_path(@order, @kp, format: 'csv'), id: 'file_export', class: 'btn btn-light btn-sm', title: 'file export' %><% end %>
+  <%= link_to '<span class="oi oi-cloud-upload"></span>'.html_safe, file_import_order_kps_path(@order, @kp), remote: 'true', id: 'file_import', title: 'file import', 'data-bs-toggle' => "modal", 'data-bs-target' => '#modal-edit', class: 'btn btn-light btn-sm' %>
   <%= link_to_add_association "Добавить позицию", f, :kp_products, 'data-association-insertion-node' => "#kp_products",
-                                                              'data-association-insertion-method' => "append",
-                                                              id: 'add_items' ,
+                                                              'data-association-insertion-method' => "append", id: 'add_items',
                                                               class: "btn btn-dark btn-sm", onclick: "initLine()"  %>
   </div>
   <div class="col-md-10">

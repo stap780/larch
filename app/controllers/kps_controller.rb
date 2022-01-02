@@ -75,7 +75,7 @@ class KpsController < ApplicationController
   def destroy
     @kp.destroy
     respond_to do |format|
-      format.html { redirect_to order_kps_path(@order), notice: 'Kp was successfully destroyed.' }
+      format.html { redirect_to edit_order_path(@order), notice: 'Kp was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -138,7 +138,7 @@ class KpsController < ApplicationController
             }
       @kp_products_data << data
     end
-    @kp_products = @kp_products_data.sort_by{ |hsh| hsh[:title] }
+    @kp_products = params[:type] == "random" ? @kp_products_data.sort_by{ |hsh| hsh[:title] } : @kp_products_data
 
     # puts @kp_products_data
     respond_to do |format|
@@ -175,7 +175,8 @@ class KpsController < ApplicationController
             }
       @kp_products_data << data
     end
-    @kp_products = @kp_products_data.sort_by{ |hsh| hsh[:sku] }
+    @kp_products = params[:type] == "random" ? @kp_products_data.sort_by{ |hsh| hsh[:sku] } : @kp_products_data
+
     respond_to do |format|
       format.html
       format.pdf do
@@ -198,6 +199,16 @@ class KpsController < ApplicationController
     end
   end
 
+  def file_export
+    @kp = @order.kps.find(params[:id])
+    filename = "file_export.csv"
+    respond_to do |format|
+      format.xls { headers["Content-Disposition"] = "attachment; filename=\"#{filename}\"" }
+      format.csv { headers["Content-Disposition"] = "attachment; filename=\"#{filename}\"" }
+    end
+  end
+
+
   def import
     @kp = Kp.find(params[:id])
     Kp.import(params[:file], params[:order_id], params[:id])
@@ -205,6 +216,19 @@ class KpsController < ApplicationController
     redirect_to edit_order_kp_path(@order, @kp)
 	end
 
+  def copy
+    puts 'here'
+    @kp = @order.kps.find(params[:id])
+    @new_kp = @order.kps.create(vid: @kp.vid, status: @kp.status, title: @kp.title)
+    kp_products = @kp.kp_products.select(:product_id,:quantity,:price,:sum).map(&:attributes)
+
+    kp_products.each do |kp_p_data|
+      @new_kp.kp_products.create(kp_p_data)
+    end
+
+    flash[:notice] = 'КП скопировали'
+    redirect_to edit_order_kp_path(@order, @new_kp)
+  end
 
   private
 
