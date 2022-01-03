@@ -125,6 +125,7 @@ class KpsController < ApplicationController
     @client = @kp.order.client
     @company = @kp.order.company
     @our_company = @kp.order.companykp2
+    if @our_company.present?
     @kp_products_data = []
     @kp.kp_products.each do |kp|
       data = {
@@ -149,12 +150,28 @@ class KpsController < ApplicationController
                  page_size: 'A4',
                  orientation: "Portrait",
                  show_as_html: params.key?('debug'),
-                 margin: {top: 12, left: 5, right: 5, bottom: 15},
+                 margin: {top: 15, left: 5, right: 5, bottom: 20},
+                 # footer: {
+                 #   spacing: 5,
+                 #   right: 'Стр [page] из [topage]'
+                 # }
+                 # header:  {
+                 # 		html: { template:'kps/print1_header.html.erb'},
+                 # 		spacing: 3
+                 # 		# locals: {},
+                 #    # right: 'Стр [page] из [topage]'
+                 # 		},
                  footer: {
-                   spacing: 5,
-                   right: 'Стр [page] из [topage]'
-                 }
+                   html: { template:'kps/print2_footer.html.erb'},
+                    :spacing => 3,
+                    locals: {}
+                    #right: '_______________________(подпись)                  _______________________(подпись)            [page] из [topage]'
+                    }
         end
+    end
+    else
+      flash[:notice] = 'Выберите компанию 2'
+      redirect_to edit_order_path(@order)
     end
   end
 
@@ -162,36 +179,57 @@ class KpsController < ApplicationController
     @kp = Kp.find(params[:id])
     @company = @kp.order.company
     @our_company = @kp.order.companykp3
-    @kp_products_data = []
-    @kp.kp_products.each do |kp|
-      data = {
-              sku: kp.product.sku,
-              # image_url: rails_representation_url(kp.product.images.first.variant(combine_options: {auto_orient: true, thumbnail: '40x40', gravity: 'center', extent: '40x40' }).processed, only_path: true),
-              image_url: kp.product.images.first,
-              title: kp.product.title,
-              price: kp.price,
-              quantity: kp.quantity,
-              sum: kp.sum.to_f.round(2)
-            }
-      @kp_products_data << data
-    end
-    @kp_products = params[:type] == "random" ? @kp_products_data.sort_by{ |hsh| hsh[:sku] } : @kp_products_data
+    puts @our_company.present?
+    if @our_company.present?
+      @kp_products_data = []
+      @kp.kp_products.each do |kp|
+        data = {
+                sku: kp.product.sku,
+                # image_url: rails_representation_url(kp.product.images.first.variant(combine_options: {auto_orient: true, thumbnail: '40x40', gravity: 'center', extent: '40x40' }).processed, only_path: true),
+                image_url: kp.product.images.first,
+                title: kp.product.title,
+                price: kp.price,
+                quantity: kp.quantity,
+                sum: kp.sum.to_f.round(2)
+              }
+        @kp_products_data << data
+      end
+      @kp_products = params[:type] == "random" ? @kp_products_data.sort_by{ |hsh| hsh[:sku] } : @kp_products_data
 
-    respond_to do |format|
-      format.html
-      format.pdf do
-              render pdf: "КП3 #{@kp.id}",
-                     page_size: 'A4',
-                     template: "kps/print3.html.erb",
-                     orientation: "Portrait",
-                     lowquality: true,
-                     zoom: 1,
-                     dpi: 75,
-                     show_as_html: params.key?('debug')
-                     #header: { right: 'Стр [page] из [topage]' }
-        end
+      respond_to do |format|
+        format.html
+        format.pdf do
+                render pdf: "КП3 #{@kp.id}",
+                       page_size: 'A4',
+                       template: "kps/print3.html.erb",
+                       orientation: "Portrait",
+                       lowquality: true,
+                       zoom: 1,
+                       dpi: 75,
+                       show_as_html: params.key?('debug'),
+                       #header: { right: 'Стр [page] из [topage]' }
+                       :margin => {top: 15, left: 0, right: 0, bottom: 20 },
+                       # header:  {
+           						 # 		html: { template:'kps/print1_header.html.erb'},
+           						 # 		spacing: 3
+           						 # 		# locals: {},
+                       #    # right: 'Стр [page] из [topage]'
+           						 # 		},
+           						 footer: {
+           							 html: { template:'kps/print3_footer.html.erb'},
+           							 	:spacing => 3,
+           								locals: {}
+           								#right: '_______________________(подпись)                  _______________________(подпись)            [page] из [topage]'
+           								}
+          end
+      end
+
+    else
+      flash[:notice] = 'Выберите компанию 3'
+      redirect_to edit_order_path(@order)
     end
   end
+
   # это для модалки для загрузки файла
   def file_import
     respond_to do |format|

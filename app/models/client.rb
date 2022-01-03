@@ -1,9 +1,9 @@
 class Client < ApplicationRecord
   has_many :orders
   has_and_belongs_to_many :companies
-  before_save :normalize_phone
+  validates :phone, phone: { possible: true, allow_blank: true }
 
-  validates :phone, phone: true, allow_blank: true
+  before_save :normalize_phone
 
   def full_name
     "#{self.name}" "#{self.surname}"
@@ -35,7 +35,7 @@ class Client < ApplicationRecord
   private
 
   def normalize_phone
-    self.phone = Phonelib.parse(phone).full_e164.presence
+    self.phone = Phonelib.valid_for_country?(phone, 'RU') ? Phonelib.parse(phone).full_e164.presence : Phonelib.parse(phone, "KZ").full_e164.presence
   end
 
 end

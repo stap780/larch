@@ -13,7 +13,7 @@
       <th colspan="5">Ваш персональны менеджер</th>
       </tr>
       <tr>
-      <th>Ирина Тихомирова</th>
+      <th><% if @kp.order.user.present? %><%= @kp.order.user.name %><% else %>Тест<% end %></th>
       <th><%=  params.key?('debug') ? image_tag('/kp_phone.png') : wicked_pdf_image_tag("/kp_phone.png") %></th>
       <th>88005501314</th>
       <th><%=  params.key?('debug') ? image_tag('/kp_email.png') : wicked_pdf_image_tag("/kp_email.png") %></th>

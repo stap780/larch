@@ -4,6 +4,7 @@ class Order < ApplicationRecord
   belongs_to :companykp1, :class_name => 'Company', foreign_key: "companykp1_id"
 	belongs_to :companykp2, :class_name => 'Company', foreign_key: "companykp2_id"
   belongs_to :companykp3, :class_name => 'Company', foreign_key: "companykp3_id"
+  belongs_to :user
   has_many :kps, dependent: :destroy
   validates :number, presence: true, uniqueness: true
   validates :client_id, presence: true
@@ -80,9 +81,11 @@ class Order < ApplicationRecord
   private
 
   def set_our_companies
+    if new_record?
     self.companykp1_id = Company.our.first.id
     self.companykp2_id = Company.our.first.id
     self.companykp3_id = Company.our.first.id
+    end
   end
 
 end

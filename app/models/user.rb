@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   belongs_to :role
+  has_many :orders
   # before_create :set_default_role
   # or
   before_validation :set_default_role

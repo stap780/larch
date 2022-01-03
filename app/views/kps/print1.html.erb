@@ -6,7 +6,7 @@
     <%= wicked_pdf_stylesheet_link_tag("print1") %>
     <%= wicked_pdf_javascript_include_tag("number_pages") %>
   </head>
-  <body>
+  <body <%if params.key?('debug') %>class="debug"<% end %>>
     <header class="clearfix">
         <div id="header-left-part">
           <div class="logo-image">
@@ -44,8 +44,8 @@
 
       <div class="second-block clearfix">
           <div class="second-block-left-part">
-            <div class="second-block-label">
-              Мы производим
+            <div class="second-block-label" Мы производим>
+              <%=  params.key?('debug') ? image_tag('/kp_zagolovok1.png', :class =>'second-block-label-img-left') : wicked_pdf_image_tag("/kp_zagolovok1.png", :class =>'second-block-label-img-left') %>
             </div>
             <table>
               <tr>
@@ -53,46 +53,46 @@
                 <th>мебель для ДОУ и школ</th>
               </tr>
               <tr>
-                <th><%=  params.key?('debug') ? image_tag('/kp_fotooboi.png') : wicked_pdf_image_tag("/kp_fotooboi.png") %></th>
+                <th><%=  params.key?('debug') ? image_tag('/kp_photooboi.png') : wicked_pdf_image_tag("/kp_photooboi.png") %></th>
                 <th>Фотообои, интерьерное оформление ДОУ и школ</th>
               </tr>
               <tr>
-                <th><%=  params.key?('debug') ? image_tag('/kp_stendi.png') : wicked_pdf_image_tag("/kp_stendi.png") %></th>
+                <th><%=  params.key?('debug') ? image_tag('/kp_bulletin_board.png') : wicked_pdf_image_tag("/kp_bulletin_board.png") %></th>
                 <th>стенды, таблички, наклейки</th>
               </tr>
               <tr>
-                <th><%=  params.key?('debug') ? image_tag('/kp_decor.png') : wicked_pdf_image_tag("/kp_decor.png") %></th>
+                <th><%=  params.key?('debug') ? image_tag('/kp_dekoracii.png') : wicked_pdf_image_tag("/kp_dekoracii.png") %></th>
                 <th>декорации, оформление уголков и зон в ДОУ и школах</th>
               </tr>
               <tr>
-                <th><%=  params.key?('debug') ? image_tag('/kp_decor.png') : wicked_pdf_image_tag("/kp_decor.png") %></th>
+                <th><%=  params.key?('debug') ? image_tag('/kp_ulichnoe_oborudovanie.png') : wicked_pdf_image_tag("/kp_ulichnoe_oborudovanie.png") %></th>
                 <th>уличное оборудование</th>
               </tr>
             </table>
           </div>
           <div class="second-block-right-part">
-            <div class="second-block-label">
-              Мы поставляем
+            <div class="second-block-label" Мы поставляем>
+              <%=  params.key?('debug') ? image_tag('/kp_zagolovok2.png', :class =>'second-block-label-img-right') : wicked_pdf_image_tag("/kp_zagolovok2.png", :class =>'second-block-label-img-right') %>
             </div>
             <table>
               <tr>
-                <th><%=  params.key?('debug') ? image_tag('/kp_mebel.png') : wicked_pdf_image_tag("/kp_mebel.png") %></th>
+                <th><%=  params.key?('debug') ? image_tag('/kp_ulichnoe_igrovoe.png') : wicked_pdf_image_tag("/kp_ulichnoe_igrovoe.png") %></th>
                 <th>уличное игровое оборудование</th>
               </tr>
               <tr>
-                <th><%=  params.key?('debug') ? image_tag('/kp_fotooboi.png') : wicked_pdf_image_tag("/kp_fotooboi.png") %></th>
+                <th><%=  params.key?('debug') ? image_tag('/kp_posuda.png') : wicked_pdf_image_tag("/kp_posuda.png") %></th>
                 <th>посуда и хоз товары</th>
               </tr>
               <tr>
-                <th><%=  params.key?('debug') ? image_tag('/kp_stendi.png') : wicked_pdf_image_tag("/kp_stendi.png") %></th>
+                <th><%=  params.key?('debug') ? image_tag('/kp_igrovoe.png') : wicked_pdf_image_tag("/kp_igrovoe.png") %></th>
                 <th>игровое развивающее оборудование</th>
               </tr>
               <tr>
-                <th><%=  params.key?('debug') ? image_tag('/kp_decor.png') : wicked_pdf_image_tag("/kp_decor.png") %></th>
+                <th><%=  params.key?('debug') ? image_tag('/kp_interaktiv.png') : wicked_pdf_image_tag("/kp_interaktiv.png") %></th>
                 <th>интерактивное оборудование</th>
               </tr>
               <tr>
-                <th><%=  params.key?('debug') ? image_tag('/kp_decor.png') : wicked_pdf_image_tag("/kp_decor.png") %></th>
+                <th><%=  params.key?('debug') ? image_tag('/kp_osnashenie.png') : wicked_pdf_image_tag("/kp_osnashenie.png") %></th>
                 <th>оснащение для классов</th>
               </tr>
             </table>
@@ -102,17 +102,20 @@
           <table>
             <td>
               <table class="third-block-img1">
-                <td>Работаем по 44-ФЗ и 223-ФЗ</td>
+                <td></td>
+                <!-- <td>Работаем по 44-ФЗ и 223-ФЗ</td> -->
               </table>
             </td>
             <td>
               <table  class="third-block-img2">
-                <td>Доставка по всей России</td>
+                <td></td>
+                <!-- <td>Доставка по всей России</td> -->
               </table>
             </td>
             <td>
               <table  class="third-block-img3">
-                <td>Гарантии и сертификаты</td>
+                <td></td>
+                <!-- <td>Гарантии и сертификаты</td> -->
               </table>
             </td>
           </table>
@@ -129,8 +132,8 @@
               <th class="desc">Артикул</th>
               <th class="desc">Фото</th>
               <th class="desc">Наименование товара</th>
-              <th class="qty">Единица измерения</th>
-              <th class="qty">Количество</th>
+              <th class="qty">Ед изм</th>
+              <th class="qty">Кол.</th>
               <th class="unit">Цена</th>
               <th class="total">Сумма</th>
           </tr>
@@ -140,7 +143,7 @@
           <tr>
             <td class="no"><%= (i+1) %></td>
             <td class="desc"><%= kp.product.sku %></td>
-            <td class="desc"><%= image_tag wicked_image_active_storage_workaround(kp.product.images.first), style: "max-width:40px;" %></td>
+            <td class="desc"><%= image_tag wicked_image_active_storage_workaround(kp.product.images.first), style: "max-width:60px;" %></td>
             <td class="desc"><%= kp.product.title %></td>
             <td class="qty">шт</td>
             <td class="qty"><%= kp.quantity %></td>
@@ -150,11 +153,11 @@
           <% end %>
 
       </table>
-      <div id="thanks">Thank you!</div>
+      <!-- <div id="thanks">Thank you!</div>
       <div id="notices">
         <div>NOTICE:</div>
         <div class="notice">A finance charge of 1.5% will be made on unpaid balances after 30 days.</div>
-      </div>
+      </div> -->
     </main>
   </body>
 </html>

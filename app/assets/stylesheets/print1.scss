@@ -12,7 +12,11 @@
   font-weight: normal;
   font-style: normal;
 }
-
+.debug {
+    max-width: 210mm;
+    margin: 0 auto;
+    border: 1px solid;
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -115,12 +119,13 @@ table td h3{
   font-weight: normal;
   margin: 0 0 0.2em 0;
 }
-
+table .kp_items_header th {
+    border: 1px solid black;
+}
 table .no {
   color: black;
   font-size: 1rem;
   // background: #57B223;
-  border: 1px solid black;
 }
 
 table .desc {
@@ -132,6 +137,7 @@ table .unit {
 }
 
 table .qty {
+  text-align: center;
 }
 
 table .total {
@@ -239,7 +245,16 @@ footer {
     background: url("/Podpisanie_dogovora_Image.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
+}
+.debug .banner {
+    width: 100%;
+    height: 100%;
+    padding: 8rem 0rem;
+    background: url("http://localhost:3000/Podpisanie_dogovora_Image.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 0rem;
 }
 table.banner-text {
   margin-bottom: 0px;
@@ -274,49 +289,89 @@ table.banner-text h3 {
 }
 .second-block-label {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 .second-block table img {
   max-width: 25px;
 }
 .third-block {
-  margin-top: 1rem;
-  margin-bottom: 6rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+.third-block table {
+  margin-bottom: 0;
 }
 .third-block table td {
-  padding: 30px;
-//   padding-top: 0px;
-//   padding-bottom: 2px;
+  padding: 0;
   background: transparent;
   font-size: 15px;
   font-weight: bold;
   text-align: center;
 }
-.third-block-img1{
-  background: url("/kp_Background1.png");
+.third-block-img1 {
+  // background: url("/kp_Background1.png");
+  background: url("/kp_ramka1.png");
   background-repeat: no-repeat;
   background-position: 0% 0%;
   background-size: 100% 100%;
+  height: 140px;
+}
+.debug .third-block-img1 {
+  // background: url("/kp_Background1.png");
+  background: url("http://localhost:3000/kp_ramka1.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 100% 100%;
+  height: 140px;
 }
 .third-block-img2 {
-  background: url("/kp_Background2.png");
+  // background: url("/kp_Background2.png");
+  background: url("/kp_ramka2.png");
   background-repeat: no-repeat;
   background-position: 0% 0%;
   background-size: 100% 100%;
+  height: 140px;
+}
+.debug .third-block-img2 {
+  // background: url("/kp_Background2.png");
+  background: url("http://localhost:3000/kp_ramka2.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 100% 100%;
+  height: 140px;
 }
 .third-block-img3 {
-  background: url("/kp_Background3.png");
+  // background: url("/kp_Background3.png");
+  background: url("/kp_ramka3.png");
   background-repeat: no-repeat;
   background-position: 0% 0%;
   background-size: 100% 100%;
+  height: 140px;
 }
-
+.debug .third-block-img3 {
+  // background: url("/kp_Background3.png");
+  background: url("http://localhost:3000/kp_ramka3.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 100% 100%;
+  height: 140px;
+}
 .footer-banner {
   display: block;
     width: 100%;
     height: 100%;
     padding: 5px 0;
     background: url("/kp_footer_back.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    // margin-bottom: 3rem;
+}
+.debug .footer-banner {
+  display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 0;
+    background: url("http://localhost:3000//kp_footer_back.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     // margin-bottom: 3rem;

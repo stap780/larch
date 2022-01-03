@@ -46,7 +46,7 @@ class OrdersController < ApplicationController
   def update
   respond_to do |format|
     if @order.update(order_params)
-      format.html { redirect_to orders_url, notice: "Order was successfully updated." }
+      format.html { redirect_to edit_order_url(@order), notice: "Order was successfully updated." }
       format.json { render :show, status: :ok, location: @order }
     else
       format.html { render :edit, status: :unprocessable_entity }
@@ -98,6 +98,6 @@ class OrdersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def order_params
-      params.require(:order).permit(:status, :number, :client_id, :company_id, :companykp1_id, :companykp2_id, :companykp3_id)
+      params.require(:order).permit(:status, :number, :client_id, :company_id, :companykp1_id, :companykp2_id, :companykp3_id, :user_id)
     end
 end
