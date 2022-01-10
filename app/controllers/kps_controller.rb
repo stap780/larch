@@ -96,6 +96,7 @@ class KpsController < ApplicationController
     @kp = Kp.find(params[:id])
     # puts @kp.present?
     @our_company = @kp.order.companykp1
+    if @our_company.present?
     @company = @kp.order.company
     respond_to do |format|
       format.html
@@ -118,6 +119,10 @@ class KpsController < ApplicationController
      								}
         end
     end
+    else
+      flash[:notice] = 'Выберите компанию 1'
+      redirect_to edit_order_path(@order)
+    end
   end
 
   def print2
@@ -126,49 +131,49 @@ class KpsController < ApplicationController
     @company = @kp.order.company
     @our_company = @kp.order.companykp2
     if @our_company.present?
-    @kp_products_data = []
-    @kp.kp_products.each do |kp|
-      data = {
-              sku: kp.product.sku,
-              # image_url: rails_representation_url(kp.product.images.first.variant(combine_options: {auto_orient: true, thumbnail: '40x40', gravity: 'center', extent: '40x40' }).processed, only_path: true),
-              image_url: kp.product.images.first,
-              title: kp.product.title,
-              price: kp.price,
-              quantity: kp.quantity,
-              sum: kp.sum.to_f.round(2)
-            }
-      @kp_products_data << data
-    end
-    @kp_products = params[:type] == "random" ? @kp_products_data.sort_by{ |hsh| hsh[:title] } : @kp_products_data
+      @kp_products_data = []
+      @kp.kp_products.each do |kp|
+        data = {
+                sku: kp.product.sku,
+                # image_url: rails_representation_url(kp.product.images.first.variant(combine_options: {auto_orient: true, thumbnail: '40x40', gravity: 'center', extent: '40x40' }).processed, only_path: true),
+                image_url: kp.product.images.first,
+                title: kp.product.title,
+                price: kp.price,
+                quantity: kp.quantity,
+                sum: kp.sum.to_f.round(2)
+              }
+        @kp_products_data << data
+      end
+      @kp_products = params[:type] == "random" ? @kp_products_data.sort_by{ |hsh| hsh[:title] } : @kp_products_data
 
-    # puts @kp_products_data
-    respond_to do |format|
-      format.html
-      format.pdf do
-          render pdf: "КП2 #{@kp.id}",
-                 template: "kps/print2.html.erb",
-                 page_size: 'A4',
-                 orientation: "Portrait",
-                 show_as_html: params.key?('debug'),
-                 margin: {top: 15, left: 5, right: 5, bottom: 20},
-                 # footer: {
-                 #   spacing: 5,
-                 #   right: 'Стр [page] из [topage]'
-                 # }
-                 # header:  {
-                 # 		html: { template:'kps/print1_header.html.erb'},
-                 # 		spacing: 3
-                 # 		# locals: {},
-                 #    # right: 'Стр [page] из [topage]'
-                 # 		},
-                 footer: {
-                   html: { template:'kps/print2_footer.html.erb'},
-                    :spacing => 3,
-                    locals: {}
-                    #right: '_______________________(подпись)                  _______________________(подпись)            [page] из [topage]'
-                    }
-        end
-    end
+      # puts @kp_products_data
+      respond_to do |format|
+        format.html
+        format.pdf do
+            render pdf: "КП2 #{@kp.id}",
+                   template: "kps/print2.html.erb",
+                   page_size: 'A4',
+                   orientation: "Portrait",
+                   show_as_html: params.key?('debug'),
+                   margin: {top: 15, left: 5, right: 5, bottom: 20},
+                   # footer: {
+                   #   spacing: 5,
+                   #   right: 'Стр [page] из [topage]'
+                   # }
+                   # header:  {
+                   # 		html: { template:'kps/print1_header.html.erb'},
+                   # 		spacing: 3
+                   # 		# locals: {},
+                   #    # right: 'Стр [page] из [topage]'
+                   # 		},
+                   footer: {
+                     html: { template:'kps/print2_footer.html.erb'},
+                      :spacing => 3,
+                      locals: {}
+                      #right: '_______________________(подпись)                  _______________________(подпись)            [page] из [topage]'
+                      }
+          end
+      end
     else
       flash[:notice] = 'Выберите компанию 2'
       redirect_to edit_order_path(@order)
