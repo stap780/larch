@@ -18,7 +18,7 @@ class User < ApplicationRecord
     if avatar.attached?
       avatar.variant(combine_options: {auto_orient: true, thumbnail: '160x160', gravity: 'center', extent: '160x160' })
     else
-      "/default_avatar.png"
+      # "/default_avatar.png"
     end
   end
 

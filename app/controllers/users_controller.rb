@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!
   before_action :authenticate_user_role!
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   def index
     @search = User.ransack(params[:q])
@@ -19,7 +20,10 @@ class UsersController < ApplicationController
 
   # PATCH/PUT /users/1 or /users/1.json
   def update
-    @user = User.find(params[:id])
+    # @user = User.find(params[:id])
+    # puts "params - "+params.to_s
+    # puts "params[:user][:avatar] - "+params[:user][:avatar].to_s
+    @user.avatar.attach(params[:user][:avatar])
     respond_to do |format|
       if @user.update(name: params[:user][:name], email: params[:user][:email], role_id: params[:user][:role_id])
         format.html { redirect_to @user, notice: "User was successfully updated." }
@@ -45,4 +49,24 @@ class UsersController < ApplicationController
       redirect_to users_url, notice: 'Нельзя удалить последнего пользователя или админа'
     end
   end
+
+
+  def delete_image
+    ActiveStorage::Attachment.where(id: params[:image_id])[0].purge
+    respond_to do |format|
+      #format.html { redirect_to edit_product_path(params[:id]), notice: 'Image was successfully deleted.' }
+      format.json { render json: { :status => "ok", :message => "destroyed" } }
+    end
+  end
+
+  private
+
+  def set_user
+    @user = User.find(params[:id])
+  end
+    # Only allow a trusted parameter "white list" through.
+    def user_params
+      params.require(:order).permit(:name, :email, :avatar)
+    end
+
 end

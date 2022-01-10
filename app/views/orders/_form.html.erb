@@ -7,15 +7,21 @@
     <%= f.input :number, as: :string, disabled: true, placeholder: "Номер заказа" , wrapper_html: { class: "col-3" } %>
     <%= f.input :created_at, as: :date, html5: true, placeholder: "Дата", wrapper_html: { class: "col-5" } %>
     <%= f.input :status, collection: Order::STATUS, prompt: "Статус", input_html: { class: "form-select" } , wrapper_html: { class: "col-4" } %>
-    <%= f.association :user, prompt: "Менеджер", input_html: { class: "form-select" }, wrapper_html: { class: "col-8 mt-3" } %>
+    <% if @order.user_id.present? && current_user.admin?%>
+      <%= f.association :user, label: "Менеджер", input_html: { class: "form-select" }, wrapper_html: { class: "col-8 mt-3" } %>
+    <% elsif @order.user_id.present? && !current_user.admin?%>
+    <%= f.association :user, label: "Менеджер", disabled: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-8 mt-3" } %>
+    <% else %>
+      <%= f.association :user, label: "Менеджер", selected: current_user.id , input_html: { class: "form-select" }, wrapper_html: { class: "col-8 mt-3" } %>
+    <% end %>
     <%= f.association :client, prompt: "Клиент", input_html: { class: "form-select" }, wrapper_html: { class: "col-6 mt-3" } %>
     <%# f.association :company, prompt: "Компания", input_html: { class: "form-select" }, include_blank: true, selected: lambda { |company|  @order.client.companies.first.id if !@order.company_id.present? && @order.client.companies.present? }, wrapper_html: { class: "col-6 mt-3" } %>
     <%# f.association :company, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-7 mt-3" } %>
     <%= f.input :company_title, as: :autocomplete, label: "Заказчик", url: autocomplete_company_title_orders_path, wrapper_html: { class: "col-6 mt-3" }, input_html: { 'data-id-element' => '#order_company_id' } %>
     <%= f.input :company_id, as: :hidden %>
-    <%= f.association :companykp1, collection: Company.our, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-4 mt-3" } %>
-    <%= f.association :companykp2, collection: Company.our, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-4 mt-3" } %>
-    <%= f.association :companykp3, collection: Company.our, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-4 mt-3" } %>
+    <%= f.association :companykp1, label: 'Компания КП1', collection: Company.our, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-4 mt-3" } %>
+    <%= f.association :companykp2, label: 'Компания КП2', collection: Company.our, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-4 mt-3" } %>
+    <%= f.association :companykp3, label: 'Компания КП3', collection: Company.our, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-4 mt-3" } %>
   </div>
   <div class="col-7 row align-items-center">
     <div class="col p-0 h4">Коммерческие предложения</div>
@@ -39,7 +45,7 @@
               <td><%= kp.vid %></td>
               <td><%= kp.status %></td>
               <td><%= kp.title %></td>
-              <td><%= kp.created_at %></td>
+              <td><%= kp.created_at.strftime("%d.%m.%Y") %></td>
               <td><%= kp.kp_products.count %></td>
               <td><%= kp.kp_products.sum(:sum) %></td>
               <td><%= link_to '<span class="oi oi-pencil"></span>'.html_safe, edit_order_kp_path(@order, kp) %></td>

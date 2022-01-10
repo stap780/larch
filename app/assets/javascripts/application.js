@@ -102,4 +102,14 @@ $(document).ready(function() {
   //   $('.import_file_submit').css('display', 'block');
   // });
 
+  // DELETE IMAGE //
+  $(".delete-image").on("ajax:success", function(event, data, status, xhr) {
+    var response = data.message;
+    console.log('Response is => ' + response);
+    if (data.message === 'destroyed') {
+      $(this).closest('tr').fadeOut();
+      $(this).closest('.image-item').fadeOut();
+    }
+  });
+
 });

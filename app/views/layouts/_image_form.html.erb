@@ -1,12 +1,12 @@
 <% if !f.new_record? && f.images.present? %>
-<div class="image-table row justify-content-between mt-3">
+<div class="image-table row justify-content-between mt-3" <%= f %> >
   <% f.images.each do |image| %>
-  <div class="col-6 row align-items-center mt-1">
-    <div class="col-9" data-image="<%= image.metadata %>">
+  <div class="col-6 row align-items-center mt-1 image-item">
+    <div class="col-10" data-image="<%= image.metadata %>">
     <%= image_tag image.variant(combine_options: {auto_orient: true, thumbnail: '160x160', gravity: 'center', extent: '160x160' }) %>
     </div>
-    <div class="col-3">
-    <%= link_to "Delete", delete_image_products_path(f.id, image.id), method: :delete, class: "btn btn-success delete-image", data: {confirm: "Are you sure?"}, remote: true %>
+    <div class="col-2">
+    <%= link_to '<span class="oi oi-trash"></span>'.html_safe, delete_image_products_path(f.id, image.id), method: :delete, class: "btn btn-success delete-image", data: {confirm: "Are you sure?"}, remote: true %>
     </div>
   </div>
   <% end %>

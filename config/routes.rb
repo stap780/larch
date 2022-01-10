@@ -39,5 +39,10 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     passwords: 'users/passwords'
   }
-  resources :users
+  resources :users do
+    collection do
+      delete '/:id/images/:image_id', action: 'delete_image', as: 'delete_image'
+    end
+  end
+
 end
