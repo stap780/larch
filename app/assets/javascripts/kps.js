@@ -42,8 +42,11 @@ function initLine() {
       var row = insertedItem;
       //console.log(row.find.attr('id'));
       console.log(row);
-      id = row.children('td').children([0]).children([0]).attr('id')
+      id = row.children('td').children([0]).children([0]).attr('id');
       console.log(id);
+      test = row.children('td').children([1]).children([0]).attr('id');
+      console.log(test);
+
     })
     .bind('railsAutocomplete.select', function(event, data) {
       //console.log(data);

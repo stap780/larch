@@ -63,7 +63,7 @@
         <th>Цена</th>
         <th>Кол-во</th>
         <th>Сумма</th>
-        <th>Комментарий</th>
+        <!-- <th>Комментарий</th> -->
       </tr>
 
       <% @kp_products.each_with_index do |kp, i| %>
@@ -75,7 +75,7 @@
           <td class="center"><%= kp[:price] %></td>
           <td class="center"><%= kp[:quantity] %></td>
           <td class="center"><%= kp[:sum]%></td>
-          <td class="comment"></td>
+          <!-- <td class="comment"></td> -->
         </tr>
       <% end %>
 
@@ -85,13 +85,13 @@
 
     <p>Всего наименований <%= @kp.kp_products.count%>, на сумму <%= RuPropisju.rublej(@kp.kp_products.sum(:sum))%></p>
 
-		<table class="signs">
+		<!-- <table class="signs">
 			<tr>
 				<td>
 				Отпустил___________________________________
 				</td>
 			</tr>
-		</table>
+		</table> -->
 
   </div>
 
