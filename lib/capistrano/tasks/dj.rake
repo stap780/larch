@@ -1,10 +1,15 @@
 namespace :delayed_job do
-  desc 'Ensure that bin/delayed_job has the permission to be executable. Ideally, this should not have been needed.'
-    task :ensure_delayed_job_executable do
-      on roles(delayed_job_roles) do
-        within release_path do
-          execute :chmod, :'u+x', :'bin/delayed_job'
+  desc "Install Deployed Job executable if needed"
+  task :install do
+    on roles(delayed_job_roles) do |host|
+      within release_path do
+        # Only install if not already present
+        unless test("[ -f #{release_path}/#{delayed_job_bin} ]")
+          with rails_env: fetch(:rails_env) do
+            execute :bundle, :exec, :rails, :generate, :delayed_job
+          end
         end
+      end
     end
   end
 end
