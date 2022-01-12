@@ -31,7 +31,7 @@ require "capistrano/rvm"
 require 'capistrano3/unicorn'
 require "whenever/capistrano"
 require 'capistrano/rails/console'
-require 'capistrano/delayed_job'
+require 'capistrano/delayed-job'
 # require "capistrano/rvm"
 # require "capistrano/rbenv"
 # require "capistrano/chruby"
