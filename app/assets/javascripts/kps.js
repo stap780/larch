@@ -44,9 +44,11 @@ function initLine() {
       console.log(row);
       id = row.children('td').children([0]).children([0]).attr('id');
       console.log(id);
-      test = row.children('td').children([1]).children([0]).attr('id');
-      console.log(test);
-
+    })
+    .on('cocoon:after-insert', function(e, insertedItem) {
+      $("input[id = '" + id.replace("product_sku_title", "quantity") + "']").val("0");
+      $("input[id = '" + id.replace("product_sku_title", "price") + "']").val("0");
+      calculate();
     })
     .bind('railsAutocomplete.select', function(event, data) {
       //console.log(data);

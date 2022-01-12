@@ -1,20 +1,25 @@
 <div class="row justify-content-center align-items-center mb-2">
-  <div class="col-3 row">
-<div class="h3 col-md-12 p-0">Заказы </div>
-<div class="h6 col-md-12 p-0">Всего - <%= Order.count %></div>
-<div class="btn-group p-0" role="group" aria-label="Button group with nested dropdown">
-  <div class="btn-group" role="group">
-  <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Действия</button>
-  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-  <%# link_to 'New Order', new_order_path, class: 'dropdown-item' %>
-  <%= link_to 'Ипортировать', download_orders_path, class: 'dropdown-item ' %>
-  <%# link_to 'Создать заказ', edit_multi_case_iorder_cases_path, class: 'dropdown-item', id: 'edit_multi_case_iorder', remote: true, data: { toggle: 'modal', target: '#modal-edit' } %>
+  <div class="col-2 row">
+    <div class="col-md-12 p-0">
+      <div class="h3">Заказы</div>
+      <div class="h6">Всего - <%= Order.count %></div>
+    </div>
   </div>
-</div>
-</div>
-  </div>
+  <div class="col-10 pl-0 pr-0 row">
+    <div class="col-12 mb-3">
+      <div class="btn-group p-0" role="group" aria-label="Button group with nested dropdown">
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Действия</button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <%# link_to 'New Order', new_order_path, class: 'dropdown-item' %>
+            <%= link_to 'Ипортировать', download_orders_path, class: 'dropdown-item ' %>
+            <%# link_to 'Создать заказ', edit_multi_case_iorder_cases_path, class: 'dropdown-item', id: 'edit_multi_case_iorder', remote: true, data: { toggle: 'modal', target: '#modal-edit' } %>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <%= search_form_for @search, {class: 'form-inline col-9 pl-0 pr-0'} do |f| %>
+  <%= search_form_for @search, {class: 'form-inline col-12 pl-0 pr-0'} do |f| %>
     <div class="input-group input-group-sm">
       <%= f.select :status_in, Order::STATUS, { :prompt => 'Статус'}, class: "form-select", style: "max-width: 180px;" %>
       <%= f.search_field :number_eq , placeholder: 'number', class: "form-control", style: "max-width: 180px;" %>
@@ -28,6 +33,7 @@
     </div>
   <% end %>
 </div>
+</div>
 
 <div class="table-responsive">
   <table class="table table-hover table-condensed">
@@ -35,10 +41,10 @@
     <tr class="bg-success">
       <th><%= check_box_tag 'selectAll', value: 'selectAll'%></th>
       <th>Status</th>
-      <th>Number</th>
-      <th>Client</th>
-      <th>Company</th>
-      <th>KP</th>
+      <th>Номер</th>
+      <th>Клиент</th>
+      <th>Компания</th>
+      <th>Кол-во КП</th>
       <th colspan="1"></th>
     </tr>
   </thead>

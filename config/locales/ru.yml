@@ -21,6 +21,10 @@
 
 ru:
   hello: "Привет world"
+  item_title: 'Название'
+  item_quantity: 'Кол-во'
+  item_price: 'Цена'
+  item_sum: 'Сумма'
   helpers:
     submit:
       create: "Сохранить"

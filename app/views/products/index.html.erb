@@ -1,31 +1,34 @@
 <div class="row justify-content-center align-items-center mb-2">
-<div class="col-2 row">
-  <div class="h3 col-md-12 p-0">
-    <div class="h3">Products</div>
-    <div class="h6">Всего - <%= Product.count %></div>
-    <div class="btn-group p-0" role="group" aria-label="Button group with nested dropdown">
-      <div class="btn-group" role="group">
-        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Действия</button>
-        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-          <%= link_to 'New Product', new_product_path, class: 'dropdown-item' %>
+  <div class="col-2 row">
+    <div class="col-md-12 p-0">
+      <div class="h3">Товары</div>
+      <div class="h6">Всего - <%= Product.count %></div>
+    </div>
+  </div>
+  <div class="col-10 pl-0 pr-0 row">
+    <div class="col-12 mb-3">
+      <div class="btn-group p-0" role="group" aria-label="Button group with nested dropdown">
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Действия</button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <%= link_to 'New Product', new_product_path, class: 'dropdown-item' %>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-  <%= search_form_for @search, {class: 'form-inline col-10 pl-0 pr-0'} do |f| %>
+  <%= search_form_for @search, {class: 'form-inline col-12 pl-0 pr-0'} do |f| %>
     <div class="input-group input-group-sm">
       <%= f.search_field :sku_or_title_cont , placeholder: 'Sku или Title', class: "form-control", style: "max-width: 280px;" %>
       <%= button_tag(type: 'submit', :class => "btn btn-info") do %>
         <span class="oi oi-magnifying-glass"></span>
       <% end %>
-      <%= link_to '<span class="oi oi-reload"></span>'.html_safe, products_path, class: 'btn btn-outline-dark ' %>
-      <%= link_to '<span class="oi oi-trash"></span>'.html_safe, delete_selected_products_path, class: 'btn btn-secondary', id: 'deleteAll', remote: true %>
+      <%= link_to '<span class="oi oi-reload"></span>'.html_safe, clients_path, class: 'btn btn-outline-dark ' %>
+      <%# link_to '<span class="oi oi-trash"></span>'.html_safe, delete_selected_clients_path, class: 'btn btn-secondary', id: 'deleteAll', remote: true %>
     </div>
   <% end %>
 </div>
-
+</div>
 
 <div class="table-responsive">
   <table class="table table-hover table-condensed">
@@ -33,11 +36,11 @@
     <tr class="bg-success">
       <th><%= check_box_tag 'selectAll', value: 'selectAll'%></th>
       <th>Sku</th>
-      <th>Title</th>
-      <th>Desc</th>
-      <th>Quantity</th>
-      <th>Costprice</th>
-      <th>Price</th>
+      <th>Название</th>
+      <th>Описание</th>
+      <th>Кол-во</th>
+      <th>Цена закупки</th>
+      <th>Цена продажи</th>
       <th colspan="1"></th>
     </tr>
   </thead>
@@ -46,8 +49,8 @@
     <% @products.each do |product| %>
     <tr id="items_table">
       <td><%= check_box_tag "product_ids[]", product.id %></td>
-        <td><%= link_to product.sku , edit_product_path(product)%></td>
-        <td><%= product.title %></td>
+        <td><%= product.sku.truncate(20) if product.sku.present? %></td>
+        <td><%= link_to product.title, edit_product_path(product)%></td>
         <td><%= product.desc %></td>
         <td><%= product.quantity %></td>
         <td><%= product.costprice %></td>

@@ -1,20 +1,24 @@
-
-  <div class="row justify-content-center align-items-center mb-2">
-    <div class="col-3 row">
-  <div class="h3 col-md-12 p-0">Clients</div>
-  <div class="h6 col-md-12 p-0">Всего - <%= Client.count %></div>
-  <div class="btn-group p-0" role="group" aria-label="Button group with nested dropdown">
-    <div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Действия</button>
-    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-    <%= link_to 'New Client', new_client_path, class: 'dropdown-item' %>
-    <%# link_to 'Создать заказ', edit_multi_case_iorder_cases_path, class: 'dropdown-item', id: 'edit_multi_case_iorder', remote: true, data: { toggle: 'modal', target: '#modal-edit' } %>
+<div class="row justify-content-center align-items-center mb-2">
+  <div class="col-2 row">
+    <div class="col-md-12 p-0">
+      <div class="h3">Клиенты</div>
+      <div class="h6">Всего - <%= Client.count %></div>
     </div>
   </div>
-  </div>
+  <div class="col-10 pl-0 pr-0 row">
+    <div class="col-12 mb-3">
+      <div class="btn-group p-0" role="group" aria-label="Button group with nested dropdown">
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Действия</button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <%= link_to 'New Client', new_client_path, class: 'dropdown-item' %>
+            <%# link_to 'Создать заказ', edit_multi_case_iorder_cases_path, class: 'dropdown-item', id: 'edit_multi_case_iorder', remote: true, data: { toggle: 'modal', target: '#modal-edit' } %>
+          </div>
+        </div>
+      </div>
     </div>
 
-  <%= search_form_for @search, {class: 'form-inline col-9 pl-0 pr-0'} do |f| %>
+  <%= search_form_for @search, {class: 'form-inline col-12 pl-0 pr-0'} do |f| %>
     <div class="input-group input-group-sm">
       <%= f.search_field :name_cont , placeholder: 'Name', class: "form-control", style: "max-width: 180px;" %>
       <%= button_tag(type: 'submit', :class => "btn btn-info") do %>
@@ -25,7 +29,7 @@
     </div>
   <% end %>
 </div>
-
+</div>
 
 <div class="table-responsive">
   <table class="table table-hover table-condensed">

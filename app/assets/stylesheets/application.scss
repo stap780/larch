@@ -282,3 +282,7 @@ section {
 }
 .ui-helper-hidden-accessible { display:none; }
 /* end autocomplete style*/
+
+#items_table a {
+  text-decoration: none;
+}
