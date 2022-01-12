@@ -47,6 +47,9 @@ set :format, :pretty
 set :log_level, :info
 set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
 # set :delayed_job_default_hooks, false
+after 'deploy:published', 'restart' do
+    invoke 'delayed_job:restart'
+end
 after 'deploy:publishing', 'unicorn:restart'
 
 
