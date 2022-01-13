@@ -21,6 +21,7 @@
 !/tmp/.keep
 /z-help.txt
 /storage/*
+/public/tmp/pdf/*
 
 # Ignore Byebug command history file.
 .byebug_history
