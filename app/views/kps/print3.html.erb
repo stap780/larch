@@ -73,7 +73,7 @@
       <% @kp_products.each_with_index do |kp, i| %>
         <tr>
           <td class="center"><%= (i+1) %></td>
-          <td class="center"><%= kp[:sku] %></td>
+          <td class="center"><%= kp[:sku].truncate(20) if kp[:sku].present? %></td>
           <td><%= kp[:title] %></td>
           <td class="center">шт</td>
           <td class="center"><%= kp[:price] %></td>

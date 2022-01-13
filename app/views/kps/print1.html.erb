@@ -145,7 +145,7 @@
           <% @kp.kp_products.each_with_index do |kp, i| %>
           <tr>
             <td class="no"><%= (i+1) %></td>
-            <td class="desc"><%= kp.product.sku %></td>
+            <td class="desc"><%= kp.product.sku.truncate(20) if kp.product.sku.present? %></td>
             <td class="desc"><%# image_tag wicked_image_active_storage_workaround(kp.product.images.first), style: "max-width:60px;" if kp.product.images.present? %>
               <% image = kp.product.images.first %>
               <% link = wicked_image_active_storage_workaround(image) %>
