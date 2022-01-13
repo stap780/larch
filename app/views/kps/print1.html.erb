@@ -149,7 +149,7 @@
             <td class="desc"><%# image_tag wicked_image_active_storage_workaround(kp.product.images.first), style: "max-width:60px;" if kp.product.images.present? %>
               <% image = kp.product.images.first %>
               <% link = wicked_image_active_storage_workaround(image) %>
-              <%= render "pdf_image", image_link: "/tmp/pdf/#{image.id}.jpg", image_class: 'w45'  %>
+              <%= render "pdf_image", image_link: "/tmp/pdf/#{image.id}.jpg", image_class: 'w45' if image.present? %>
             </td>
             <td class="desc"><%= kp.product.title %></td>
             <td class="qty">шт</td>
