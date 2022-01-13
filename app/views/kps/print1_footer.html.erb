@@ -14,15 +14,15 @@
       </tr>
       <tr>
       <th><% if @kp.order.user.present? %><%= @kp.order.user.name %><% else %>Тест<% end %></th>
-      <th><%=  params.key?('debug') ? image_tag('/kp_phone.png') : wicked_pdf_image_tag("/kp_phone.png") %></th>
+      <th><%= render "pdf_image", image_link: '/kp_phone.png', image_class: ''  %></th>
       <th>88005501314</th>
-      <th><%=  params.key?('debug') ? image_tag('/kp_email.png') : wicked_pdf_image_tag("/kp_email.png") %></th>
+      <th><%= render "pdf_image", image_link: '/kp_email.png', image_class: ''  %></th>
       <th><a href="mailto:info@adventer.su">info@adventer.su</a></th>
       </tr>
     </table>
   </div>
 <div class="footer-right-part">
-  <%=  params.key?('debug') ? image_tag('/kp_logo_footer.png') : wicked_pdf_image_tag("/kp_logo_footer.png") %>
+  <%= render "pdf_image",  image_link: '/logo_little__200x70_.png' , image_class: ''  %>
 </div>
 </div>
 <!-- <center>Invoice was created on a computer and is valid without the signature and seal.<span class="footerContent">test</span></center>

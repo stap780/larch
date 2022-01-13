@@ -2,7 +2,7 @@ module ProductsHelper
 
   def wicked_image_active_storage_workaround( image )
     if image.is_a? ActiveStorage::Attachment
-      save_path = Rails.root.join( "tmp/pdf", "#{image.id}.jpg")
+      save_path = Rails.root.join( "public/tmp/pdf", "#{image.id}.jpg")
       File.open(save_path, 'wb') do |file|
         file << image.blob.download
       end

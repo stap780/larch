@@ -10,16 +10,16 @@
     <header class="clearfix">
         <div id="header-left-part">
           <div class="logo-image">
-            <%=  params.key?('debug') ? image_tag('/logo_little__200x70_.png') : wicked_pdf_image_tag("/logo_little__200x70_.png") %>
+            <%= render "pdf_image",  image_link: '/logo_little__200x70_.png' , image_class: ''  %>
           </div>
           <div class="header-left-part-bottom">
             <table>
               <thead>
-                <th><%=  params.key?('debug') ? image_tag('/kp_phone.png') : wicked_pdf_image_tag("/kp_phone.png") %></th>
+                <th><%= render "pdf_image", image_link: '/kp_phone.png', image_class: 'w25'  %></th>
                 <th>88005501314</th>
-                <th><%=  params.key?('debug') ? image_tag('/kp_email.png') : wicked_pdf_image_tag("/kp_email.png") %></th>
+                <th><%= render "pdf_image", image_link: '/kp_email.png', image_class: 'w25'  %></th>
                 <th><a href="mailto:info@adventer.su">info@adventer.su</a></th>
-                <th><%=  params.key?('debug') ? image_tag('/kp_globus.png') : wicked_pdf_image_tag("/kp_globus.png") %></th>
+                <th><%= render "pdf_image", image_link: '/kp_globus.png', image_class: 'w25'  %></th>
                 <th>www.adventer.su</th>
               </thead>
             </table>
@@ -33,66 +33,66 @@
         </div>
     </header>
     <main>
-      <div class="first-block banner">
+      <!-- <div class="first-block banner">
         <table class="banner-text">
           <td>
             <h1>Коммерческое предложение</h1>
             <h3>Группа компаний «Адвентер» благодарит Вас за проявленный интерес к нашей продукции. Предлагаем ознакомиться с нашим коммерческим предложением на следующей странице.</h3>
           </td>
         </table>
-      </div>
+      </div> -->
 
       <div class="second-block clearfix">
           <div class="second-block-left-part">
             <div class="second-block-label" Мы производим>
-              <%= params.key?('debug') ? image_tag('/kp_zagolovok1.png', :class =>'second-block-label-img-left') : wicked_pdf_image_tag("/kp_zagolovok1.png", :class =>'second-block-label-img-left') %>
+              <%= render "pdf_image", image_link: '/kp_zagolovok1.png', image_class: 'second-block-label-img-left' %>
             </div>
             <table>
               <tr>
-                <th><%= params.key?('debug') ? image_tag('/kp_mebel.png') : wicked_pdf_image_tag("/kp_mebel.png") %></th>
+                <th><%= render "pdf_image", image_link: '/kp_mebel.png', image_class: 'w30'  %></th>
                 <th>мебель для ДОУ и школ</th>
               </tr>
               <tr>
-                <th><%= params.key?('debug') ? image_tag('/kp_photooboi.png') : wicked_pdf_image_tag("/kp_photooboi.png") %></th>
+                <th><%= render "pdf_image", image_link: '/kp_photooboi.png', image_class: 'w30'  %></th>
                 <th>Фотообои, интерьерное оформление ДОУ и школ</th>
               </tr>
               <tr>
-                <th><%= params.key?('debug') ? image_tag('/kp_bulletin_board.png') : wicked_pdf_image_tag("/kp_bulletin_board.png") %></th>
+                <th><%= render "pdf_image", image_link: '/kp_bulletin_board.png', image_class: 'w30'  %></th>
                 <th>стенды, таблички, наклейки</th>
               </tr>
               <tr>
-                <th><%= params.key?('debug') ? image_tag('/kp_dekoracii.png') : wicked_pdf_image_tag("/kp_dekoracii.png") %></th>
+                <th><%= render "pdf_image", image_link: '/kp_dekoracii.png', image_class: 'w30'  %></th>
                 <th>декорации, оформление уголков и зон в ДОУ и школах</th>
               </tr>
               <tr>
-                <th><%= params.key?('debug') ? image_tag('/kp_ulichnoe_oborudovanie.png') : wicked_pdf_image_tag("/kp_ulichnoe_oborudovanie.png") %></th>
+                <th><%= render "pdf_image", image_link: '/kp_ulichnoe_oborudovanie.png', image_class: 'w30'  %></th>
                 <th>уличное оборудование</th>
               </tr>
             </table>
           </div>
           <div class="second-block-right-part">
             <div class="second-block-label" Мы поставляем>
-              <%=  params.key?('debug') ? image_tag('/kp_zagolovok2.png', :class =>'second-block-label-img-right') : wicked_pdf_image_tag("/kp_zagolovok2.png", :class =>'second-block-label-img-right') %>
+              <%= render "pdf_image", image_link: '/kp_zagolovok2.png', image_class: 'second-block-label-img-right'  %>
             </div>
             <table>
               <tr>
-                <th><%= params.key?('debug') ? image_tag('/kp_ulichnoe_igrovoe.png') : wicked_pdf_image_tag("/kp_ulichnoe_igrovoe.png") %></th>
+                <th><%= render "pdf_image", image_link: '/kp_ulichnoe_igrovoe.png', image_class: 'w30'  %></th>
                 <th>уличное игровое оборудование</th>
               </tr>
               <tr>
-                <th><%= params.key?('debug') ? image_tag('/kp_posuda.png') : wicked_pdf_image_tag("/kp_posuda.png") %></th>
+                <th><%= render "pdf_image", image_link: '/kp_posuda.png', image_class: 'w30'  %></th>
                 <th>посуда и хоз товары</th>
               </tr>
               <tr>
-                <th><%= params.key?('debug') ? image_tag('/kp_igrovoe.png') : wicked_pdf_image_tag("/kp_igrovoe.png") %></th>
+                <th><%= render "pdf_image", image_link: '/kp_igrovoe.png', image_class: 'w30'  %></th>
                 <th>игровое развивающее оборудование</th>
               </tr>
               <tr>
-                <th><%= params.key?('debug') ? image_tag('/kp_interaktiv.png') : wicked_pdf_image_tag("/kp_interaktiv.png") %></th>
+                <th><%= render "pdf_image", image_link: '/kp_interaktiv.png', image_class: 'w30'  %></th>
                 <th>интерактивное оборудование</th>
               </tr>
               <tr>
-                <th><%= params.key?('debug') ? image_tag('/kp_osnashenie.png') : wicked_pdf_image_tag("/kp_osnashenie.png") %></th>
+                <th><%= render "pdf_image", image_link: '/kp_osnashenie.png', image_class: 'w30'  %></th>
                 <th>оснащение для классов</th>
               </tr>
             </table>
@@ -101,29 +101,32 @@
       <div class="third-block clearfix">
           <table>
             <td>
+              <%# render "pdf_image", image_link: '/kp_ramka1.png', image_class: ''  %>
               <table class="third-block-img1">
-                <td></td>
+                <td><%= render "pdf_image", image_link: '/kp_ramka1.png', image_class: 'w260'  %></td>
                 <!-- <td>Работаем по 44-ФЗ и 223-ФЗ</td> -->
               </table>
             </td>
             <td>
               <table  class="third-block-img2">
-                <td></td>
+                <td><%= render "pdf_image", image_link: '/kp_ramka2.png', image_class: 'w260'  %></td>
                 <!-- <td>Доставка по всей России</td> -->
               </table>
             </td>
             <td>
               <table  class="third-block-img3">
-                <td></td>
+                <td><%= render "pdf_image", image_link: '/kp_ramka3.png', image_class: 'w260'  %></td>
                 <!-- <td>Гарантии и сертификаты</td> -->
               </table>
             </td>
           </table>
       </div>
 
-      <center>
-        <h1><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></h1>
-      </center>
+      <div class="kp-title">
+        <center>
+          <h1><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></h1>
+        </center>
+      </div>
 
       <table  id="kp_items" border="0" cellspacing="0" cellpadding="0">
         <thead>
@@ -143,7 +146,11 @@
           <tr>
             <td class="no"><%= (i+1) %></td>
             <td class="desc"><%= kp.product.sku %></td>
-            <td class="desc"><%= image_tag wicked_image_active_storage_workaround(kp.product.images.first), style: "max-width:60px;" if kp.product.images.present? %></td>
+            <td class="desc"><%# image_tag wicked_image_active_storage_workaround(kp.product.images.first), style: "max-width:60px;" if kp.product.images.present? %>
+              <% image = kp.product.images.first %>
+              <% link = wicked_image_active_storage_workaround(image) %>
+              <%= render "pdf_image", image_link: "/tmp/pdf/#{image.id}.jpg", image_class: 'w45'  %>
+            </td>
             <td class="desc"><%= kp.product.title %></td>
             <td class="qty">шт</td>
             <td class="qty"><%= kp.quantity %></td>
