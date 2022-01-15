@@ -140,7 +140,7 @@ class KpsController < ApplicationController
                 title: kp.product.title,
                 price: kp.price,
                 quantity: kp.quantity,
-                sum: kp.sum.to_f.round(2)
+                sum: (kp.sum.truncate(2).to_s("F") + "00")[ /.*\..{2}/ ]
               }
         @kp_products_data << data
       end
@@ -195,7 +195,7 @@ class KpsController < ApplicationController
                 title: kp.product.title,
                 price: kp.price,
                 quantity: kp.quantity,
-                sum: kp.sum.to_f.round(2)
+                sum: (kp.sum.truncate(2).to_s("F") + "00")[ /.*\..{2}/ ]
               }
         @kp_products_data << data
       end

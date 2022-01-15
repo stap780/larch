@@ -8,7 +8,7 @@
   <body onload="number_pages()">
 <!-- <center>Invoice was created on a computer and is valid without the signature and seal.<span class="footerContent">test</span></center>-->
 <center>
-  <span style="margin-right: 60px;"><%= @our_company.title%> ______________</span><span style="margin-right: 60px;">Дата <%= Time.now.strftime("%d-%m-%Y" )%></span><!--Стр. <span class="page"></span> из <span class="topage"></span>-->
+  <span style="margin-right: 60px;"><%= @our_company.title%> ______________</span><span style="margin-right: 60px;">Дата <%= @kp.created_at.strftime("%d / %m / %Y")%></span><!--Стр. <span class="page"></span> из <span class="topage"></span>-->
 </center>
   </body>
 </html>

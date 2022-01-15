@@ -23,16 +23,18 @@ div.nobreak:before { clear:both; }
 div.nobreak { page-break-inside: avoid; }
 /* end pdf style*/
 body {
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
   background-color: #fff;
   font-family: "Times New Roman", Times, serif;
   margin: 30px;
+  font-style: italic;
 }
 
 .wrapper {
-  width: 700px;
+  width: 750px;
   page-break-after: always;
+    margin: 0 auto;
 }
 
 .wrapper:last-child {
@@ -48,18 +50,27 @@ h1 {
   font-size: 16px;
   margin: 30px 0 20px;
 }
-.generalInfo {
-    width: 400px;
-    margin-left: 300px;
+.kp-title h1 {
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: bold;
 }
-.generalInfo th {
-  text-align: right;
-  padding-right: 10px;
+.generalInfo {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
 }
 
 .itemsInfo {
   border-collapse: collapse;
   width: 100%;
+  font-style: italic;
+  font-size: 14px;
 }
 
 .itemsInfo th {
@@ -92,4 +103,6 @@ h1 {
   text-align: right;
   font-weight: bold;
   margin-top: 10px;
+  font-style: italic;
+  font-size: 14px;
 }

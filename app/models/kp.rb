@@ -10,7 +10,7 @@ class Kp < ApplicationRecord
   after_initialize :set_title
 
   VID = ["Начальное","Основное"]
-  STATUS = ["Новый", "В работе","Отправлен", "Завершен", "Отменен"]
+  STATUS = ["Новый", "В работе", "Ждёт печати","Отправлен", "Завершен", "Отменен"]
 
   def self.import(file, order, kp)
 		puts 'импорт файла '+Time.now.to_s

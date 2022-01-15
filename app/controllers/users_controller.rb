@@ -25,8 +25,9 @@ class UsersController < ApplicationController
     # puts "params[:user][:avatar] - "+params[:user][:avatar].to_s
     @user.avatar.attach(params[:user][:avatar])
     respond_to do |format|
-      if @user.update(name: params[:user][:name], email: params[:user][:email], role_id: params[:user][:role_id])
-        format.html { redirect_to @user, notice: "User was successfully updated." }
+      #if @user.update(name: params[:user][:name], email: params[:user][:email], role_id: params[:user][:role_id])
+      if @user.update(user_params)
+        format.html { redirect_to users_url, notice: "User was successfully updated." }
         format.json { render :show, status: :ok, location: @user }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -66,7 +67,7 @@ class UsersController < ApplicationController
   end
     # Only allow a trusted parameter "white list" through.
     def user_params
-      params.require(:order).permit(:name, :email, :avatar)
+      params.require(:user).permit(:name, :email, :role_id, :avatar)
     end
 
 end

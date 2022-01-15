@@ -20,64 +20,55 @@
 		<table class="generalInfo">
 			<tbody>
 				<tr>
-				<th>Поставщик:</th>
-				<td><%= @our_company.fulltitle.camelize%></td>
+				<td><b>Поставщик:</b> <%= @our_company.fulltitle.camelize%></td>
 				</tr>
 				<tr>
-				<th>Адрес:</th>
-				<td><%= @our_company.uraddress%></td>
+				<td><b>Адрес:</b> <%= @our_company.uraddress%></td>
 				</tr>
 				<tr>
-				<th>Телефон:</th>
-				<td>(81378) 20581б 89213955526</td>
+				<td><b>Телефон:</b> (81378) 20581б 89213955526</td>
 				</tr>
 				<tr>
-				<th>Банк:</th>
-				<td><%= @our_company.banktitle%></td>
+				<td><b>Банк:</b> <%= @our_company.banktitle%></td>
 				</tr>
 				<tr>
-				<th>Р/С:</th>
-				<td><%= @our_company.bankaccount%></td>
+				<td><b>Р/С:</b> <%= @our_company.bankaccount%></td>
 				</tr>
 				<tr>
-				<th>БИК:</th>
-				<td><%= @our_company.bik%></td>
+				<td><b>БИК:</b> <%= @our_company.bik%></td>
 				</tr>
 				<tr>
-				<th>ИНН:</th>
-				<td><%= @our_company.inn%></td>
+				<td><b>ИНН:</b> <%= @our_company.inn%></td>
 				</tr>
 				<tr>
-				<th>КПП:</th>
-				<td><%= @our_company.kpp%></td>
+				<td><b>КПП:</b> <%= @our_company.kpp%></td>
 				</tr>
 				<tr>
-				<th>ОГРН:</th>
-				<td> <%= @our_company.ogrn%></td>
+				<td><b>ОГРН:</b> <%= @our_company.ogrn%></td>
 				</tr>
 			</tbody>
 		</table>
-    <center><h1><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></h1></h1></center>
-    <table class="itemsInfo">
+		<div class="kp-title">
+			<h1><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %></h1>
+			</div>
+			<table class="itemsInfo">
       <tr>
-        <th>№</th>
-        <th>Артикул</th>
-        <th style="width: 220px;">Товар</th>
-        <th>Ед.</th>
-        <th>Цена</th>
-        <th>Кол-во</th>
-        <th>Сумма</th>
+				<th>№ п/п</th>
+        <th style="width: 220px;">товар</th>
+        <th>ед. изм.</th>
+				<th>кол-во</th>
+        <th>цена (руб. без НДС)</th>
+        <th>сумма (руб. без НДС)</th>
         <!-- <th>Комментарий</th> -->
       </tr>
 
       <% @kp_products.each_with_index do |kp, i| %>
         <tr>
           <td class="center"><%= (i+1) %></td>
-          <td class="center"><%= kp[:sku].truncate(20) if kp[:sku].present? %></td>
           <td><%= kp[:title] %></td>
           <td class="center">шт</td>
+					<td class="center"><%= kp[:quantity] %></td>
           <td class="center"><%= kp[:price] %></td>
-          <td class="center"><%= kp[:quantity] %></td>
           <td class="center"><%= kp[:sum]%></td>
           <!-- <td class="comment"></td> -->
         </tr>
@@ -85,15 +76,15 @@
 
     </table>
 
-    <div class="summary">Итого:&nbsp;&nbsp;<%= @kp.kp_products.sum(:sum)%> руб</div>
-
-    <p>Всего наименований <%= @kp.kp_products.count%>, на сумму <%= RuPropisju.rublej(@kp.kp_products.sum(:sum))%></p>
+    <div class="summary">Итого:&nbsp;&nbsp;<%= (@kp.kp_products.sum(:sum).truncate(2).to_s("F") + "00")[ /.*\..{2}/ ] %> руб</div>
+		<p>Дата <%= @kp.created_at.strftime("%d / %m / %Y")%></p>
+    <!-- <p>Всего наименований <%# @kp.kp_products.count%>, на сумму <%# RuPropisju.rublej(@kp.kp_products.sum(:sum))%></p> -->
 
 		<table class="signs">
 			<tr>
-				<!-- <td>
-				Отпустил___________________________________
-				</td> -->
+				<td>
+				М П
+				</td>
 			</tr>
 		</table>
 

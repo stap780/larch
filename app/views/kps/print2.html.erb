@@ -53,23 +53,26 @@
 				</tr>
 			</tbody>
 		</table>
-    <center><h1><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></h1></h1></center>
+		<div class="kp-title">
+			<h1><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %></h1>
+			<div class="kp-title-date">
+				Дата <%= @kp.created_at.strftime("%d / %m / %Y")%>
+			</div>
+		</div>
     <table class="itemsInfo">
       <tr>
         <th>№</th>
-        <th>Артикул</th>
-        <th style="width: 220px;">Товар</th>
-        <th>Ед.</th>
-        <th>Цена</th>
-        <th>Кол-во</th>
-        <th>Сумма</th>
+        <th style="width: 220px;">товар</th>
+        <th>ед. изм.</th>
+        <th>цена (руб. без НДС)</th>
+        <th>кол-во</th>
+        <th>сумма (руб. без НДС)</th>
         <!-- <th>Комментарий</th> -->
       </tr>
 
       <% @kp_products.each_with_index do |kp, i| %>
         <tr>
           <td class="center"><%= (i+1) %></td>
-          <td class="center"><%= kp[:sku].truncate(20) if kp[:sku].present? %></td>
           <td><%= kp[:title] %></td>
           <td class="center">шт</td>
           <td class="center"><%= kp[:price] %></td>
@@ -81,17 +84,17 @@
 
     </table>
 
-    <div class="summary">Итого:&nbsp;&nbsp;<%= @kp.kp_products.sum(:sum)%> руб</div>
+    <div class="summary">Итого:&nbsp;&nbsp;<%= (@kp.kp_products.sum(:sum).truncate(2).to_s("F") + "00")[ /.*\..{2}/ ] %> руб</div>
 
-    <p>Всего наименований <%= @kp.kp_products.count%>, на сумму <%= RuPropisju.rublej(@kp.kp_products.sum(:sum))%></p>
+    <!-- <p>Всего наименований <%# @kp.kp_products.count%>, на сумму <%# RuPropisju.rublej(@kp.kp_products.sum(:sum))%></p> -->
 
-		<!-- <table class="signs">
+		<table class="signs">
 			<tr>
 				<td>
-				Отпустил___________________________________
+				М П
 				</td>
 			</tr>
-		</table> -->
+		</table>
 
   </div>
 

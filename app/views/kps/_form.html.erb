@@ -6,7 +6,11 @@
   <div class="row">
     <div class="col-12 h3"><%= page_title %></div>
     <div class="col-10 row">
+      <% if current_user.admin? %>
     <%= f.input :vid, collection: Kp::VID, label: 'Тип КП', prompt: "Тип", input_html: { class: "form-select" } , wrapper_html: { class: "col-2" } %>
+    <% else %>
+    <%= f.input :vid, disabled: true, collection: Kp::VID, label: 'Тип КП', prompt: "Тип", input_html: { class: "form-select" } , wrapper_html: { class: "col-2" } %>
+    <% end %>
     <%= f.input :status, collection: Kp::STATUS, prompt: "Статус", input_html: { class: "form-select" } , wrapper_html: { class: "col-2" } %>
     <%= f.input :title, label: 'Заголовок', wrapper_html: { class: "col-8" } %>
     <%= f.input :comment, label: 'Комментарий', as: :text, wrapper_html: { class: "col-8" } %>

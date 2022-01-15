@@ -9,7 +9,7 @@ class Product < ApplicationRecord
   accepts_nested_attributes_for :images_attachments, allow_destroy: true
 
   def sku_title
-    "#{self.title}" # было так -  "#{self.title} (#{self.sku}) " - убрал чтобы не заморачиваться с правкаим кода в форме КП (потом если найду время)
+    "#{self.title} (#{self.sku}) " # было так -  "#{self.title} (#{self.sku}) " - убрал чтобы не заморачиваться с правкаим кода в форме КП (потом если найду время)
   end
 
 

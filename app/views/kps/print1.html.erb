@@ -148,8 +148,8 @@
             <td class="desc"><%= kp.product.sku.truncate(20) if kp.product.sku.present? %></td>
             <td class="desc"><%# image_tag wicked_image_active_storage_workaround(kp.product.images.first), style: "max-width:60px;" if kp.product.images.present? %>
               <% image = kp.product.images.first %>
-              <% link = wicked_image_active_storage_workaround(image) %>
-              <%= render "pdf_image", image_link: "/tmp/pdf/#{image.id}.jpg", image_class: 'w45' if image.present? %>
+              <% link = "/tmp"+wicked_image_active_storage_workaround(image).to_s.split('/tmp').last %>
+              <%= render "pdf_image", image_link: link, image_class: 'w45' if image.present? %>
             </td>
             <td class="desc"><%= kp.product.title %></td>
             <td class="qty">шт</td>
@@ -160,11 +160,23 @@
           <% end %>
 
       </table>
-      <!-- <div id="thanks">Thank you!</div>
+      <!-- <div id="thanks">Thank you!</div> -->
       <div id="notices">
-        <div>NOTICE:</div>
-        <div class="notice">A finance charge of 1.5% will be made on unpaid balances after 30 days.</div>
-      </div> -->
+        <!-- <div>NOTICE:</div> -->
+        <div class="notice">
+          Менеджер <span><% if @kp.order.user.present? %><%= @kp.order.user.name %><% else %>Тест<% end %></span>
+        </div>
+        <div class="notice-date">
+          Дата <%= @kp.created_at.strftime("%d / %m / %Y")%>
+        </div>
+        <div class="notice-stamp">М П
+          <% if @kp.vid == 'Основное'%>
+          <% image = @our_company.images.first %>
+          <% link = "/tmp"+wicked_image_active_storage_workaround(image).to_s.split('/tmp').last %>
+          <%= render "pdf_image", image_link: link, image_class: 'center pechat' if image.present? %>
+          <% end %>
+        </div>
+      </div>
     </main>
   </body>
 </html>

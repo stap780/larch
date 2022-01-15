@@ -179,20 +179,37 @@ table tfoot tr td:first-child {
   border: none;
 }
 
-#thanks{
-  font-size: 2em;
-  margin-bottom: 50px;
-}
+// #thanks{
+//   font-size: 2em;
+//   margin-bottom: 50px;
+// }
 
 #notices{
-  padding-left: 6px;
-  border-left: 6px solid #0087C3;
-}
+  // padding-left: 6px;
+  // border-left: 6px solid #0087C3;
+  margin-top: 60px;
 
+}
+//
 #notices .notice {
-  font-size: 1.2em;
+  // font-size: 1.2em;
+  text-align: center;
+  width: 70%;
+  float: left;
 }
-
+.notice span {
+    padding-left: 70px;
+}
+.notice-date {
+  width: 30%;
+    float: left;
+}
+.notice-stamp {
+  margin-left: 25%;
+  padding-top: 40px;
+  font-size: 12px;
+  position:  relative;
+}
 footer {
   color: #777777;
   width: 100%;
@@ -371,3 +388,9 @@ table.footer-banner-text th {
 }
 .footer-right-part img {max-width: 120px;}
 .kp-title {margin-top: 20px;}
+.pechat {
+  max-height: 140px;
+  left: 0;
+  top: 30%;
+}
+//   "/tmp/pdf/#{image.id}.#{image.filename.to_s.split('.').last}"
