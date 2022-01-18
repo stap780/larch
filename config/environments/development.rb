@@ -43,10 +43,11 @@ Rails.application.configure do
   config.assets.debug = true
 
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
-    port: 587,
+    address: Rails.application.secrets.email_provider_address,
+    port: Rails.application.secrets.email_provider_port,
     domain: Rails.application.secrets.domain_name,
     authentication: "plain",
+    tls: true,
     enable_starttls_auto: true,
     user_name: Rails.application.secrets.email_provider_username,
     password: Rails.application.secrets.email_provider_password

@@ -8,6 +8,7 @@ class Kp < ApplicationRecord
   validates :order_id, presence: true
   after_initialize :set_status_vid
   after_initialize :set_title
+  after_commit :notify_admin_to_add_stamp, if: :persisted?
 
   VID = ["Начальное","Основное"]
   STATUS = ["Новый", "В работе", "Ждёт печати","Отправлен", "Завершен", "Отменен"]
@@ -72,6 +73,11 @@ class Kp < ApplicationRecord
     end
   end
 
+  def notify_admin_to_add_stamp
+    if self.status == 'Ждёт печати'
+      KpMailer.add_stamp.deliver_now
+    end
+  end
 
 
 end
