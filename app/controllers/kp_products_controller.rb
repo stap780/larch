@@ -1,6 +1,5 @@
 class KpProductsController < ApplicationController
   before_action :authenticate_user!
-  before_action :authenticate_user_role!
   before_action :set_kp_product, only: [:show, :edit, :update, :destroy]
 
   # GET /kp_products

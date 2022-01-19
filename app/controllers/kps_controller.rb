@@ -1,7 +1,5 @@
 class KpsController < ApplicationController
   before_action :authenticate_user!
-  before_action :authenticate_user_role!
-  before_action :active_storage_host
   before_action :get_order
   before_action :set_kp, only: %i[show edit update destroy]
   autocomplete :product, :title, :extra_data => [:id, :sku, :price], :display_value => :sku_title, 'data-noMatchesLabel' => 'нет товара'

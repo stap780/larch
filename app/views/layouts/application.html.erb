@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : Rails.application.class.parent_name.downcase %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "CRM - "+Rails.application.class.parent_name.downcase %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : Rails.application.class.parent_name.downcase %>">
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-    <% if user_signed_in? %>  <%= render 'layouts/navigation' %> <% end %>
+    <% if user_signed_in? && current_user.role.name != 'registered' %>  <%= render 'layouts/navigation' %> <% end %>
     </header>
     <main role="main" class="container-fluid">
        <%= render 'layouts/messages' %>

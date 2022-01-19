@@ -1,5 +1,5 @@
 class Users::SessionsController < Devise::SessionsController
-
+  after_action :welcome_message, only: :create
   # GET /resource/sign_in
   # def new
   #   super
@@ -20,5 +20,12 @@ class Users::SessionsController < Devise::SessionsController
 
   # def check_sign_in_user
   # end
-  
+  private
+
+  def welcome_message
+    if current_user.present? && current_user.role.name == 'registered'
+      flash[:notice] = "Дождитесь проверки от админа. Мы отправили ему письмо про вашу регистрацию"
+    end
+  end
+
 end

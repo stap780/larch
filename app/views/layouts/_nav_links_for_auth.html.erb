@@ -1,7 +1,9 @@
 <% if user_signed_in? %>
-  <li class='nav-item'><%# link_to 'Edit account', edit_user_registration_path, class: 'nav-link' %></li>
+  <!-- <li class='nav-item'><%# link_to 'Edit account', edit_user_registration_path, class: 'nav-link' %></li> -->
+  <li class='nav-item'><a class="nav-link" href="#"><%= current_user.email %></a></li>
   <li class='nav-item'><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete', class: 'nav-link' %></li>
 <% else %>
-  <li class='nav-item'><%= link_to 'Sign in', new_user_session_path, class: 'nav-link' %></li>
+  <span class="d-block text-center"><%= Rails.application.class.parent_name %></span>
+  <%= link_to 'Sign in', new_user_session_path, class: 'nav-link text-center' %>
   <!-- <li class='nav-item'><%# link_to 'Sign up', new_user_registration_path, class: 'nav-link' %></li> -->
 <% end %>

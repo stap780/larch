@@ -1,6 +1,5 @@
 class OrdersController < ApplicationController
   before_action :authenticate_user!, except: [:webhook]
-  before_action :authenticate_user_role!, except: [:webhook]
   before_action :set_order, only: [:show, :edit, :update, :destroy]
   autocomplete :company, :title, :extra_data => [:id, :fulltitle, :inn], :display_value => :title, 'data-noMatchesLabel' => 'нет компании'
 
