@@ -33,138 +33,59 @@
         </div>
     </header>
     <main>
-      <!-- <div class="first-block banner">
-        <table class="banner-text">
-          <td>
-            <h1>Коммерческое предложение</h1>
-            <h3>Группа компаний «Адвентер» благодарит Вас за проявленный интерес к нашей продукции. Предлагаем ознакомиться с нашим коммерческим предложением на следующей странице.</h3>
-          </td>
-        </table>
-      </div> -->
-
-      <div class="second-block clearfix">
-          <div class="second-block-left-part">
-            <div class="second-block-label" Мы производим>
-              <%= render "pdf_image", image_link: '/kp_zagolovok1.png', image_class: 'second-block-label-img-left' %>
-            </div>
-            <table>
-              <tr>
-                <th><%= render "pdf_image", image_link: '/kp_mebel.png', image_class: 'w30'  %></th>
-                <th>мебель для ДОУ и школ</th>
-              </tr>
-              <tr>
-                <th><%= render "pdf_image", image_link: '/kp_photooboi.png', image_class: 'w30'  %></th>
-                <th>Фотообои, интерьерное оформление ДОУ и школ</th>
-              </tr>
-              <tr>
-                <th><%= render "pdf_image", image_link: '/kp_bulletin_board.png', image_class: 'w30'  %></th>
-                <th>стенды, таблички, наклейки</th>
-              </tr>
-              <tr>
-                <th><%= render "pdf_image", image_link: '/kp_dekoracii.png', image_class: 'w30'  %></th>
-                <th>декорации, оформление уголков и зон в ДОУ и школах</th>
-              </tr>
-              <tr>
-                <th><%= render "pdf_image", image_link: '/kp_ulichnoe_oborudovanie.png', image_class: 'w30'  %></th>
-                <th>уличное оборудование</th>
-              </tr>
-            </table>
-          </div>
-          <div class="second-block-right-part">
-            <div class="second-block-label" Мы поставляем>
-              <%= render "pdf_image", image_link: '/kp_zagolovok2.png', image_class: 'second-block-label-img-right'  %>
-            </div>
-            <table>
-              <tr>
-                <th><%= render "pdf_image", image_link: '/kp_ulichnoe_igrovoe.png', image_class: 'w30'  %></th>
-                <th>уличное игровое оборудование</th>
-              </tr>
-              <tr>
-                <th><%= render "pdf_image", image_link: '/kp_posuda.png', image_class: 'w30'  %></th>
-                <th>посуда и хоз товары</th>
-              </tr>
-              <tr>
-                <th><%= render "pdf_image", image_link: '/kp_igrovoe.png', image_class: 'w30'  %></th>
-                <th>игровое развивающее оборудование</th>
-              </tr>
-              <tr>
-                <th><%= render "pdf_image", image_link: '/kp_interaktiv.png', image_class: 'w30'  %></th>
-                <th>интерактивное оборудование</th>
-              </tr>
-              <tr>
-                <th><%= render "pdf_image", image_link: '/kp_osnashenie.png', image_class: 'w30'  %></th>
-                <th>оснащение для классов</th>
-              </tr>
-            </table>
-          </div>
-      </div>
-      <div class="third-block clearfix">
-          <table>
-            <td>
-              <%# render "pdf_image", image_link: '/kp_ramka1.png', image_class: ''  %>
-              <table class="third-block-img1">
-                <td><%= render "pdf_image", image_link: '/kp_ramka1.png', image_class: 'w260'  %></td>
-                <!-- <td>Работаем по 44-ФЗ и 223-ФЗ</td> -->
-              </table>
-            </td>
-            <td>
-              <table  class="third-block-img2">
-                <td><%= render "pdf_image", image_link: '/kp_ramka2.png', image_class: 'w260'  %></td>
-                <!-- <td>Доставка по всей России</td> -->
-              </table>
-            </td>
-            <td>
-              <table  class="third-block-img3">
-                <td><%= render "pdf_image", image_link: '/kp_ramka3.png', image_class: 'w260'  %></td>
-                <!-- <td>Гарантии и сертификаты</td> -->
-              </table>
-            </td>
-          </table>
-      </div>
-
       <div class="kp-title">
         <center>
           <h1><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></h1>
         </center>
       </div>
 
-      <table  id="kp_items" border="0" cellspacing="0" cellpadding="0">
+      <table id="kp_items" border="1" cellspacing="0" cellpadding="0">
         <thead>
           <tr class="kp_items_header">
-            <th class="no">№</th>
-              <th class="desc">Артикул</th>
-              <th class="desc">Фото</th>
-              <th class="desc">Наименование товара</th>
-              <th class="qty">Ед изм</th>
-              <th class="qty">Кол.</th>
-              <th class="unit">Цена</th>
-              <th class="total">Сумма</th>
+            <th class="">№</th>
+            <th class="">Фото</th>
+              <th class="" style="min-width: 80px;">Артикул</th>
+              <th class="">Наименование товара</th>
+              <th class="" style="min-width: 100px;">Цена</th>
+              <th class="" style="max-width: 40px;">Кол.</th>
+              <th class="" style="min-width: 110px;">Сумма</th>
           </tr>
         </thead>
         <tbody>
           <% @kp.kp_products.each_with_index do |kp, i| %>
           <tr>
-            <td class="no"><%= (i+1) %></td>
-            <td class="desc"><%= kp.product.sku.truncate(20) if kp.product.sku.present? %></td>
-            <td class="desc"><%# image_tag wicked_image_active_storage_workaround(kp.product.images.first), style: "max-width:60px;" if kp.product.images.present? %>
+            <td class="item-nu"><%= (i+1) %></td>
+            <td class="item-image">
               <% image = kp.product.images.first %>
-              <% link = "/tmp"+wicked_image_active_storage_workaround(image).to_s.split('/tmp').last %>
+              <% link = image.present? ? "/tmp"+wicked_image_active_storage_workaround(image).to_s.split('/tmp').last : '' %>
               <%= render "pdf_image", image_link: link, image_class: 'w45' if image.present? %>
             </td>
-            <td class="desc"><%= kp.product.title %></td>
-            <td class="qty">шт</td>
-            <td class="qty"><%= kp.quantity %></td>
-            <td class="unit"><%= kp.price %></td>
-            <td class="total"><%= kp.sum.to_f.round(2)%></td>
+            <td class="item-sku"><%= kp.product.sku.truncate(20) if kp.product.sku.present? %></td>
+            <td class="item-title"><%= kp.product.title %></td>
+            <!-- <td class="qty">шт</td> -->
+            <td class="item-price"><%= kp.price %> руб</td>
+            <td class="item-qt"><%= kp.quantity %></td>
+            <td class="item-sum"><%= (kp.sum.truncate(2).to_s("F") + "00")[ /.*\..{2}/ ] %> руб</td>
           </tr>
           <% end %>
-
+          <tr>
+            <td colspan="4"></td>
+            <td class="item-itogo" colspan="2">ИТОГО</td>
+            <td class="item-itogo-sum"><%= (@kp.kp_products.sum(:sum).truncate(2).to_s("F") + "00")[ /.*\..{2}/ ] %> руб</td>
+          </tr>
       </table>
-      <!-- <div id="thanks">Thank you!</div> -->
+      <div id="thanks">Организация работает без НДС на основании ст. 346.11 НК РФ.<br>Цены по данному коммерческому предложению действительны в течение 14 дней.</div>
       <div id="notices">
         <!-- <div>NOTICE:</div> -->
         <div class="notice">
-          Менеджер <span><% if @kp.order.user.present? %><%= @kp.order.user.name %><% else %>Тест<% end %></span>
+          <div class="text">Менеджер</div>
+          <div class="podpis">
+            <% image = @kp.order.user.avatar if @kp.order.user.present? %>
+            <% link = image.present? ? "/tmp"+wicked_image_active_storage_workaround(image).to_s.split('/tmp').last : '' %>
+            <%= render "pdf_image", image_link: link, image_class: '' if image.present? %>
+            </div>
+            <div class="fio"><% if @kp.order.user.present? %><%= @kp.order.user.name %><% else %>Тест<% end %></div>
+          </div>
         </div>
         <div class="notice-date">
           Дата <%= @kp.created_at.strftime("%d / %m / %Y")%>
@@ -172,11 +93,14 @@
         <div class="notice-stamp">М П
           <% if @kp.vid == 'Основное'%>
           <% image = @our_company.images.first %>
-          <% link = "/tmp"+wicked_image_active_storage_workaround(image).to_s.split('/tmp').last %>
-          <%= render "pdf_image", image_link: link, image_class: 'center pechat' if image.present? %>
+          <% link = image.present? ? "/tmp"+wicked_image_active_storage_workaround(image).to_s.split('/tmp').last : '' %>
+          <%= render "pdf_image", image_link: link, image_class: 'pechat' if image.present? %>
           <% end %>
         </div>
       </div>
     </main>
   </body>
+
+
+
 </html>

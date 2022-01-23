@@ -27,7 +27,7 @@
     <div class="col p-0 h4">Коммерческие предложения</div>
     <%= link_to 'Создать', new_order_kp_path(@order), class: 'btn btn-dark col-3' if !@order.new_record?%>
     <div class="col-12 mt-3 p-0">
-      <table class="table">
+      <table class="table table-hover">
         <thead>
           <tr>
             <th>Тип КП</th>

@@ -102,7 +102,7 @@ class KpsController < ApplicationController
           render :pdf => "КП1 #{@kp.id}",
                  :template => "kps/print1.html.erb",
                  :show_as_html => params.key?('debug'),
-     						 :margin => {top: 15, left: 0, right: 0, bottom: 18 },
+     						 :margin => {top: 0, left: 0, right: 0, bottom: 38 },
      						 header:  {
      						 		html: { template:'kps/print1_header.html.erb'},
      						 		spacing: 2

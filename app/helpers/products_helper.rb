@@ -10,6 +10,14 @@ module ProductsHelper
       # IO.copy_stream(download, save_path.to_s)
       # puts save_path
       return save_path.to_s
+
+    elsif image.is_a? ActiveStorage::Attached
+      save_path = Rails.root.join( "public/tmp/pdf", "#{image.id}.#{image.filename.to_s.split('.').last}")
+      File.open(save_path, 'wb') do |file|
+        file << image.blob.download
+      end
+      return save_path.to_s
+      
     end
   end
 

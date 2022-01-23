@@ -7,7 +7,7 @@
     <title><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></title>
   </head>
   <body onload="number_pages()">
-  <div class="headerContent" style="margin-bottom: 20px;"><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></div>
+  <div class="headerContent"><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></div>
 <!-- <p id="pdf_console_output" ></p> -->
   </body>
 </html>

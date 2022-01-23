@@ -49,7 +49,9 @@ set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
 # set :delayed_job_default_hooks, false
 after 'deploy:publishing', 'unicorn:restart'
 
-
+if Rake::Task.task_defined?('deploy:published')
+  after 'deploy:published', 'delayed_job:default'
+end
 
 # set :application, 'my_app_name'
 # set :repo_url, 'git@example.com:me/my_repo.git'
