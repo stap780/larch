@@ -74,7 +74,7 @@ class Kp < ApplicationRecord
   end
 
   def notify_admin_to_add_stamp
-    if self.status == 'Ждёт печати'
+    if self.status == 'Ждёт печати' && self.vid != 'Основное'
       KpMailer.add_stamp.deliver_now
     end
   end

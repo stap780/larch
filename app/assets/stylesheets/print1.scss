@@ -35,7 +35,9 @@ header {
   // border-bottom: 1px solid #AAAAAA;
   background-color: #f6f6f6;
 }
-
+main {
+  padding: 0 10px;
+}
 #header-left-part {
   float: left;
   margin-top: 8px;
@@ -106,7 +108,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   border: 1px solid #80808059 ;
 }
 
@@ -190,14 +192,15 @@ table {
 // }
 
 #thanks{
-  font-size: 14зч;
+  font-size: 14px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
 #notices{
   // padding-left: 6px;
   // border-left: 6px solid #0087C3;
-  margin-top: 60px;
+  margin-top: 20px;
 
 }
 //
@@ -297,10 +300,10 @@ footer {
     background-size: 100% 100%;
     margin-bottom: 0rem;
 }
-table.banner-text {
+.banner-text {
   margin-bottom: 0px;
 }
-table.banner-text td {
+.banner-text td {
   text-align: center;
   vertical-align: middle;
   padding: 10px;
@@ -308,7 +311,7 @@ table.banner-text td {
   border-bottom: none;
   color: white;
 }
-table.banner-text h3 {
+.banner-text h3 {
   color: white;
 }
 .second-block-left-part {
@@ -372,8 +375,9 @@ background-color: #f6f6f6;
 
 #kp_items td {
   background-color: white;
-  padding: 10px 5px;
+  padding: 5px;
   border: 1px solid #80808059;
+  font-size: 13px;
 }
 .kp_items_header th {
   background-color: #f6f6f6;

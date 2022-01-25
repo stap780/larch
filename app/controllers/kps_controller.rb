@@ -111,7 +111,7 @@ class KpsController < ApplicationController
      						 		},
      						 footer: {
      							 html: { template:'kps/print1_footer.html.erb'},
-     							 	:spacing => 3,
+     							 	:spacing => 2,
      								locals: {}
      								#right: '_______________________(подпись)                  _______________________(подпись)            [page] из [topage]'
      								}
