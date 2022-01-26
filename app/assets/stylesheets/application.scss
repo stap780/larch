@@ -286,3 +286,7 @@ section {
 #items_table a, .sort_link {
   text-decoration: none;
 }
+.table > :not(caption) > * > * {
+    padding: 0.3rem 0.3rem;
+    border-bottom-width: 0px;
+}

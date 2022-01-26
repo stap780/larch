@@ -11,7 +11,7 @@
     <% else %>
     <%= f.input :vid, disabled: true, collection: Kp::VID, label: 'Тип КП', prompt: "Тип", input_html: { class: "form-select" } , wrapper_html: { class: "col-2" } %>
     <% end %>
-    <%= f.input :status, collection: Kp::STATUS, prompt: "Статус", input_html: { class: "form-select" } , wrapper_html: { class: "col-2" } %>
+    <%= f.input :status, collection: Kp::STATUS, prompt: "Статус", label: 'Статус', input_html: { class: "form-select" } , wrapper_html: { class: "col-2" } %>
     <%= f.input :title, label: 'Заголовок', wrapper_html: { class: "col-8" } %>
     <%= f.input :comment, label: 'Комментарий', as: :text, wrapper_html: { class: "col-8" } %>
     <%= f.input :extra, wrapper_html: { class: "col-4" }, input_html: {min: "0"} %>
