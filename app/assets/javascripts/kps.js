@@ -16,7 +16,7 @@ function calculate(val) {
     for (var i = 0; i < rows.length; i++) {
       var row = rows[i];
       var sum = row.cells[3].firstChild.firstChild;
-      if (parseInt(sum.value))
+      if (parseFloat(sum.value))
         tot += parseFloat(sum.value);
     }
     // var discount = document.getElementById("invoice_discount");
