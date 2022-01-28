@@ -22,12 +22,11 @@
   <%= search_form_for @search, {class: 'form-inline col-12 pl-0 pr-0'} do |f| %>
     <div class="input-group input-group-sm">
       <%= f.select :status_in, Order::STATUS, { :prompt => 'Статус'}, class: "form-select", style: "max-width: 180px;" %>
-      <%= f.search_field :number_eq , placeholder: 'number', class: "form-control", style: "max-width: 180px;" %>
-      <%= f.collection_select :client_id_eq, Client.all, "id", "full_name", {:prompt => 'Client'} , {:class => "form-select", :style => "max-width:200px;"} %>
-      <%= f.collection_select :company_id_eq, Company.all, "id", "title", {:prompt => 'Company'} , {:class => "form-select", :style => "max-width:200px;"} %>
-      <%= button_tag(type: 'submit', :class => "btn btn-info") do %>
-        <span class="oi oi-magnifying-glass"></span>
-      <% end %>
+      <%= f.search_field :number_eq , placeholder: 'Номер', class: "form-control", style: "max-width: 180px;" %>
+      <%= f.collection_select :user_id_eq, User.all, "id", "name", {:prompt => 'Пользователь'} , {:class => "form-select", :style => "max-width:200px;"} if current_user.admin? %>
+      <%= f.collection_select :client_id_eq, Client.all, "id", "full_name", {:prompt => 'Клиент'} , {:class => "form-select", :style => "max-width:200px;"} %>
+      <%= f.collection_select :company_id_eq, Company.all, "id", "title", {:prompt => 'Компания'} , {:class => "form-select", :style => "max-width:200px;"} %>
+      <%= button_tag(type: 'submit', :class => "btn btn-info") do %><span class="oi oi-magnifying-glass"></span><% end %>
       <%= link_to '<span class="oi oi-reload"></span>'.html_safe, orders_path, class: 'btn btn-outline-dark ' %>
       <%= link_to '<span class="oi oi-trash"></span>'.html_safe, delete_selected_orders_path, class: 'btn btn-secondary', id: 'deleteAll', remote: true %>
     </div>

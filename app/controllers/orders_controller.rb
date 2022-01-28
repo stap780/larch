@@ -7,9 +7,9 @@ class OrdersController < ApplicationController
   # GET /orders
   def index
     #@orders = Order.all
-    @search = Order.ransack(params[:q])
+    @search = current_user.admin? ? Order.ransack(params[:q]) : Order.where(user_id: current_user.id).ransack(params[:q])
     @search.sorts = 'id desc' if @search.sorts.empty?
-    @orders = @search.result.paginate(page: params[:page], per_page: 30)
+    @orders = @search.result.paginate(page: params[:page], per_page: 100)
   end
 
   # GET /orders/1

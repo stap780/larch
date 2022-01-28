@@ -52,7 +52,7 @@ class KpsController < ApplicationController
       if !v["product_id"].present?
         # puts 'not present'
         # puts v["product_sku_title"]
-        product = Product.find_or_create_by(title: v["product_sku_title"], quantity: v["quantity"], price:  v["price"], sku: v["product_sku_title"].gsub(' ','_'))
+        product = Product.find_or_create_by(title: v["product_sku_title"], quantity: v["quantity"], price: v["price"], sku: v["product_sku_title"].gsub(' ','_'))
         # puts product.id.to_s
         v["product_id"] = product.id
       end
@@ -102,7 +102,7 @@ class KpsController < ApplicationController
           render :pdf => "КП1 #{@kp.id}",
                  :template => "kps/print1.html.erb",
                  :show_as_html => params.key?('debug'),
-     						 :margin => {top: 0, left: 0, right: 0, bottom: 39 },
+     						 :margin => {top: 0, left: 2, right: 2, bottom: 39 },
      						 header:  {
      						 		html: { template:'kps/print1_header.html.erb'},
      						 		spacing: 2

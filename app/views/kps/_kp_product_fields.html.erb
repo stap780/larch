@@ -5,8 +5,8 @@
   <%= f.input :product_id, as: :hidden %>
 </td>
   <td><%= f.input :quantity, as: :integer, label: false, input_html: {min: "0" , onchange: "calculate(this.value)"}%></td>
-  <td><%= f.input :price, as: :decimal, label: false, input_html: {min: "0", onchange: "calculate()"}%></td>
-  <td><%= f.input :sum, as: :decimal, label: false, input_html: {min: "0", onchange: "calculate()"} %></td>
+  <td><%= f.input :price, as: :decimal, label: false, input_html: {min: "0", onchange: "calculate()", step: "0.01"}%></td>
+  <td><%= f.input :sum, as: :decimal, label: false, input_html: {min: "0", onchange: "calculate()", step: "0.01"} %></td>
   <%# f.association :kp %>
   <td><%= link_to_remove_association '<span class="oi oi-trash"></span>'.html_safe, f %></td>
 </tr>

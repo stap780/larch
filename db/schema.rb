@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_03_165204) do
+ActiveRecord::Schema.define(version: 2022_01_28_102447) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -93,7 +93,7 @@ ActiveRecord::Schema.define(version: 2022_01_03_165204) do
     t.bigint "order_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "extra"
+    t.decimal "extra", precision: 8, scale: 2
     t.string "comment"
     t.index ["order_id"], name: "index_kps_on_order_id"
   end
