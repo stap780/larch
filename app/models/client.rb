@@ -10,8 +10,8 @@ class Client < ApplicationRecord
   end
 
   def self.api_get_create_client(client_data)
-    state = client_data["fields_values"].select{|a| a if a["name"] == "ОБЛАСТЬ / КРАЙ / РЕСПУБЛИКА"}[0]["value"]
-    address = client_data["fields_values"].select{|a| a if a["name"] == "Адрес для доставки"}[0]["value"]
+    state = client_data["fields_values"].select{|a| a if a["name"] == "ОБЛАСТЬ / КРАЙ / РЕСПУБЛИКА"}
+    address = client_data["fields_values"].select{|a| a if a["name"] == "Адрес для доставки"}
     data = {
       name: client_data["name"],
       middlename:  client_data["middlename"],
@@ -19,9 +19,9 @@ class Client < ApplicationRecord
       phone:  client_data["phone"],
       email:  client_data["email"],
       zip:  "",
-      state:  state.present? ? state : "",
+      state:  state.present? ? state[0]["value"] : "",
       city:  "",
-      address: address.present? ? address : ""
+      address: address.present? ? address[0]["value"] : ""
     }
 
     client = Client.find_by_email(data[:email])
