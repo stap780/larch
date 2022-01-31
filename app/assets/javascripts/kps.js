@@ -92,13 +92,14 @@ $(document).ready(function() {
   $("#kp_extra").on('change', function() {
     var extraValue = $(this).val();
     var table_lines = $('#kp_products tbody tr');
-    var value = parseFloat(extraValue) / table_lines.length;
+    var total = $('#kp-total').text();
+    var value = ((parseFloat(extraValue) + parseFloat(total)) / parseFloat(total)).toFixed(2);
     if (table_lines.length >= 1) {
       for (var i = 0; i < table_lines.length; i++) {
         var row = table_lines[i];
         //console.log(row);
         var price = row.cells[2].firstChild.firstChild.value;
-        var newPrice = parseFloat(price) + parseFloat(value, 10);
+        var newPrice = parseFloat(price) * parseFloat(value);
         row.cells[2].firstChild.firstChild.value = newPrice.toFixed(2);
       };
     }
