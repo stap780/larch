@@ -91,15 +91,18 @@ $(document).ready(function() {
   // пересчет суммы при изменении поля extra
   $("#kp_extra").on('change', function() {
     var extraValue = $(this).val();
+    console.log("extraValue " + extraValue);
     var table_lines = $('#kp_products tbody tr');
     var total = $('#kp-total').text();
+    console.log("total " + total);
     var value = ((parseFloat(extraValue) + parseFloat(total)) / parseFloat(total)).toFixed(1);
+    console.log("value " + value);
     if (table_lines.length >= 1) {
       for (var i = 0; i < table_lines.length; i++) {
         var row = table_lines[i];
         //console.log(row);
         var price = row.cells[2].firstChild.firstChild.value;
-        var newPrice = parseFloat(price) * parseFloat(value);
+        var newPrice = parseFloat(price) * value;
         row.cells[2].firstChild.firstChild.value = newPrice.toFixed(2);
       };
     }
