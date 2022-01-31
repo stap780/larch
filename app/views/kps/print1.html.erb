@@ -80,9 +80,11 @@
         <div class="notice">
           <div class="text">Менеджер</div>
           <div class="podpis">
-            <% image = @kp.order.user.avatar if @kp.order.user.present? %>
+            <% if @kp.order.user.present? && @kp.order.user.avatar.attached? %>
+            <% image = @kp.order.user.avatar %>
             <% link = image.present? ? "/tmp"+wicked_image_active_storage_workaround(image).to_s.split('/tmp').last : '' %>
             <%= render "pdf_image", image_link: link, image_class: '' if image.present? %>
+            <% end %>
             </div>
             <div class="fio"><% if @kp.order.user.present? %><%= @kp.order.user.name %><% else %>Тест<% end %></div>
           </div>
