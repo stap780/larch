@@ -27,11 +27,8 @@ class Kp < ApplicationRecord
       product = Product.find_by_sku(sku)
       product_id = product.present? ? product.id : Product.create(sku: sku, title: title, quantity: 1, price: price).id
 
-    kp_product_data = {
-			product_id: product_id,
-			quantity: pr_quantity,
-			price: price
-		}
+      kp_product_data = { product_id: product_id, quantity: pr_quantity, price: price }
+
       k_p = kp.kp_products.where(product_id: product_id).take
 			k_p.present? ? k_p.update_attributes(quantity: pr_quantity+k_p.quantity) : kp.kp_products.create(kp_product_data)
 

@@ -4,15 +4,15 @@
 <div class="row">
   <div class="col-12 h3"><%= page_title %></div>
   <div class="col-5 row align-content-start">
-    <%= f.input :number, as: :string, disabled: true, placeholder: "Номер заказа" , wrapper_html: { class: "col-3" } %>
-    <%= f.input :created_at, as: :date, html5: true, placeholder: "Дата", wrapper_html: { class: "col-5" } %>
-    <%= f.input :status, collection: Order::STATUS, prompt: "Статус", input_html: { class: "form-select" } , wrapper_html: { class: "col-4" } %>
+    <%= f.input :number, label: "Номер", as: :string, disabled: true, placeholder: "Номер заказа" , wrapper_html: { class: "col-3" } %>
+    <%= f.input :created_at, as: :date, html5: true, disabled: true, placeholder: "Дата", wrapper_html: { class: "col-5" } %>
+    <%= f.input :status, label: "Статус", collection: Order::STATUS, prompt: "Статус", input_html: { class: "form-select" } , wrapper_html: { class: "col-4" } %>
     <% if current_user.admin? %>
       <%= f.association :user, label: "Менеджер", input_html: { class: "form-select" }, wrapper_html: { class: "col-8 mt-3" } %>
     <% else %>
       <%= f.association :user, label: "Менеджер", disabled: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-8 mt-3" } %>
     <% end %>
-    <%= f.association :client, prompt: "Клиент", input_html: { class: "form-select" }, wrapper_html: { class: "col-6 mt-3" } %>
+    <%= f.association :client, prompt: false, label: "Клиент", input_html: { class: "form-select" }, wrapper_html: { class: "col-6 mt-3" }, hint_html: { class: 'form-text' }, hint: "#{@order.client.phone} #{@order.client.email} #{@order.client.address}"  %>
     <%# f.association :company, prompt: "Компания", input_html: { class: "form-select" }, include_blank: true, selected: lambda { |company|  @order.client.companies.first.id if !@order.company_id.present? && @order.client.companies.present? }, wrapper_html: { class: "col-6 mt-3" } %>
     <%# f.association :company, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-7 mt-3" } %>
     <%= f.input :company_title, as: :autocomplete, label: "Заказчик", url: autocomplete_company_title_orders_path, wrapper_html: { class: "col-6 mt-3" }, input_html: { 'data-id-element' => '#order_company_id' } %>

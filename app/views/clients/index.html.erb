@@ -20,7 +20,7 @@
 
   <%= search_form_for @search, {class: 'form-inline col-12 pl-0 pr-0'} do |f| %>
     <div class="input-group input-group-sm">
-      <%= f.search_field :name_cont , placeholder: 'Name', class: "form-control", style: "max-width: 180px;" %>
+      <%= f.search_field :name_or_middlename_or_surname_cont , placeholder: 'ФИО', class: "form-control", style: "max-width: 180px;" %>
       <%= button_tag(type: 'submit', :class => "btn btn-info") do %>
         <span class="oi oi-magnifying-glass"></span>
       <% end %>
@@ -36,16 +36,14 @@
   <thead>
     <tr class="bg-success">
       <th><%= check_box_tag 'selectAll', value: 'selectAll'%></th>
-      <th>Name</th>
-      <th>Middlename</th>
-      <th>Surname</th>
+      <th>ФИО</th>
       <th>Phone</th>
       <th>Email</th>
       <th>Zip</th>
       <th>State</th>
       <th>City</th>
       <th>Address</th>
-      <th colspan="3"></th>
+      <th colspan="1"></th>
     </tr>
   </thead>
 
@@ -53,17 +51,13 @@
     <% @clients.each do |client| %>
     <tr id="items_table">
       <td><%= check_box_tag "client_ids[]", client.id %></td>
-        <td><%= client.name %></td>
-        <td><%= client.middlename %></td>
-        <td><%= client.surname %></td>
+        <td><%= link_to client.name, edit_client_path(client) %><br /><%= client.middlename %><br /><%= client.surname %></td>
         <td><%= client.phone %></td>
         <td><%= client.email %></td>
         <td><%= client.zip %></td>
         <td><%= client.state %></td>
         <td><%= client.city %></td>
         <td><%= client.address %></td>
-        <td><%= link_to '<span class="oi oi-eye"></span>'.html_safe, client %></td>
-        <td><%= link_to '<span class="oi oi-pencil"></span>'.html_safe, edit_client_path(client) %></td>
         <td><%= link_to '<span class="oi oi-trash"></span>'.html_safe, client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
