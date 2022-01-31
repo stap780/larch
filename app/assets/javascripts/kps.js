@@ -93,7 +93,7 @@ $(document).ready(function() {
     var extraValue = $(this).val();
     var table_lines = $('#kp_products tbody tr');
     var total = $('#kp-total').text();
-    var value = ((parseFloat(extraValue) + parseFloat(total)) / parseFloat(total)).toFixed(2);
+    var value = ((parseFloat(extraValue) + parseFloat(total)) / parseFloat(total)).toFixed(1);
     if (table_lines.length >= 1) {
       for (var i = 0; i < table_lines.length; i++) {
         var row = table_lines[i];
