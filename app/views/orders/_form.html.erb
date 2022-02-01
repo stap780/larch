@@ -12,7 +12,16 @@
     <% else %>
       <%= f.association :user, label: "Менеджер", disabled: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-8 mt-3" } %>
     <% end %>
-    <%= f.association :client, prompt: false, label: "Клиент", input_html: { class: "form-select" }, wrapper_html: { class: "col-6 mt-3" }, hint_html: { class: 'form-text' }, hint: "#{@order.client.phone} #{@order.client.email} #{@order.client.address}"  %>
+      <%= f.association :client, prompt: false, label: "Клиент", input_html: { class: "form-select" }, wrapper_html: { class: "col-6 mt-3" } %>
+<div class="form-group col-6 mt-3">
+  <label class="">Данные клиента:</label><br>
+  <small class="form-text text-muted">
+  Телефон: <%= @order.client.phone %><br>
+  E-mail: <%= @order.client.email %><br>
+  Область: <%= @order.client.state %><br>
+  Адрес: <%= @order.client.address %>
+  </small>
+</div>
     <%# f.association :company, prompt: "Компания", input_html: { class: "form-select" }, include_blank: true, selected: lambda { |company|  @order.client.companies.first.id if !@order.company_id.present? && @order.client.companies.present? }, wrapper_html: { class: "col-6 mt-3" } %>
     <%# f.association :company, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-7 mt-3" } %>
     <%= f.input :company_title, as: :autocomplete, label: "Заказчик", url: autocomplete_company_title_orders_path, wrapper_html: { class: "col-6 mt-3" }, input_html: { 'data-id-element' => '#order_company_id' } %>
