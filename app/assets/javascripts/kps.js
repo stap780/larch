@@ -102,7 +102,7 @@ $(document).ready(function() {
         var row = table_lines[i];
         //console.log(row);
         var price = row.cells[2].firstChild.firstChild.value;
-        var newPrice = (parseFloat(price) * value) / 100 + parseFloat(price);
+        var newPrice = parseFloat(price) * value ;//(parseFloat(price) * value) / 100 + parseFloat(price);
         row.cells[2].firstChild.firstChild.value = newPrice.toFixed(2);
       };
     }
