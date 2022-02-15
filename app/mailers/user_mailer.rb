@@ -10,7 +10,7 @@ class UserMailer < ApplicationMailer
       # mail(to: @user.email, subject: 'Welcome to My Awesome Site')
 
       mail(to: admin_users,
-          reply_to: Rails.application.secrets.default_from ,
+          reply_to: Rails.application.secrets.default_from,
           subject: 'Новая регистрация в нашем приложении')
     end
 
