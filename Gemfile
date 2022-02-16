@@ -22,7 +22,6 @@ gem 'ransack'
 gem 'roo'
 gem 'roo-xls'
 gem 'whenever', require: false
-gem 'figaro'
 gem 'pg', '~> 0.18'
 gem 'unicorn'
 gem 'phonelib'

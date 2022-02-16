@@ -28,11 +28,11 @@
 
 # Ignore application configuration
 /config/application.yml
-
+/config/secrets.yml
 
 
 /_work
-/config/secrets.yml
+
 
 # various artifacts
 **.war
