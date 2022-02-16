@@ -21,6 +21,7 @@ gem 'will_paginate', '~> 3.3'
 gem 'ransack'
 gem 'roo'
 gem 'roo-xls'
+gem 'figaro'
 gem 'whenever', require: false
 gem 'pg', '~> 0.18'
 gem 'unicorn'
