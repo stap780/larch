@@ -39,12 +39,13 @@
   <thead>
     <tr class="bg-success">
       <th><%= check_box_tag 'selectAll', value: 'selectAll'%></th>
-      <th>Status</th>
+      <th>Статус</th>
       <th>Номер</th>
       <th>Клиент</th>
       <th>Дата</th>
       <th>Сумма</th>
-      <th>Компания</th>
+      <th>Ответственный</th>
+      <!-- <th>Компания</th> -->
       <th>Кол-во КП</th>
       <th colspan="1"></th>
     </tr>
@@ -55,11 +56,12 @@
       <tr id="items_table">
         <td><%= check_box_tag "order_ids[]", order.id %></td>
         <td><%= order.status %></td>
-        <td><%= link_to order.number,  edit_order_path(order) %></td>
+        <td><%= link_to order.number, edit_order_path(order) %></td>
         <td><%= order.client.name if order.client %></td>
         <td><%= order.created_at.strftime("%d.%m.%Y") %></td>
         <td><%= order.kps.order('created_at' => 'asc' ).first.kp_products.sum(:sum) %></td>
-        <td><%= order.company.title if order.company %></td>
+        <td><%= order.user.name if order.user %></td>
+        <!-- <td><%# order.company.title if order.company %></td> -->
         <td><%= order.kps.count %></td>
         <td><%= link_to '<span class="oi oi-trash"></span>'.html_safe, order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
