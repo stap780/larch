@@ -34,7 +34,7 @@
             <th colspan="2" style="text-align: center;"><% if @kp.order.user.present? %><%= @kp.order.user.name %><% else %>Тест<% end %></th>
             <tr>
               <th><%= render "pdf_image", image_link: '/kp_phone.png', image_class: ''  %></th>
-              <th>88005501314</th>
+              <th><% if @kp.order.user.present? && @kp.order.user.phone.present? %><%= @kp.order.user.phone %><% else %>88005501314<% end %></th>
             </tr>
             <tr>
               <th><%= render "pdf_image", image_link: '/kp_email.png', image_class: ''  %></th>

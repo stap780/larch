@@ -24,7 +24,7 @@
 </div>
     <%# f.association :company, prompt: "Компания", input_html: { class: "form-select" }, include_blank: true, selected: lambda { |company|  @order.client.companies.first.id if !@order.company_id.present? && @order.client.companies.present? }, wrapper_html: { class: "col-6 mt-3" } %>
     <%# f.association :company, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-7 mt-3" } %>
-    <%= f.input :company_title, as: :autocomplete, label: "Заказчик", url: autocomplete_company_title_orders_path, wrapper_html: { class: "col-6 mt-3" }, input_html: { 'data-id-element' => '#order_company_id' } %>
+    <%= f.input :company_title, as: :autocomplete, label: "Компания", url: autocomplete_company_title_orders_path, wrapper_html: { class: "col-6 mt-3" }, input_html: { 'data-id-element' => '#order_company_id' } %>
     <%= f.input :company_id, as: :hidden %>
     <%= f.association :companykp1, label: 'Компания КП1', collection: Company.our, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-4 mt-3" } %>
     <%= f.association :companykp2, label: 'Компания КП2', collection: Company.our, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-4 mt-3" } %>

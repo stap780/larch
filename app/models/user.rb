@@ -5,6 +5,8 @@ class User < ApplicationRecord
   # or
   before_validation :set_default_role
   has_one_attached :avatar, dependent: :destroy
+  before_save :normalize_phone
+
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
@@ -24,7 +26,12 @@ class User < ApplicationRecord
 
   private
 
+  def normalize_phone
+    self.phone = Phonelib.valid_for_country?(phone, 'RU') ? Phonelib.parse(phone).full_e164.presence : Phonelib.parse(phone, "KZ").full_e164.presence
+  end
+
   def set_default_role
     self.role_id = Role.find_by_name('registered').id if role_id.nil?
   end
+
 end
