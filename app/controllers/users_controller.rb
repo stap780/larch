@@ -22,7 +22,7 @@ class UsersController < ApplicationController
     # @user = User.find(params[:id])
     # puts "params - "+params.to_s
     # puts "params[:user][:avatar] - "+params[:user][:avatar].to_s
-    @user.avatar.attach(params[:user][:avatar])
+    @user.avatar.attach(params[:user][:avatar]) if params[:user][:avatar]
     respond_to do |format|
       #if @user.update(name: params[:user][:name], email: params[:user][:email], role_id: params[:user][:role_id])
       if @user.update(user_params)
