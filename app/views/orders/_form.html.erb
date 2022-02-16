@@ -12,9 +12,9 @@
     <% else %>
       <%= f.association :user, label: "Менеджер", disabled: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-8 mt-3" } %>
     <% end %>
-      <%= f.association :client, prompt: false, label: "Клиент", input_html: { class: "form-select" }, wrapper_html: { class: "col-6 mt-3" } %>
+      <%= f.association :client, prompt: false, label: "Контакт", input_html: { class: "form-select" }, wrapper_html: { class: "col-6 mt-3" } %>
 <div class="form-group col-6 mt-3">
-  <label class="">Данные клиента:</label><br>
+  <label class="">Данные контакта:</label><br>
   <small class="form-text text-muted">
   Телефон: <%= @order.client.phone %><br>
   E-mail: <%= @order.client.email %><br>
