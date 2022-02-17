@@ -9,6 +9,8 @@ class Order < ApplicationRecord
   validates :number, presence: true, uniqueness: true
   validates :client_id, presence: true
   before_validation :set_our_companies
+  after_initialize :set_default_new
+
 
   delegate :title, to: :company, prefix: true, allow_nil: true
 
@@ -82,9 +84,21 @@ class Order < ApplicationRecord
 
   def set_our_companies
     if new_record?
-    self.companykp1_id = Company.our.first.id
-    self.companykp2_id = Company.our.first.id
-    self.companykp3_id = Company.our.first.id
+      self.companykp1_id = Company.our.first.id
+      self.companykp2_id = Company.our.first.id
+      self.companykp3_id = Company.our.first.id
+    end
+  end
+
+  def set_default_new
+    if new_record? && !self.number.present?
+      self.number = Order.last.id + 1
+    end
+    if new_record? && !self.created_at.present?
+      self.created_at = Time.now
+    end
+    if new_record?
+      self.status = Order::STATUS.first
     end
   end
 

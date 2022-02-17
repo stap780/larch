@@ -31,7 +31,7 @@ class OrdersController < ApplicationController
 
     respond_to do |format|
       if @order.save
-        format.html { redirect_to @order, notice: "Order was successfully created." }
+        format.html { redirect_to edit_order_url(@order), notice: "Заказ создан" }
         format.json { render :show, status: :created, location: @order }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -45,7 +45,7 @@ class OrdersController < ApplicationController
   def update
   respond_to do |format|
     if @order.update(order_params)
-      format.html { redirect_to edit_order_url(@order), notice: "Order was successfully updated." }
+      format.html { redirect_to edit_order_url(@order), notice: "Заказ обновлён" }
       format.json { render :show, status: :ok, location: @order }
     else
       format.html { render :edit, status: :unprocessable_entity }
@@ -58,7 +58,7 @@ class OrdersController < ApplicationController
   def destroy
   @order.destroy
   respond_to do |format|
-    format.html { redirect_to orders_url, notice: "Order was successfully destroyed." }
+    format.html { redirect_to orders_url, notice: "Заказ удалён" }
     format.json { head :no_content }
   end
   end
@@ -70,7 +70,7 @@ class OrdersController < ApplicationController
         order.destroy
     end
     respond_to do |format|
-      format.html { redirect_to orders_url, notice: "Order was successfully destroyed." }
+      format.html { redirect_to orders_url, notice: "Заказы удалёны" }
       format.json { render json: { :status => "ok", :message => "destroyed" } }
     end
   end
@@ -78,13 +78,13 @@ class OrdersController < ApplicationController
 
   def download
     Order.download
-    flash[:notice] = 'Orders was successfully downloaded'
+    flash[:notice] = 'Заказы загружены'
     redirect_to orders_path
   end
 
   def webhook
     Order.one_order(params)
-    flash[:notice] = 'Order was successfully downloaded'
+    flash[:notice] = 'Заказ загружен'
     redirect_to orders_path
   end
 

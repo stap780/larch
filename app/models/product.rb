@@ -1,7 +1,8 @@
 class Product < ApplicationRecord
   before_save :normalize_data_white_space
-  validates :sku, presence: true, uniqueness: true
-  validates :images, size: { less_than: 10.megabytes , message: 'is not given between size' }
+  validates :title, presence: true
+  # validates :sku, presence: true, uniqueness: true
+  validates :images, size: { less_than: 10.megabytes , message: 'размер файла должен быть меньше 10Мб' }
 
   has_many :kp_products, dependent: :destroy
   has_many :kps, :through => :kp_products

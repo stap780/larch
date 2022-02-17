@@ -64,6 +64,10 @@ ru:
         other: Пользователи
     errors:
       models:
+        order:
+          attributes:
+            client_id:
+              blank: "Выберите контакт"
         user:
           attributes:
             email:
