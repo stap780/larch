@@ -53,12 +53,12 @@
         </thead>
         <tbody>
           <% @kp.kp_products.each_with_index do |kp, i| %>
-          <tr>
+          <tr style="height:65px;">
             <td class="item-nu"><%= (i+1) %></td>
             <td class="item-image">
               <% image = kp.product.images.first %>
               <% link = image.present? ? "/tmp"+wicked_image_active_storage_workaround(image).to_s.split('/tmp').last : '' %>
-              <%= render "pdf_image", image_link: link, image_class: 'w45 image-product-contain' if image.present? %>
+              <%= render "pdf_image", image_link: link, image_class: 'w45' if image.present? %>
             </td>
             <td class="item-sku"><%= kp.product.sku.truncate(20) if kp.product.sku.present? %></td>
             <td class="item-title"><%= kp.product.title %></td>
@@ -74,20 +74,21 @@
             <td class="item-itogo-sum"><%= (@kp.kp_products.sum(:sum).truncate(2).to_s("F") + "00")[ /.*\..{2}/ ] %> руб</td>
           </tr>
       </table>
-      <div id="thanks">Организация работает без НДС на основании ст. 346.11 НК РФ.<br>Цены по данному коммерческому предложению действительны в течение 14 дней.</div>
-      <div id="notices">
-        <!-- <div>NOTICE:</div> -->
-        <div class="notice">
-          <div class="text">Менеджер</div>
-          <div class="podpis">
-            <% if @kp.order.user.present? && @kp.order.user.avatar.attached? %>
-            <% image = @kp.order.user.avatar %>
-            <% link = image.present? ? "/tmp"+wicked_image_active_storage_workaround(image).to_s.split('/tmp').last : '' %>
-            <%= render "pdf_image", image_link: link, image_class: '' if image.present? %>
-            <% end %>
+      <div class="wrapper-notice <% if @kp.kp_products.count > 11 %> alwaysbreak <%end%>" style="padding-top:20px;">
+        <div id="thanks">Организация работает без НДС на основании ст. 346.11 НК РФ.<br>Цены по данному коммерческому предложению действительны в течение 14 дней.</div>
+        <div id="notices">
+          <!-- <div>NOTICE:</div> -->
+          <div class="notice">
+            <div class="text">Менеджер</div>
+            <div class="podpis">
+              <% if @kp.order.user.present? && @kp.order.user.avatar.attached? %>
+              <% image = @kp.order.user.avatar %>
+              <% link = image.present? ? "/tmp"+wicked_image_active_storage_workaround(image).to_s.split('/tmp').last : '' %>
+              <%= render "pdf_image", image_link: link, image_class: '' if image.present? %>
+              <% end %>
+              </div>
+              <div class="fio"><% if @kp.order.user.present? %><%= @kp.order.user.name %><% else %>Тест<% end %></div>
             </div>
-            <div class="fio"><% if @kp.order.user.present? %><%= @kp.order.user.name %><% else %>Тест<% end %></div>
-          </div>
         </div>
         <div class="notice-date">Дата <%= @kp.created_at.strftime("%d / %m / %Y")%></div>
         <div class="notice-stamp">М П
@@ -98,9 +99,10 @@
           <% end %>
         </div>
       </div>
+
     </main>
+
+
   </body>
-
-
 
 </html>

@@ -102,16 +102,16 @@ class KpsController < ApplicationController
           render :pdf => "КП1 #{@kp.id}",
                  :template => "kps/print1.html.erb",
                  :show_as_html => params.key?('debug'),
-     						 :margin => {top: 0, left: 5, right: 5, bottom: 40 },
+     						 margin: {top: 0, left: 5, right: 5, bottom: 40 },
      						 header:  {
      						 		html: { template:'kps/print1_header.html.erb'},
-     						 		spacing: 2
-     						 		# locals: {},
+     						 		#spacing: 5,
                     # right: 'Стр [page] из [topage]'
+                    locals: {}
      						 		},
      						 footer: {
      							 html: { template:'kps/print1_footer.html.erb'},
-     							 	:spacing => 2,
+     							 	#spacing: 2,
      								locals: {}
      								#right: '_______________________(подпись)                  _______________________(подпись)            [page] из [topage]'
      								}

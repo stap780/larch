@@ -24,7 +24,9 @@ body {
   display: table;
   clear: both;
 }
-
+div.alwaysbreak { page-break-before: always;}
+div.nobreak:before { clear:both; }
+div.nobreak { page-break-inside: avoid; }
 a {
   color: #0087C3;
   text-decoration: none;
@@ -119,7 +121,6 @@ table {
 
 #notices{
   margin-top: 20px;
-
 }
 //
 #notices .notice {
@@ -360,6 +361,6 @@ background-color: #f6f6f6;
   padding-left: 0px;
 }
 .image-product-contain {
-    max-height: 40px;
+    max-height: 60px;
     object-fit: contain;
 }
