@@ -53,7 +53,7 @@
         </thead>
         <tbody>
           <% @kp.kp_products.each_with_index do |kp, i| %>
-          <tr style="height:65px;">
+          <tr style="max-height:65px;">
             <td class="item-nu"><%= (i+1) %></td>
             <td class="item-image">
               <% image = kp.product.images.first %>
