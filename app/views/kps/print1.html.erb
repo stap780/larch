@@ -44,11 +44,11 @@
           <tr class="kp_items_header">
             <th class="">№</th>
             <th class="">Фото</th>
-              <th class="" style="min-width: 80px;">Артикул</th>
-              <th class="">Наименование товара</th>
-              <th class="" style="min-width: 100px;">Цена</th>
-              <th class="" style="max-width: 40px;">Кол.</th>
-              <th class="" style="min-width: 110px;">Сумма</th>
+            <th class="" style="min-width: 80px;">Артикул</th>
+            <th class="">Наименование товара</th>
+            <th class="" style="min-width: 100px;">Цена</th>
+            <th class="" style="max-width: 40px;">Кол.</th>
+            <th class="" style="min-width: 110px;">Сумма</th>
           </tr>
         </thead>
         <tbody>
@@ -58,7 +58,7 @@
             <td class="item-image">
               <% image = kp.product.images.first %>
               <% link = image.present? ? "/tmp"+wicked_image_active_storage_workaround(image).to_s.split('/tmp').last : '' %>
-              <%= render "pdf_image", image_link: link, image_class: 'w45' if image.present? %>
+              <%= render "pdf_image", image_link: link, image_class: 'w45 image-product-contain' if image.present? %>
             </td>
             <td class="item-sku"><%= kp.product.sku.truncate(20) if kp.product.sku.present? %></td>
             <td class="item-title"><%= kp.product.title %></td>
@@ -89,9 +89,7 @@
             <div class="fio"><% if @kp.order.user.present? %><%= @kp.order.user.name %><% else %>Тест<% end %></div>
           </div>
         </div>
-        <div class="notice-date">
-          Дата <%= @kp.created_at.strftime("%d / %m / %Y")%>
-        </div>
+        <div class="notice-date">Дата <%= @kp.created_at.strftime("%d / %m / %Y")%></div>
         <div class="notice-stamp">М П
           <% if @kp.vid == 'Основное'%>
           <% image = @our_company.images.first %>
