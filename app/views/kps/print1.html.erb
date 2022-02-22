@@ -74,7 +74,7 @@
             <td class="item-itogo-sum"><%= (@kp.kp_products.sum(:sum).truncate(2).to_s("F") + "00")[ /.*\..{2}/ ] %> руб</td>
           </tr>
       </table>
-      <div class="wrapper-notice <% if @kp.kp_products.count > 11 %>alwaysbreak<%end%>" <% if @kp.kp_products.count >style="padding-top:20px;"<%end%> >
+      <div class="wrapper-notice <% if @kp.kp_products.count > 11 %>alwaysbreak<%end%>" <% if @kp.kp_products.count %>style="padding-top:20px;"<%end%> >
         <div id="thanks">Организация работает без НДС на основании ст. 346.11 НК РФ.<br>Цены по данному коммерческому предложению действительны в течение 14 дней.</div>
         <div id="notices">
           <!-- <div>NOTICE:</div> -->
