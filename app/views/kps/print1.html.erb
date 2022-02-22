@@ -53,12 +53,12 @@
         </thead>
         <tbody>
           <% @kp.kp_products.each_with_index do |kp, i| %>
-          <tr style="max-height:65px;">
+          <tr style="height:100%;max-height:65px;">
             <td class="item-nu"><%= (i+1) %></td>
             <td class="item-image">
               <% image = kp.product.images.first %>
               <% link = image.present? ? "/tmp"+wicked_image_active_storage_workaround(image).to_s.split('/tmp').last : '' %>
-              <%= render "pdf_image", image_link: link, image_class: 'w45' if image.present? %>
+              <%= render "pdf_image", image_link: link, image_class: 'w45 image-product-contain' if image.present? %>
             </td>
             <td class="item-sku"><%= kp.product.sku.truncate(20) if kp.product.sku.present? %></td>
             <td class="item-title"><%= kp.product.title %></td>
