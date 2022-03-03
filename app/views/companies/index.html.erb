@@ -1,4 +1,4 @@
-<div class="row justify-content-center align-items-center mb-2">
+<div class="row justify-content-center align-items-center mb-4">
   <div class="col-2 row">
     <div class="col-md-12 p-0">
       <div class="h3">Компании</div>
@@ -33,11 +33,11 @@
 </div>
 
 
-<div class="table-responsive">
+<div class="card card-body border-light shadow-sm table-wrapper table-responsive pt-0">
   <table class="table table-hover table-condensed">
   <thead>
-    <tr class="bg-success">
-      <th><%= check_box_tag 'selectAll', value: 'selectAll'%></th>
+    <tr class="text-secondary">
+      <th><%= check_box_tag 'selectAll', 'selectAll'%></th>
       <!-- <th>Our company</th> -->
       <th>Название</th>
       <th>Полное название</th>
@@ -49,9 +49,9 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody id="items_table" class="border-0">
     <% @companies.each do |company| %>
-    <tr id="items_table">
+    <tr>
       <td><%= check_box_tag "company_ids[]", company.id %></td>
         <!-- <td><%# company.our_company %></td> -->
         <td><%= link_to company.title , edit_company_path(company) %></td>

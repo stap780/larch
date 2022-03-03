@@ -1,4 +1,4 @@
-<div class="row justify-content-center align-items-center mb-2">
+<div class="row justify-content-center align-items-center mb-4">
   <div class="col-2 row">
     <div class="col-md-12 p-0">
       <div class="h3">Клиенты</div>
@@ -31,11 +31,11 @@
 </div>
 </div>
 
-<div class="table-responsive">
+<div class="card card-body border-light shadow-sm table-wrapper table-responsive pt-0">
   <table class="table table-hover table-condensed">
   <thead>
-    <tr class="bg-success">
-      <th><%= check_box_tag 'selectAll', value: 'selectAll'%></th>
+    <tr class="text-secondary">
+      <th><%= check_box_tag 'selectAll', 'selectAll'%></th>
       <th>ФИО</th>
       <th>Phone</th>
       <th>Email</th>
@@ -47,9 +47,9 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody id="items_table" class="border-0">
     <% @clients.each do |client| %>
-    <tr id="items_table">
+    <tr>
       <td><%= check_box_tag "client_ids[]", client.id %></td>
         <td><%= link_to client.name, edit_client_path(client) %><br /><%= client.middlename %><br /><%= client.surname %></td>
         <td><%= client.phone %></td>

@@ -1,4 +1,4 @@
-<div class="row justify-content-center align-items-center mb-2">
+<div class="row justify-content-center align-items-center mb-4">
 <div class="col-3 row">
   <div class="h3 col-md-12 p-0"><%= plural_table_name.titleize %><small>Всего - <%%= <%= singular_table_name.titleize %>.count %></small></div
     <div class="btn-group p-0" role="group" aria-label="Button group with nested dropdown">
@@ -24,11 +24,11 @@
   <%% end %>
 </div>
 
-<div class="table-responsive">
+<div class="card card-body border-light shadow-sm table-wrapper table-responsive pt-0">
   <table class="table table-hover table-condensed">
   <thead>
-    <tr class="bg-success">
-      <th><%%= check_box_tag 'selectAll', value: 'selectAll'%></th>
+    <tr class="text-secondary">
+      <th><%%= check_box_tag 'selectAll', 'selectAll'%></th>
 <% attributes.reject(&:password_digest?).each do |attribute| -%>
       <th><%= attribute.human_name %></th>
 <% end -%>
@@ -36,9 +36,9 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody id="items_table" class="border-0">
     <%% @<%= plural_table_name %>.each do |<%= singular_table_name %>| %>
-      <tr id="items_table">
+      <tr>
 <% attributes.reject(&:password_digest?).each do |attribute| -%>
         <td><%%= check_box_tag "<%= singular_table_name %>_ids[]", <%= singular_table_name %>.id %></td>
         <td><%%= <%= singular_table_name %>.<%= attribute.name %> %></td>

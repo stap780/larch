@@ -16,11 +16,11 @@
   <% end %>
 </div>
 
-<div class="table-responsive">
+<div class="card card-body border-light shadow-sm table-wrapper table-responsive pt-0">
   <table class="table table-hover table-condensed">
   <thead>
-    <tr class="bg-success">
-      <th><%= check_box_tag 'selectAll', value: 'selectAll'%></th>
+    <tr class="text-secondary">
+      <th><%= check_box_tag 'selectAll', 'selectAll'%></th>
       <th>Вид</th>
       <th>Status</th>
       <th>Title</th>
@@ -29,9 +29,9 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody id="items_table" class="border-0">
     <% @kps.each do |kp| %>
-      <tr id="items_table">
+      <tr>
         <td><%= check_box_tag "kp_ids[]", kp.id %></td>
         <td><%= kp.vid %></td>
         <td><%= kp.status %></td>
