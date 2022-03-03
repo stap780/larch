@@ -56,7 +56,7 @@
           <% @order.kps.order('created_at' => 'asc' ).each do |kp| %>
             <tr class="align-middle">
               <td><%= kp.vid %></td>
-              <td><%= kp.status %></td>
+              <td class="<%= kp_status_bg_color(kp.status)%>"><%= kp.status %></td>
               <td><%= kp.title %></td>
               <td><%= kp.created_at.strftime("%d.%m.%Y") %></td>
               <td><%= kp.kp_products.count %></td>
