@@ -39,8 +39,8 @@
   <thead>
     <tr class="bg-success">
       <th><%= check_box_tag 'selectAll', value: 'selectAll'%></th>
-      <th>Статус</th>
-      <th>Номер</th>
+      <th class="text-center">Статус</th>
+      <th class="text-center">Номер</th>
       <th>Контакт</th>
       <th>Дата</th>
       <th>Сумма</th>
@@ -55,8 +55,8 @@
     <% @orders.each do |order| %>
       <tr id="items_table">
         <td><%= check_box_tag "order_ids[]", order.id %></td>
-        <td><%= order.status %></td>
-        <td><%= link_to order.number, edit_order_path(order) %></td>
+        <td class="<%= order_status_bg_color(order.status)%>"><%= order.status %></td>
+        <td class="text-center"><%= link_to order.number, edit_order_path(order) %></td>
         <td><%= order.client.name if order.client %></td>
         <td><%= order.created_at.strftime("%d.%m.%Y") %></td>
         <td><%= order.kps.order('created_at' => 'asc' ).first.kp_products.sum(:sum) if order.kps.present? %></td>

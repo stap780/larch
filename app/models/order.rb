@@ -9,12 +9,13 @@ class Order < ApplicationRecord
   validates :number, presence: true, uniqueness: true
   validates :client_id, presence: true
   before_validation :set_our_companies
+  before_validation :check_manager_and_change_status
   after_initialize :set_default_new
 
 
   delegate :title, to: :company, prefix: true, allow_nil: true
 
-  STATUS = ["Новый", "В работе","Проверяем", "Отправлен", "Отменена"]
+  STATUS = ["Новый", "В работе", "Отменен"]
 
   def self.download
     puts "start download order"
@@ -99,6 +100,12 @@ class Order < ApplicationRecord
     end
     if new_record?
       self.status = Order::STATUS.first
+    end
+  end
+
+  def check_manager_and_change_status
+    if user_id_changed?
+      self.status = "В работе"
     end
   end
 
