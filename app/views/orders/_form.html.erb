@@ -3,42 +3,42 @@
 <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 <div class="row">
   <div class="col-12 h3"><%= page_title %></div>
-  <div class="col-5 row align-content-start">
-    <%= f.input :number, label: "Номер", as: :string, disabled: true, placeholder: "Номер заказа" , wrapper_html: { class: "col-3" } %>
-    <%= f.input :created_at, as: :date, html5: true, disabled: true, placeholder: "Дата", wrapper_html: { class: "col-5" } %>
-    <%= f.input :status, label: "Статус", collection: Order::STATUS, prompt: "Статус", input_html: { class: "form-select" } , wrapper_html: { class: "col-4" } %>
-    <% if current_user.admin? %>
-      <%= f.association :user, label: "Менеджер", input_html: { class: "form-select" }, wrapper_html: { class: "col-8 mt-3" } %>
-    <% else %>
-      <%= f.association :user, label: "Менеджер", disabled: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-8 mt-3" } %>
-    <% end %>
-      <%= f.association :client, prompt: "Выберите контакт", label: "Контакт", input_html: { class: "form-select" }, wrapper_html: { class: "col-6 mt-3" } %>
-<div class="form-group col-6 mt-3">
+  <div class="col-12 row align-content-start mb-5">
+    <%= f.input :number, label: "Номер", as: :string, disabled: true, placeholder: "Номер заказа" , wrapper_html: { class: "col-1" } %>
+    <%= f.input :created_at, label: "Создан", as: :date, html5: true, disabled: true, placeholder: "Дата", wrapper_html: { class: "col-2" } %>
+    <%= f.input :status, label: "Статус", collection: Order::STATUS, prompt: "Статус", input_html: { class: "form-select" } , wrapper_html: { class: "col-2" } %>
+      <%= f.association :client, prompt: "Выберите контакт", label: "Контакт", input_html: { class: "form-select" }, wrapper_html: { class: "col-2" } %>
+<div class="form-group col-4">
   <label class="">Данные контакта:</label><br>
   <% if @order.client %>
   <small class="form-text text-muted">
-  Телефон: <%= @order.client.phone %><br>
-  E-mail: <%= @order.client.email %><br>
-  Область: <%= @order.client.state %><br>
-  Адрес: <%= @order.client.address %>
+  Телефон: <%= @order.client.phone %> E-mail: <%= @order.client.email %><br>
+  Область: <%= @order.client.state %> Адрес: <%= @order.client.address %>
   </small>
   <% end %>
 </div>
+<% if current_user.admin? %>
+  <%= f.association :user, label: "Менеджер", input_html: { class: "form-select" }, wrapper_html: { class: "col-2" } %>
+<% else %>
+  <%= f.association :user, label: "Менеджер", disabled: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-2" } %>
+<% end %>
+
     <%# f.association :company, prompt: "Компания", input_html: { class: "form-select" }, include_blank: true, selected: lambda { |company|  @order.client.companies.first.id if !@order.company_id.present? && @order.client.companies.present? }, wrapper_html: { class: "col-6 mt-3" } %>
     <%# f.association :company, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-7 mt-3" } %>
     <%# f.input :company_title, as: :autocomplete, label: "Компания", url: autocomplete_company_title_orders_path, wrapper_html: { class: "col-6 mt-3" }, input_html: { 'data-id-element' => '#order_company_id' } %>
-    <%= f.input :company_id, as: :hidden %>
-    <%= f.association :companykp1, label: 'Компания КП1', collection: Company.our, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-4 mt-3" } %>
-    <%= f.association :companykp2, label: 'Компания КП2', collection: Company.our, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-4 mt-3" } %>
-    <%= f.association :companykp3, label: 'Компания КП3', collection: Company.our, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-4 mt-3" } %>
+    <%# f.input :company_id, as: :hidden %>
+    <%= f.association :companykp1, label: 'Компания КП1', collection: Company.our, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-2" } %>
+    <%= f.association :companykp2, label: 'Компания КП2', collection: Company.our, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-2" } %>
+    <%= f.association :companykp3, label: 'Компания КП3', collection: Company.our, prompt: false, include_blank: true, input_html: { class: "form-select" }, wrapper_html: { class: "col-2" } %>
   </div>
-  <div class="col-7 row align-content-start align-items-center">
+  <div class="col-12 row align-content-start align-items-center">
     <% if @order.new_record? %>
     <p>Это новый заказ. Сохраните заказ для создания КП</p>
     <% else %>
-    <div class="col p-0 h4">Коммерческие предложения</div>
-    <%= link_to 'Создать', new_order_kp_path(@order), class: 'btn btn-dark col-3' if !@order.new_record? %>
-    <div class="col-12 mt-3 p-0">
+    <div class="col-4 h4">Коммерческие предложения</div>
+    <%= link_to 'Создать', new_order_kp_path(@order), class: 'btn btn-dark col-2' if !@order.new_record? %>
+      <div class="card card-body border-light shadow-sm table-wrapper col-12 mt-3 ">
+
       <table class="table table-hover">
         <thead>
           <tr>
