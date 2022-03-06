@@ -30,10 +30,12 @@ function calculate(val) {
     $('#kp-total').html(tot.toFixed(2));
   }
 };
+//
 
 //автокомплит init после вставки строки
 function initLine() {
-  var idNode;
+  var id;
+  var dataId;
   //alert('hi');
   $("#kp_products")
     .on('cocoon:before-insert', function(e, insertedItem) {
@@ -48,6 +50,18 @@ function initLine() {
       $("input[id = '" + idNode.replace("product_sku_title", "price") + "']").val("0");
       calculate();
     });
+     // автокомплит для строк что создаются динамически
+    // .bind('railsAutocomplete.select', function(event, data) {
+    //   console.log(data);
+    //   dataId = data.item.id;
+    //   dataValue = data.item.value;
+    //   dataPrice = data.item.price;
+    //   //$("input[id='" + idNode + "']").val(dataValue);
+    //   $("input[id = '" + idNode.replace("product_sku_title", "product_id") + "']").val(dataId);
+    //   $("input[id = '" + idNode.replace("product_sku_title", "quantity") + "']").val("1");
+    //   $("input[id = '" + idNode.replace("product_sku_title", "price") + "']").val(dataPrice);
+    //   calculate();
+    // });
 }
 
 // убираем значение id продукта пока не выберем следующий продукт
@@ -57,15 +71,15 @@ function getId(val) {
   $("input[id = '" + idNode.replace("product_sku_title", "product_id") + "']").val('');
 }
 
-/* автокомплит */
 function productAutocomplete(val){
   var idNode = val;
   $("input[id = '" + idNode + "']").bind('railsAutocomplete.select', function(event, data) {
+    /* Do something here */
     // console.log($(this).attr('id'));
-    // console.log(event);
+    console.log(event);
     // console.log(data.item);
 
-    /* проставляем значения id продукта, кол-во продукта, цена продукта - если выберем продукт из списка продуктов  */
+    // проставляем значения id продукта, кол-во продукта, цена продукта - если выберем продукт из списка продуктов
     var dataId = data.item.id;
     var dataPrice = data.item.price;
     $("input[id = '" + idNode.replace("product_sku_title", "product_id") + "']").val(dataId);
@@ -89,6 +103,7 @@ $(document).ready(function() {
       //console.log($(this));
       // var row = removeRow;
       //console.log(row);
+
       calculate();
     });
 
@@ -112,5 +127,21 @@ $(document).ready(function() {
     }
     calculate();
   });
+
+  // автокомплит для строк которые уже есть в таблице
+  // $('input.autocomplete').bind('railsAutocomplete.select', function(event, data) {
+  //   /* Do something here */
+  //   // console.log($(this).attr('id'));
+  //   // console.log(event);
+  //   // console.log(data.item);
+  //   var idNode = $(this).attr('id');
+  //   // проставляем значения id продукта, кол-во продукта, цена продукта - если выберем продукт из списка продуктов
+  //   var dataId = data.item.id;
+  //   var dataPrice = data.item.price;
+  //   $("input[id = '" + idNode.replace("product_sku_title", "product_id") + "']").val(dataId);
+  //   $("input[id = '" + idNode.replace("product_sku_title", "quantity") + "']").val("1");
+  //   $("input[id = '" + idNode.replace("product_sku_title", "price") + "']").val(dataPrice);
+  //   calculate();
+  // });
 
 });

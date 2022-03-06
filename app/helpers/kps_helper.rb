@@ -1,7 +1,7 @@
 module KpsHelper
 
   def kp_status_bg_color(status)
-    puts status
+    # puts status
     background_class = 'bg-dark text-white text-center' if status.include?('Новый')
     background_class = 'bg-info text-dark text-center' if status.include?('В работе')
     background_class = 'bg-warning text-dark text-center' if status.include?('Ждёт печати')

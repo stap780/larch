@@ -52,7 +52,9 @@ class KpsController < ApplicationController
       if !v["product_id"].present?
         # puts 'not present'
         # puts v["product_sku_title"]
-        product = Product.find_or_create_by(title: v["product_sku_title"], quantity: v["quantity"], price: v["price"], sku: v["product_sku_title"].gsub(' ','_'))
+        # product = Product.find_or_create_by(title: v["product_sku_title"], quantity: v["quantity"], price: v["price"], sku: v["product_sku_title"].gsub(' ','_'))
+        sku = v["sku"].present? ? v["sku"] : ''
+        product = Product.find_or_create_by(title: v["product_sku_title"], quantity: v["quantity"], price: v["price"], sku: sku )
         # puts product.id.to_s
         v["product_id"] = product.id
       end

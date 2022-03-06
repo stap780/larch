@@ -36,7 +36,7 @@
 
   <tbody id="items_table" class="border-0">
     <% @kps.each do |kp| %>
-      <tr id="items_table">
+      <tr>
         <td><%= check_box_tag "kp_ids[]", kp.id %></td>
         <td><%= kp.order.number %></td>
         <td><%= kp.vid %></td>

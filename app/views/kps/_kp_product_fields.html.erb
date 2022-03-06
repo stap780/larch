@@ -1,7 +1,7 @@
 <tr class="nested-fields align-middle">
   <td class="w-50">
     <%# f.association :product, label: false, collection: Product.all.map { |product| ["("+product.sku+") "+product.title, product.id, {data: {sku: product.sku}}] } %>
-	<%= f.input :product_sku_title, as: :autocomplete, label: false, url: autocomplete_product_title_order_kps_path , input_html: {min: "0" , onkeyup: "getId(this.id)"}%>
+	<%= f.input :product_sku_title, as: :autocomplete, label: false, url: autocomplete_product_title_order_kps_path , input_html: {onkeyup: "getId(this.id)", onclick:"productAutocomplete(this.id)"}%>
   <%= f.input :product_id, as: :hidden %>
 </td>
   <td><%= f.input :quantity, as: :integer, label: false, input_html: {min: "0" , onchange: "calculate(this.value)"}%></td>
