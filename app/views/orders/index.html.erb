@@ -24,8 +24,10 @@
       <%= f.select :status_in, Order::STATUS, { :prompt => 'Статус'}, class: "form-select", style: "max-width: 180px;" %>
       <%= f.search_field :number_eq , placeholder: 'Номер', class: "form-control", style: "max-width: 180px;" %>
       <%= f.collection_select :user_id_eq, User.all, "id", "name", {:prompt => 'Пользователь'} , {:class => "form-select", :style => "max-width:200px;"} if current_user.admin? %>
-      <%= f.collection_select :client_id_eq, Client.all, "id", "full_name", {:prompt => 'Клиент'} , {:class => "form-select", :style => "max-width:200px;"} %>
-      <%= f.collection_select :company_id_eq, Company.all, "id", "title", {:prompt => 'Компания'} , {:class => "form-select", :style => "max-width:200px;"} %>
+      <%# f.collection_select :client_id_eq, Client.all, "id", "full_name", {:prompt => 'Клиент'} , {:class => "form-select", :style => "max-width:200px;"} %>
+      <%# f.text_field :client_name_cont, "data-autocomplete" => autocomplete_client_name_orders_path, class: "form-control input-sm" , placeholder: 'Контакт'%>
+      <%= f.search_field :client_name_or_client_surname_cont, class: "form-control input-sm" , placeholder: 'Контакт'%>
+      <%# f.collection_select :company_id_eq, Company.all, "id", "title", {:prompt => 'Компания'} , {:class => "form-select", :style => "max-width:200px;"} %>
       <%= button_tag(type: 'submit', :class => "btn btn-info") do %><span class="oi oi-magnifying-glass"></span><% end %>
       <%= link_to '<span class="oi oi-reload"></span>'.html_safe, orders_path, class: 'btn btn-outline-dark ' %>
       <%= link_to '<span class="oi oi-trash"></span>'.html_safe, delete_selected_orders_path, class: 'btn btn-secondary', id: 'deleteAll', remote: true %>
@@ -56,7 +58,9 @@
           <td><%= check_box_tag "order_ids[]", order.id %></td>
           <td class="<%= order_status_bg_color(order.status)%>"><%= order.status %></td>
           <td class="text-center"><%= link_to order.number, edit_order_path(order) %></td>
-          <td><%= order.client.name if order.client %></td>
+          <td><%= order.client.name if order.client %>
+            <p><%= order.client.surname if order.client %></p>
+          </td>
           <td><%= order.created_at.strftime("%d.%m.%Y") %></td>
           <td><%= order.kps.order('created_at' => 'asc' ).first.kp_products.sum(:sum) if order.kps.present? %></td>
           <td><%= order.user.name if order.user %></td>

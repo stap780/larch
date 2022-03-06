@@ -19,6 +19,7 @@ Rails.application.routes.draw do
       get :download
       post :webhook
       get :autocomplete_company_title
+      get :autocomplete_client_name
     end
   end
   resources :products do

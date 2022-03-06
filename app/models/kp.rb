@@ -9,6 +9,7 @@ class Kp < ApplicationRecord
   after_initialize :set_status_vid
   after_initialize :set_title
   after_commit :notify_admin_to_add_stamp, if: :persisted?
+  after_commit :notify_manager_kp_ready, if: :persisted?
 
   VID = ["Начальное","Основное"]
   STATUS = ["Новый", "В работе", "Ждёт печати","Согласовано бухгалтером", "Договор"]
@@ -71,9 +72,11 @@ class Kp < ApplicationRecord
   end
 
   def notify_admin_to_add_stamp
-    if self.status == 'Ждёт печати' && self.vid != 'Основное'
-      KpMailer.add_stamp.deliver_now
-    end
+      KpMailer.add_stamp.deliver_now if self.status == 'Ждёт печати' && self.vid != 'Основное'
+  end
+
+  def notify_manager_kp_ready
+      KpMailer.kp_ready(self).deliver_now if self.status == 'Ждёт печати' && self.vid == 'Основное'
   end
 
 

@@ -2,11 +2,11 @@ class OrdersController < ApplicationController
   before_action :authenticate_user!, except: [:webhook]
   before_action :set_order, only: [:show, :edit, :update, :destroy]
   autocomplete :company, :title, :extra_data => [:id, :fulltitle, :inn], :display_value => :title, 'data-noMatchesLabel' => 'нет компании'
+  autocomplete :client, :name, full: true,  :extra_data => [:id, :surname], :case_sensitive => true
 
 
   # GET /orders
   def index
-    #@orders = Order.all
     @search = current_user.admin? ? Order.ransack(params[:q]) : Order.where(user_id: current_user.id).ransack(params[:q])
     @search.sorts = 'id desc' if @search.sorts.empty?
     @orders = @search.result.paginate(page: params[:page], per_page: 100)
@@ -14,6 +14,7 @@ class OrdersController < ApplicationController
 
   # GET /orders/1
   def show
+    redirect_to edit_order_url(@order)
   end
 
   # GET /orders/new
@@ -74,7 +75,6 @@ class OrdersController < ApplicationController
       format.json { render json: { :status => "ok", :message => "destroyed" } }
     end
   end
-
 
   def download
     Order.download

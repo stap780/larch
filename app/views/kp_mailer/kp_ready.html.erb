@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>Добрый день, <%= @user.name %>!</p>
+    <p>Согласовано <%= @kp.title %>. <%= link_to "Посмотреть", @app_url+"/orders/"+@kp.order_id.to_s, target: "_blank" %></p>
+    <p>___</p>
+    <p>С уважением, служба поддержки </p>
+    <p><a href="#"><strong>.....</strong></a></p>
+  </body>
+</html>

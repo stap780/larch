@@ -8,10 +8,11 @@ class Order < ApplicationRecord
   has_many :kps, dependent: :destroy
   validates :number, presence: true, uniqueness: true
   validates :client_id, presence: true
+  after_initialize :set_default_new
   before_validation :set_our_companies
   before_validation :check_manager_and_change_status
-  after_initialize :set_default_new
-
+  # after_save :check_manager_and_send_notification
+  after_commit :check_manager_and_send_notification, if: :persisted?
 
   delegate :title, to: :company, prefix: true, allow_nil: true
 
@@ -104,9 +105,11 @@ class Order < ApplicationRecord
   end
 
   def check_manager_and_change_status
-    if user_id_changed?
-      self.status = "В работе"
-    end
+      self.status = "В работе" if user_id_changed?
+  end
+
+  def check_manager_and_send_notification
+      OrderMailer.order_ready(self).deliver_now if saved_change_to_user_id?
   end
 
 end

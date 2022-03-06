@@ -1,13 +1,13 @@
 <%= simple_form_for (@order) do |f| %>
 <%= f.error_notification %>
 <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
-<div class="row">
+<div class="row mx-auto">
   <div class="col-12 h3"><%= page_title %></div>
   <div class="col-12 row align-content-start mb-5">
     <%= f.input :number, label: "Номер", as: :string, disabled: true, placeholder: "Номер заказа" , wrapper_html: { class: "col-1" } %>
     <%= f.input :created_at, label: "Создан", as: :date, html5: true, disabled: true, placeholder: "Дата", wrapper_html: { class: "col-2" } %>
     <%= f.input :status, label: "Статус", collection: Order::STATUS, prompt: "Статус", input_html: { class: "form-select" } , wrapper_html: { class: "col-2" } %>
-      <%= f.association :client, prompt: "Выберите контакт", label: "Контакт", input_html: { class: "form-select" }, wrapper_html: { class: "col-2" } %>
+    <%= f.association :client, prompt: "Выберите контакт", label: "Контакт", input_html: { class: "form-select" }, wrapper_html: { class: "col-3" } %>
 <div class="form-group col-4">
   <label class="">Данные контакта:</label><br>
   <% if @order.client %>
