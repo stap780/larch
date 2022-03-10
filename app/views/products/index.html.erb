@@ -19,7 +19,7 @@
 
   <%= search_form_for @search, {class: 'form-inline col-12 pl-0 pr-0'} do |f| %>
     <div class="input-group input-group-sm">
-      <%= f.search_field :sku_or_title_cont , placeholder: 'Sku или Title', class: "form-control", style: "max-width: 280px;" %>
+      <%= f.search_field :sku_or_title_cont , placeholder: 'Sku или Название', class: "form-control", style: "max-width: 280px;" %>
       <%= button_tag(type: 'submit', :class => "btn btn-info") do %>
         <span class="oi oi-magnifying-glass"></span>
       <% end %>
@@ -49,9 +49,9 @@
     <% @products.each do |product| %>
     <tr>
       <td><%= check_box_tag "product_ids[]", product.id %></td>
-        <td><%= product.sku.truncate(20) if product.sku.present? %></td>
-        <td><%= link_to product.title, edit_product_path(product)%></td>
-        <td><%= product.desc %></td>
+        <td style="width:170px;"><%= product.sku.truncate(20) if product.sku.present? %></td>
+        <td style="width:250px;"><%= link_to product.title, edit_product_path(product)%></td>
+        <td style="width:250px;"><%= product.desc %></td>
         <td><%= product.quantity %></td>
         <td><%= product.costprice %></td>
         <td><%= product.price %></td>

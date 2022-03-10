@@ -2,7 +2,7 @@ class KpsController < ApplicationController
   before_action :authenticate_user!
   before_action :get_order
   before_action :set_kp, only: %i[show edit update destroy]
-  autocomplete :product, :title, :extra_data => [:id, :sku, :price], :display_value => :sku_title, 'data-noMatchesLabel' => 'нет товара'
+  autocomplete :product, :title, :extra_data => [:id, :title, :sku, :price, :desc], :display_value => :autocomplete_title, 'data-noMatchesLabel' => 'нет товара'
 
   # GET /kps
   def index
@@ -36,7 +36,7 @@ class KpsController < ApplicationController
 
     respond_to do |format|
       if @kp.save
-        format.html { redirect_to edit_order_path(@order), notice: 'Kp was successfully created.' }
+        format.html { redirect_to edit_order_path(@order), notice: 'КП создано' }
         format.json { render :show, status: :created, location: @kp }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -62,7 +62,7 @@ class KpsController < ApplicationController
 
     respond_to do |format|
       if @kp.update(kp_params)
-        format.html { redirect_to edit_order_path(@order), notice: 'Kp was successfully updated.' }
+        format.html { redirect_to edit_order_path(@order), notice: 'Обновили КП' }
         format.json { render :show, status: :ok, location: @kp }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -75,7 +75,7 @@ class KpsController < ApplicationController
   def destroy
     @kp.destroy
     respond_to do |format|
-      format.html { redirect_to edit_order_path(@order), notice: 'Kp was successfully destroyed.' }
+      format.html { redirect_to edit_order_path(@order), notice: 'КП удалено' }
       format.json { head :no_content }
     end
   end
@@ -87,7 +87,7 @@ class KpsController < ApplicationController
       kp.destroy
     end
     respond_to do |format|
-      format.html { redirect_to order_kps_path(@order), notice: 'Kp was successfully destroyed.' }
+      format.html { redirect_to order_kps_path(@order), notice: 'КП удалено' }
       format.json { render json: { status: 'ok', message: 'destroyed' } }
     end
   end
@@ -286,6 +286,6 @@ class KpsController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def kp_params
-    params.require(:kp).permit(:vid, :status, :title, :order_id, :extra, :comment, kp_products_attributes:[:id,:quantity,:price,:sum,:product_id,:_destroy])
+    params.require(:kp).permit(:vid, :status, :title, :order_id, :extra, :comment, kp_products_attributes:[:id,:quantity,:price,:sum,:product_id, :desc,:_destroy])
   end
 end

@@ -64,6 +64,10 @@ ru:
         other: Пользователи
     errors:
       models:
+        kp_product:
+          attributes:
+            quantity:
+              blank: "пусто"
         order:
           attributes:
             client_id:

@@ -21,38 +21,11 @@
 //= require_tree .
 
 
-
 $(document).ready(function() {
 
   $(".alert").delay(4000).slideUp(200, function() {
     $(this).alert('close');
   });
-
-
-  // function check_order() {
-  //   var order_id = $(".payment_status").data('order-id');
-  //
-  //   $.ajax({
-  //     url: "/orders/status/" + order_id,
-  //     dataType: "json",
-  //     success: function(data) {
-  //       console.log(data)
-  //       if (data.status == "PAID") {
-  //         $(".payment_status").html('PAID');
-  //         window.location = data.redirect_url;
-  //       } else {
-  //         $(".payment_status").append(' . ');
-  //       }
-  //     },
-  //     error: function(xhr, textStatus, errorThrown) {}
-  //   });
-  //
-  //   setTimeout(check_order, 3000); // 0.5 сек
-  // }
-  //
-  // if ($(".payment_status").length > 0) {
-  //   check_order();
-  // }
 
   // SELECT ALL //
   $('#selectAll').click(function() {
@@ -111,5 +84,6 @@ $(document).ready(function() {
       $(this).closest('.image-item').fadeOut();
     }
   });
+
 
 });

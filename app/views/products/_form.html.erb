@@ -6,14 +6,14 @@
     <div class="col-12 h3"><%= page_title %></div>
     <div class="col-6">
     <%= f.input :sku %>
-    <%= f.input :title %>
-    <%= f.input :desc %>
-    <%= f.input :quantity %>
-    <%= f.input :costprice %>
-    <%= f.input :price %>
+    <%= f.input :title, label: "Название" %>
+    <%= f.input :desc, label: "Описание", as: :text  %>
+    <%= f.input :quantity, label: "К-во"  %>
+    <%= f.input :costprice, label: "Цена закупки"  %>
+    <%= f.input :price, label: "Цена"  %>
 </div>
 <div class="col-6 row align-content-start">
-  <div class="col-12 mb-3 h3">Images</div>
+  <div class="col-12 mb-3 h3">Изображения</div>
   <%= f.input :images, as: :file, label: false, :input_html => { :multiple => true } %>
   <%= render '/layouts/image_form', :f => @product %>
   </div>

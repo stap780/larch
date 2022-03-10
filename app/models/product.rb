@@ -9,8 +9,11 @@ class Product < ApplicationRecord
   has_many_attached :images, dependent: :destroy
   accepts_nested_attributes_for :images_attachments, allow_destroy: true
 
-  def sku_title
-    self.sku.present? ? "#{self.title} (#{self.sku})" : "#{self.title}"
+
+  def autocomplete_title
+    # такая запись ниже, так как этот результат подсовывается в json автокомплита и только так там срабатывают html теги
+    autocomplete_title = self.sku.present? ? self.title+"<br><small style='color:grey;'>Артикул: "+self.sku : self.title+"<br><small style='color:grey;'>Артикул:  Не указан"
+    autocomplete_title.html_safe
   end
 
 
@@ -24,7 +27,7 @@ class Product < ApplicationRecord
           save_data = {
             insvarid: var["id"],
             title: data["title"],
-            desc: data["desc"],
+            desc: data["short_description"],
             insid: data["id"],
             sku: var["sku"],
             quantity: var["quantity"],

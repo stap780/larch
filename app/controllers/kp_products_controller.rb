@@ -4,7 +4,6 @@ class KpProductsController < ApplicationController
 
   # GET /kp_products
   def index
-    #@kp_products = KpProduct.all
     @search = KpProduct.ransack(params[:q])
     @search.sorts = 'id asc' if @search.sorts.empty?
     @kp_products = @search.result.paginate(page: params[:page], per_page: 30)
@@ -82,6 +81,6 @@ class KpProductsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def kp_product_params
-      params.require(:kp_product).permit(:quantity, :price, :sum, :kp_id, :product_id)
+      params.require(:kp_product).permit(:desc, :quantity, :price, :sum, :kp_id, :product_id)
     end
 end

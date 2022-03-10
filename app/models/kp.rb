@@ -25,7 +25,7 @@ class Kp < ApplicationRecord
       title = row["title"]
       pr_quantity = row["quantity"]
       price = row["price"]
-      product = Product.find_by_sku(sku)
+      product = Product.find_by_title(title)
       product_id = product.present? ? product.id : Product.create(sku: sku, title: title, quantity: 1, price: price).id
 
       kp_product_data = { product_id: product_id, quantity: pr_quantity, price: price }

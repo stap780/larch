@@ -23,11 +23,12 @@
   <thead>
     <tr class="text-secondary">
       <th><%= check_box_tag 'selectAll', 'selectAll'%></th>
-      <th><%= sort_link(@search, :order_number, 'Order', default_order: :asc) %></th>
       <th>Вид</th>
       <th>Статус</th>
-      <th>Заголовок</th>
-      <th>Кол-во т.</th>
+      <th><%= sort_link(@search, :order_number, 'Заказ', default_order: :asc) %></th>
+      <th>Заголовок КП</th>
+      <th>Ответственный</th>
+      <!-- <th>К-во тв.</th> -->
       <th>Сумма</th>
       <th>Комментарии</th>
       <th colspan="1"></th>
@@ -38,11 +39,12 @@
     <% @kps.each do |kp| %>
       <tr>
         <td><%= check_box_tag "kp_ids[]", kp.id %></td>
-        <td><%= kp.order.number %></td>
         <td><%= kp.vid %></td>
         <td><%= kp.status %></td>
+        <td><%= kp.order.number %></td>
         <td><%= kp.title %></td>
-        <td><%= kp.kp_products.count %></td>
+        <td><%= kp.order.user.name if kp.order.user.present? %></td>
+        <!-- <td><%# kp.kp_products.count %></td> -->
         <td><%= kp.kp_products.sum(:sum) %></td>
         <td><%= kp.comment %></td>
         <td><%= link_to '<span class="oi oi-pencil"></span>'.html_safe, edit_order_kp_path(kp.order, kp) %></td>
