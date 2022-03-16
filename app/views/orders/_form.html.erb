@@ -7,7 +7,7 @@
     <%= f.input :number, label: "Номер", as: :string, disabled: true, placeholder: "Номер заказа" , wrapper_html: { class: "col-1" } %>
     <%= f.input :created_at, label: "Создан", as: :date, html5: true, disabled: true, placeholder: "Дата", wrapper_html: { class: "col-2" } %>
     <%= f.input :status, label: "Статус", collection: Order::STATUS, prompt: "Статус", input_html: { class: "form-select" } , wrapper_html: { class: "col-2" } %>
-    <%= f.association :client, prompt: "Выберите контакт", label: "Контакт", input_html: { class: "form-select" }, wrapper_html: { class: "col-3" } %>
+    <%= f.association :client, prompt: "Выберите контакт", label: "Контакт", label_method: :order_contact_name, value_method: :id, input_html: { class: "form-select" }, wrapper_html: { class: "col-3" } %>
 <div class="form-group col-4">
   <label class="">Данные контакта:</label><br>
   <% if @order.client %>

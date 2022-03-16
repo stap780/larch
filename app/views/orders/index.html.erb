@@ -57,7 +57,9 @@
         <tr>
           <td><%= check_box_tag "order_ids[]", order.id %></td>
           <td class="<%= order_status_bg_color(order.status)%>"><%= order.status %></td>
-          <td class="text-center"><%= link_to order.number, edit_order_path(order) %></td>
+          <td class="text-center"><%= link_to order.number, edit_order_path(order) %>
+            <%= link_to 'Догрузить', download_orders_path(insid: order.insid), class: 'dropdown-item ' if current_user.admin? && order.insid.present? %>
+          </td>
           <td><%= order.client.name if order.client %>
             <p><%= order.client.surname if order.client %></p>
           </td>

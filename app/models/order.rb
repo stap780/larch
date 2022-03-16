@@ -18,7 +18,7 @@ class Order < ApplicationRecord
 
   STATUS = ["Новый", "В работе", "Отменен"]
 
-  def self.download
+  def self.download_last_five
     puts "start download order"
 
     url_order = Insales::Api::Base_url+"orders.json?page=1&per_page=5"
@@ -45,18 +45,46 @@ class Order < ApplicationRecord
     puts "end download product"
   end
 
+  def self.download_one_order(insid)
+    puts "start download order"
+
+    url_order = Insales::Api::Base_url+"orders/"+insid.to_s+".json"
+
+    RestClient.get( url_order, :accept => :json, :content_type => "application/json") do |response, request, result, &block|
+      case response.code
+      when 200
+        data = JSON.parse(response)
+          Order.one_order(data)
+      when 422
+        puts "error 422 - не удалили товар"
+      when 404
+        puts 'error 404'
+      when 503
+        sleep 1
+        puts 'sleep 1 error 503'
+      else
+        response.return!(&block)
+      end
+    end
+
+    puts "end download product"
+  end
+
   def self.one_order(data)
     number = data["number"]
+    insid = data["id"]
     order = Order.find_by_number(number)
     if !order.present?
       client = Client.api_get_create_client(data["client"])
-      order = Order.create(number: number, client_id: client.id, status: Order::STATUS.first)
+      order = Order.create(number: number, insid: insid, client_id: client.id, status: Order::STATUS.first)
       kp = order.kps.create
       Order.create_kp_products(kp.id, data["order_lines"])
+      puts "===> order not present and create <==="
     else
       # kp = order.kps.order(created_at: :asc).first
-      # Order.create_kp_products(kp.id, data["order_lines"])
-      puts "===> order present <==="
+      kp = order.kps.create
+      Order.create_kp_products(kp.id, data["order_lines"])
+      puts "===> order present and update kp products <==="
     end
   end
 

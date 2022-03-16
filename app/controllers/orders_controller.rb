@@ -77,9 +77,15 @@ class OrdersController < ApplicationController
   end
 
   def download
-    Order.download
-    flash[:notice] = 'Заказы загружены'
-    redirect_to orders_path
+    if !params[:insid].present?
+      Order.download_last_five
+      flash[:notice] = 'Заказы загружены'
+      redirect_to orders_path
+    else
+      Order.download_one_order(params[:insid])
+      flash[:notice] = 'Заказ загружен'
+      redirect_to orders_path
+    end
   end
 
   def webhook
@@ -97,6 +103,6 @@ class OrdersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def order_params
-      params.require(:order).permit(:status, :number, :client_id, :company_id, :companykp1_id, :companykp2_id, :companykp3_id, :user_id)
+      params.require(:order).permit(:status, :number, :insid, :client_id, :company_id, :companykp1_id, :companykp2_id, :companykp3_id, :user_id)
     end
 end

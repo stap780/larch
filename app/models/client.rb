@@ -9,6 +9,10 @@ class Client < ApplicationRecord
     "#{self.name}" "#{self.surname}"
   end
 
+  def order_contact_name
+    self.surname.present? ? self.surname : self.name
+  end
+
   def self.api_get_create_client(client_data)
     state = client_data["fields_values"].select{|a| a if a["name"] == "ОБЛАСТЬ / КРАЙ / РЕСПУБЛИКА"}
     address = client_data["fields_values"].select{|a| a if a["name"] == "Адрес для доставки"}

@@ -24,10 +24,11 @@ class Product < ApplicationRecord
       when 200
         data = JSON.parse(response)
         data["variants"].each do |var|
+          desc = data["short_description"].present? ? Product.strip_html(data["short_description"]) : ''
           save_data = {
             insvarid: var["id"],
             title: data["title"],
-            desc: data["short_description"],
+            desc: desc,
             insid: data["id"],
             sku: var["sku"],
             quantity: var["quantity"],
@@ -66,6 +67,12 @@ class Product < ApplicationRecord
     response = Net::HTTP.get_response(URI.parse(ascii_url))
     StringIO.new(response.body)
   end
+
+  def self.strip_html(content_data)
+    content = Nokogiri::HTML(content_data)
+    content.text.squish if content.text.respond_to?("squish")
+  end
+
 
   private
 
