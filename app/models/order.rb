@@ -73,7 +73,7 @@ class Order < ApplicationRecord
   def self.one_order(data)
     number = data["number"]
     insid = data["id"]
-    order = Order.find_by_number(number)
+    order = Order.find_by_insid(insid)
     if !order.present?
       client = Client.api_get_create_client(data["client"])
       order = Order.create(number: number, insid: insid, client_id: client.id, status: Order::STATUS.first)
@@ -83,6 +83,7 @@ class Order < ApplicationRecord
     else
       # kp = order.kps.order(created_at: :asc).first
       client = Client.api_get_create_client(data["client"])
+      order.update_attributes(client_id: client.id)
       kp = order.kps.create
       Order.create_kp_products(kp.id, data["order_lines"])
       puts "===> order present and crete new kp products <==="
