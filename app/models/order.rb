@@ -82,9 +82,10 @@ class Order < ApplicationRecord
       puts "===> order not present and create <==="
     else
       # kp = order.kps.order(created_at: :asc).first
+      client = Client.api_get_create_client(data["client"])
       kp = order.kps.create
       Order.create_kp_products(kp.id, data["order_lines"])
-      puts "===> order present and update kp products <==="
+      puts "===> order present and crete new kp products <==="
     end
   end
 
