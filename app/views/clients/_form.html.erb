@@ -4,6 +4,7 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="row">
+    <div class="col-12 h3" data-client-insid="<%= @client.insid if @client.insid.present? %>"><%= page_title %></div>
     <div class="col row align-items-center justify-content-start">
     <%= f.input :name, label: "Имя", wrapper_html: { class: "col-4 mt-2" } %>
     <%= f.input :middlename, label: "Отчество", wrapper_html: { class: "col-4 mt-2" } %>

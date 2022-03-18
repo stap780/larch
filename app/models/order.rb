@@ -42,7 +42,7 @@ class Order < ApplicationRecord
       end
     end
 
-    puts "end download product"
+    puts "end download order"
   end
 
   def self.download_one_order(insid)

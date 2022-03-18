@@ -17,6 +17,7 @@ class Client < ApplicationRecord
     state = client_data["fields_values"].select{|a| a if a["name"] == "ОБЛАСТЬ / КРАЙ / РЕСПУБЛИКА"}
     address = client_data["fields_values"].select{|a| a if a["name"] == "Адрес для доставки"}
     data = {
+      insid: client_data["id"],
       name: client_data["name"],
       middlename:  client_data["middlename"],
       surname:  client_data["surname"],
@@ -28,7 +29,7 @@ class Client < ApplicationRecord
       address: address.present? ? address[0]["value"] : ""
     }
 
-    client = Client.find_by_email(data[:email])
+    client = Client.find_by_insid(data[:insid])
     if client.present?
       client.update_attributes(data)
       get_create_client = client
