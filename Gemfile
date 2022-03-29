@@ -36,6 +36,7 @@ gem 'ru_propisju'
 gem 'rails-jquery-autocomplete'
 gem 'daemons'
 gem 'delayed_job_active_record'
+gem 'cancancan'
 
 
 gem 'bcrypt_pbkdf', '< 2.0', :require => false

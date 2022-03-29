@@ -7,6 +7,7 @@
   </div>
   <div class="col-10 pl-0 pr-0 row">
     <div class="col-12 mb-3">
+      <% if can? :download, Order %>
       <div class="btn-group p-0" role="group" aria-label="Button group with nested dropdown">
         <div class="btn-group" role="group">
           <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Действия</button>
@@ -17,6 +18,7 @@
           </div>
         </div>
       </div>
+      <% end %>
     </div>
 
   <%= search_form_for @search, {class: 'form-inline col-12 pl-0 pr-0'} do |f| %>

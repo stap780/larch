@@ -5,8 +5,29 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   before_action :allow_cross_domain_ajax
   helper_method :current_admin
-  helper_method :authenticate_admin!
+  # helper_method :authenticate_admin!
+  check_authorization unless: :devise_controller?
 
+
+  rescue_from CanCan::AccessDenied do |exception|
+    if current_user.nil?
+      session[:next] = request.fullpath
+      redirect_to login_url, alert: 'You have to log in to continue.'
+    else
+      respond_to do |format|
+        format.json { render nothing: true, status: :not_found }
+        format.html { redirect_to main_app.root_url, alert: exception.message }
+        format.js   { render nothing: true, status: :not_found }
+      end
+    end
+  end
+
+  # rescue_from CanCan::AccessDenied do |exception|
+  #   respond_to do |format|
+  #     format.json { head :forbidden }
+  #     format.html { redirect_to orders_path, alert: exception.message }
+  #   end
+  # end
 
   def allow_cross_domain_ajax
       headers['Access-Control-Allow-Origin'] = '*'

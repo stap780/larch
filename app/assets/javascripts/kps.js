@@ -53,9 +53,9 @@ function initLine() {
 
 // убираем значение id продукта пока не выберем следующий продукт
 function getId(val) {
-  // var idNode = val;
-  // // console.log("function getId idNode - "+idNode);
-  // $("input[id = '" + idNode.replace("product_title", "product_id") + "']").val('');
+  var idNode = val;
+  // console.log("function getId idNode - "+idNode);
+  $("input[id = '" + idNode.replace("product_title", "product_id") + "']").val('');
 }
 
 /* автокомплит */

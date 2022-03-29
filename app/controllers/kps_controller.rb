@@ -1,5 +1,6 @@
 class KpsController < ApplicationController
   before_action :authenticate_user!
+  authorize_resource
   before_action :get_order
   before_action :set_kp, only: %i[show edit update destroy]
   autocomplete :product, :title, :extra_data => [:id, :title, :sku, :price, :desc], :display_value => :autocomplete_title, 'data-noMatchesLabel' => 'нет товара'
@@ -54,7 +55,7 @@ class KpsController < ApplicationController
         # puts v["product_sku_title"]
         # product = Product.find_or_create_by(title: v["product_sku_title"], quantity: v["quantity"], price: v["price"], sku: v["product_sku_title"].gsub(' ','_'))
         sku = v["sku"].present? ? v["sku"] : ''
-        product = Product.find_or_create_by(title: v["product_sku_title"], quantity: v["quantity"], price: v["price"], sku: sku )
+        product = Product.find_or_create_by(title: v["product_title"], quantity: v["quantity"], price: v["price"], sku: sku )
         # puts product.id.to_s
         v["product_id"] = product.id
       end

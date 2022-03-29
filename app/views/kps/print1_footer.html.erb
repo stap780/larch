@@ -39,6 +39,7 @@
             <tr>
               <th><%= render "pdf_image", image_link: '/kp_email.png', image_class: ''  %></th>
               <th>info@adventer.su</th>
+              <th><% if @kp.order.user.present? && @kp.order.user.email.present? %><%= @kp.order.user.email %><% else %>info@adventer.su<% end %></th>
             </tr>
           </tr>
         </table>

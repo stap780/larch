@@ -36,7 +36,9 @@
     <p>Это новый заказ. Сохраните заказ для создания КП</p>
     <% else %>
     <div class="col-4 h4">Коммерческие предложения</div>
+    <% if can? :create, Kp%>
     <%= link_to 'Создать', new_order_kp_path(@order), class: 'btn btn-dark col-2' if !@order.new_record? %>
+    <% end %>
       <div class="card card-body border-light shadow-sm table-wrapper col-12 mt-3 ">
 
       <table class="table table-hover">
@@ -49,7 +51,14 @@
             <th>Кол-во товаров</th>
             <th>Сумма</th>
             <th>Комментарий</th>
-          <th colspan="<% if current_user.admin? %>4<%else%>3<%end%>"></th>
+            <% colspan_integer = [1]%>
+            <% if current_user.admin? %>
+              <% colspan_integer.push(3)%>
+            <%else%>
+                <% colspan_integer.push(1) if can? :copy, Kp %>
+                <% colspan_integer.push(1) if can? :update, Kp %>
+            <%end%>
+          <th <%= colspan_integer %> colspan="<%= colspan_integer.sum %>"></th>
           </tr>
         </thead>
         <tbody>
@@ -63,7 +72,9 @@
               <td><%= kp.kp_products.sum(:sum) %></td>
               <td><%= kp.comment %></td>
               <td><%= link_to '<span class="oi oi-pencil"></span>'.html_safe, edit_order_kp_path(@order, kp) %></td>
+              <% if can? :copy, Kp %>
               <td><%= link_to '<span class="oi oi-file"></span>'.html_safe, copy_order_kps_path(@order, kp) %></td>
+              <% end %>
               <td class="nav-item dropdown">
                 <a class="dropdown-toggle" href="#" id="print_navbardrop" data-bs-toggle="dropdown"><i class="oi oi-print"></i></a>
                 <div class="dropdown-menu">

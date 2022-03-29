@@ -12,6 +12,7 @@ class Order < ApplicationRecord
   before_validation :set_our_companies
   before_validation :check_manager_and_change_status
   # after_save :check_manager_and_send_notification
+  after_commit :send_mail_to_operator , on: :create
   after_commit :check_manager_and_send_notification, if: :persisted?
 
   delegate :title, to: :company, prefix: true, allow_nil: true
@@ -140,6 +141,10 @@ class Order < ApplicationRecord
 
   def check_manager_and_send_notification
       OrderMailer.order_ready(self).deliver_now if saved_change_to_user_id?
+  end
+
+  def send_mail_to_operator
+    OrderMailer.order_new(self).deliver_now
   end
 
 end

@@ -41,7 +41,7 @@
         <td><%= check_box_tag "kp_ids[]", kp.id %></td>
         <td><%= kp.vid %></td>
         <td><%= kp.status %></td>
-        <td><%= kp.order.number %></td>
+        <td><%= link_to kp.order.number, kp.order, target: "blank" %></td>
         <td><%= kp.title %></td>
         <td><%= kp.order.user.name if kp.order.user.present? %></td>
         <!-- <td><%# kp.kp_products.count %></td> -->
