@@ -15,6 +15,10 @@ class User < ApplicationRecord
   def admin?
     role.name.include?('admin')
   end
+  def operator?
+    role.name.include?('operator')
+  end
+
 
   def avatar_thumbnail
     if avatar.attached?
