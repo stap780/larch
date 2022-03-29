@@ -16,7 +16,7 @@ class Ability
       can [:create, :update], Kp
       can [:create, :update], Product
     when 'operator'
-      can [:index, :edit], Order
+      can [:read, :update], Order
       cannot :download, Order
       cannot :create, Kp
       cannot :copy, Kp
