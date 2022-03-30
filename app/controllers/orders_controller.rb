@@ -91,6 +91,7 @@ class OrdersController < ApplicationController
   end
 
   def webhook
+    current_user = User.joins(:role).where(name: "admin").first if current_user.nil?
     Order.one_order(params)
     flash[:notice] = 'Заказ загружен'
     redirect_to orders_path
