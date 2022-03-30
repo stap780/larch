@@ -2,6 +2,7 @@ class OrdersController < ApplicationController
 
   before_action :authenticate_user!, except: [:webhook]
   authorize_resource
+  skip_authorize_resource only: [:webhook]
   before_action :set_order, only: [:show, :edit, :update, :destroy]
   autocomplete :company, :title, :extra_data => [:id, :fulltitle, :inn], :display_value => :title, 'data-noMatchesLabel' => 'нет компании'
   autocomplete :client, :name, full: true,  :extra_data => [:id, :surname], :case_sensitive => true
