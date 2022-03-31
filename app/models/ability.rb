@@ -5,7 +5,7 @@ class Ability
 
   def initialize(user)
     user ||= User.new # guest user (not logged in)
-    # puts user.role.name
+    puts "user.role.name ability ===> "+user.role.name.to_s
     case user.role.name
     when 'admin'
       can :manage, :all
@@ -14,6 +14,9 @@ class Ability
       can [:read, :update], Order
       cannot :download, Order
       can [:create, :update], Kp
+      can :copy, Kp
+      can :autocomplete_product_title, Kp
+      can [:print1, :print2, :print3], Kp
       can [:create, :update], Product
     when 'operator'
       can [:read, :update], Order
