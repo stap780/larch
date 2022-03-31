@@ -1,7 +1,8 @@
 Welcome to .....!
 ===============================================
 
-  Появились новые КП для проверки и готовые к печати.
+Требуется печать: <%= link_to "Заказ "+@kp.order.number.to_s, @app_url+"/kps?utf8=✓&q%5Border_number_eq%5D="+@kp.order.number.to_s+"&q%5Bvid_eq%5D=&q%5Bstatus_eq%5D=&button=", target: "_blank" %>
+
 
 ___
 С уважением,
