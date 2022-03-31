@@ -17,7 +17,10 @@ class Ability
       can :copy, Kp
       can :autocomplete_product_title, Kp
       can [:print1, :print2, :print3], Kp
-      can [:create, :update], Product
+      can [:file_import, :file_export], Kp
+      can :manage, Product
+      can :manage, Client
+      can :manage, Company
     when 'operator'
       can [:read, :update], Order
       cannot :download, Order
