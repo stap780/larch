@@ -9,7 +9,7 @@
       <%= f.input :title, label: false, placeholder: 'Заголовок' , wrapper_html: { class: "col-8" }%>
     </div>
     <div class="col-12 row">
-    <% if current_user.admin? || current_user.bookkeeper? %>
+    <% if current_user.admin? || current_user.manager? %>
     <%= f.input :vid, collection: Kp::VID, label: 'Тип КП', prompt: "Тип", input_html: { class: "form-select" } , wrapper_html: { class: "col-2" } %>
     <% else %>
     <%= f.input :vid, disabled: true, collection: Kp::VID, label: 'Тип КП', prompt: "Тип", input_html: { class: "form-select" } , wrapper_html: { class: "col-2" } %>
