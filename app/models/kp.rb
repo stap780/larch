@@ -8,6 +8,7 @@ class Kp < ApplicationRecord
   validates :order_id, presence: true
   after_initialize :set_status_vid
   after_initialize :set_title
+  before_validation :check_status_if_manager_set_print_ready
   after_commit :notify_bookkeeper_to_add_stamp, if: :persisted?
   after_commit :notify_manager_kp_ready, if: :persisted?
 
@@ -71,8 +72,12 @@ class Kp < ApplicationRecord
     end
   end
 
+  def check_status_if_manager_set_print_ready
+      self.vid = 'Основное' if self.status == 'Ждёт печати'
+  end
+
   def notify_bookkeeper_to_add_stamp
-      KpMailer.add_stamp(self).deliver_now if self.status == 'Ждёт печати' && self.vid != 'Основное'
+      KpMailer.add_stamp(self).deliver_now if self.status == 'Ждёт печати' && self.vid == 'Основное'
   end
 
   def notify_manager_kp_ready
