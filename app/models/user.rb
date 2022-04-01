@@ -15,9 +15,13 @@ class User < ApplicationRecord
   def admin?
     role.name.include?('admin')
   end
-  
+
   def operator?
     role.name.include?('operator')
+  end
+
+  def bookkeeper?
+    role.name.include?('bookkeeper')
   end
 
 

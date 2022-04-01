@@ -27,7 +27,7 @@ class Ability
       cannot :create, Kp
       cannot :copy, Kp
     when 'bookkeeper'
-      can :manage, Order
+      can :update, Order
       cannot :download, Order
       can :index_all, Kp
       can :update, Kp
