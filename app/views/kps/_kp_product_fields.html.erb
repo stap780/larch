@@ -13,7 +13,7 @@
     <% value = f.object.desc.present? ? f.object.desc : pr_desc %>
     <%= f.input :desc, as: :text, label: false , input_html: {value: value, rows: "1"} %>
   </td>
-  <td style="width:90px;"><%= f.input :quantity, as: :integer, label: false, input_html: {min: "0" , onchange: "calculate(this.value)"} %></td>
+  <td style="width:110px;"><%= f.input :quantity, as: :integer, label: false, input_html: {min: "0" , onchange: "calculate(this.value)"} %></td>
   <td style="width:155px;"><%= f.input :price, as: :decimal, label: false, input_html: {min: "0", onchange: "calculate()", step: "0.01"}%></td>
   <td style="width:155px;"><%= f.input :sum, as: :decimal, label: false, input_html: {min: "0", onchange: "calculate()", step: "0.01"} %></td>
   <%# f.association :kp %>
