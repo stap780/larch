@@ -130,6 +130,15 @@ section {
     padding: 15px;
     margin: 0 auto;
 }
+.form-control.is-valid {
+    padding-right: calc(0.70em + 0.70rem);
+    background-size: calc(0.40em + 0.305rem) calc(0.40em + 0.305rem);
+}
+.form-select.is-valid:not([multiple]):not([size]), .form-select.is-valid[size="1"]:not([multiple]) {
+  padding-right: 3.025rem;
+  background-position: right 0.60rem center, center right 1.65rem;
+  background-size: calc(0.40em + 0.305rem) calc(0.40em + 0.305rem);
+}
   footer {
     display: none;
   }
