@@ -24,11 +24,11 @@ class Product < ApplicationRecord
       when 200
         data = JSON.parse(response)
         data["variants"].each do |var|
-          desc = data["short_description"].present? ? Product.strip_html(data["short_description"]) : ''
+          sdesc = data["short_description"].present? ? Product.strip_html(data["short_description"]) : ''
           save_data = {
             insvarid: var["id"],
             title: data["title"],
-            desc: desc,
+            desc: sdesc,
             insid: data["id"],
             sku: var["sku"],
             quantity: var["quantity"],

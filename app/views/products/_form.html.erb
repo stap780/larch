@@ -4,8 +4,10 @@
 
   <div class="row">
     <div class="col-12 h3"><%= page_title %></div>
+    <%= link_to "Товар в инсалес", "http://adventer.su/product_by_id/#{@product.insid}", target: "blank" if @product.insid %>
     <div class="col-6">
     <%= f.input :sku %>
+    <%= f.input :insid %>
     <%= f.input :title, label: "Название" %>
     <%= f.input :desc, label: "Описание", as: :text  %>
     <%= f.input :quantity, label: "К-во"  %>

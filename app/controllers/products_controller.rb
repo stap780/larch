@@ -80,6 +80,11 @@ class ProductsController < ApplicationController
     end
   end
 
+  def insales_import
+    Rails.env.development? ? Services::Import.product : ImportProductJob.perform_later
+    redirect_to products_path, notice: 'Запущен процесс Обновление Товаров InSales. Дождитесь письма о выполнении обновления'
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product

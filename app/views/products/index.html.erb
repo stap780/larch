@@ -11,7 +11,8 @@
         <div class="btn-group" role="group">
           <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Действия</button>
           <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-            <%= link_to 'New Product', new_product_path, class: 'dropdown-item' %>
+            <%# link_to 'Добавить товар', new_product_path, class: 'dropdown-item' %>
+            <%= link_to 'Обновить каталог', insales_import_products_path, class: 'dropdown-item' if can? :insales_import, Product %>
           </div>
         </div>
       </div>

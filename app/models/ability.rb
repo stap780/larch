@@ -19,6 +19,7 @@ class Ability
       can [:print1, :print2, :print3], Kp
       can [:file_import, :file_export], Kp
       can :manage, Product
+      cannot :insales_import, Product
       can :manage, Client
       can :manage, Company
     when 'operator'
