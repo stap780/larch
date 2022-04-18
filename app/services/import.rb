@@ -29,7 +29,7 @@ class Services::Import
       # puts "images кол-во - #{images.count.to_s}"
       # puts images.to_s
       if images.present?
-        images.each do |img_link|
+        images.first(1).each do |img_link|
           # puts img_link
           file = Product.download_remote_file(img_link)
           product.images.attach(io: file, filename: filename, content_type: "image/jpg")

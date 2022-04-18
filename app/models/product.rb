@@ -41,7 +41,7 @@ class Product < ApplicationRecord
           #pp save_data
 
           puts "product - #{product.id}"
-          data['images'].each do |i|
+          data['images'].take(1).each do |i|
             url = i["large_url"]
             filename = i["filename"]
             file = Product.download_remote_file(url)
