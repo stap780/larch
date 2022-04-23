@@ -3,21 +3,25 @@ class KpsController < ApplicationController
   authorize_resource
   before_action :get_order
   before_action :set_kp, only: %i[show edit update destroy]
-  autocomplete :product, :title, :extra_data => [:id, :title, :sku, :price, :desc], :display_value => :autocomplete_title, 'data-noMatchesLabel' => 'нет товара'
+  # autocomplete :product, :title, :extra_data => [:id, :title, :sku, :price, :desc], :display_value => :autocomplete_title, 'data-noMatchesLabel' => 'нет товара'
 
   # GET /kps
   def index
-    # @kps = Kp.all
     @search = @order.kps.ransack(params[:q])
     @search.sorts = 'id asc' if @search.sorts.empty?
     @kps = @search.result.paginate(page: params[:page], per_page: 30)
   end
 
   def index_all
-    # @kps = Kp.all
     @search = Kp.ransack(params[:q])
     @search.sorts = 'order_number desc' if @search.sorts.empty?
     @kps = @search.result.includes(:order, :kp_products).paginate(page: params[:page], per_page: 100)
+  end
+
+  def autocomplete_product_title
+    term = params[:term]
+    products = Product.search_by_title_sku(term).all
+    render :json => products.map { |product| {id: product.id, title: product.title, label: product.autocomplete_title, value: product.autocomplete_title, sku: product.sku, price: product.price, desc: product.desc } }
   end
 
   # GET /kps/1
@@ -287,6 +291,6 @@ class KpsController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def kp_params
-    params.require(:kp).permit(:vid, :status, :title, :order_id, :extra, :comment, kp_products_attributes:[:id,:quantity,:price,:sum,:product_id, :desc,:_destroy])
+    params.require(:kp).permit(:vid, :status, :title, :order_id, :extra, :comment, kp_products_attributes:[:id,:quantity,:price,:sum,:product_id, :desc, :sku,:_destroy])
   end
 end

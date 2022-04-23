@@ -6,16 +6,16 @@ function calculate(val) {
     for (var i = 0; i < table_lines.length; i++) {
       var row = table_lines[i];
       //console.log(row);
-      var quantity = row.cells[3].firstChild.firstChild.value;
-      var price = row.cells[4].firstChild.firstChild.value;
+      var quantity = row.cells[4].firstChild.firstChild.value;
+      var price = row.cells[5].firstChild.firstChild.value;
       var sum = quantity * price;
-      row.cells[5].firstChild.firstChild.value = sum.toFixed(2);
+      row.cells[6].firstChild.firstChild.value = sum.toFixed(2);
     };
     var rows = $("tr.nested-fields:visible");
     var tot = 0;
     for (var i = 0; i < rows.length; i++) {
       var row = rows[i];
-      var sum = row.cells[5].firstChild.firstChild;
+      var sum = row.cells[6].firstChild.firstChild;
       if (parseFloat(sum.value))
         tot += parseFloat(sum.value);
     }
@@ -44,7 +44,8 @@ function initLine() {
       // console.log("function initLine idNode - "+idNode);
     })
     .on('cocoon:after-insert', function(e, insertedItem) {
-      // console.log(insertedItem);
+      console.log(idNode);
+       console.log(insertedItem);
       $("input[id = '" + idNode.replace("product_title", "quantity") + "']").val("0");
       $("input[id = '" + idNode.replace("product_title", "price") + "']").val("0");
       calculate();
@@ -71,11 +72,13 @@ function productAutocomplete(val){
     var dataId = data.item.id;
     var dataPrice = data.item.price;
     var dataDesc = data.item.desc;
+    var dataSku = data.item.sku;
     $("input[id = '" + idNode + "']").val(dataTitle);
     $("input[id = '" + idNode.replace("product_title", "product_id") + "']").val(dataId);
     $("input[id = '" + idNode.replace("product_title", "quantity") + "']").val("1");
     $("input[id = '" + idNode.replace("product_title", "price") + "']").val(dataPrice);
     $("[id = '" + idNode.replace("product_title", "desc") + "']").val(dataDesc);
+    $("[id = '" + idNode.replace("product_title", "sku") + "']").val(dataSku);
     calculate();
   });
 }
@@ -109,9 +112,9 @@ $(document).ready(function() {
       for (var i = 0; i < table_lines.length; i++) {
         var row = table_lines[i];
         //console.log(row);
-        var price = row.cells[4].firstChild.firstChild.value;
+        var price = row.cells[5].firstChild.firstChild.value;
         var newPrice = parseFloat(price) * value ;//(parseFloat(price) * value) / 100 + parseFloat(price);
-        row.cells[4].firstChild.firstChild.value = newPrice.toFixed(2);
+        row.cells[5].firstChild.firstChild.value = newPrice.toFixed(2);
       };
     }
     calculate();

@@ -8,6 +8,7 @@ class Product < ApplicationRecord
   has_many :kps, :through => :kp_products
   has_many_attached :images, dependent: :destroy
   accepts_nested_attributes_for :images_attachments, allow_destroy: true
+  scope :search_by_title_sku, ->(q) { where("title ILIKE ? or sku ILIKE ?", "%#{q}%", "%#{q}%").order(:title) }
 
 
   def autocomplete_title
