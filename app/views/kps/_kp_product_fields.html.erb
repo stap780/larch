@@ -1,7 +1,7 @@
 <tr class="nested-fields align-middle">
-  <td style="width:60px;">
+  <td width="60px" height="50px">
     <% image = f.object.product.present? && f.object.product.images.present? ? f.object.product.images.first : ''%>
-    <%= image_tag image %>
+    <%= image_tag image, class: "mx-auto d-block" %>
   </td>
 
   <td class="" style="width:30%;">
@@ -9,7 +9,11 @@
 	<%= f.input :product_title, as: :autocomplete, label: false, url: autocomplete_product_title_order_kps_path , input_html: {onkeyup: "getId(this.id)", onclick:"productAutocomplete(this.id)"} %>
   <%= f.input :product_id, as: :hidden %>
 </td>
-<td><%= f.input :sku , label: false %></td>
+<td>
+  <% pr_sku = f.object.product.present? ? f.object.product.sku : '' %>
+  <% sku = f.object.sku.present? ? f.object.sku : pr_sku %>
+  <%= f.input :sku , label: false, input_html: { value: sku } %>
+</td>
   <td>
     <% pr_desc = f.object.product.present? ? f.object.product.desc : '' %>
     <% value = f.object.desc.present? ? f.object.desc : pr_desc %>
