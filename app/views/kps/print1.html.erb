@@ -7,7 +7,7 @@
     <%= wicked_pdf_javascript_include_tag("number_pages") %>
   </head>
   <body <%if params.key?('debug') %>class="debug"<% end %>>
-    <header class="clearfix">
+    <header class="headerContent clearfix">
         <div id="header-left-part">
           <div class="logo-image">
             <%= render "pdf_image",  image_link: '/logo_little__200x70_.png' , image_class: ''  %>
@@ -32,7 +32,8 @@
           <div>КПП: <%= @our_company.kpp%></div>
         </div>
     </header>
-    <main>
+
+    <main class="alwaysbreak" style="height: 247mm;">
       <div class="kp-title">
         <center>
           <h1><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></h1>
@@ -74,7 +75,7 @@
             <td class="item-itogo-sum"><%= (@kp.kp_products.sum(:sum).truncate(2).to_s("F") + "00")[ /.*\..{2}/ ] %> руб</td>
           </tr>
       </table>
-      <div class="wrapper-notice <% if @kp.kp_products.count > 10 && @kp.kp_products.count < 16 %> alwaysbreak <%end%>" <% if @kp.kp_products.count > 10 && @kp.kp_products.count < 16 %>style="padding-top:20px;"<%end%> >
+      <div class="wrapper-notice" >
         <div id="thanks">Организация работает без НДС на основании ст. 346.11 НК РФ.<br>Цены по данному коммерческому предложению действительны в течение 14 дней.</div>
         <div id="notices">
           <!-- <div>NOTICE:</div> -->
@@ -102,7 +103,5 @@
 
     </main>
 
-
   </body>
-
 </html>

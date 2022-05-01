@@ -18,10 +18,11 @@ class KpMailer < ApplicationMailer
   def kp_ready(kp)
       @kp = kp
       @user = @kp.order.user
+      email = @user.present? ? @user.email : "test@mail.ru"
       # @url  = 'http://example.com/login'
       @app_url = Rails.env.development? ? 'http://localhost:3000' : 'http://165.227.78.150'
       # mail(to: @user.email, subject: 'Welcome to My Awesome Site')
-      mail( to: @user.email,
+      mail( to: email,
             reply_to: Rails.application.secrets.default_from,
             subject: "Согласовано #{@kp.title}")
   end

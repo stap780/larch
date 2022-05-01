@@ -13,10 +13,9 @@
 }
 body {
   font-family: CenturyGothicRegular;
+  //margin-top: -5mm;
 }
 .debug {
-    max-width: 210mm;
-    margin: 0 auto;
     border: 1px solid;
 }
 .clearfix:after {
@@ -32,12 +31,9 @@ a {
   text-decoration: none;
 }
 
-header {
+.headerContent {
   padding: 20px;
   background-color: #f6f6f6;
-}
-main {
-  padding: 0 10px;
 }
 #header-left-part {
   float: left;
@@ -52,7 +48,7 @@ main {
 }
 
 #header-right-part {
-  float: right;
+  float: left;
   text-align: left;
   width: 100%;
   max-width: 45%;
@@ -60,19 +56,16 @@ main {
   background-color: #f6f6f6;
   font-weight: 100;
 }
-
 #details {
   margin-bottom: 50px;
   background-color: #f6f6f6;
 }
-
 #client {
   padding-left: 6px;
   border-left: 6px solid #0087C3;
   float: left;
   background-color: #f6f6f6;
 }
-
 #client .to {
   color: #777777;
 }
@@ -85,6 +78,10 @@ main {
 
 #header-right-part div {
   line-height: 20px;
+}
+main {
+  margin-top: 45mm;
+  padding: 0 10px;
 }
 
 #invoice {
@@ -317,6 +314,7 @@ background-color: #f6f6f6;
   display: block;
   width: 100%;
   height: 100%;
+  padding-top: 10px;
 }
 .footer-first-part, .footer-second-part, .footer-third-part {
   width: 33.3%;

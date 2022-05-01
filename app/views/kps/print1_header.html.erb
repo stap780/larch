@@ -1,13 +1,38 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<%= wicked_pdf_stylesheet_link_tag("print1") %>
 		<%= wicked_pdf_javascript_include_tag("number_pages") %>
     <title><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></title>
   </head>
-  <body onload="number_pages()">
-  <div class="headerContent"><% if @kp.title.present? %><%= @kp.title%><%else%>КП № <%= current_user.id%>-<%= @kp.id %><% end %>  от <%= @kp.created_at.strftime("%d / %m / %Y")%></div>
+  <body onload="number_pages()" <%if params.key?('debug') %>class="debug"<% end %> >
+    <header class="headerContent clearfix">
+        <div id="header-left-part">
+          <div class="logo-image">
+            <%= render "pdf_image",  image_link: '/logo_little__200x70_.png' , image_class: ''  %>
+          </div>
+          <div class="header-left-part-bottom">
+            <table>
+              <thead>
+                <th><%= render "pdf_image", image_link: '/kp_phone.png', image_class: 'w25'  %></th>
+                <th>88005501314</th>
+                <th><%= render "pdf_image", image_link: '/kp_email.png', image_class: 'w25'  %></th>
+                <th><a href="mailto:info@adventer.su">info@adventer.su</a></th>
+                <th><%= render "pdf_image", image_link: '/kp_globus.png', image_class: 'w25'  %></th>
+                <th>www.adventer.su</th>
+              </thead>
+            </table>
+          </div>
+        </div>
+        <div id="header-right-part">
+          <h4 class="name"><%= @our_company.fulltitle.camelize%></h4>
+          <div><%= @our_company.uraddress%></div>
+          <div>ИНН: <%= @our_company.inn%></div>
+          <div>КПП: <%= @our_company.kpp%></div>
+        </div>
+    </header>
+height <span id="header_height"></span> width <span id="header_width"></span>
 <!-- <p id="pdf_console_output" ></p> -->
   </body>
 </html>

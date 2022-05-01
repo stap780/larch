@@ -106,12 +106,13 @@ class KpsController < ApplicationController
     respond_to do |format|
       format.html
       format.pdf do
-          render :pdf => "КП1 #{@kp.id}",
-                 :template => "kps/print1.html.erb",
-                 :show_as_html => params.key?('debug'),
-     						 margin: {top: 0, left: 5, right: 5, bottom: 40 },
+          render pdf: "КП1 #{@kp.id}",
+                 template: "kps/print1.html.erb",
+                 show_as_html: params.key?('debug'),
+                 page_size: "A4",
+     						 margin: {top: 5, left: 5, right: 5, bottom: 45 },
      						 header:  {
-     						 		html: { template:'kps/print1_header.html.erb'},
+     						 		#html: { template:'kps/print1_header.html.erb'},
      						 		#spacing: 5,
                     # right: 'Стр [page] из [topage]'
                     locals: {}

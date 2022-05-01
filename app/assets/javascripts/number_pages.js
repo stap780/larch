@@ -34,11 +34,24 @@ function number_pages() {
     console.log(y);
     for (var j = 0; j < y.length; ++j) y[j].textContent = vars[x[i]];
   }
-  var pagenumber = vars['page']
-  if (pagenumber == 1 || pagenumber == 2) {
-    document.getElementsByClassName("headerContent")[0].style.display = "none";
+  var pagenumber = vars['page'];
+  var header = document.getElementsByClassName("headerContent")[0];
+  var headerHeight = header.offsetHeight;
+  var headerWidth = header.offsetWidth;
+  // if (pagenumber == 1 || pagenumber == 2) {
+  //   document.getElementsByClassName("headerContent")[0].style.display = "none";
+  //   document.getElementsByClassName("footerContent")[0].style.display = "none";
+  // }
+  if (pagenumber == 1) {
+    document.getElementById('header_height').innerText = headerHeight;
+    document.getElementById('header_width').innerText = headerWidth;
+  }
+
+  if (pagenumber == 2) {
+    header.style.display = "none";
     document.getElementsByClassName("footerContent")[0].style.display = "none";
   }
+
 
 }
 
