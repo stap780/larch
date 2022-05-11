@@ -266,10 +266,10 @@ class KpsController < ApplicationController
 	end
 
   def copy
-    puts 'here'
+    # puts 'here copy'
     @kp = @order.kps.find(params[:id])
     @new_kp = @order.kps.create(vid: @kp.vid, status: @kp.status, title: @kp.title)
-    kp_products = @kp.kp_products.select(:product_id,:quantity,:price,:sum).map(&:attributes)
+    kp_products = @kp.kp_products.select(:product_id,:quantity,:price,:sum, :desc, :sku).map(&:attributes)
 
     kp_products.each do |kp_p_data|
       @new_kp.kp_products.create(kp_p_data)
