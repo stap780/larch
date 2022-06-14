@@ -31,8 +31,11 @@ class Services::Import
       if images.present?
         images.first(1).each do |img_link|
           # puts img_link
-          file = Product.download_remote_file(img_link)
-          product.images.attach(io: file, filename: filename, content_type: "image/jpg")
+          img_filename = img_link.split('/').last.split('.').first
+          if product.images.size < 3 && !product.images.select{|im| im.filename.to_s == img_filename }.present?
+            file = Product.download_remote_file(img_link)
+            product.images.attach(io: file, filename: img_filename, content_type: "image/jpg")
+          end
         end
       end
 

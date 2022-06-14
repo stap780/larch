@@ -44,9 +44,11 @@ class Product < ApplicationRecord
           puts "product - #{product.id}"
           data['images'].take(1).each do |i|
             url = i["large_url"]
-            filename = i["filename"]
-            file = Product.download_remote_file(url)
-            product.images.attach(io: file, filename: filename, content_type: "image/jpg")
+            img_filename = i["filename"]
+            if product.images.size < 3 && !product.images.select{|im| im.filename.to_s == img_filename }.present?
+              file = Product.download_remote_file(url)
+              product.images.attach(io: file, filename: img_filename, content_type: "image/jpg")
+            end
           end
         end
       when 422
