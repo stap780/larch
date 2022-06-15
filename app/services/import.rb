@@ -14,12 +14,12 @@ class Services::Import
       row = Hash[[header, spreadsheet.row(i)].transpose]
       sdesc = row["Краткое описание"].present? ? Product.strip_html(row["Краткое описание"]) : ''
       save_data = {
-                  insvarid: row["ID варианта"].to_s,
+                  insvarid: row["ID варианта"].to_i,
                   sku: row["Артикул"].to_s,
                   title: row["Название товара"].to_s,
                   desc: sdesc,
-                  price: row["Цена продажи"].to_s,
-                  insid: row["ID товара"].to_s
+                  price: row["Цена продажи"].to_i,
+                  insid: row["ID товара"].to_i
                 }
 
       search_product = Product.find_by_insvarid(save_data[:insvarid])
