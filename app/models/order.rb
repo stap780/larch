@@ -144,7 +144,7 @@ class Order < ApplicationRecord
   end
 
   def send_mail_to_operator
-    OrderMailer.order_new(self).deliver_now
+    # OrderMailer.order_new(self).deliver_now
   end
 
 end
