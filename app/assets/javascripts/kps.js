@@ -114,7 +114,7 @@ $(document).ready(function() {
         //console.log(row);
         var price = row.cells[5].firstChild.firstChild.value;
         var newPrice = parseFloat(price) * value ;//(parseFloat(price) * value) / 100 + parseFloat(price);
-        row.cells[5].firstChild.firstChild.value = newPrice.toFixed(2);
+        row.cells[5].firstChild.firstChild.value = newPrice.toFixed(0);
       };
     }
     calculate();

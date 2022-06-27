@@ -14,4 +14,5 @@ namespace :product do
     puts "end delete_extra_images #{Time.now.to_s}"
   end
 
+
 end
