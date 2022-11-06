@@ -40,6 +40,7 @@ gem 'cancancan'
 gem 'caxlsx'
 gem 'caxlsx_rails'
 gem 'insales_api'
+gem 'rubyzip'
 
 
 gem 'bcrypt_pbkdf', '< 2.0', :require => false

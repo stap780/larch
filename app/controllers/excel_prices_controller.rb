@@ -42,24 +42,24 @@ class ExcelPricesController < ApplicationController
 
   # PATCH/PUT /excel_prices/1
   def update
-  respond_to do |format|
-    if @excel_price.update(excel_price_params)
-      format.html { redirect_to @excel_price, notice: "Excel price was successfully updated." }
-      format.json { render :show, status: :ok, location: @excel_price }
-    else
-      format.html { render :edit, status: :unprocessable_entity }
-      format.json { render json: @excel_price.errors, status: :unprocessable_entity }
+    respond_to do |format|
+      if @excel_price.update(excel_price_params)
+        format.html { redirect_to @excel_price, notice: "Excel price was successfully updated." }
+        format.json { render :show, status: :ok, location: @excel_price }
+      else
+        format.html { render :edit, status: :unprocessable_entity }
+        format.json { render json: @excel_price.errors, status: :unprocessable_entity }
+      end
     end
-  end
   end
 
   # DELETE /excel_prices/1
   def destroy
-  @excel_price.destroy
-  respond_to do |format|
-    format.html { redirect_to excel_prices_url, notice: "Excel price was successfully destroyed." }
-    format.json { head :no_content }
-  end
+    @excel_price.destroy
+    respond_to do |format|
+      format.html { redirect_to excel_prices_url, notice: "Excel price was successfully destroyed." }
+      format.json { head :no_content }
+    end
   end
 
 # POST /excel_prices
