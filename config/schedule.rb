@@ -27,3 +27,7 @@ set :chronic_options, :hours24 => true
 every 1.day, :at => '06:00' do #
   runner "ImportProductJob.perform_later"
 end
+
+every 1.day, :at => '23:45' do #
+  rake "file:create_production_log_zip_every_day"
+end

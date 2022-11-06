@@ -26,7 +26,7 @@ namespace :file do
   #   puts "finish cut_file - время москва - #{Time.zone.now}"
   # end
 
-  task copy_production_log_every_day: :environment do
+  task create_production_log_zip_every_day: :environment do
     puts "start copy_production_log_every_day"
       zipfile_name = "#{Rails.root}/log/production_#{Time.zone.now.strftime("%d_%m_%Y_%I_%M")}.zip"
       filename = "production.log"
