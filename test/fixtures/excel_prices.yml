@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  link: 1
+  price_move: MyString
+  price_shift: 1
+  price_points: MyString
+  comment: MyText
+
+two:
+  title: MyString
+  link: 1
+  price_move: MyString
+  price_shift: 1
+  price_points: MyString
+  comment: MyText

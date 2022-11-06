@@ -37,6 +37,9 @@ gem 'rails-jquery-autocomplete'
 gem 'daemons'
 gem 'delayed_job_active_record'
 gem 'cancancan'
+gem 'caxlsx'
+gem 'caxlsx_rails'
+gem 'insales_api'
 
 
 gem 'bcrypt_pbkdf', '< 2.0', :require => false

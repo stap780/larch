@@ -29,9 +29,9 @@
   <thead>
     <tr class="text-secondary">
       <th><%%= check_box_tag 'selectAll', 'selectAll'%></th>
-<% attributes.reject(&:password_digest?).each do |attribute| -%>
+      <% attributes.reject(&:password_digest?).each do |attribute| -%>
       <th><%= attribute.human_name %></th>
-<% end -%>
+      <% end -%>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -39,8 +39,8 @@
   <tbody id="items_table" class="border-0">
     <%% @<%= plural_table_name %>.each do |<%= singular_table_name %>| %>
       <tr>
+<td><%%= check_box_tag "<%= singular_table_name %>_ids[]", <%= singular_table_name %>.id %></td>
 <% attributes.reject(&:password_digest?).each do |attribute| -%>
-        <td><%%= check_box_tag "<%= singular_table_name %>_ids[]", <%= singular_table_name %>.id %></td>
         <td><%%= <%= singular_table_name %>.<%= attribute.name %> %></td>
 <% end -%>
         <td><%%= link_to '<span class="oi oi-eye"></span>'.html_safe, <%= model_resource_name %> %></td>

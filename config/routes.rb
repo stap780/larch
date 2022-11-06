@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :excel_prices do
+    collection do
+      post :delete_selected
+    end
+  end
   resources :kp_products
   get 'kps', to: 'kps#index_all'
   resources :orders do
