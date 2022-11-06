@@ -42,7 +42,7 @@ set :application, "adventer"
 set :repo_url, "git@github.com:stap780/#{fetch(:application)}.git"
 set :deploy_to, "/var/www/#{fetch(:application)}"
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
-set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'tmp/pdf', 'vendor/bundle', 'public/system', 'storage', 'public/tmp/pdf')
+set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'tmp/pdf', 'vendor/bundle', 'public/system', 'storage', 'public/tmp/pdf', 'lib/tasks')
 set :format, :pretty
 set :log_level, :info
 set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
