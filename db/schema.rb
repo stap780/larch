@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_06_091736) do
+ActiveRecord::Schema.define(version: 2022_11_08_063037) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -92,13 +92,14 @@ ActiveRecord::Schema.define(version: 2022_11_06_091736) do
 
   create_table "excel_prices", force: :cascade do |t|
     t.string "title"
-    t.integer "link"
+    t.string "link"
     t.string "price_move"
     t.integer "price_shift"
     t.string "price_points"
     t.text "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "file_status"
   end
 
   create_table "homes", force: :cascade do |t|

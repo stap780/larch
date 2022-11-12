@@ -40,27 +40,27 @@ class KpProductsController < ApplicationController
 
   # PATCH/PUT /kp_products/1
   def update
-  respond_to do |format|
-    if @kp_product.update(kp_product_params)
-      format.html { redirect_to @kp_product, notice: "Kp product was successfully updated." }
-      format.json { render :show, status: :ok, location: @kp_product }
-    else
-      format.html { render :edit, status: :unprocessable_entity }
-      format.json { render json: @kp_product.errors, status: :unprocessable_entity }
+    respond_to do |format|
+      if @kp_product.update(kp_product_params)
+        format.html { redirect_to @kp_product, notice: "Kp product was successfully updated." }
+        format.json { render :show, status: :ok, location: @kp_product }
+      else
+        format.html { render :edit, status: :unprocessable_entity }
+        format.json { render json: @kp_product.errors, status: :unprocessable_entity }
+      end
     end
-  end
   end
 
   # DELETE /kp_products/1
   def destroy
-  @kp_product.destroy
-  respond_to do |format|
-    format.html { redirect_to kp_products_url, notice: "Kp product was successfully destroyed." }
-    format.json { head :no_content }
-  end
+    @kp_product.destroy
+    respond_to do |format|
+      format.html { redirect_to kp_products_url, notice: "Kp product was successfully destroyed." }
+      format.json { head :no_content }
+    end
   end
 
-# POST /kp_products
+  # POST /kp_products
   def delete_selected
     @kp_products = KpProduct.find(params[:ids])
     @kp_products.each do |kp_product|

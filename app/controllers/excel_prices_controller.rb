@@ -1,7 +1,7 @@
 class ExcelPricesController < ApplicationController
   before_action :authenticate_user!
   authorize_resource
-  before_action :set_excel_price, only: [:show, :edit, :update, :destroy]
+  before_action :set_excel_price, only: [:show, :edit, :update, :import, :file_export, :destroy]
 
   # GET /excel_prices
   def index
@@ -30,7 +30,7 @@ class ExcelPricesController < ApplicationController
 
     respond_to do |format|
       if @excel_price.save
-        format.html { redirect_to @excel_price, notice: "Excel price was successfully created." }
+        format.html { redirect_to excel_prices_url, notice: "Excel price was successfully created." }
         format.json { render :show, status: :created, location: @excel_price }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -44,7 +44,7 @@ class ExcelPricesController < ApplicationController
   def update
     respond_to do |format|
       if @excel_price.update(excel_price_params)
-        format.html { redirect_to @excel_price, notice: "Excel price was successfully updated." }
+        format.html { redirect_to excel_prices_url, notice: "Excel price was successfully updated." }
         format.json { render :show, status: :ok, location: @excel_price }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -74,6 +74,19 @@ class ExcelPricesController < ApplicationController
     end
   end
 
+  def import
+    Rails.env.development? ? Services::Import.excel_price(@excel_price) : ImportExcelPriceJob.perform_later(@excel_price)
+    redirect_to excel_prices_url, notice: 'Запущен процесс создания файла эксель. Дождитесь выполнении процесса.'
+  end
+
+  def check_file_status
+  end
+
+  def file_export
+    file_path = "#{Rails.public_path}/#{@excel_price.id.to_s}_file.xlsx"
+    send_file(file_path)
+  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -83,6 +96,6 @@ class ExcelPricesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def excel_price_params
-      params.require(:excel_price).permit(:title, :link, :price_move, :price_shift, :price_points, :comment)
+      params.require(:excel_price).permit(:title, :link, :price_move, :price_shift, :price_points, :comment, :file_status)
     end
 end

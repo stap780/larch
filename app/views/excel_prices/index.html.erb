@@ -41,11 +41,8 @@
       <th><%= check_box_tag 'selectAll', 'selectAll'%></th>
       <th>Title</th>
       <th>Link</th>
-      <!--<th>Price move</th>
-      <th>Price shift</th>
-      <th>Price points</th>-->
       <th>Comment</th>
-      <th colspan="3"></th>
+      <th colspan="4"></th>
     </tr>
   </thead>
 
@@ -55,11 +52,16 @@
         <td><%= check_box_tag "excel_price_ids[]", excel_price.id %></td>
         <td><%= excel_price.title %></td>
         <td><%= excel_price.link %></td>
-        <!--<td><%# excel_price.price_move %></td>
-        <td><%# excel_price.price_shift %></td>
-        <td><%# excel_price.price_points %></td>-->
         <td><%= excel_price.comment %></td>
-        <td><%= link_to '<span class="oi oi-eye"></span>'.html_safe, excel_price %></td>
+        <td><%= link_to "Создать", import_excel_price_path(excel_price), id: "import_#{excel_price.id}", class: "btn btn-light btn-sm", role: "button" %>
+</td>
+        <td>
+        <% if excel_price.file_status == true %>
+          <%= link_to '<span class="oi oi-cloud-download"></span>'.html_safe, file_export_excel_price_path(excel_price), id: "file_export_#{excel_price.id}", class: "btn btn-light btn-sm", title: "file export" %>
+        <% else %>
+          <%= link_to '<span class="oi oi-cloud-download"></span>'.html_safe, file_export_excel_price_path(excel_price), id: "file_export_#{excel_price.id}", class: "btn btn-light btn-sm disabled", title: "file export" %>
+        <% end %>
+        <%# link_to 'Создать файл', import_excel_price_path(excel_price), :remote => true, :method => :get , class: "btn btn-outline-info btn-sm", id: "button_#{excel_price.id}"%></td>
         <td><%= link_to '<span class="oi oi-pencil"></span>'.html_safe, edit_excel_price_path(excel_price) %></td>
         <td><%= link_to '<span class="oi oi-trash"></span>'.html_safe, excel_price, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

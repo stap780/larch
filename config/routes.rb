@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  get '/excel_prices/:id/import', to: 'excel_prices#import', as: 'import_excel_price'
+  get '/excel_prices/:id/file_export', to: 'excel_prices#file_export', as: 'file_export_excel_price'
   resources :excel_prices do
     collection do
+      get :check_file_status
       post :delete_selected
     end
   end
