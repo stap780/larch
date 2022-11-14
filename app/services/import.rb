@@ -147,7 +147,7 @@ class Services::Import
               cat_products = offers.select{|item| item.css('categoryId').text == s_cat[:id]}
               cat_products.each do |pr|
                 price = Services::Import.price_shift(excel_price, pr.css('price').text)
-                pr_row = sheet.add_row ['',pr.css('name').text, pr.css('description').text, '', price], style: [nil, pr_title, pr_descr, pr_pict, money]
+                pr_row = sheet.add_row ['',pr.css('model').text, pr.css('description').text, '', price], style: [nil, pr_title, pr_descr, pr_pict, money]
                 # puts "pr_row.row_index - "+pr_row.row_index.to_s
                 hyp_ref = "B#{pr_row.row_index.to_s}"
                 # puts hyp_ref.to_s
@@ -174,7 +174,7 @@ class Services::Import
             cat_products = offers.select{|item| item.css('categoryId').text == cat[:id]}
             cat_products.each do |pr|
               price = Services::Import.price_shift(excel_price, pr.css('price').text)
-              pr_row = sheet.add_row ['',pr.css('name').text, pr.css('description').text, '', price], style: [nil, pr_title, pr_descr, pr_pict, money]
+              pr_row = sheet.add_row ['',pr.css('model').text, pr.css('description').text, '', price], style: [nil, pr_title, pr_descr, pr_pict, money]
               # puts "pr_row.row_index - "+pr_row.row_index.to_s
               hyp_ref = "B#{pr_row.row_index.to_s}"
               sheet.add_hyperlink location: pr.css('url').text, ref: hyp_ref
@@ -289,5 +289,5 @@ class Services::Import
     new_price
   end
 
-  
+
 end
