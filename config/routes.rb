@@ -1,14 +1,4 @@
 Rails.application.routes.draw do
-  get '/excel_prices/:id/import', to: 'excel_prices#import', as: 'import_excel_price'
-  get '/excel_prices/:id/file_export', to: 'excel_prices#file_export', as: 'file_export_excel_price'
-  resources :excel_prices do
-    collection do
-      get :check_file_status
-      post :delete_selected
-    end
-  end
-  resources :kp_products
-  get 'kps', to: 'kps#index_all'
   resources :orders do
     resources :kps do
       collection do
@@ -28,18 +18,6 @@ Rails.application.routes.draw do
       post :webhook
       get :autocomplete_company_title
       get :autocomplete_client_name
-    end
-  end
-  resources :products do
-    collection do
-      post :delete_selected
-      get :insales_import
-      delete '/:id/images/:image_id', action: 'delete_image', as: 'delete_image'
-    end
-  end
-  resources :companies do
-    collection do
-      delete '/:id/images/:image_id', action: 'delete_image', as: 'delete_image'
     end
   end
   resources :clients

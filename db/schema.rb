@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_08_063037) do
+ActiveRecord::Schema.define(version: 2022_11_14_155424) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,31 +48,6 @@ ActiveRecord::Schema.define(version: 2022_11_08_063037) do
     t.string "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "insid"
-  end
-
-  create_table "clients_companies", id: false, force: :cascade do |t|
-    t.bigint "client_id", null: false
-    t.bigint "company_id", null: false
-    t.index ["client_id", "company_id"], name: "index_clients_companies_on_client_id_and_company_id"
-    t.index ["company_id", "client_id"], name: "index_clients_companies_on_company_id_and_client_id"
-  end
-
-  create_table "companies", force: :cascade do |t|
-    t.boolean "our_company"
-    t.string "title"
-    t.string "fulltitle"
-    t.string "uraddress"
-    t.string "factaddress"
-    t.bigint "inn"
-    t.bigint "kpp"
-    t.bigint "ogrn"
-    t.bigint "okpo"
-    t.bigint "bik"
-    t.string "banktitle"
-    t.string "bankaccount"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "delayed_jobs", force: :cascade do |t|
@@ -90,76 +65,13 @@ ActiveRecord::Schema.define(version: 2022_11_08_063037) do
     t.index ["priority", "run_at"], name: "delayed_jobs_priority"
   end
 
-  create_table "excel_prices", force: :cascade do |t|
-    t.string "title"
-    t.string "link"
-    t.string "price_move"
-    t.integer "price_shift"
-    t.string "price_points"
-    t.text "comment"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.boolean "file_status"
-  end
-
-  create_table "homes", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "kp_products", force: :cascade do |t|
-    t.integer "quantity"
-    t.decimal "price"
-    t.decimal "sum"
-    t.bigint "kp_id"
-    t.bigint "product_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "desc"
-    t.string "sku"
-    t.index ["kp_id"], name: "index_kp_products_on_kp_id"
-    t.index ["product_id"], name: "index_kp_products_on_product_id"
-  end
-
-  create_table "kps", force: :cascade do |t|
-    t.string "vid"
-    t.string "status"
-    t.string "title"
-    t.bigint "order_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.decimal "extra", precision: 8, scale: 2
-    t.string "comment"
-    t.index ["order_id"], name: "index_kps_on_order_id"
-  end
-
   create_table "orders", force: :cascade do |t|
     t.string "status"
-    t.integer "number"
     t.integer "client_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "company_id"
-    t.integer "companykp1_id"
-    t.integer "companykp2_id"
-    t.integer "companykp3_id"
     t.bigint "user_id"
-    t.integer "insid"
-    t.index ["company_id"], name: "index_orders_on_company_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
-  end
-
-  create_table "products", force: :cascade do |t|
-    t.string "sku"
-    t.string "title"
-    t.string "desc"
-    t.integer "quantity"
-    t.decimal "costprice"
-    t.decimal "price"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "insid"
-    t.integer "insvarid"
   end
 
   create_table "roles", force: :cascade do |t|
@@ -185,10 +97,6 @@ ActiveRecord::Schema.define(version: 2022_11_08_063037) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "kp_products", "kps"
-  add_foreign_key "kp_products", "products"
-  add_foreign_key "kps", "orders"
-  add_foreign_key "orders", "companies"
   add_foreign_key "orders", "users"
   add_foreign_key "users", "roles"
 end

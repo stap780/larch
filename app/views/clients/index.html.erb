@@ -11,7 +11,7 @@
         <div class="btn-group" role="group">
           <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Действия</button>
           <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-            <%= link_to 'New Client', new_client_path, class: 'dropdown-item' %>
+            <%= link_to 'Создать', new_client_path, class: 'dropdown-item' %>
             <%# link_to 'Создать заказ', edit_multi_case_iorder_cases_path, class: 'dropdown-item', id: 'edit_multi_case_iorder', remote: true, data: { toggle: 'modal', target: '#modal-edit' } %>
           </div>
         </div>
@@ -51,7 +51,7 @@
     <% @clients.each do |client| %>
     <tr>
       <td><%= check_box_tag "client_ids[]", client.id %></td>
-        <td><%= link_to client.name, edit_client_path(client) %><br /><%= client.middlename %><br /><%= client.surname %></td>
+        <td><%= link_to client.full_name, edit_client_path(client) %></td>
         <td><%= client.phone %></td>
         <td><%= client.email %></td>
         <td><%= client.zip %></td>

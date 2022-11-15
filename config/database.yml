@@ -2,7 +2,7 @@ development:
   adapter: postgresql
   host: localhost
   encoding: unicode
-  database: #{Rails.application.class.parent_name.downcase}+'_development'
+  database: 'carrent_development'
   pool: 5
   username: administrator
   password:
@@ -12,7 +12,7 @@ test:
   adapter: postgresql
   host: localhost
   encoding: unicode
-  database: #{Rails.application.class.parent_name.downcase}+'_test'
+  database: 'carrent_test'
   pool: 5
   username: administrator
   password:

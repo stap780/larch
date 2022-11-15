@@ -1,5 +1,0 @@
-<% if params.key?('debug') %>
-  <%= image_tag( image_link , class: image_class  ) %>
-<% else %>
-  <%= wicked_pdf_image_tag( asset_url( image_link ) , class: image_class ) %>
-<% end %>

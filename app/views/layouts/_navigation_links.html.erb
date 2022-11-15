@@ -2,19 +2,9 @@
 <% if can? :index , Order %>
 <li class="nav-item <%= 'active' if current_page?(orders_path) %>'"><%= link_to 'Заказы', orders_path, class: 'nav-link' %></li>
 <% end %>
-<% if can? :index_all , Kp %>
-<li class="nav-item <%= 'active' if current_page?(kps_path) %>'"><%= link_to 'Все КП', kps_path, class: 'nav-link' %></li>
-<% end %>
 <% if can? :index , Client %>
 <li class="nav-item <%= 'active' if current_page?(clients_path) %>'"><%= link_to 'Контакт', clients_path, class: 'nav-link' %></li>
 <% end %>
-<% if can? :index , Company %>
-<li class="nav-item <%= 'active' if current_page?(companies_path) %>'"><%= link_to 'Компании', companies_path, class: 'nav-link' %></li>
-<% end %>
-<% if can? :index , Product %>
-<li class="nav-item <%= 'active' if current_page?(products_path) %>'"><%= link_to 'Товары', products_path, class: 'nav-link' %></li>
-<% end %>
-<li class="nav-item <%= 'active' if current_page?(excel_prices_path) %>'"><%= link_to 'Excel', excel_prices_path, class: 'nav-link' %></li>
 <% if can? :index , User %>
 <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">Настройки</a>

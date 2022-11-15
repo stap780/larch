@@ -4,22 +4,17 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="row">
-    <div class="col-12 h3" data-client-insid="<%= @client.insid if @client.insid.present? %>"><%= page_title %></div>
+    <div class="col-12 h3"><%= page_title %></div>
     <div class="col row align-items-center justify-content-start">
     <%= f.input :name, label: "Имя", wrapper_html: { class: "col-4 mt-2" } %>
     <%= f.input :middlename, label: "Отчество", wrapper_html: { class: "col-4 mt-2" } %>
     <%= f.input :surname, label: "Фамилия", wrapper_html: { class: "col-4 mt-2" } %>
     <%= f.input :phone, label: "Телефон", wrapper_html: { class: "col-4 mt-2" } %>
     <%= f.input :email, label: "Е-mail", wrapper_html: { class: "col-6 mt-2" } %>
-    <%# f.input :zip, wrapper_html: { class: "col-4" }  %>
+    <%= f.input :zip, wrapper_html: { class: "col-4" }  %>
     <%= f.input :state, label: "Область", wrapper_html: { class: "col-4 mt-2" } %>
-    <%# f.input :city, wrapper_html: { class: "col-4" } %>
+    <%= f.input :city, wrapper_html: { class: "col-4" } %>
     <%= f.input :address, label: "Адрес", wrapper_html: { class: "col-8 mt-2" } %>
-    </div>
-      <div class="col-5 align-items-center">
-      <div class="h4">  Компании клиента  </div>
-      <%= f.association :companies, input_html: { multiple: false, class: "form-select "}%>
-    </div>
 </div>
   <div class="row">
   <div class="col-3 btn-group mt-5">

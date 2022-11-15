@@ -39,7 +39,6 @@ gem 'delayed_job_active_record'
 gem 'cancancan'
 gem 'caxlsx'
 gem 'caxlsx_rails'
-gem 'insales_api'
 gem 'rubyzip'
 
 
