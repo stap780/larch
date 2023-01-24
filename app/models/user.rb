@@ -1,8 +1,6 @@
 class User < ApplicationRecord
   belongs_to :role
   has_many :orders
-  # before_create :set_default_role
-  # or
   before_validation :set_default_role
   has_one_attached :avatar, dependent: :destroy
   before_save :normalize_phone

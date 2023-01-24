@@ -1,17 +1,13 @@
 Rails.application.routes.draw do
-  resources :orders do
-    resources :kps do
-      collection do
-        get '/:id/copy', action: 'copy', as: 'copy'
-        get '/:id/print1', action: 'print1', as: 'print1'
-        get '/:id/print2', action: 'print2', as: 'print2'
-        get '/:id/print3', action: 'print3', as: 'print3'
-        get ':id/file_import', action: 'file_import', as: 'file_import'
-        get ':id/file_export', action: 'file_export', as: 'file_export'
-        post ':id/import', action: 'import', as: 'import'
-        get :autocomplete_product_title
-      end
+  resources :products do
+    collection do
+      post :delete_selected
+      get :insales_import
+      delete '/:id/images/:image_id', action: 'delete_image', as: 'delete_image'
     end
+  end
+
+  resources :orders do
     collection do
       post :delete_selected
       get :download
@@ -21,7 +17,7 @@ Rails.application.routes.draw do
     end
   end
   resources :clients
-  root to: 'orders#index'
+  root to: 'products#index'
   devise_for :users, controllers: {
     registrations: 'users/registrations',
     sessions: 'users/sessions',
@@ -31,6 +27,10 @@ Rails.application.routes.draw do
     collection do
       delete '/:id/images/:image_id', action: 'delete_image', as: 'delete_image'
     end
+  end
+
+  authenticated :user, -> user { user.admin? }  do
+    mount DelayedJobWeb, at: "/job"
   end
 
 end

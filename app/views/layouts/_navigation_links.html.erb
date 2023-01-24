@@ -1,15 +1,15 @@
 <% if current_user.role.name != 'registered'%>
-<% if can? :index , Order %>
-<li class="nav-item <%= 'active' if current_page?(orders_path) %>'"><%= link_to 'Заказы', orders_path, class: 'nav-link' %></li>
-<% end %>
-<% if can? :index , Client %>
-<li class="nav-item <%= 'active' if current_page?(clients_path) %>'"><%= link_to 'Контакт', clients_path, class: 'nav-link' %></li>
+<%# if can? :index , Order %><%# link_to 'Заказы', orders_path, class: 'nav-link' %><%# end %>
+<%# if can? :index , Client %><%# link_to 'Контакт', clients_path, class: 'nav-link' %><%# end %>
+<% if can? :index , Product %>
+<li class="nav-item <%= 'active' if current_page?(clients_path) %>"><%= link_to 'Товары', products_path, class: 'nav-link' %></li>
 <% end %>
 <% if can? :index , User %>
 <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">Настройки</a>
   <div class="dropdown-menu">
     <a class="dropdown-item <%= 'active' if current_page?(users_path) %>" href="<%= users_path %>">Пользователи</a>
+    <a class="dropdown-item <%= 'active' if current_page?(delayed_job_web_path) %>" href="<%= delayed_job_web_path %>" target="_blank">Системные задания</a>
   </div>
 </li>
 <% end %>

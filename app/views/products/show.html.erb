@@ -1,0 +1,40 @@
+
+<div class="row">
+<div class="col-6">
+  <strong>Sku:</strong>
+  <%= @product.sku %>
+</div>
+
+<div class="col-6">
+  <strong>Title:</strong>
+  <%= @product.title %>
+</div>
+
+<div class="col-6">
+  <strong>Desc:</strong>
+  <%= @product.desc %>
+</div>
+
+<div class="col-6">
+  <strong>Quantity:</strong>
+  <%= @product.quantity %>
+</div>
+
+<div class="col-6">
+  <strong>Costprice:</strong>
+  <%= @product.costprice %>
+</div>
+
+<div class="col-6">
+  <strong>Price:</strong>
+  <%= @product.price %>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-3 btn-group mt-5">
+<%= link_to 'Edit', edit_product_path(@product) , class: 'btn btn-success' %> |
+<%= link_to 'Back', products_path, class: 'btn btn-outline-primary' %>
+</div>
+</div>
