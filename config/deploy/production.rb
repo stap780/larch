@@ -42,5 +42,5 @@
 
 # fetch(:default_env).merge!(rails_env: :production)
 
-server '104.131.40.131', user: 'deploy', roles: %w{app db web}
+server '95.163.236.170', user: 'deploy', roles: %w{app db web}
 set :unicorn_rack_env, -> { "production" }
