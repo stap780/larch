@@ -165,7 +165,6 @@ GEM
     mime-types-data (3.2022.0105)
     mini_magick (4.12.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.1)
     minitest (5.17.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
@@ -183,8 +182,7 @@ GEM
     net-ssh (7.0.1)
     netrc (0.11.0)
     nio4r (2.5.8)
-    nokogiri (1.13.10)
-      mini_portile2 (~> 2.8.0)
+    nokogiri (1.13.10-x86_64-darwin)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pg (0.21.0)
@@ -363,6 +361,7 @@ DEPENDENCIES
   nokogiri
   pg (~> 0.18)
   phonelib
+  rack-protection
   rails (~> 5.2.4, >= 5.2.4.4)
   rails-jquery-autocomplete
   ransack

@@ -41,6 +41,7 @@ gem 'caxlsx'
 gem 'caxlsx_rails'
 gem 'rubyzip'
 gem 'delayed_job_web'
+gem 'rack-protection'
 
 
 gem 'bcrypt_pbkdf', '< 2.0', :require => false
