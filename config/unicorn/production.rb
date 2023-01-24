@@ -1,4 +1,4 @@
-app_name = "carrent"
+app_name = "alexproduct"
 working_directory "/var/www/#{app_name}/current"
 pid "/var/www/#{app_name}/current/tmp/pids/unicorn.pid"
 stderr_path "/var/www/#{app_name}/log/unicorn.log"
