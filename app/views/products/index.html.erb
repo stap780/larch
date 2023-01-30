@@ -18,7 +18,7 @@
             <%= f.search_field :title_eq , placeholder: 'title', class: "form-control", style: "max-width: 180px;" %>
             <%= f.search_field :desc_eq , placeholder: 'desc', class: "form-control", style: "max-width: 180px;" %>
             <%= f.search_field :quantity_eq , placeholder: 'quantity', class: "form-control", style: "max-width: 180px;" %>
-            <%= f.search_field :costprice_eq , placeholder: 'costprice', class: "form-control", style: "max-width: 180px;" %>
+            <%# f.search_field :costprice_eq , placeholder: 'costprice', class: "form-control", style: "max-width: 180px;" %>
             <%= f.search_field :price_eq , placeholder: 'price', class: "form-control", style: "max-width: 180px;" %>
             <%= button_tag(type: 'submit', :class => "btn btn-info") do %>
         <span class="oi oi-magnifying-glass"></span>
@@ -50,7 +50,7 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= check_box_tag "product_ids[]", product.id %></td>
-        <td><%= image_tag product.images.first.variant(resize: "100x100"), class: "img-thumbnail" if product.images.present? %></td>
+        <td style="width:100px;"><%= image_tag product.images.first.variant(resize: "100x100"), class: "img-thumbnail" if product.images.present? %></td>
         <td><%= product.sku %></td>
         <td><%= product.barcode %></td>
         <td><%= product.title %></td>

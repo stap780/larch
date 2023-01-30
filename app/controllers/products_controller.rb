@@ -23,7 +23,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1/edit
   def edit
-    @product.variants.build if @product.variants.empty?
+    # @product.variants.build if @product.variants.empty?
   end
 
   # POST /products

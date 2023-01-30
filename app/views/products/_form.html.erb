@@ -9,7 +9,7 @@
       <%= f.input :title, label: "Название", wrapper_html: { class: "col-12" }  %>
       <%= f.input :sku, wrapper_html: { class: "col-3" }  %>
       <%= f.input :barcode, wrapper_html: { class: "col-4" }  %>
-      <%= f.input :desc, label: "Описание", as: :text, wrapper_html: { class: "col-12" }   %>
+      <%= f.input :desc, label: "Описание", as: :text, wrapper_html: { class: "col-12" } , input_html: { rows: "5" } %> 
       <%= f.input :avito_param, label: "Avito параметры", wrapper_html: { class: "col-12" }   %>
       <%= f.input :quantity, label: "К-во", wrapper_html: { class: "col-3" }   %>
       <%= f.input :costprice, label: "Цена закупки", wrapper_html: { class: "col-3" }   %>

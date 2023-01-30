@@ -33,24 +33,21 @@ class Services::Import
         quantity: pr.xpath("count").text
       }
 
-      product = Product.find_by(offer_id: data[:offer_id]).present? ? Product.find_by(offer_id: data[:offer_id]).update(data) : Product.create!(data)
-
-      images = pr.xpath("picture").present? ? pr.xpath("picture").map(&:text) : []
-      # puts "images кол-во - #{images.count.to_s}"
-      # puts images.to_s
+      check_product = Product.where(offer_id: data[:offer_id]).first
+      if check_product.present?
+        check_product.update!(data)
+        product = check_product
+      else
+        product = Product.create!(data)
+      end
+      
+      images = pr.xpath("picture").present? ? pr.xpath("picture").map(&:text) : nil
+      pr_filenames = product.images.map(&:filename).reject(&:blank?)
       if images.present?
         images.each do |img_link|
-          # puts img_link
           img_filename = img_link.split('/').last.split('.').first
-          if product.images.present?
-            if !product.images.select{|im| im.filename.to_s == img_filename }.present?
-              file = Services::Import.download_file(img_link)
-              product.images.attach(io: file, filename: img_filename, content_type: "image/jpg")
-            end
-          else
-            file = Services::Import.download_file(img_link)
-            product.images.attach(io: file, filename: img_filename, content_type: "image/jpg")
-          end
+          file = Services::Import.download_file(img_link)
+          product.images.attach(io: file, filename: img_filename, content_type: "image/jpg")
         end
       end
 

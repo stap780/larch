@@ -7,4 +7,6 @@ class Product < ApplicationRecord
 
     ImageBackground = ['red','green','blue','yellow'].freeze
     ImageSize = ['600x600','800x800','1200x1200','1600x1600'].freeze
+
+
 end
