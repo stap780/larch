@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_24_120225) do
+ActiveRecord::Schema.define(version: 2023_01_28_101146) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -83,6 +83,9 @@ ActiveRecord::Schema.define(version: 2023_01_24_120225) do
     t.decimal "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "offer_id"
+    t.string "barcode"
+    t.string "avito_param"
   end
 
   create_table "roles", force: :cascade do |t|
@@ -105,6 +108,15 @@ ActiveRecord::Schema.define(version: 2023_01_24_120225) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["role_id"], name: "index_users_on_role_id"
+  end
+
+  create_table "variants", force: :cascade do |t|
+    t.string "sku"
+    t.string "title"
+    t.string "desc"
+    t.integer "product_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

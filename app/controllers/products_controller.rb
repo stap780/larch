@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
     #@products = Product.all
     @search = Product.ransack(params[:q])
     @search.sorts = 'id asc' if @search.sorts.empty?
-    @products = @search.result.paginate(page: params[:page], per_page: 30)
+    @products = @search.result.paginate(page: params[:page], per_page: 100)
   end
 
   # GET /products/1
@@ -18,10 +18,12 @@ class ProductsController < ApplicationController
   # GET /products/new
   def new
     @product = Product.new
+    @product.variants.build
   end
 
   # GET /products/1/edit
   def edit
+    @product.variants.build if @product.variants.empty?
   end
 
   # POST /products
@@ -30,7 +32,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to products_url, notice: "Product was successfully created." }
+        format.html { redirect_to @product, notice: "Product was successfully created." }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -44,7 +46,7 @@ class ProductsController < ApplicationController
   def update
   respond_to do |format|
     if @product.update(product_params)
-      format.html { redirect_to products_url, notice: "Product was successfully updated." }
+      format.html { redirect_to @product, notice: "Product was successfully updated." }
       format.json { render :show, status: :ok, location: @product }
     else
       format.html { render :edit, status: :unprocessable_entity }
@@ -87,8 +89,6 @@ class ProductsController < ApplicationController
     redirect_to products_path, notice: 'Запущен процесс Обновление Товаров InSales. Дождитесь письма о выполнении обновления'
   end
 
-
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product
@@ -97,6 +97,6 @@ class ProductsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def product_params
-      params.require(:product).permit(:sku, :title, :desc, :quantity, :costprice, :price, images: [], images_attachments_attributes: [:id, :_destroy])
+      params.require(:product).permit(:sku, :title, :desc, :quantity, :costprice, :price, :offer_id,:barcode, :avito_param, images: [], images_attachments_attributes: [:id, :_destroy], :variants_attributes =>[:id, :sku, :product_id, :title, :desc, :_destroy])
     end
 end

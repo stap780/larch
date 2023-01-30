@@ -1,18 +1,21 @@
-<div class="row justify-content-center align-content-center mb-3 mt-3">
-<div class="col-2">
-  <div class="h3 col-md-12 p-0"><%= plural_table_name.titleize %></div>
-  <div class="col-md-12 p-0"><small>Всего - <%= <%= singular_table_name.titleize %>.count %></small></div>
-</div>
-<div class="col-2 p-0">
-  <div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Действия</button>
-    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <%= link_to 'New <%= singular_table_name.titleize %>',  new_<%= singular_route_name %>_path, class: 'dropdown-item' %>
+<div class="row justify-content-center align-items-center mb-2">
+  <div class="col-2 row">
+  <div class="col-md-12 p-0">
+    <div class="h3"><%= plural_table_name.titleize %>  </div>
+    <div class="h6">Всего - <%%= <%= singular_table_name.titleize %>.count %></div>
+  </div>
+  </div>
+  <div class="col-10 pl-0 pr-0 row">
+  <div class="col-12 mb-3">
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Действия</button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <%%= link_to 'New <%= singular_table_name.titleize %>', new_<%= singular_route_name %>_path, class: 'dropdown-item' %>
+      </div>
     </div>
   </div>
-</div>
 
-  <%%= search_form_for @search, {class: 'form-inline col-7 pl-0 pr-0'} do |f| %>
+  <%%= search_form_for @search, {class: 'form-inline col-9 pl-0 pr-0'} do |f| %>
     <div class="input-group input-group-sm">
       <% attributes.reject(&:password_digest?).each do |attribute| -%>
       <%%= f.search_field :<%= attribute.name %>_eq , placeholder: '<%= attribute.name %>', class: "form-control", style: "max-width: 180px;" %>

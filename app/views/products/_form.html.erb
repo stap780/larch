@@ -6,9 +6,11 @@
   <div class="row">
     <div class="col-12 h3"><%= page_title %></div>
     <div class="col-6 row">
-      <%= f.input :sku, wrapper_html: { class: "col-2" }  %>
-      <%= f.input :title, label: "Название", wrapper_html: { class: "col-10" }  %>
+      <%= f.input :title, label: "Название", wrapper_html: { class: "col-12" }  %>
+      <%= f.input :sku, wrapper_html: { class: "col-3" }  %>
+      <%= f.input :barcode, wrapper_html: { class: "col-4" }  %>
       <%= f.input :desc, label: "Описание", as: :text, wrapper_html: { class: "col-12" }   %>
+      <%= f.input :avito_param, label: "Avito параметры", wrapper_html: { class: "col-12" }   %>
       <%= f.input :quantity, label: "К-во", wrapper_html: { class: "col-3" }   %>
       <%= f.input :costprice, label: "Цена закупки", wrapper_html: { class: "col-3" }   %>
       <%= f.input :price, label: "Цена" , wrapper_html: { class: "col-3" }  %>
@@ -18,7 +20,31 @@
         <%= f.input :images, as: :file, label: false, :input_html => { :multiple => true } %>
         <%= render '/layouts/image_form', :f => @product %>
       </div>
+    <div class="col-10 row">
+    <div class="col-6">
+      <%= link_to_add_association "Добавить вариант", f, :variants, 'data-association-insertion-node' => "#variants", 
+                                                                    'data-association-insertion-method' => "append",
+                                                                    class: "btn btn-dark btn-sm mt-5 mb-3", 
+                                                                    onclick: "initLine()"  %>
     </div>
+    <div class="col-12">
+    <table class="table table-success table-striped" id="variants">
+      <thead>
+        <tr class="table-success">
+          <th>sku</th>
+          <th>title</th>
+          <th>desc</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+      <tbody class="">
+        <%= f.simple_fields_for :variants do |variant| %>
+          <%= render 'variant_fields', f: variant %>
+        <% end %>
+        </tbody>
+    </table>
+    </div>
+  </div>
 
 </div>
   <div class="row">

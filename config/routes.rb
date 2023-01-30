@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
+  resources :variants do
+    collection do
+      post '/:id/create_images', action: 'create_images', as: 'create_images'
+    end
+  end
+
   resources :products do
     collection do
       post :delete_selected
-      get :insales_import
+      get :import
       delete '/:id/images/:image_id', action: 'delete_image', as: 'delete_image'
     end
   end

@@ -1,0 +1,14 @@
+<tr class="nested-fields align-middle" data="<%= f.present?%>">
+    <td class="p-1"  style="width:15%;"><%= f.input :sku , label: false %></td>
+    <td class="p-1 w-25"><%= f.input :title , label: false %></td>
+    <td class="p-1 w-50"><%= f.input :desc , label: false %></td>
+    <td class="p-1"><%= link_to_remove_association '<span class="oi oi-trash"></span>'.html_safe, f %></td>
+    <td class="p-1">
+    <% if f.object.id.present? %>
+         <%= render '/layouts/image_form', :f => f.object %>
+    <% end%>
+    </td>
+    <%= f.input :product_id, as: :hidden %>
+</tr>
+
+
