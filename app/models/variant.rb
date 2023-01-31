@@ -15,8 +15,9 @@ class Variant < ApplicationRecord
             product_images.each do |pi|
                 puts "pi => "+pi.filename.to_s
                 im_service = Services::Image.new(pi,background,size)
-                im_service.transparent_background
-                im_service.color_background
+                # im_service.transparent_background
+                # im_service.color_background
+                im_service.change_background
                 im_service.resize
                 puts "im_service => "+im_service.inspect.to_s
                 temp_image = im_service.temp_image_path

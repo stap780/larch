@@ -34,7 +34,7 @@ class Services::Image
 
   def color_background
     puts "color_background start"
-    # convert output.png -fuzz 0% -fill red -opaque transparent -flatten result1.png
+    # convert output.png -fuzz 0% -fill red -opaque transparent -flatten result1.png - работает на локале
     convert = MiniMagick::Tool::Convert.new
     convert << @temp_image_path
     convert.merge! ["-fuzz", "0%", "-fill", @background, "-opaque", "transparent", "-flatten"]
@@ -43,6 +43,19 @@ class Services::Image
     # @temp_image_path = "#{Rails.root}/public/temp_image.png"
     puts "color_background finish"
   end
+
+  def change_background #это сразу удаляет фон и ставит новый фон
+    puts "change_background start"
+    # convert test.jpg -fuzz 25% -fill none -draw "matte 0,0 floodfill" -background red -flatten result2.jpg - сработало на продакшене
+    convert = MiniMagick::Tool::Convert.new
+    convert << @temp_image_path
+    convert.merge! ["-fuzz", "25%", "-fill", "none", "-draw", "matte 0,0 floodfill", "-background", @background, "-flatten"]
+    convert << @temp_image_path
+    convert.call
+    # @temp_image_path = "#{Rails.root}/public/temp_image.png"
+    puts "change_background finish"
+  end
+
 
   def resize
     puts "resize start"
