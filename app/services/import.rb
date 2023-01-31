@@ -46,8 +46,10 @@ class Services::Import
       if images.present?
         images.each do |img_link|
           img_filename = img_link.split('/').last.split('.').first
-          file = Services::Import.download_file(img_link)
-          product.images.attach(io: file, filename: img_filename, content_type: "image/jpg")
+          if !pr_filenames.include?(img_filename)
+            file = Services::Import.download_file(img_link)
+            product.images.attach(io: file, filename: img_filename, content_type: "image/jpg")
+          end
         end
       end
 
