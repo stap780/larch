@@ -1,34 +1,18 @@
 <div class="row">
 <div class="col-6">
-  <strong>Sku:</strong>
-  <%= @product.sku %>
+<p><strong>Sku:</strong> <%= @product.sku %></p>
+<p><strong>Title:</strong> <%= @product.title %></p>
+<p><strong>Desc:</strong> <%= @product.desc %></p>
+<p><strong>Quantity:</strong> <%= @product.quantity %></p>
+<p><strong>Costprice:</strong> <%= @product.costprice %></p>
+<p><strong>Price:</strong> <%= @product.price %></p>
+</div>
+<div class="col-6">
+  <%= render '/layouts/image_form', :f => @product %>
 </div>
 
-<div class="col-6">
-  <strong>Title:</strong>
-  <%= @product.title %>
-</div>
-
-<div class="col-6">
-  <strong>Desc:</strong>
-  <%= @product.desc %>
-</div>
-
-<div class="col-6">
-  <strong>Quantity:</strong>
-  <%= @product.quantity %>
-</div>
-
-<div class="col-6">
-  <strong>Costprice:</strong>
-  <%= @product.costprice %>
-</div>
-
-<div class="col-6">
-  <strong>Price:</strong>
-  <%= @product.price %>
-</div>
-<div class="col-10 mt-4">
+<div class="col-12 mt-4">
+<div class="col-6 mb-2 h4">Варианты</div>
   <div class="table-responsive">
     <table class="table table-primary">
       <thead>
@@ -37,6 +21,7 @@
           <th scope="col">Title</th>
           <th scope="col">Desc</th>
           <th scope="col">Картинки</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -47,14 +32,14 @@
           <td><%= variant.desc%></td>
           <td> 
           <%= form_tag create_images_variants_path(variant), method: :post do %>
-            <label>Color</label>
+            <p><label>Color</label>
             <%= select_tag "background", options_for_select(Product::ImageBackground) %>
             <label>Size</label>
-            <%= select_tag "size", options_for_select(Product::ImageSize) %>
-            <%= submit_tag "Create image", class: "btn btn-primary" %>
+            <%= select_tag "size", options_for_select(Product::ImageSize) %></p>
+            <p><%= submit_tag "Create image", class: "btn btn-primary btn-sm" %></p>
           <% end %>
-           <%= render '/layouts/image_form', :f => variant %>
-        </td>
+          </td>
+           <td class="pt-0"><%= render '/layouts/image_form', :f => variant %></td>
         </tr>
         <% end %>
       </tbody>
@@ -67,7 +52,7 @@
 
 <div class="row">
 <div class="col-2 btn-group mt-5">
-<%= link_to 'Edit', edit_product_path(@product) , class: 'btn btn-success' %>
-<%= link_to 'Back', products_path, class: 'btn btn-outline-primary' %>
+<%= link_to 'Редактировать', edit_product_path(@product) , class: 'btn btn-success' %>
+<%= link_to 'Назад', products_path, class: 'btn btn-outline-primary' %>
 </div>
 </div>

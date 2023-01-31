@@ -20,7 +20,7 @@
         <%= f.input :images, as: :file, label: false, :input_html => { :multiple => true } %>
         <%= render '/layouts/image_form', :f => @product %>
       </div>
-    <div class="col-10 row">
+    <div class="col-12 row">
     <div class="col-6">
       <%= link_to_add_association "Добавить вариант", f, :variants, 'data-association-insertion-node' => "#variants", 
                                                                     'data-association-insertion-method' => "append",
@@ -34,7 +34,8 @@
           <th>sku</th>
           <th>title</th>
           <th>desc</th>
-          <th colspan="3"></th>
+          <th colspan="1"></th>
+          <th>image</th>
         </tr>
       </thead>
       <tbody class="">

@@ -80,7 +80,7 @@ $(document).ready(function() {
     var response = data.message;
     console.log('Response is => ' + response);
     if (data.message === 'destroyed') {
-      $(this).closest('tr').fadeOut();
+      // $(this).closest('tr').fadeOut();
       $(this).closest('.image-item').fadeOut();
     }
   });
