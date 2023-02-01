@@ -1,6 +1,7 @@
 class Variant < ApplicationRecord
     belongs_to :product
     has_many_attached :images, dependent: :destroy
+    default_scope { order(id: :asc) }
     validates :images, size: { less_than: 10.megabytes , message: 'размер файла должен быть меньше 10Мб' }
     validates :title, presence: true
 
@@ -13,20 +14,17 @@ class Variant < ApplicationRecord
         product_images = self.product.images
         if product_images.present?
             product_images.each do |pi|
-                puts "pi => "+pi.filename.to_s
+                # image_disk_path = ActiveStorage::Blob.service.path_for(pi.key)
+                # puts "pi => "+pi.filename.to_s
                 im_service = Services::Image.new(pi,background,size)
-                # im_service.transparent_background
-                # im_service.color_background
-                im_service.change_background
+                im_service.change_background_for_jpg
                 im_service.resize
                 puts "im_service => "+im_service.inspect.to_s
                 temp_image = im_service.temp_image_path
-                puts "temp_image => "+temp_image.to_s
-                host = Rails.env.development? ? 'http://localhost:3000' : 'http://95.163.236.170'
-                img_link = host+'/'+temp_image.split('/').last
-                file = Services::Import.download_file(img_link)
+                # puts "temp_image => "+temp_image.to_s
                 filename = pi.filename.to_s+"_"+self.id.to_s
-                self.images.attach(io: file, filename: filename)
+                self.images.attach(io: File.open(temp_image), filename: filename)
+                im_service.close
             end
         end
     end

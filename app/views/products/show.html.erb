@@ -17,6 +17,7 @@
     <table class="table table-primary">
       <thead>
         <tr>
+        <th scope="col">Id</th>
           <th scope="col">Sku</th>
           <th scope="col">Title</th>
           <th scope="col">Desc</th>
@@ -27,7 +28,8 @@
       <tbody>
       <% @product.variants.each do |variant|%>
         <tr class="">
-          <td scope="row"><%= variant.sku%></td>
+          <td><%= variant.id%></td>
+          <td><%= variant.sku%></td>
           <td><%= variant.title%></td>
           <td><%= variant.desc%></td>
           <td> 
