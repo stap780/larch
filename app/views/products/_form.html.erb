@@ -18,7 +18,7 @@
     <div class="col-6 row align-content-start">
       <div class="col-12 mb-3 h3">Изображения</div>
         <%= f.input :images, as: :file, label: false, :input_html => { :multiple => true } %>
-        <%= render '/layouts/image_form', :f => @product %>
+        <%= render '/layouts/image_form', :f => @product, size: '200x200'  %>
       </div>
     <div class="col-12 row">
     <div class="col-6">

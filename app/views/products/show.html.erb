@@ -8,7 +8,7 @@
 <p><strong>Price:</strong> <%= @product.price %></p>
 </div>
 <div class="col-6">
-  <%= render '/layouts/image_form', :f => @product %>
+  <%= render '/layouts/image_form', :f => @product, size: '200x200' %>
 </div>
 
 <div class="col-12 mt-4">
@@ -32,7 +32,7 @@
           <td><%= variant.sku%></td>
           <td><%= variant.title%></td>
           <td><%= variant.desc%></td>
-          <td style="max-width:180px"> 
+          <td style="max-width:160px"> 
           <%= form_tag create_images_variants_path(variant), method: :post do %>
             <p><label>Color</label>
             <%= select_tag "background", options_for_select(Product::ImageBackground) %>
@@ -41,7 +41,7 @@
             <p><%= submit_tag "Create image", class: "btn btn-primary btn-sm" %></p>
           <% end %>
           </td>
-           <td class="pt-0"><%= render '/layouts/image_form', :f => variant %></td>
+           <td class="pt-0"><%= render '/layouts/image_form', :f => variant , size: '150x150'%></td>
         </tr>
         <% end %>
       </tbody>

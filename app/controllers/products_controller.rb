@@ -86,7 +86,12 @@ class ProductsController < ApplicationController
 
   def import
     Rails.env.development? ? Services::Import.product : ImportProductJob.perform_later
-    redirect_to products_path, notice: 'Запущен процесс Обновление Товаров InSales. Дождитесь письма о выполнении обновления'
+    redirect_to products_path, notice: 'Запущен процесс Обновление Товаров InSales. Дождитесь выполнении'
+  end
+
+  def avito
+    Rails.env.development? ? Services::Export.avito : ExportProductJob.perform_later
+    redirect_to products_path, notice: 'Запущен процесс создания файла авито. Дождитесь выполнении'
   end
 
   private
