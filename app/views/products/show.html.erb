@@ -32,7 +32,7 @@
           <td><%= variant.sku%></td>
           <td><%= variant.title%></td>
           <td><%= variant.desc%></td>
-          <td> 
+          <td style="max-width:180px"> 
           <%= form_tag create_images_variants_path(variant), method: :post do %>
             <p><label>Color</label>
             <%= select_tag "background", options_for_select(Product::ImageBackground) %>

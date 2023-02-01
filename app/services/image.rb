@@ -56,7 +56,7 @@ class Services::Image
     # convert test.jpg -fuzz 25% -fill none -draw "alpha 0,0 floodfill" -background red -flatten result2.jpg - сработало на продакшене
     convert = MiniMagick::Tool::Convert.new
     convert << @start_image_jpg
-    convert.merge! ["-fuzz", "25%", "-fill", "none", "-draw", "alpha 0,0 floodfill", "-background", @background, "-flatten"]
+    convert.merge! ["-fuzz", "25%", "-fill", "none", "-draw", "matte 0,0 floodfill", "-background", @background, "-flatten"]
     convert << @temp_image_path
     convert.call
     puts "change_background finish"
