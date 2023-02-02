@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     collection do
       post :delete_selected
       get :import
+      get :avito
       delete '/:id/images/:image_id', action: 'delete_image', as: 'delete_image'
     end
   end

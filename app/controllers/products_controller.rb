@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
     #@products = Product.all
     @search = Product.ransack(params[:q])
     @search.sorts = 'id asc' if @search.sorts.empty?
-    @products = @search.result.paginate(page: params[:page], per_page: 100)
+    @products = @search.result.paginate(page: params[:page], per_page: 100).includes(images_attachments: :blob)
   end
 
   # GET /products/1
@@ -90,7 +90,7 @@ class ProductsController < ApplicationController
   end
 
   def avito
-    Rails.env.development? ? Services::Export.avito : ExportProductJob.perform_later
+    Rails.env.development? ? Services::Export.avito : ExportAvitoJob.perform_later
     redirect_to products_path, notice: 'Запущен процесс создания файла авито. Дождитесь выполнении'
   end
 

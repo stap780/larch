@@ -2,6 +2,7 @@
 <div class="col-2">
   <div class="h3 col-md-12 p-0">Товары</div>
   <div class="col-md-12 p-0"><small>Всего - <%= Product.count %></small></div>
+  <div class="col-md-12 p-0"><small>Показано - <%= @products.count.to_s %></small></div>
 </div>
 <div class="col-2 p-0">
   <div class="btn-group" role="group">
@@ -9,17 +10,26 @@
     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
       <%= link_to 'Создать', new_product_path, class: 'dropdown-item' %>
       <%= link_to 'Импорт', import_products_path, class: 'dropdown-item' %>
+      <%= link_to 'Авито', avito_products_path, class: 'dropdown-item' %>
     </div>
   </div>
 </div>
-  <%= search_form_for @search, {class: 'form-inline col-7 pl-0 pr-0'} do |f| %>
+  <%= search_form_for @search, {class: 'form-inline col-7 pl-0 pr-0 z-0'} do |f| %>
     <div class="input-group input-group-sm">
             <%= f.search_field :sku_eq , placeholder: 'sku', class: "form-control", style: "max-width: 180px;" %>
             <%= f.search_field :title_eq , placeholder: 'title', class: "form-control", style: "max-width: 180px;" %>
             <%= f.search_field :desc_eq , placeholder: 'desc', class: "form-control", style: "max-width: 180px;" %>
             <%= f.search_field :quantity_eq , placeholder: 'quantity', class: "form-control", style: "max-width: 180px;" %>
-            <%# f.search_field :costprice_eq , placeholder: 'costprice', class: "form-control", style: "max-width: 180px;" %>
             <%= f.search_field :price_eq , placeholder: 'price', class: "form-control", style: "max-width: 180px;" %>
+            <div class="btn-group" role="group" aria-label="">
+              <div class="btn-group" role="group">
+                <button id="dropdownId" type="button" class="form-control dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Картинки</button>
+                <div class="dropdown-menu checkboxes" aria-labelledby="dropdownId">
+                  <%= f.label :with_images do %><%= f.check_box :with_images %>есть<% end %>
+                  <%= f.label :without_images do %><%= f.check_box :without_images%>нет<% end %>
+                </div>
+              </div>
+            </div>
             <%= button_tag(type: 'submit', :class => "btn btn-info") do %>
         <span class="oi oi-magnifying-glass"></span>
       <% end %>

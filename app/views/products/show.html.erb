@@ -8,7 +8,7 @@
 <p><strong>Price:</strong> <%= @product.price %></p>
 </div>
 <div class="col-6">
-  <%= render '/layouts/image_form', :f => @product, size: '200x200' %>
+  <%= render '/layouts/image_form', f: @product, size: '200x200', col: "col-4" %>
 </div>
 
 <div class="col-12 mt-4">
@@ -17,22 +17,22 @@
     <table class="table table-primary">
       <thead>
         <tr>
-        <th scope="col">Id</th>
-          <th scope="col">Sku</th>
-          <th scope="col">Title</th>
-          <th scope="col">Desc</th>
-          <th scope="col">Картинки</th>
-          <th></th>
+          <th >Id</th>
+          <th >Sku</th>
+          <th >Title</th>
+          <th >Desc</th>
+          <th ></th>
+          <th >Картинки</th>
         </tr>
       </thead>
       <tbody>
       <% @product.variants.each do |variant|%>
         <tr class="">
-          <td><%= variant.id%></td>
+          <td style="max-width:30px;"><%= variant.id%></td>
           <td><%= variant.sku%></td>
           <td><%= variant.title%></td>
           <td><%= variant.desc%></td>
-          <td style="max-width:160px"> 
+          <td style="max-width:170px;"> 
           <%= form_tag create_images_variants_path(variant), method: :post do %>
             <p><label>Color</label>
             <%= select_tag "background", options_for_select(Product::ImageBackground) %>
@@ -41,7 +41,7 @@
             <p><%= submit_tag "Create image", class: "btn btn-primary btn-sm" %></p>
           <% end %>
           </td>
-           <td class="pt-0"><%= render '/layouts/image_form', :f => variant , size: '150x150'%></td>
+           <td class="pt-0 px-0"><%= render '/layouts/image_form', f: variant , size: '150x150', col: "col-3"%></td>
         </tr>
         <% end %>
       </tbody>
