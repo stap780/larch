@@ -1,15 +1,15 @@
 class Services::Export
 
     def self.avito
-              puts "Формируем avito "+"#{Time.zone.now}"  
-                file_name =  "avito.xml"  
-        		products = Product.with_images
-                xml = Nokogiri::XML::Builder.new(:encoding => 'UTF-8'){ |xml|
-                
-                    xml.send(:'Ads', :formatVersion => '3', :target => "Avito.ru") { 
-                    
-                    products.each do |product|
-                                    
+        puts "Формируем avito "+"#{Time.zone.now}"  
+        file_name =  "avito.xml"  
+        products = Product.with_images
+        xml = Nokogiri::XML::Builder.new(:encoding => 'UTF-8'){ |xml|
+        
+            xml.send(:'Ads', :formatVersion => '3', :target => "Avito.ru") { 
+            
+                products.each do |product|
+                                
                     xml.send(:'Ad') {
                         xml.Id id
                         xml.DateBegin time_begin
@@ -33,14 +33,13 @@ class Services::Export
                                             end
                                             }
                     }
-                    end			
-                    }
-                }
-                
-                File.open("#{Rails.public_path}"+"/"+file_name, "w") {|f| f.write(xml.to_xml)}
-                puts "Закончили Формируем avito "+"#{Time.zone.now}"
-                end
+                end			
+            }
+        }
         
+        File.open("#{Rails.public_path}"+"/"+file_name, "w") {|f| f.write(xml.to_xml)}
+        puts "Закончили Формируем avito "+"#{Time.zone.now}"
     end
+        
 end
   
