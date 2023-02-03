@@ -1,7 +1,7 @@
 class ExportAvitoJob < ApplicationJob
   queue_as :default
 
-  def perform(excel_price)
+  def perform
     # Do something later
     Services::Export.avito
   end
