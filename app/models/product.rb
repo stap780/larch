@@ -1,4 +1,6 @@
 class Product < ApplicationRecord
+    include Rails.application.routes.url_helpers
+
     has_many :variants, inverse_of: :product, dependent: :destroy
     accepts_nested_attributes_for :variants, :allow_destroy => true
     has_many_attached :images, dependent: :destroy
@@ -9,6 +11,7 @@ class Product < ApplicationRecord
 
     ImageBackground = ['red','green','blue','yellow'].freeze
     ImageSize = ['600x600','800x800','1200x1200','1600x1600'].freeze
+
     
     def self.ransackable_scopes(auth_object = nil)
 		[:with_images, :without_images]
@@ -17,6 +20,18 @@ class Product < ApplicationRecord
     def self.with_images
         ids = Product.joins(:images_attachments).uniq.map(&:id)
         Product.where(id: ids)
+    end
+
+    def image_urls
+        return unless self.images.attached?
+        self.images.map do |pr_image|
+            # puts pr_image.to_s
+            pr_image.blob.attributes.slice('filename', 'byte_size', 'id').merge(url: pr_image_url(pr_image))
+        end
+    end
+
+    def pr_image_url(image)
+        rails_blob_path(image, only_path: true)
     end
 
 end

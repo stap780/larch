@@ -1,4 +1,5 @@
 class Variant < ApplicationRecord
+    include Rails.application.routes.url_helpers
     belongs_to :product
     has_many_attached :images, dependent: :destroy
     default_scope { order(id: :asc) }
@@ -27,6 +28,19 @@ class Variant < ApplicationRecord
                 im_service.close
             end
         end
+    end
+
+
+    def image_urls
+        return unless self.images.attached?
+        self.images.map do |var_image|
+            # puts var_image.to_s
+            var_image.blob.attributes.slice('filename', 'byte_size', 'id').merge(url: var_image_url(var_image))
+        end
+    end
+
+    def var_image_url(image)
+        rails_blob_path(image, only_path: true)
     end
     
 end

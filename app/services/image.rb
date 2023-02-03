@@ -21,6 +21,7 @@ class Services::Image
     image.format "jpg"
     image.write @start_image_jpg
   end
+  
   def convert_to_png
     image = MiniMagick::Image.open(@image_path)
     image.format "png"
