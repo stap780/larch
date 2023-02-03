@@ -21,7 +21,7 @@ class Services::Image
     image.format "jpg"
     image.write @start_image_jpg
   end
-  
+
   def convert_to_png
     image = MiniMagick::Image.open(@image_path)
     image.format "png"
@@ -30,6 +30,7 @@ class Services::Image
 
   def transparent_background
     puts "transparent_background start"
+    convert_to_png
     # convert test.jpg -fill 'transparent' -fuzz 20% -draw 'color 0,0 floodfill' output.png
     convert = MiniMagick::Tool::Convert.new
     convert << @start_image_png
