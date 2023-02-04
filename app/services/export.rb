@@ -14,16 +14,18 @@ class Services::Export
                     time_end = (Time.now.in_time_zone+1.month).strftime("%Y-%m-%d").to_s
                     sku = product.sku.to_s
                     title = product.title.to_s
-                    desc = product.desc.to_s
                     quantity = product.quantity.to_s
                     costprice = product.costprice.to_s
                     price = product.price.to_s
                     offer_id = product.offer_id.to_s
                     barcode = product.barcode.to_s
                     avito_params = product.avito_param.split('---')
-                    contactphone = '+79019011111'
+                    cross = avito_params.present? && avito_params.any?{|a| a.include?('cross')} ? 
+                                    avito_params.select{|p| p.split(':')[1] if p.split(':')[0] == 'cross'}[0].split(':').last : ''
+                    desc = product.desc.to_s+" Артикул: "+sku+" Кросс номер: "+cross.to_s
+                    contactphone = '7 (499) 110-67-24'
                     region = 'Москва'
-                    address = "Россия, Москва, Высокие высока проезд, 2"
+                    address = "Россия, Москва, Люблинская 78к2"
                     host = Rails.env.development? ? 'http://localhost:3000' : 'http://95.163.236.170'
                     images = product.image_urls.map{|h| host+h[:url]}
                     xml.send(:'Ad') {
@@ -38,7 +40,6 @@ class Services::Export
                         xml.Title title 
                         xml.Description {xml.cdata(desc)}
                         xml.Price price
-                        xml.OEM barcode
                         xml.Category "Запчасти и аксессуары"
                         avito_params.each do |a_p|
                             key = a_p.split(':')[0]
@@ -56,6 +57,8 @@ class Services::Export
                             if var.images.present?
                                 host = Rails.env.development? ? 'http://localhost:3000' : 'http://95.163.236.170'
                                 var_images = var.image_urls.map{|h| host+h[:url]}
+                                sku = var.sku.to_s
+                                var_desc = var.desc.to_s+" Артикул: "+sku+" Кросс номер: "+cross.to_s
                             
                                 xml.send(:'Ad') {
                                     xml.Id id+"_"+var.id.to_s
@@ -67,9 +70,8 @@ class Services::Export
                                     xml.Region region
                                     xml.Address address
                                     xml.Title var.title.to_s 
-                                    xml.Description {xml.cdata(var.desc.to_s)}
+                                    xml.Description {xml.cdata(var_desc)}
                                     xml.Price price
-                                    xml.OEM barcode
                                     xml.Category "Запчасти и аксессуары"
                                     avito_params.each do |a_p|
                                         key = a_p.split(':')[0]

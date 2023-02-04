@@ -21,10 +21,12 @@ class Services::Import
     offers.each do |pr|
       # params = pr.xpath("param").present? ? pr.xpath("param").map{ |p| p["name"]+":"+p.text if p["name"] != "Цена EBAY" && p["name"] != "Цена Etsy"}.join(' --- ') : ''
       avito_params = pr.xpath("param").select{ |p| p if p["name"].include?("avito") }.reject(&:blank?)
+      sku_check = pr.xpath("param").present? ? pr.xpath("param").select{|p| p if p["name"].include?("article") } : []
+      sku = sku_check.present? ? sku_check[0].text.strip : ''
 
       data = {
         offer_id: pr["id"],
-        sku: pr.xpath("sku").text,
+        sku: sku,
         title: pr.xpath("name").text,
         barcode: pr.xpath("barcode").text,
         desc: pr.xpath("description").text,

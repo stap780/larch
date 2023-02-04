@@ -1,1505 +1,1586 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Ads formatVersion="3" target="Avito.ru">
   <Ad>
-    <Id>503</Id>
+    <Id>790</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
     <Title>Фонарь задний LADA LARGUS 12- RH (без платы)</Title>
-    <Description><![CDATA[Лада Ларгус 1 / Lada Largus / Лада Ларгус 1 /ДОРЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 года выпуска]]></Description>
+    <Description><![CDATA[Лада Ларгус 1 / Lada Largus / Лада Ларгус 1 /ДОРЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 года выпуска Артикул: 00094 Кросс номер: ]]></Description>
     <Price>1450.0</Price>
-    <OEM>2000000000954</OEM>
     <Category>Запчасти и аксессуары</Category>
     <Typeid>11-618</Typeid>
     <Brand>Sat</Brand>
+    <Article>00094</Article>
+    <Oem>ST-551-1973R</Oem>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBY2c9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4ed9367f2854f03ce2977c721cf06612e371efe2/8343d033-5fc9-40b6-a83e-fbcbbc832b82"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBY2s9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6368fe581ae8a03f69fef7b0734e1281e6e454c7/30b159ee-dd6d-4543-8685-4f04a1db331a"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb2dCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9786bd59d79ed9d503e4d184692b49cd5d3cc22e/ae8d3a07-be0a-4d7b-9ad8-ccf771e3cdd8"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb2tCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--15435a02b0b19a38032d11fa78bf7b9a189121d6/81be43ca-d2d5-4d38-99ce-828ca891196e"/>
     </Images>
   </Ad>
   <Ad>
-    <Id>505</Id>
+    <Id>798</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний RENAULT DUSTER 10-15 LH</Title>
-    <Description><![CDATA[Рено Дастер 1 поколение /  Renault Duster / Рено Дустер 1 / ДО РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 года выпуска]]></Description>
-    <Price>1900.0</Price>
-    <OEM>2000000000909</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBY289IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5b4d6cb633d0a1821fe21b982ecadf3039adf78e/5d2e116b-d729-4bcb-bf4e-a6c63245b7b8"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBY3M9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--356ac950861d71b9b6f645d218299856db32dfce/9e30ae02-309d-451c-abc1-4d1005371b2d"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>510</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний RENAULT KAPTUR 16- LH</Title>
-    <Description><![CDATA[Рено Каптур 1 поколение / Renault Kaptur  / Рено Каптюр / РЕСТАЙЛИНГ /  ДОРЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 2021 2022 2023 года выпуска]]></Description>
-    <Price>6400.0</Price>
-    <OEM>2000000002422</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>TYC</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBY3c9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fb9f0402a2549fbf2e3a68f701b85aaf82b266b0/9c70a5e5-ae3d-428e-a20d-39d26f9c1938"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYzA9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ed0977dd7ea62ab9d6292c92c66a05c8beae026a/1efbfd77-024c-424a-8a31-4ca0f3fe0dd5"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYzQ9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3987b20c99b92c7812f59c9ea74f882aa6049a12/acaf66ae-61d6-4ec2-9890-f4977bf989a7"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>511</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
     <Title>Фара HYUNDAI CRETA 16-21 LH диодная, линза</Title>
-    <Description><![CDATA[Хендай Крета / Hyundai Creta (Хундай, Хюндай Хёндэ) /  Крета Грета /  В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 года выпуска]]></Description>
+    <Description><![CDATA[Хендай Крета / Hyundai Creta (Хундай, Хюндай Хёндэ) / Крета Грета / В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 года выпуска Артикул: 00109 Кросс номер: ]]></Description>
     <Price>17550.0</Price>
-    <OEM>2000000001104</OEM>
     <Category>Запчасти и аксессуары</Category>
     <Typeid>11-618</Typeid>
     <Brand>Sat</Brand>
+    <Article>00109</Article>
+    <Oem>ST-121-1112L</Oem>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYzg9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8279a2fa937c748108ccee098dbefb44fcc713c2/769b2f97-4593-410f-bbe2-4b56e90e5bd8"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZEE9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--eeec08791b530dfc77c3fa344232736706e7a723/b35f7e78-a8b8-4f88-980c-a6ebc056f25e"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZEU9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--49f20b5da79a98c15224a083a53328ca75f7853d/d892d7a1-cf1a-413b-a2a1-b2377e5dd681"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZEk9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f8cb11a3a459d369dd2adcf67d8c2bce3315bfc2/f81aa96a-6c05-4857-b534-e6541442c060"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzhCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3dfc97383bec50bb8c78b7a94f4a2dc671bbcb00/b472d04c-0e8d-4578-a6bb-15ea23f3b629"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcEFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--337dfe97c54dde342b0152a72074e2d5c8bb1dfc/0970acea-8565-4772-823f-8ffc83390c2b"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcEVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e0bc3bdc97a3d2c312305d9e632cc991e4620e98/3f11cb65-7142-4281-8341-678fd3943729"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcElCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--16754d598d96bf2c78b00b83561bea1f6eff67ab/d720ceb8-c69e-4659-8f1e-26dafe03c5d6"/>
     </Images>
   </Ad>
   <Ad>
-    <Id>520</Id>
+    <Id>797</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара NISSAN X-TRAIL 14-17 RH галоген, ДХО, с электрокорректором</Title>
-    <Description><![CDATA[Ниссан Х Трейл 3 Т32 / Nissan X-Trail Ниссан (Нисан) Х-Трейл (Х Трейл X Trail) 3 Т32 T32 / ДО  РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2013 2014 2015 2016 2017  года выпуска]]></Description>
-    <Price>12800.0</Price>
-    <OEM>2000000002385</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZE09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2b867eebbc5331435c920cc21a886126eb37c9b9/a788fdc7-3aac-499c-bc4d-81f1f7e47ab6"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZFE9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--32ff2834c2681ef920cc18af5554a17ef208ffc0/930049c8-33c7-428c-9297-973a7b182a73"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZFU9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e99ed9eb58ddbd1577ddf1f014a3a6dbbd24b8a4/ad2f0cf5-b493-4fc3-aa86-ee9bba70ee36"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZFk9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3c28f11d964311ad81eea4956f003ff782d53308/3ae6ee42-b311-413b-97f1-749316df6683"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>527</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара RENAULT DUSTER 10-15 RH хром</Title>
-    <Description><![CDATA[Рено Дастер 1 поколение /  Renault Duster / Рено Дустер 1 / ДО РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 года выпуска]]></Description>
-    <Price>3950.0</Price>
-    <OEM>2000000000459</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZGM9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fab7ec36e8cf26feec8207f545c04fb09e2b8f20/207d8be1-6687-439f-87aa-7f6f6531aee3"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZGc9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--63ef9a875d0a376c86b67394a12ee7d902f74551/8adec1dc-0027-465d-92b9-fc36680aff7a"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZGs9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ba99c81345e75a54e83b627b7f07c2954c86a23e/1ec3c142-4eb5-41b6-8901-868c9dfc9f3b"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZG89IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3253dfe9f1b72a53091fd7062ab1fb34aff62ce3/ea507124-c8a0-4f21-a1a5-74b541dfc8ba"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>536</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара VW PASSAT B7 10-14 LH с электрокорректором</Title>
-    <Description><![CDATA[VW Passat B7 / Фольксваген Пассат В7 Б7 / Volkswagen Passat Фольцваген Фольксваген (Фольсваген) Пассат (Пасат) B7 /  В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 года выпуска]]></Description>
-    <Price>15500.0</Price>
-    <OEM>2000000002309</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Depo</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZHM9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e46837149595d6c5f75f62d277a3625e02d7f408/cb459efc-66b5-4331-a472-ebf5dd2cae75"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZHc9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bfc1b33c398f0d889f3b0b824c596f01c762d4f0/5f5c724d-976f-495c-bb6f-1be7f71b8c6b"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZDA9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--39c2b3838db80b3f6dbcbe80fadb3311b67ac188/b1c2bdc1-4eb4-4886-9d86-073420968e45"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZDQ9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--00a2b0a15af62887b1932d1ffc199dfa82502377/3bb4eb26-c254-4f9f-851f-5d66da9d0a58"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>539</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара HYUNDAI TUCSON 15-19 LH галоген</Title>
-    <Description><![CDATA[Хендай Туксон 3 / Hyundai Tucson Хендай (Хундай, Хюндай) Туксон 3 / ДО  РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили:  2015 2016 2017 2018 года выпуска]]></Description>
-    <Price>10900.0</Price>
-    <OEM>2000000000220</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZDg9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--327734610458036105a2a9e672d3db04ea1cbbe0/072279ac-5906-4857-be89-d60b54cb9b17"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZUE9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c82519469157ee85167ab9e2e86eb0df579734ca/e1b5fa96-97bd-4870-8bca-5b2ac2e75648"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZUU9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a5f3a6a745a0216f39ac8b881f97137e4045fbde/f3870836-72b2-432b-ad0b-73dd6f7794e4"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZUk9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--61e5b603af563f08e17eaa6ca01b533b905c1044/dc77d136-81d8-47b6-8450-48a8a74eaf36"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>541</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара VW PASSAT B7 10-14 RH с электрокорректором</Title>
-    <Description><![CDATA[VW Passat B7 / Фольксваген Пассат В7 Б7 / Volkswagen Passat Фольцваген Фольксваген (Фольсваген) Пассат (Пасат) B7 /  В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 года выпуска]]></Description>
-    <Price>15500.0</Price>
-    <OEM>2000000000756</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Depo</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZU09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--95985600ab2682c05e550ce1962374c5836ea723/909320e4-c91d-45e7-9044-9faa559b65b8"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZVE9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--60124d1cdf39157d8abc6ebff27fec930ab6d614/7777f651-7add-4c3c-b226-00c7d5c74cc4"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZVU9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b61809c7bb02303a5f23eb662e52953a266a9f39/70127991-e368-4644-93c2-64cb97af93f5"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZVk9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--77732e254d105e9a7910c46fa32458662ae660b4/34431ebe-b99c-416d-af00-2dc2afb6d8e9"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>543</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Решетка радиатора VW POLO 10-14 4D</Title>
-    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 / рестайлинг  /В зависимости от комплектации деталь может подойти на автомобили:  2010 2011 2012 2013 2014 2015 года выпуска]]></Description>
-    <Price>1100.0</Price>
-    <OEM>2000000001494</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>16-825</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZWM9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ffb17eb5e962e929db5b438c24c0c90cddf08219/d3af66a3-9b3e-4bda-a491-cd3c933d3900"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>545</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара HYUNDAI CRETA 16-21 RH диодная, линза</Title>
-    <Description><![CDATA[Хендай Крета / Hyundai Creta (Хундай, Хюндай Хёндэ) /  Крета Грета /  В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>17550.0</Price>
-    <OEM>2000000001913</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZWc9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--59db49b40ac4e3b95be8b32c73f63365597ec5c0/e73e93e3-d98e-4b99-8a32-54d2bc68565d"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZWs9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6aa2a0c281c8cfff59b42391b353b05d2effc0b1/9f0eb34c-f2c6-40aa-91ac-f9e72e830757"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZW89IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c8c6f48e939371d4a861a7f97c0eb6f46e6922ba/1108f40d-917c-4ff5-b9e1-e7dc619f8ec8"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>546</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара RENAULT KAPTUR 16- LH (чёрная) с электрокорректором</Title>
-    <Description><![CDATA[Рено Каптур 1 поколение / Renault Kaptur  / Рено Каптюр / РЕСТАЙЛИНГ /  ДОРЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 2021 2022 2023 года выпуска]]></Description>
-    <Price>14150.0</Price>
-    <OEM>2000000000961</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>TYC</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZXM9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--150be11507c580c592f8f1e56e30cb59421981ce/cd21fbca-fbcf-451a-8b70-cb57a2c4597f"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZXc9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--89a07281b298abc439948216cea8a4b835bee50f/6613709e-328b-459d-8922-77bce12d8fbe"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZTA9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fa4e4e92634c793752cda8eac65a6a98333e91b0/aff9eff2-f7aa-4791-a24f-d2c84f250e2a"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>554</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара BMW 3-SERIES F30/F31 12-16 RH с электрокорректором, ксенон, LED</Title>
-    <Description><![CDATA[BMW 3er F30/ F31/ F80 / BMW 3er F30 F31 F80 /  БМВ 3 er Ф30 /  Ф31 / Ф80 (Ф f 30 31 80) ДО РЕСТАЙЛИНГ /  В зависимости от комплектации деталь может подойти на автомобили: 2011 2012 2013 2014 2015 2016]]></Description>
-    <Price>19000.0</Price>
-    <OEM>2000000001067</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>TYC</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZTQ9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c08b0a73ae15cf951c02bc826e882d2beac43d5a/26c410d2-d7de-482e-982d-c4cf6e577eeb"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZTg9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1b201d400135c54b0c95d08a5a526a5292b3e9b6/6ca46266-9481-41f1-bb8b-045e7f0511fe"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZkE9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--36a55f83d923ecd76a7df140d91499d7862b8688/f9b5edc3-7048-429b-9bcb-35cd4d35f840"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZkU9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d2767d0d0731d7218012405575895184cc5df9e/bcb133d1-59e9-411e-9cbc-e8fdadb8f460"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZkk9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--821d9a6c54a896c4067ad24e559cbf0e8172382b/15729e57-5903-47a8-b5fb-e1a9b72b45fa"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>565</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара RENAULT LOGAN/SANDERO 14-18 LH</Title>
-    <Description><![CDATA[Рено Логан 2 поколение / Renault Logan /  Рено Логан / Рено Сандеро 2 / Renault Sandero /  Рено Сандеро 2 /ДО РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили:  2014 2015 2016 2017 2018 года выпуска]]></Description>
-    <Price>3200.0</Price>
-    <OEM>2000000002897</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZk09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3c9ee00e224aee48f66d32efe9acfd2760c579b6/119f676d-aaa4-4012-a10e-89885599d69b"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZlE9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8cd9aab58f6c39ef3a3da658f9afbdf7c1ca9bc3/e283b2e8-309b-44f3-b7ac-57d682fa3d35"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZlU9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--06000de507b62ee336a577d7a6fc774205960315/e46fe310-035c-4f44-8e15-0efe868a5263"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>569</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара VW POLO 15-20 SEDAN/POLO 09-13 HBK RH</Title>
-    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 до рестайлинг / рестайлинг  /В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>4550.0</Price>
-    <OEM>2000000000121</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZlk9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ad07c72333fa2e73357e5bfec75d1e4221300d1d/ee25073d-45d2-4186-a109-80e75e499d20"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZmM9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ea34f0aaa0e03a75ede6bea69d8c7eb16ce25298/1603615f-8803-4bfe-a1d2-eadf750bcda4"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>572</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний VW PASSAT 14- LH диодный</Title>
-    <Description><![CDATA[VW Passat B8 / Фольксваген Пассат В8 Б8 / Volkswagen Passat Фольцваген Фольксваген (Фольсваген) Пассат (Пасат) B8 /  ДОРЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2014 2015 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>5750.0</Price>
-    <OEM>2000000001593</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Depo</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZmc9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--55a7164d00e646ce4e8d366bbecc408db2618fac/1662700a-191c-45f0-8436-6c3be95699d0"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZms9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--863fae3e769b37e3124fd4ace62d3b041bdecde6/fa404687-2e7f-45cf-a4d9-9fe18bbe7af2"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>583</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара RENAULT DUSTER 10-15 LH хром</Title>
-    <Description><![CDATA[Рено Дастер 1 поколение /  Renault Duster / Рено Дустер 1 / ДО РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 года выпуска]]></Description>
-    <Price>3950.0</Price>
-    <OEM>2000000000060</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZm89IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ded9fc2f54cf4a43b95038a3533198acbf178f34/33a89af0-f96b-4e09-8753-f31034cf3fa7"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZnM9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b33abc722037a6a0eab493dd53a6aff2b5d1de5f/2ffe59ac-f8fe-4706-a720-cede5769e81e"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZnc9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d6e1aa0f8d3bd3c2198326855fba45a08ce1b78c/05fcd739-caf4-4abb-af6e-7bed8b49a22f"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZjA9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--58aedc22c9167ee04753bf7fea82d0823aeda21a/cb36de0d-20e6-4e20-a922-a433fb238e8d"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>589</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний W TRANSPORTER T6 15-19 LH (распашные двери)</Title>
-    <Description><![CDATA[VW Transporter / Volkswagen Transporter T6 / Volkswagen Transporter T6 / Фольцваген Фольксваген (Фольсваген) Транспортер Т6 (Т T 6) / ДОРЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 2019 года выпуска]]></Description>
-    <Price>6900.0</Price>
-    <OEM>2000000002194</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>TYC</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZjQ9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a83a9d0029929f5b07e0356c4ea563165ea70338/d71dc9bf-b0fc-4a71-b401-d85be518916f"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZjg9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--52d79364b75ce9d8d8d4e3ed05338b290b4b548f/e9a07f7f-7615-441e-9601-67a44b2e9489"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>591</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний SKODA RAPID 12-20 RH</Title>
-    <Description><![CDATA[Шкода Рапид / Skoda Rapid /  Шкода Рапид / РЕСТАЙЛИНГ /  ДО РЕСТАЙЛИНГ  В зависимости от комплектации деталь может подойти на автомобили: 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>3000.0</Price>
-    <OEM>2000000001210</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ0FCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--eeee80ca571e0e78c599ec1e4303deaa52294bf4/d3852153-d1fe-46df-98b5-d8cd80e73da9"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>594</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний VW JETTA 14-19 RH LED</Title>
-    <Description><![CDATA[VW Jetta / Фольксваген Джетта 6 / Volkswagen Jetta /  Фольксваген (Фольсваген) Джетта (Джета) 6 Фольцваген / В Зависимости от комплектации деталь может подойти  на автомобили: 2010 2014 2015 2016 2017 2018 года выпуска]]></Description>
-    <Price>10000.0</Price>
-    <OEM>2000000002064</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ0VCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9605c6f2332373b3db2847e86c8ef245915ec6a9/c2775968-ae34-4068-a42a-0c72eda9434f"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ0lCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4963d05b1b362d8634f9058841b33f8e95d9052d/0b4e0322-2d81-47fe-928f-59e19a40022c"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>596</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний HYUNDAI SOLARIS 17- RH LED</Title>
-    <Description><![CDATA[Хендай Соларис 2 / Hyundai Solaris Хендай (Хундай, Хюндай Хёндэ) / Соларис (Солярис) / РЕСТАЙЛИНГ/ ДО РЕСТАЙЛИНГ/ В зависимости от комплектации деталь может подойти на автомобили: 2017 2018 2019 2020 2021 2022 2023 года выпуска]]></Description>
-    <Price>10000.0</Price>
-    <OEM>2000000000541</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ01CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a9c160e78c38a8a1738b66f375bf72b4308c2556/696ab616-5e1b-452c-8c8e-281755ab517e"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1FCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e3b35e5740b7014c03ff0e57d909bbe753a695ff/68eb8de1-a7ef-4a65-bd7a-42a17dfcc30f"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1VCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--85710fb6bd87ab4183f5539524fd0f8db0e6b993/c5258a56-84c8-4d0f-aa77-9f51b2c12c37"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>603</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний HYUNDAI SOLARIS 14-17 RH 4D</Title>
-    <Description><![CDATA[Хендай Соларис 1 / Hyundai Solaris Хендай (Хундай, Хюндай) /  Соларис (Солярис) 1 / РЕСТАЙЛИНГ /В зависимости от комплектации деталь может подойти на автомобили:2014 2015 2016 2017 года выпуска]]></Description>
-    <Price>2250.0</Price>
-    <OEM>2000000000183</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1lCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--60e8b13b1ede5ac6afe04d5ba8aa64fe310c37fb/0c36fff3-031e-4443-808b-bdfef8b5e043"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2NCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--58226fcb795af9c33903eccff85def83336944ca/326aa618-1bd7-4a7d-a72d-f7e122d9c67d"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2dCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--02ef8737120137c6b2331ddf7811f96c977c075d/1008acd7-dea8-4918-a1a8-c369171776ce"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>605</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний HYUNDAI TUCSON 15-19 LH</Title>
-    <Description><![CDATA[Хендай Туксон 3 / Hyundai Tucson Хендай (Хундай, Хюндай) Туксон 3 / ДО  РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили:  2015 2016 2017 2018 года выпуска]]></Description>
-    <Price>4550.0</Price>
-    <OEM>2000000002545</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2tCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0c042b9144582df62fef8658865993cc269a0f31/0a6dd6b1-bd3d-4b03-9d69-eecf65bcc6b2"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ29CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7375d643adbd5243402fd34bf3abde734bf4e18c/a67f1eab-0959-4a7d-a8f4-d6a65474afd6"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>612</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара VW POLO 10-20 4D RH</Title>
-    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 до рестайлинг / рестайлинг  /В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>4650.0</Price>
-    <OEM>2000000000718</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3NCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cd70d39c38a21142259e4765f1c1d493dc2d3c80/528c4422-55ff-4549-aab9-3e9361f69dca"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3dCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8a331c3c0c7d994b2bc2e91afb642d9738c2926d/8a86a9c0-bc24-4420-aaea-d6acd7b8cea5"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>623</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара HYUNDAI TUCSON 15-19 RH галоген</Title>
-    <Description><![CDATA[Хендай Туксон 3 / Hyundai Tucson Хендай (Хундай, Хюндай) Туксон 3 / ДО  РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили:  2015 2016 2017 2018 года выпуска]]></Description>
-    <Price>10900.0</Price>
-    <OEM>2000000001654</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8dac385a45bb5e0e39eb56b9df065161d3c4e08e/bf846d47-70b5-443c-bf78-06be10ccb917"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bc84f1b0fcc805a6d7394757ff7c5f49de535679/ed2d71b6-520d-4f1e-ac1b-63d0384a048b"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzhCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c37b5bfcfb82707e620ae75d6ee09b8dcfa7f1fc/e73c2c73-cfae-4935-9786-fc1d2b02499f"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaEFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--42ca30c8a031d61130c87e7b11c121fe5c88b6d8/1cbb3427-02d6-45d2-93f2-74a13eb08924"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>624</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара HYUNDAI CRETA 16-21 LH</Title>
-    <Description><![CDATA[Хендай Крета / Hyundai Creta (Хундай, Хюндай Хёндэ) /  Крета Грета /  В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>4700.0</Price>
-    <OEM>2000000001197</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaEVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9896f9e1284a0369f291bb5fb259408ba73ed4/041c52d0-199c-4e1a-b98c-fb62d927aab3"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaElCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8aac41d060d6bce07c8ef8ca61cd85249130c2bf/6c00c6cb-a759-4dbc-9023-142d3da83884"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaE1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1af00f65a22c4e948474b2f662a0938657907f8a/e865752a-7ade-4d95-8657-1b3597472a36"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>626</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Решетка радиатора VW POLO 15-20 4D</Title>
-    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 / рестайлинг  /В зависимости от комплектации деталь может подойти на автомобили:  2015 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>1900.0</Price>
-    <OEM>2000000002569</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>16-825</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaFFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f127e6b86360c4464548aa62f33c22284135b4ff/af112c80-2968-4bc1-b6a1-74f766254044"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>628</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара HYUNDAI SOLARIS 17-20 RH</Title>
-    <Description><![CDATA[Хендай Соларис 2 / Hyundai Solaris Хендай (Хундай, Хюндай Хёндэ) / Соларис (Солярис) / ДО РЕСТАЙЛИНГ/ В зависимости от комплектации деталь может подойти на автомобили: 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>4000.0</Price>
-    <OEM>2000000002361</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaFVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2916ca4983618c0f1a278793ad8efb4a55251ae3/39181eb8-9135-4f94-91bd-9bfcf55a6981"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaFlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--51b14ba089984385f235ca581c6e841cad89f0d7/c9b87eb1-35ea-4f9d-bb81-d1d72c88aa15"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--67114e1747b0e0f531597031317957b063485ca5/6b6f553a-a833-4e0f-a533-0f9eb5932ca3"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>635</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний HYUNDAI SOLARIS 17- LH LED</Title>
-    <Description><![CDATA[Хендай Соларис 2 / Hyundai Solaris Хендай (Хундай, Хюндай Хёндэ) / Соларис (Солярис) / РЕСТАЙЛИНГ/ ДО РЕСТАЙЛИНГ/ В зависимости от комплектации деталь может подойти на автомобили: 2017 2018 2019 2020 2021 2022 2023 года выпуска]]></Description>
-    <Price>10000.0</Price>
-    <OEM>2000000002705</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d816509965eda14fd2465dbdcc833e0308d6be8/c14b2375-0ddb-4b9f-8e16-fc32ba03b09d"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--22bf3732175de6a641b2e12d5cc9393dd1bce4a6/77dc2e4b-23bd-4527-9815-d4e938b9afca"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaG9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--609131fb61c497f15b2093a3dcf34f5631dbd3f2/71593484-129c-4fc5-b64d-2fb0e98a3ed7"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>645</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара BMW 3-SERIES F30 15-19 RH LED</Title>
-    <Description><![CDATA[BMW 3er F30/ F31/ F80 / BMW 3er F30 F31 F80 /  БМВ 3 er Ф30 /  Ф31 / Ф80 (Ф f 30 31 80) РЕСТАЙЛИНГ /  В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 2019 2020]]></Description>
-    <Price>19000.0</Price>
-    <OEM>2000000001579</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaHNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--44375a1dab0bd7c1fbd7b608ab07202c47356f7c/73f655da-0df8-486e-b114-20bacbe0b394"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaHdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--431a987e8785d8ea46980473e7b95737be5a7c81/3615d23d-9d15-4c82-bfb5-6dcce8dce8f6"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--597ab082444db20a862f6dcdd45b84b5fbdd64ba/33bdce75-e96c-43c8-a2f4-805cb84ecc6e"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9fc661f5d5454490fdfd6ffd2d7360cb17e3402d/17735ada-9789-40b2-8570-aae3101d5a73"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>650</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний RENAULT KAPTUR 16- RH</Title>
-    <Description><![CDATA[Рено Каптур 1 поколение / Renault Kaptur  / Рено Каптюр / РЕСТАЙЛИНГ /  ДОРЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 2021 2022 2023 года выпуска]]></Description>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний RENAULT KAPTUR 16- LH</Title>
+    <Description><![CDATA[Рено Каптур 1 поколение / Renault Kaptur / Рено Каптюр / РЕСТАЙЛИНГ / ДОРЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 2021 2022 2023 года выпуска Артикул: 00241 Кросс номер: ]]></Description>
     <Price>6400.0</Price>
-    <OEM>2000000001241</OEM>
     <Category>Запчасти и аксессуары</Category>
     <Typeid>11-618</Typeid>
     <Brand>TYC</Brand>
+    <Article>00241</Article>
+    <Oem>11-E428-06-2B</Oem>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDhCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--79a618eda5e74e642e04d0baa34678326b1b51b3/ab5f5a93-b98d-4ba6-a339-196c0a845847"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaUFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--76fc3a9e6f916e995ce5e064e8808c3a269a9460/7b9583dc-d7bd-4ea0-8323-f1e83df2e1c1"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaUVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4a07eda13298fcae0f0f81fefecb4fed6e5b2b2d/46f72f53-a65a-4672-bcb1-d35a80a7c400"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3dCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b85d13e20583bbafc6cd2af9fbb9abad7ef03775/2328dd95-0893-416d-91b0-565d99381341"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--54acd81e8806808216f397674f2162a5853f0b66/40420b5f-615b-4830-93f4-6ab0a9dc56c4"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6e1a195a9d9ed86a06160098b2f656b3c6c33e19/446283fa-c13a-4042-a06d-454302bda864"/>
     </Images>
   </Ad>
   <Ad>
-    <Id>655</Id>
+    <Id>814</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара VW TRANSPORTER T5 10-15 RH под корректор</Title>
-    <Description><![CDATA[VW Transporter / Volkswagen Transporter T5 / Volkswagen Transporter T5  / Фольцваген Фольксваген (Фольсваген) Транспортер Т5 (Т T 5) Рестайлинг / В зависимости от комплектации деталь может подойти на автомобили: 2009 2010 2011 2012 2013 2014 2015 года выпуска]]></Description>
-    <Price>12900.0</Price>
-    <OEM>2000000000503</OEM>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара RENAULT DUSTER 10-15 RH хром</Title>
+    <Description><![CDATA[Рено Дастер 1 поколение / Renault Duster / Рено Дустер 1 / ДО РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 года выпуска Артикул: 00044 Кросс номер: ]]></Description>
+    <Price>3950.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00044</Article>
+    <Oem>ST-551-1186R-LDEM1</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcGNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0092b83e3db10bbc7bf9372a2f4d17629e0476bb/5eb9bcde-d3e7-4a81-8602-a8a5ccf78163"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcGdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--de50b418860fd700edc8154afe653a944649fb47/58b107b5-d946-439b-a38a-6dc95ff07c1b"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcGtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6187f3c3a82a994974645cd0fb92b57ddceaaa42/b275aceb-42c2-45b3-9285-767264e63f01"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcG9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--075fd9dc6d85747a4396cd0725cde58a72eb7675/ce6c5b96-61fb-46f5-a381-4a83782b8797"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>828</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара VW PASSAT B7 10-14 RH с электрокорректором</Title>
+    <Description><![CDATA[VW Passat B7 / Фольксваген Пассат В7 Б7 / Volkswagen Passat Фольцваген Фольксваген (Фольсваген) Пассат (Пасат) B7 / В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 года выпуска Артикул: 00074 Кросс номер: ]]></Description>
+    <Price>15500.0</Price>
     <Category>Запчасти и аксессуары</Category>
     <Typeid>11-618</Typeid>
     <Brand>Depo</Brand>
+    <Article>00074</Article>
+    <Oem>441-11G5RMLDEM2</Oem>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaUlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9c36d80414be864b8528053d6b905226a4eed4e7/34d4c3cc-63d2-4bbe-8923-f736d95feee3"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaU1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--abb5c3539fe32bf121d392a8995d8d8475af1339/f3b5bff6-d927-4272-a811-3314169d53c4"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcU1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6c54e7dac281e21ef04b4e2b5333a7de67c7ca32/b6c4fc7c-6552-4b1e-bd33-027ff2718d36"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcVFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4813e3cfe578bec68e8d5affde5f2f43a79783d7/ae48a882-50c5-4f28-a3e1-4ea676153d49"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcVVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cffb86e07e19f3149d87212267e3d947b2ad356c/be52acac-129c-4870-8f29-d9c4afea9647"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcVlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d7f9c828ce267ed779358a1c5654ed33a183996a/fc30dc0c-edb6-4ed3-9d8b-0dbd1be25e46"/>
     </Images>
   </Ad>
   <Ad>
-    <Id>665</Id>
+    <Id>826</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара W TRANSPORTER T6 15-19 RH 2 секции</Title>
-    <Description><![CDATA[VW Transporter / Volkswagen Transporter T6 / Volkswagen Transporter T6 / Фольцваген Фольксваген (Фольсваген) Транспортер Т6 (Т T 6) / ДОРЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 2019 года выпуска
-20-F239-05-9B]]></Description>
-    <Price>15650.0</Price>
-    <OEM>2000000000374</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>TYC</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9c2e85dc38af03d8e574f8478e39c7bdccaaa8f9/2cc2274b-1230-4ff4-812b-82a1191986ec"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d3bb30f6aee8f25c4d4ea0f7e1379dca3654e56f/2f581f4c-71be-49f6-a4c3-f217576c1e03"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>676</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний W TRANSPORTER T6 15-19 RH (распашные двери)</Title>
-    <Description><![CDATA[VW Transporter / Volkswagen Transporter T6 / Volkswagen Transporter T6 / Фольцваген Фольксваген (Фольсваген) Транспортер Т6 (Т T 6) / ДОРЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 2019 года выпуска]]></Description>
-    <Price>6900.0</Price>
-    <OEM>2000000001630</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>TYC</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c27f959cd487005d00b53116c2f92254c2ca9713/51865e0a-f8c5-41cb-a59c-cfa9fd4b041d"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--775258a3c5c62f319ae007c519594e8464f77f25/35d173c1-223d-48f0-b201-16a730c350b6"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>677</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара HYUNDAI SOLARIS 17-20 LH</Title>
-    <Description><![CDATA[Хендай Соларис 2 / Hyundai Solaris Хендай (Хундай, Хюндай Хёндэ) / Соларис (Солярис) / ДО РЕСТАЙЛИНГ/ В зависимости от комплектации деталь может подойти на автомобили: 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>4000.0</Price>
-    <OEM>2000000002699</OEM>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара HYUNDAI TUCSON 15-19 LH галоген</Title>
+    <Description><![CDATA[Хендай Туксон 3 / Hyundai Tucson Хендай (Хундай, Хюндай) Туксон 3 / ДО РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 года выпуска Артикул: 00021 Кросс номер: ]]></Description>
+    <Price>10900.0</Price>
     <Category>Запчасти и аксессуары</Category>
     <Typeid>11-618</Typeid>
     <Brand>Sat</Brand>
+    <Article>00021</Article>
+    <Oem>ST-121-1114L</Oem>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bc0691f20488ab28a6a499f2f95ee405102e6883/a1fbae2d-e1c6-4371-82c9-280d37a5de82"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4e36e30c2220701a58aaa026c65afe4e3966b807/f242afd9-c907-4c0d-b583-e5ecbe0ea6b8"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaW9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3419d9459bd875f4290b3f15369b8840806d1984/2e4607d5-0027-4ec6-837e-11bddb37c89a"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDhCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a27a6df79d7695f0ba8b54b1851e87d6198469a1/f2e5219b-c9cf-4158-8324-906f5b441cca"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcUFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d1ff78da6728460da064f1e984f58e05e117e32e/0c4523e5-60ca-433b-861a-c069e1154757"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcUVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cbc9b7511b7b5f7b2440149b6192a347525bef16/6dfd6970-ee9e-4fe9-a772-15cc8d9872db"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcUlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--96670a31dde04d5fba19702ef51c702441054259/a30d66ad-cc77-4945-979d-7e4b880ff7b2"/>
     </Images>
   </Ad>
   <Ad>
-    <Id>678</Id>
+    <Id>823</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара RENAULT KAPTUR 16- RH (чёрная) с электрокорректором</Title>
-    <Description><![CDATA[Рено Каптур 1 поколение / Renault Kaptur  / Рено Каптюр / РЕСТАЙЛИНГ /  ДОРЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 2021 2022 2023 года выпуска]]></Description>
-    <Price>14150.0</Price>
-    <OEM>2000000000794</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>TYC</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaXNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fac17c63a7848438c5b135a798155283a0e33a72/5c5f00ee-c383-4c5b-96d3-fa1404338054"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaXdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d4fa9d360a2cea40c6d0bed409098a6102f656b8/c3cdd41d-ddf2-48b0-9937-fe2471098c3d"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaTBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ab6276248ca998f18e82a7bb0126b8de35fc114d/850979c4-c0e5-499e-851c-76a2623dbf4a"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>683</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний VW JETTA 14-19 LH LED</Title>
-    <Description><![CDATA[VW Jetta / Фольксваген Джетта 6 / Volkswagen Jetta /  Фольксваген (Фольсваген) Джетта (Джета) 6 Фольцваген / В Зависимости от комплектации деталь может подойти  на автомобили: 2010 2014 2015 2016 2017 2018 года выпуска]]></Description>
-    <Price>10000.0</Price>
-    <OEM>2000000002200</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaTRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c7505223bf8f4d64f4d25a4a5d264f6b73625fad/97ec1771-a343-4da0-b314-ee3299887e8d"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaThCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d14b45ac18a0d24e509d0c768f9d0e0778b55032/058c8fea-e1be-49ae-8a46-38636d9cbef7"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>684</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний BMW 3-SERIES F30 12-16 RH 4D LED</Title>
-    <Description><![CDATA[BMW 3er F30/ F31/ F80 / BMW 3er F30 F31 F80 /  БМВ 3 er Ф30 /  Ф31 / Ф80 (Ф f 30 31 80) ДО РЕСТАЙЛИНГ /  В зависимости от комплектации деталь может подойти на автомобили: 2011 2012 2013 2014 2015 2016]]></Description>
-    <Price>10350.0</Price>
-    <OEM>2000000001586</OEM>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара VW PASSAT B7 10-14 LH с электрокорректором</Title>
+    <Description><![CDATA[VW Passat B7 / Фольксваген Пассат В7 Б7 / Volkswagen Passat Фольцваген Фольксваген (Фольсваген) Пассат (Пасат) B7 / В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 года выпуска Артикул: 00229 Кросс номер: ]]></Description>
+    <Price>15500.0</Price>
     <Category>Запчасти и аксессуары</Category>
     <Typeid>11-618</Typeid>
     <Brand>Depo</Brand>
+    <Article>00229</Article>
+    <Oem>441-11G5LMLDEM2</Oem>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBakFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3cd579f2ca096fc400fe4c38f28367c5ecefe236/ded259b4-f997-4e52-a17f-2b0c41c4d37b"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBakVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3154d069eea49a52cc755d5209232b03ef413a2b/a6823aef-dbae-4121-9bc9-e74a3091b02c"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcHNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d3390ea9da5fb29053da2e4808d3fcde13f81338/1da0dca4-a360-45b7-93e2-f9dbf90dc51e"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcHdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8b0b267af9eebdd9f67f4354aa5b8e33c9adc942/9197c552-38be-4274-8292-8616865afa55"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bf32a1889970d7ffc67be8119de1f17813b4f38f/340d2312-633b-497a-a5d9-114eaaa34b31"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6f1f385836f8a7e6e73e6fbbc60aa4fb2fc5ec38/009cf29b-d3fd-4b8f-9769-96352705b860"/>
     </Images>
   </Ad>
   <Ad>
-    <Id>685</Id>
+    <Id>841</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний VW TIGUAN 11-16 RH</Title>
-    <Description><![CDATA[VW Tiguan / Фольксваген Тигуан 1 /  Volkswagen Tiguan /  Фольцваген Фольксваген (Фольсваген) Тигуан 1 РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2011 2012 2013 2014 2015 2016  года выпуска]]></Description>
-    <Price>9100.0</Price>
-    <OEM>2000000001722</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Depo</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaklCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--026f25c5fc0d17ca6e3cfa9f6d2521fa986af0d5/5b40e367-6d2d-440b-9f68-8c9b446b4bb3"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBak1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f2f914e141f141f7d9018e3ab9819d47221b9b53/c882099a-448c-4d31-808e-6ade511a6234"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>687</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний HYUNDAI SANTA FE 18-21 RH</Title>
-    <Description><![CDATA[Hyundai Santa Fe 4 TM / Hyundai Santa Fe 4 TM  / Хендай (Хундай, Хюндай) Санта Фе (SantaFe СантаФе) ТМ / ДОРЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2018 2019 2020 2021 года выпуска]]></Description>
-    <Price>7000.0</Price>
-    <OEM>2000000002514</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBalFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ea4deb19071277fbe78420d520d04b6fcb969e2f/9b24bd8e-5b80-4cb0-bee7-66fe501fe643"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBalVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--44f0d78fdd7943fd60629a044fe1322d68490b67/0c708570-1ded-4ec0-a81d-3d9e7cce7c62"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>688</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний VW PASSAT 14- RH диодный</Title>
-    <Description><![CDATA[VW Passat B8 / Фольксваген Пассат В8 Б8 / Volkswagen Passat Фольцваген Фольксваген (Фольсваген) Пассат (Пасат) B8 /  ДОРЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2014 2015 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>5750.0</Price>
-    <OEM>2000000002378</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Depo</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBallCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--40683605c9dee52e5cc462cee0b7d88e1dd580b3/db98961a-8eb9-4422-9c2b-c12d97646a0d"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f77bf6576c02524bb8a38825c6154b2a78f5d790/47755104-cbb5-442b-8c18-8c7dce0b5d60"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>693</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний HYUNDAI SOLARIS 14-17 LH 4D</Title>
-    <Description><![CDATA[Хендай Соларис 1 / Hyundai Solaris Хендай (Хундай, Хюндай) /  Соларис (Солярис) 1 / РЕСТАЙЛИНГ /В зависимости от комплектации деталь может подойти на автомобили:2014 2015 2016 2017 года выпуска]]></Description>
-    <Price>2250.0</Price>
-    <OEM>2000000001883</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4fa551c6b0c9a12f0ab8b38d87ae3a5718cbb3e9/8888b730-747b-4e6e-8e28-f1e21b32bef4"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a523af032545b763e2f6dd7a7a1de5037658fd30/9e3e6085-3103-4106-a5f8-8709aa01bd22"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBam9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--68c1e802d1f8e0e57e0ffc84872b4d265e655f04/b3191b7e-a6a6-4c4c-9ce2-b64e9867e0e2"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>715</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара VW POLO 15-20 LH</Title>
-    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 до рестайлинг / рестайлинг  /В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>4250.0</Price>
-    <OEM>2000000001890</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBanNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1def45ad72a888ce1bf8cf247c1c531cebd9d2c/94e829ed-0ef0-4b23-a61f-098c4a242618"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBandCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c3f66cf167a6e1349bbd183ecad75e235461433e/fbcc8f66-2821-415e-aa48-b92315522658"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>718</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара NISSAN X-TRAIL 14-17 LH галоген, ДХО, с электрокорректором</Title>
-    <Description><![CDATA[Ниссан Х Трейл 3 Т32 / Nissan X-Trail Ниссан (Нисан) Х-Трейл (Х Трейл X Trail) 3 Т32 T32 / ДО  РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2013 2014 2015 2016 2017  года выпуска]]></Description>
-    <Price>12800.0</Price>
-    <OEM>2000000000589</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBajBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1fd88500dd0a06e0706ab4c4f1b73a613ab4c004/5c9b4d21-27af-492a-89d2-10e93b8be786"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBajRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--761f4add64cd5bc678e83728d978beb01ce5be7b/b1a052bf-22df-49d5-83f8-bc9791edba22"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBajhCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a415b2d409cc4ec1d93b9859676243c3e913bbe9/45b3bb6e-29ed-41ee-ace8-77c544376824"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0FCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f261211154377fb0e7b2dd80ba3f0517b071433d/4d4c6221-2003-49d3-8863-d99817ae2779"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>720</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара HYUNDAI CRETA 16-21 RH</Title>
-    <Description><![CDATA[Хендай Крета / Hyundai Creta (Хундай, Хюндай Хёндэ) /  Крета Грета /  В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>4700.0</Price>
-    <OEM>2000000001319</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0VCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1ea4cad7c05b2344c0c818e561ac3c1c5032fe01/f5358b4f-fc2c-425b-88a6-c05fa9bf1caa"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0lCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--176708ccc89f913a5af805087e69a0fe0068a52c/f096d5df-2577-444f-b4eb-7e597680bf93"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa01CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--766dec92424787b21cf6c0e45484b0503ad5ae1c/afcf6baf-a012-4242-918a-ae670b386ba0"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>722</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний HYUNDAI SOLARIS 17- RH</Title>
-    <Description><![CDATA[Хендай Соларис 2 / Hyundai Solaris Хендай (Хундай, Хюндай Хёндэ) / Соларис (Солярис) / РЕСТАЙЛИНГ/ ДО РЕСТАЙЛИНГ/ В зависимости от комплектации деталь может подойти на автомобили: 2017 2018 2019 2020 2021 2022 2023 года выпуска]]></Description>
-    <Price>2000.0</Price>
-    <OEM>2000000000923</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa1FCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--320c048232ad2c0f6c5c4a816eebe97546880d23/2db46c92-67fe-4e57-9cc8-bfa082d4269a"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa1VCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--498a081eccbefc145fffb88582f88f47af098e4a/24c8bef0-5e38-4010-89e1-ffbf200f8ed1"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa1lCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0073a5cfc435520303dca67f79902198701392d4/9ab733ff-6a6a-4cca-973b-2fc547fba564"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>724</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний VW POLO 15-20 4D LH</Title>
-    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 до рестайлинг / рестайлинг  /В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>2150.0</Price>
-    <OEM>2000000000565</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2NCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--20fdbdd58543ba92a99d77fb102ec37344a54d33/72dc0bdf-bfe3-4109-855d-a87fd04782a8"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2dCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f6abfe29965345c8ea458e16b7e27a09fb87cc52/df9475aa-3dd8-4a62-b2df-a290ea7377a7"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>733</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний HYUNDAI TUCSON 15-19 RH</Title>
-    <Description><![CDATA[Хендай Туксон 3 / Hyundai Tucson Хендай (Хундай, Хюндай) Туксон 3 / ДО  РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили:  2015 2016 2017 2018 года выпуска]]></Description>
-    <Price>4550.0</Price>
-    <OEM>2000000001821</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2tCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bcf314d3a698d07955bfcc1ed2ff638ae3edfb56/2ab5f063-1fb4-485b-bce2-b2e9bad4e0fa"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa29CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7bf8b50bacf4ec8796d73cf8d8ad00ff6e7ad313/f22efa40-7443-4da5-b558-7cd99ae58f1d"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>735</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара BMW 3-SERIES F30 15-19 LH LED</Title>
-    <Description><![CDATA[BMW 3er F30/ F31/ F80 / BMW 3er F30 F31 F80 /  БМВ 3 er Ф30 /  Ф31 / Ф80 (Ф f 30 31 80) РЕСТАЙЛИНГ /  В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 2019 2020]]></Description>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара BMW 3-SERIES F30/F31 12-16 RH с электрокорректором, ксенон, LED</Title>
+    <Description><![CDATA[BMW 3er F30/ F31/ F80 / BMW 3er F30 F31 F80 / БМВ 3 er Ф30 / Ф31 / Ф80 (Ф f 30 31 80) ДО РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2011 2012 2013 2014 2015 2016 Артикул: 00105 Кросс номер: ]]></Description>
     <Price>19000.0</Price>
-    <OEM>2000000001166</OEM>
     <Category>Запчасти и аксессуары</Category>
     <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
+    <Brand>TYC</Brand>
+    <Article>00105</Article>
+    <Oem>TG-444-1183RMLEHM2</Oem>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa3NCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dd57cc4af0265c11f52f513d103a6b72b1a2aff9/c976bfa5-c688-42c2-8a12-bf7c71fd1b82"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa3dCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--91957e2566c1c1d5b8e4a69f7d1890229d6a729c/9aa3efda-ed60-42de-8492-08bf03156c8a"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBazBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5a59b530b29c1bf1fe4f114b4b0c9502e0b44349/d57e3634-ef59-4ac4-bed4-1567c79d82bb"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcTRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1104972cd5933c7466a5ea50df1e630e9f83ffa0/94d5e9a4-0a83-46a4-8f72-999cac3e4f5c"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcThCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--75d73d366c670d8e805edb5fb2c8087122e4daef/a955672e-c3aa-4fa8-b70b-f50c3cca51dc"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBckFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8f0fa571cd4e620f3c31eca68dd73a6e78ffc070/5b1e5578-89aa-4af6-9b7e-c65feee6281e"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBckVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ef88cfbb8f7a21a39b0e1842ea2f7571e43b1163/d24fa297-cde1-4ca3-8c78-d87879fc8970"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcklCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5f33f68d0582ba2f4eef45d69d6503ac82e770e4/644e74e5-19c7-4b81-bd0f-2e7a0fb562aa"/>
     </Images>
   </Ad>
   <Ad>
-    <Id>742</Id>
+    <Id>852</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара VW PASSAT 14- RH с электрокорректором</Title>
-    <Description><![CDATA[VW Passat B8 / Фольксваген Пассат В8 Б8 / Volkswagen Passat Фольцваген Фольксваген (Фольсваген) Пассат (Пасат) B8 /  ДОРЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2014 2015 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>8900.0</Price>
-    <OEM>2000000000107</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Depo</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBazRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--50612eb13c5798e2529483dda418dee5fea67d89/0811a049-5465-4e92-a2f6-3ea8913cdbfb"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBazhCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--58c18b6f443de159a2cf69c92d43817983d6ff81/480180d9-dbe8-4400-a832-5a4532d48751"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbEFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bbc82916eb787d0b260df19b4854511b78e6a9e8/9c4292dd-53e9-48ed-b80f-c0991ce02d0b"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbEVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--52f06724ec2707c756698fe9e2bc2887a72dd391/a1315a2c-417c-402d-ba6f-ec86ba94a801"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>743</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара W TRANSPORTER T6 15-19 LH 2 секции</Title>
-    <Description><![CDATA[VW Transporter / Volkswagen Transporter T6 / Volkswagen Transporter T6 / Фольцваген Фольксваген (Фольсваген) Транспортер Т6 (Т T 6) / ДОРЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 2019 года выпуска]]></Description>
-    <Price>15650.0</Price>
-    <OEM>2000000001968</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbElCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e490bd9edcc41282b6862753f01029c1f33cbe7b/a51c594d-36e3-4cd8-a8c5-b455779b881f"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbE1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4c49f6b9d564d07ba103c71f7d5c48d4b4789c5c/2f581f4c-71be-49f6-a4c3-f217576c1e03"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>747</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара RENAULT LOGAN/SANDERO 14-18 RH</Title>
-    <Description><![CDATA[Рено Логан 2 поколение / Renault Logan /  Рено Логан / Рено Сандеро 2 / Renault Sandero /  Рено Сандеро 2 /ДО РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили:  2014 2015 2016 2017 2018 года выпуска]]></Description>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара RENAULT LOGAN/SANDERO 14-18 LH</Title>
+    <Description><![CDATA[Рено Логан 2 поколение / Renault Logan / Рено Логан / Рено Сандеро 2 / Renault Sandero / Рено Сандеро 2 /ДО РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2014 2015 2016 2017 2018 года выпуска Артикул: 00288 Кросс номер: ]]></Description>
     <Price>3200.0</Price>
-    <OEM>2000000001326</OEM>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00288</Article>
+    <Oem>ST-551-11L5L</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBck1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--02f8c760925995ac37523637a0c5b876a2c1b065/69fa4456-2504-4b61-a125-591b807830a7"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBclFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce9f4934c2eb252cd48f561a4fa60adaa59c8ea7/6a00614a-e004-4663-96af-cc35d281114a"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBclVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e135b417a34736070a705e460a55a639c4a0378d/d78a78dc-9707-4408-9907-f249406bbb18"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>856</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара VW POLO 15-20 SEDAN/POLO 09-13 HBK RH</Title>
+    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 до рестайлинг / рестайлинг /В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска Артикул: 00011 Кросс номер: ]]></Description>
+    <Price>4550.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00011</Article>
+    <Oem>ST-441-11D6R</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcllCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--42f015365590f9ec6e7df1170dcdc21992880d23/19d1e7ae-93e1-4ab4-a625-4ba35f3a4992"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5734ad930e3d84c87d3577d24bc82e1c19012f9a/1b24b3c2-a2a0-4953-bfa6-eb680463c568"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>870</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара RENAULT DUSTER 10-15 LH хром</Title>
+    <Description><![CDATA[Рено Дастер 1 поколение / Renault Duster / Рено Дустер 1 / ДО РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 года выпуска Артикул: 00005 Кросс номер: ]]></Description>
+    <Price>3950.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00005</Article>
+    <Oem>ST-551-1186L-LDEM1</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcm9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c2bb04336597201cb95d7ab4b70bdb1bebbc7463/4e00cadf-e5cd-49c8-98f6-0b4094a98020"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcnNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f9116a90ce9b3f6ea03e843b59bd9505c1a44f79/f0c1cac2-8932-46e0-968e-b52c3d801d09"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcndCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7ff5d43415d203a19a572d82ad234aa290626b0a/bb20f449-8965-4060-9a75-976f54c62efb"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcjBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0b908d4a1e8ef4377cd0265c89de7b370820b34c/14374c6c-b40d-49e4-bb4a-a56780cced6a"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>881</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний VW JETTA 14-19 RH LED</Title>
+    <Description><![CDATA[VW Jetta / Фольксваген Джетта 6 / Volkswagen Jetta / Фольксваген (Фольсваген) Джетта (Джета) 6 Фольцваген / В Зависимости от комплектации деталь может подойти на автомобили: 2010 2014 2015 2016 2017 2018 года выпуска Артикул: 00205 Кросс номер: ]]></Description>
+    <Price>10000.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00205</Article>
+    <Oem>ST-441-19G3R</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0VCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--362d4e3f01f7d4d9100e1db5e91832041b1f0e38/cd289af5-6164-4aa6-a2bc-bddcef0cb246"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0lCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f55056c1def9f7fe4acb257bb51f7d0e503d43dd/64f2d50d-e37d-42ed-8637-568d84d50ba5"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>883</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний HYUNDAI SOLARIS 17- RH LED</Title>
+    <Description><![CDATA[Хендай Соларис 2 / Hyundai Solaris Хендай (Хундай, Хюндай Хёндэ) / Соларис (Солярис) / РЕСТАЙЛИНГ/ ДО РЕСТАЙЛИНГ/ В зависимости от комплектации деталь может подойти на автомобили: 2017 2018 2019 2020 2021 2022 2023 года выпуска Артикул: 00053 Кросс номер: ]]></Description>
+    <Price>10000.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00053</Article>
+    <Oem>ST-221-19S7DR</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc01CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7964bbc117bfda6e760d0c74a9d9453a594498cf/28157ad9-78c7-4184-8dec-ee06baf1e252"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc1FCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d48fa11dc59c7be36e41e14358ffb032ba77dfa/357b3b61-e157-4a82-b9ed-9d95817b9c1d"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc1VCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3c53c91b4eb81c2e6cbfeebbc5b822b8aaafecab/ebf74f4d-e315-47bd-aed0-9480f326d980"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>878</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний SKODA RAPID 12-20 RH</Title>
+    <Description><![CDATA[Шкода Рапид / Skoda Rapid / Шкода Рапид / РЕСТАЙЛИНГ / ДО РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска Артикул:  Кросс номер: ]]></Description>
+    <Price>3000.0</Price>
     <Category>Запчасти и аксессуары</Category>
     <Typeid>11-618</Typeid>
     <Brand>Sat</Brand>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbFFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b8128bc7788c30beadc46ec8308ccf8f2aa789d0/eb1a414f-e339-4e61-94a9-35568a986280"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbFVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a45676d8b4c5dac0b62e7253d2cb86563c5079b5/1a45d3d1-397d-4aee-8a84-7bd119770301"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbFlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--433de15e91bb2042d148d5e15712e8ebaf5d3d66/b5586471-b820-4e02-8bcc-c97b44eaf9a7"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0FCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2cb471f7d931c97da627a4106802886a28ae2be2/d3852153-d1fe-46df-98b5-d8cd80e73da9"/>
     </Images>
   </Ad>
   <Ad>
-    <Id>750</Id>
+    <Id>899</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара VW PASSAT 14- LH с электрокорректором</Title>
-    <Description><![CDATA[VW Passat B8 / Фольксваген Пассат В8 Б8 / Volkswagen Passat Фольцваген Фольксваген (Фольсваген) Пассат (Пасат) B8 /  ДОРЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2014 2015 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>8900.0</Price>
-    <OEM>2000000002477</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Depo</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--886f90e91aa91830c9284e79a197ee298885af0e/ece70e8b-29f6-4815-b683-580a4543aec0"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--83d2c4b4d8bf2a413e1f479106e02512ee3c47ca/8950fd12-4e1f-416a-95de-9ef20294db5f"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--218467ead6bc4eb306cae106f1f6d50a226b50cb/6e52abec-9902-4ee8-953b-a95fe18d12a5"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbG9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5b5a2d14a82007cdb09fe6b8b7363988a9ce59cf/838ab776-913a-4967-b9ea-8bc6e631b2f5"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>751</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний VW POLO 15-20 4D RH</Title>
-    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 до рестайлинг / рестайлинг  /В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>2150.0</Price>
-    <OEM>2000000001234</OEM>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара VW POLO 10-20 4D RH</Title>
+    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 до рестайлинг / рестайлинг /В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска Артикул: 00070 Кросс номер: ]]></Description>
+    <Price>4650.0</Price>
     <Category>Запчасти и аксессуары</Category>
     <Typeid>11-618</Typeid>
     <Brand>Sat</Brand>
+    <Article>00070</Article>
+    <Oem>ST-441-11G9R</Oem>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbHNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e8bda468e4797a18e9b26e54015ff46235131e0e/93d7a78f-132e-47c7-8be3-7ba945b3e854"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbHdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--23dfd10934460c2146fa0082f76baf594840cf8a/f2980864-0a96-4e5a-a348-01126d9bd02e"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc3NCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2ad50feb2f9500fa18c2db8f17eba8720868bd2d/ac35983e-2e2e-49a8-8bf0-39b0042a6706"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc3dCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c9d69c2285d60bd66cdfb0af1d2753de7f9cace1/5c29ff03-034d-494e-a3d0-2a92fde506f2"/>
     </Images>
   </Ad>
   <Ad>
-    <Id>753</Id>
+    <Id>891</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара RENAULT LOGAN/SANDERO 18- RH</Title>
-    <Description><![CDATA[Рено Логан 2 поколение / Renault Logan / Рено Логан /  рестайлинг В зависимости от комплектации деталь может подойти на автомобили: 2018 2019 2020 2021 2022 года выпуска /  Рено Сандеро 2 /  поколение / Renault Sandero /  Рено Сандеро 2 рестайлинг / В зависимости от комплектации деталь может подойти на автомобили: 2018 2019 2020 2021 2022 года выпуска]]></Description>
-    <Price>6250.0</Price>
-    <OEM>2000000002255</OEM>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний HYUNDAI TUCSON 15-19 LH</Title>
+    <Description><![CDATA[Хендай Туксон 3 / Hyundai Tucson Хендай (Хундай, Хюндай) Туксон 3 / ДО РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 года выпуска Артикул: 00253 Кросс номер: ]]></Description>
+    <Price>4550.0</Price>
     <Category>Запчасти и аксессуары</Category>
     <Typeid>11-618</Typeid>
     <Brand>Sat</Brand>
+    <Article>00253</Article>
+    <Oem>ST-121-1916L</Oem>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbDBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--adc3e4a2f14ecb25b713a546c97d33e34e33a707/eddc8534-5127-4864-9bc4-1af56824d973"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbDRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--933fc76230c5cf87922fd235e254ba00944bb061/9f673a97-8507-4de5-820c-841a9237bde8"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbDhCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ba0f808e0c8960c34c8b49945b1ee720c0a04922/5cb1f4bb-9832-4863-8c7c-67c3a9b21c19"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbUFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4853e4393018d7d888a00069ef7faf7d48fea421/59355c61-2f20-40fa-a410-954f2ca3ef14"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc2tCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f952045de891acd78e31a0232aed6257704aa586/d58e8fec-8b00-4d85-8951-d7c95f963602"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc29CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2c4390a396cc7690106daa23e992378155a070ed/b236c21f-ed9e-4848-b7f6-a2c575e7f3fa"/>
     </Images>
   </Ad>
   <Ad>
-    <Id>755</Id>
+    <Id>913</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний VW TIGUAN 11-16 LH</Title>
-    <Description><![CDATA[VW Tiguan / Фольксваген Тигуан 1 /  Volkswagen Tiguan /  Фольцваген Фольксваген (Фольсваген) Тигуан 1 РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2011 2012 2013 2014 2015 2016  года выпуска]]></Description>
-    <Price>9100.0</Price>
-    <OEM>2000000002040</OEM>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Решетка радиатора VW POLO 15-20 4D</Title>
+    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 / рестайлинг /В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 2019 2020 года выпуска Артикул:  Кросс номер: ]]></Description>
+    <Price>1900.0</Price>
     <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Depo</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbUVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c480e68207dced023d039734ea977d59ddfc2211/6fd5327d-50e2-4eb2-8af4-06ca24bdc3ac"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbUlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8fb0a60600a65a5a17f0582f5212ae6ae93c4123/8b1cb620-b7d4-49cb-bd9b-f876ed271a53"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>766</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара VW POLO 15-20 RH</Title>
-    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 до рестайлинг / рестайлинг  /В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>4250.0</Price>
-    <OEM>2000000001296</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
+    <Typeid>16-825</Typeid>
     <Brand>Sat</Brand>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbU1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6523f3966e8d95ffd8485c919826f5abf57ef7bd/2fa38ee6-4b81-4a5a-bfb8-0be1919714a4"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbVFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f821aa4b3e69574bd2d74d25b4abd2cbb521d2c1/860567bb-5e74-44b1-b87d-10651b1305a7"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdElCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--aa54a4c00724ec56762d54ee68ee94153f04c75f/af112c80-2968-4bc1-b6a1-74f766254044"/>
     </Images>
   </Ad>
   <Ad>
-    <Id>768</Id>
+    <Id>911</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара BMW 3-SERIES F30/F31 12-16 LH с электрокорректором, ксенон, LED</Title>
-    <Description><![CDATA[BMW 3er F30/ F31/ F80 / BMW 3er F30 F31 F80 /  БМВ 3 er Ф30 /  Ф31 / Ф80 (Ф f 30 31 80) ДО РЕСТАЙЛИНГ /  В зависимости от комплектации деталь может подойти на автомобили: 2011 2012 2013 2014 2015 2016]]></Description>
-    <Price>19000.0</Price>
-    <OEM>2000000002811</OEM>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара HYUNDAI CRETA 16-21 LH</Title>
+    <Description><![CDATA[Хендай Крета / Hyundai Creta (Хундай, Хюндай Хёндэ) / Крета Грета / В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 года выпуска Артикул: 00118 Кросс номер: ]]></Description>
+    <Price>4700.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00118</Article>
+    <Oem>ST-121-1111L</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdEFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6cfc5f039205bfd5500147dbf98c59383d1dd302/dfc4f1ba-1a26-4458-905c-d2e7291849b5"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdEVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--50583a7e963fc11ba74bd932c11d22f6bd8cce55/3620edad-051b-48c3-bb79-425cdb1e6b9c"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>915</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара HYUNDAI SOLARIS 17-20 RH</Title>
+    <Description><![CDATA[Хендай Соларис 2 / Hyundai Solaris Хендай (Хундай, Хюндай Хёндэ) / Соларис (Солярис) / ДО РЕСТАЙЛИНГ/ В зависимости от комплектации деталь может подойти на автомобили: 2017 2018 2019 2020 года выпуска Артикул: 00235 Кросс номер: ]]></Description>
+    <Price>4000.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00235</Article>
+    <Oem>ST-221-11S7R</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdE1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e0fddb61491fa71a017f57657b10b7ec6fc0ce02/99801c94-d913-44c6-9d9e-26ffe7afc34f"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdFFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d4b4d55c9fa99d311f765e9e50def7a9554084ab/31254c19-a674-4979-949d-3fe04fc161e7"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdFVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ebd86ed430f89ca0cff84f514b4522d32c39e2fe/0a97bf8b-1d36-48a7-aa1b-27c61a474437"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>910</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара HYUNDAI TUCSON 15-19 RH галоген</Title>
+    <Description><![CDATA[Хендай Туксон 3 / Hyundai Tucson Хендай (Хундай, Хюндай) Туксон 3 / ДО РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 года выпуска Артикул: 00164 Кросс номер: 92102-D7000 31 78 012 2 01-D700-01EX1R JH02-TUN15-001R OEM0107FR SHF-12045 ZHN1168ER 20-15397-06-2 20-15397-16-2 20-F397-06-2B]]></Description>
+    <Price>10900.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00164</Article>
+    <Cross>92102-D7000 31 78 012 2 01-D700-01EX1R JH02-TUN15-001R OEM0107FR SHF-12045 ZHN1168ER 20-15397-06-2 20-15397-16-2 20-F397-06-2B</Cross>
+    <Oem>ST-121-1114R</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBczBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cb731b9caa01f878e8190dda0774b8781593ea67/d88b30c7-9c98-449f-a720-14f93c11e0ad"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBczRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5eaf2081d7c69750fce9df58e6b2758c55c05733/2fa6c0d7-c6a4-4ea3-a7a7-800271ab2c03"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBczhCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8698c388c0d0fe36582b9caf1999ce20f6fad734/433903d0-0118-460f-9380-b3aec8de6279"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>910_9</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>test</Title>
+    <Description><![CDATA[test Артикул:  Кросс номер: 92102-D7000 31 78 012 2 01-D700-01EX1R JH02-TUN15-001R OEM0107FR SHF-12045 ZHN1168ER 20-15397-06-2 20-15397-16-2 20-F397-06-2B]]></Description>
+    <Price>10900.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00164</Article>
+    <Cross>92102-D7000 31 78 012 2 01-D700-01EX1R JH02-TUN15-001R OEM0107FR SHF-12045 ZHN1168ER 20-15397-06-2 20-15397-16-2 20-F397-06-2B</Cross>
+    <Oem>ST-121-1114R</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBanNDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fb3b61db400710252725634f361d39fb7b5a3e6f/d88b30c7-9c98-449f-a720-14f93c11e0ad_9"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBandDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9eb4120921b5fa2e8edbc77407d51cf787f20ef9/2fa6c0d7-c6a4-4ea3-a7a7-800271ab2c03_9"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBajBDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8ae21657440adef74d0db43ca040f16fba091a42/433903d0-0118-460f-9380-b3aec8de6279_9"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>922</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний HYUNDAI SOLARIS 17- LH LED</Title>
+    <Description><![CDATA[Хендай Соларис 2 / Hyundai Solaris Хендай (Хундай, Хюндай Хёндэ) / Соларис (Солярис) / РЕСТАЙЛИНГ/ ДО РЕСТАЙЛИНГ/ В зависимости от комплектации деталь может подойти на автомобили: 2017 2018 2019 2020 2021 2022 2023 года выпуска Артикул: 00269 Кросс номер: ]]></Description>
+    <Price>10000.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00269</Article>
+    <Oem>ST-221-19S7DL</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdFlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5fd6c3f8ec3ffe2831ef3c2e79df7ee95209a784/ad389e56-5d47-46c4-9f2a-62708c762977"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdGNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--decabcce3ae30821848ffd05b567f06011b4ddd0/25f037d0-3eed-4c3f-b568-63de9ca9f817"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdGdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a06abf4473f48afd38ec4ffbaa8b74ef84c1176e/d38015a3-577f-4f61-bb2d-3797a4accc93"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>964</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара HYUNDAI SOLARIS 17-20 LH</Title>
+    <Description><![CDATA[Хендай Соларис 2 / Hyundai Solaris Хендай (Хундай, Хюндай Хёндэ) / Соларис (Солярис) / ДО РЕСТАЙЛИНГ/ В зависимости от комплектации деталь может подойти на автомобили: 2017 2018 2019 2020 года выпуска Артикул: 00268 Кросс номер: ]]></Description>
+    <Price>4000.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00268</Article>
+    <Oem>ST-221-11S7L</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdVlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d3bec8b257a85298c49dd47bce28e793c1e8cb9a/2adab94b-aef7-4b77-8385-1be01d91a2c3"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdWNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--813816e6f1d2dba50cf6180f017dffbfba56e428/1e05edc4-c665-4e00-a899-42c16b516e6a"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdWdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b2d0438c4157181b8adbc9bf1656dcfe72e489e3/4bcb004c-7790-45b3-bfbd-f69668a529f6"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>965</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара RENAULT KAPTUR 16- RH (чёрная) с электрокорректором</Title>
+    <Description><![CDATA[Рено Каптур 1 поколение / Renault Kaptur / Рено Каптюр / РЕСТАЙЛИНГ / ДОРЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 2021 2022 2023 года выпуска Артикул: 00078 Кросс номер: ]]></Description>
+    <Price>14150.0</Price>
     <Category>Запчасти и аксессуары</Category>
     <Typeid>11-618</Typeid>
     <Brand>TYC</Brand>
+    <Article>00078</Article>
+    <Oem>20-E695-05-2B</Oem>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbVVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2ef9bd1d39c690cbc9d1bdf9c19149e58265f130/56f457e1-6cfd-4a55-810f-5141bce3d124"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbVlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1668011ac51abe749df3b15da04937f1f2c1e224/3e6cde98-7f91-461f-b1f3-b47cee2b54ef"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0c8aa945cc38bd2fe04dcf49f006d80d9905574c/af513655-e025-4fba-80e5-652a54596b51"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ff78b6fc467b8634c75862ca124b548e070db572/66ed536a-4093-4075-8b62-5d666f55c3d1"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdWtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f5b3ac7f823a4d60c0715a8b623ba987f10274b4/2bf89026-4aca-49e6-9ef3-1146d19a4396"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdW9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--69e88f063fe0c36a18a2095ca36ab65166b1e652/4dfd28e1-2489-413d-a37d-532d4fda5f1e"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdXNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f9691219b351c064a6e01c211ae9ec7f24bba3ed/5a41f7dd-d2a0-4d4c-8eba-deb2cc5b2626"/>
     </Images>
   </Ad>
   <Ad>
-    <Id>769</Id>
+    <Id>970</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фара VW POLO 15-20 SEDAN/POLO 09-13 HBK LH</Title>
-    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 до рестайлинг / рестайлинг  /В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>4550.0</Price>
-    <OEM>2000000001050</OEM>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний VW JETTA 14-19 LH LED</Title>
+    <Description><![CDATA[VW Jetta / Фольксваген Джетта 6 / Volkswagen Jetta / Фольксваген (Фольсваген) Джетта (Джета) 6 Фольцваген / В Зависимости от комплектации деталь может подойти на автомобили: 2010 2014 2015 2016 2017 2018 года выпуска Артикул: 00219 Кросс номер: ]]></Description>
+    <Price>10000.0</Price>
     <Category>Запчасти и аксессуары</Category>
     <Typeid>11-618</Typeid>
     <Brand>Sat</Brand>
+    <Article>00219</Article>
+    <Oem>ST-441-19G3L</Oem>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2d47be62d46e6aedc9fa531e9146d2f79771377b/ae6e271d-e3f5-4dc0-a96c-2b93350c355b"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbW9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--13b722032888e9a5904b8ece03936cb52bcb0f1d/dbee7da4-0939-4c62-b966-a181d9b9ee83"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdXdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6e6bb40c785396ca20d306329f85838fd6f5d1e9/d00f3c7b-e032-446e-99bb-5b9366322e3c"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdTBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dd20730f4c51500e86699b224b27207a162c3ce6/e656986d-7c6d-4bc1-9959-69b855dee5dc"/>
     </Images>
   </Ad>
   <Ad>
-    <Id>770</Id>
+    <Id>972</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний RENAULT DUSTER 10-15 RH</Title>
-    <Description><![CDATA[Рено Дастер 1 поколение /  Renault Duster / Рено Дустер 1 / ДО РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 года выпуска]]></Description>
-    <Price>1900.0</Price>
-    <OEM>2000000001876</OEM>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний VW TIGUAN 11-16 RH</Title>
+    <Description><![CDATA[VW Tiguan / Фольксваген Тигуан 1 / Volkswagen Tiguan / Фольцваген Фольксваген (Фольсваген) Тигуан 1 РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2011 2012 2013 2014 2015 2016 года выпуска Артикул: 00171 Кросс номер: ]]></Description>
+    <Price>9100.0</Price>
     <Category>Запчасти и аксессуары</Category>
     <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
+    <Brand>Depo</Brand>
+    <Article>00171</Article>
+    <Oem>441-19D2R-UE</Oem>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbXNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e41f634c37e3d3115028dc0f8fb4b7fccd54fba3/d490bd42-2f2a-4e82-b38c-0f0df806924a"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbXdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f8dc3b51ca81c0085277e2ce9b07330094f660c6/11424845-76a5-4e18-83b1-5888852320f0"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdkFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5d0a5637fbf6e1edeb6f358b011f3443a5b23f6c/38178551-1de2-4b18-abad-611bfa7ba336"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdkVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5914135034d749b3075bfe44ff48ceb029216b03/d5a3f89d-b793-435c-abfd-352f89afb7bd"/>
     </Images>
   </Ad>
   <Ad>
-    <Id>772</Id>
+    <Id>974</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний HYUNDAI CRETA 16-21 RH</Title>
-    <Description><![CDATA[Хендай Крета / Hyundai Creta (Хундай, Хюндай Хёндэ) /  Крета Грета /  В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>2750.0</Price>
-    <OEM>2000000001258</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbTBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c4bda05e5ba69c649780766c46de7fc6a1ec33fb/be7b4cd8-235f-49ea-a8a3-4681b06445f7"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbTRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--001d3d9c06635dfdc1997875885f96d659ffe6f2/a94ff516-c997-41c9-a802-26d7e3d17dc7"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbThCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--34c36e8173ec33b638f7e18093e0e9613a7d6772/1a8035f6-5f10-4553-a8cc-796ffd6f93d8"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>774</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний SKODA RAPID 12-20 LH</Title>
-    <Description><![CDATA[Шкода Рапид / Skoda Rapid /  Шкода Рапид / РЕСТАЙЛИНГ /  ДО РЕСТАЙЛИНГ  В зависимости от комплектации деталь может подойти на автомобили: 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска]]></Description>
-    <Price>3000.0</Price>
-    <OEM>2000000002873</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbkFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cfa1c420920339c5c80521f34e6b4e6b01f97b5e/0c732c61-7acd-4ed8-b092-1b84db63f134"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>775</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний HYUNDAI TUCSON 15-19 LH LED</Title>
-    <Description><![CDATA[Хендай Туксон 3 / Hyundai Tucson Хендай (Хундай, Хюндай) Туксон 3 / ДО  РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили:  2015 2016 2017 2018 года выпуска]]></Description>
-    <Price>6750.0</Price>
-    <OEM>2000000002736</OEM>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>Sat</Brand>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbkVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ecde18d60545464dd9e49a6e8ba5e7ce4f7f654d/ffaf4794-1a67-47c6-825d-7ca607cfdbc1"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbklCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--04937d085fd1e7d2d93db16d59a86bedbb53378e/e22416da-7157-4dcf-90e3-aab4edde0bea"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>777</Id>
-    <DateBegin>2023-02-04</DateBegin>
-    <DateEnd>2023-03-04</DateEnd>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний HYUNDAI SANTA FE 18-21 LH</Title>
-    <Description><![CDATA[Hyundai Santa Fe 4 TM / Hyundai Santa Fe 4 TM  / Хендай (Хундай, Хюндай) Санта Фе (SantaFe СантаФе) ТМ / ДОРЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2018 2019 2020 2021 года выпуска]]></Description>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний HYUNDAI SANTA FE 18-21 RH</Title>
+    <Description><![CDATA[Hyundai Santa Fe 4 TM / Hyundai Santa Fe 4 TM / Хендай (Хундай, Хюндай) Санта Фе (SantaFe СантаФе) ТМ / ДОРЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2018 2019 2020 2021 года выпуска Артикул: 00250 Кросс номер: ]]></Description>
     <Price>7000.0</Price>
-    <OEM>2000000002019</OEM>
     <Category>Запчасти и аксессуары</Category>
     <Typeid>11-618</Typeid>
     <Brand>Sat</Brand>
+    <Article>00250</Article>
+    <Oem>ST-18-0021</Oem>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbk1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a1492f4544ca7d8d4bb7ce1fce38b9bb8cce9dd6/1e915909-69d5-48d8-8dba-dd672f30c1e6"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBblFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--58d84b347b0e1d20b288b0447af8158d45658930/9c80f5ea-51d1-4c81-87ff-a088ccf839d5"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBblVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--933b8319b782cefbdb6de6b7bbbfd84b242baad2/a0868071-faed-4b3f-9e60-34d3862216b2"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdklCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5bfeb59a6dcae624e69801c71f8763b0a28503e0/d93a3905-6a71-482b-b4e6-0a8cc528f6f6"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdk1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--73b99ac3146706faae3f4cd98f40054780384826/03e7a458-d5b9-404d-b4e3-abcd97a012a2"/>
     </Images>
   </Ad>
   <Ad>
-    <Id>779</Id>
+    <Id>980</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
-    <Title>Фонарь задний HYUNDAI TUCSON 15-19 RH LED</Title>
-    <Description><![CDATA[Хендай Туксон 3 / Hyundai Tucson Хендай (Хундай, Хюндай) Туксон 3 / ДО  РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили:  2015 2016 2017 2018 года выпуска]]></Description>
-    <Price>6750.0</Price>
-    <OEM>2000000001173</OEM>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний HYUNDAI SOLARIS 14-17 LH 4D</Title>
+    <Description><![CDATA[Хендай Соларис 1 / Hyundai Solaris Хендай (Хундай, Хюндай) / Соларис (Солярис) 1 / РЕСТАЙЛИНГ /В зависимости от комплектации деталь может подойти на автомобили:2014 2015 2016 2017 года выпуска Артикул: 00187 Кросс номер: ]]></Description>
+    <Price>2250.0</Price>
     <Category>Запчасти и аксессуары</Category>
     <Typeid>11-618</Typeid>
     <Brand>Sat</Brand>
+    <Article>00187</Article>
+    <Oem>ST-221-19S3L</Oem>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbllCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2e3df94a4274621c037724fa16d1b156d12ab91a/cf515de9-2d3d-4aa1-b8e3-6361b5651fba"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbmNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ff902d94700f0ce7f181e81ceb9ce17f40cc8d8e/f2f206ce-437c-4888-87bb-acee341e48a2"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbmdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3e632e972cb4f8b3010707cdad566390e3c3f82b/690bb3a0-1cb3-4019-8d01-a5854592a767"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbmtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3b29b13ebd224dfca722a3e6a77f6ec8253ed9ba/9d840808-25c3-4281-a9f5-fc047d6a84e6"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdllCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--113a67c5cccbe2e3fa003351f16b466fa286702b/c9f3cd6a-a85d-4c7a-8446-8e19ae56d079"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdmNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7c1e89122a900d39e237a8a736ecfb1a6da6e4ae/857a2acd-ce5b-4b99-b8eb-d78afd9b24c4"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdmdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--28f8c3120b1ac947ae6e4eaadc160adc5895830e/42543293-7ae1-4c2d-bc32-99ef922ce007"/>
     </Images>
   </Ad>
   <Ad>
-    <Id>780</Id>
+    <Id>1011</Id>
     <DateBegin>2023-02-04</DateBegin>
     <DateEnd>2023-03-04</DateEnd>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
-    <ContactPhone>+79019011111</ContactPhone>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
     <Region>Москва</Region>
-    <Address>Россия, Москва, Высокие высока проезд, 2</Address>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний VW POLO 15-20 4D LH</Title>
+    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 до рестайлинг / рестайлинг /В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска Артикул: 00055 Кросс номер: ]]></Description>
+    <Price>2150.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00055</Article>
+    <Oem>ST-441-19DDL</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1VDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--eb11fe8cd48cc18782e350c785017b55ca0dd4e1/79fbd9fc-1830-43ee-8d78-d792c040f38d"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1lDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--24590b1402a90c328e0cb8790ab653fc5c0090e1/7c6e5327-df0a-43e4-a21e-0753400c2cb5"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1005</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара NISSAN X-TRAIL 14-17 LH галоген, ДХО, с электрокорректором</Title>
+    <Description><![CDATA[Ниссан Х Трейл 3 Т32 / Nissan X-Trail Ниссан (Нисан) Х-Трейл (Х Трейл X Trail) 3 Т32 T32 / ДО РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2013 2014 2015 2016 2017 года выпуска Артикул: 00057 Кросс номер: ]]></Description>
+    <Price>12800.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00057</Article>
+    <Oem>ST-115-1136LMLD-M2</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdnNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--21306850ad0b0bf5529f16428d2a862a7c846167/51c4ba53-45e6-4b43-a3a5-b727d8960dae"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdndCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--382bbac76f39b0c141379a42e72f9021d80f2971/b34a1a7a-72aa-4bb4-b8cf-b25bc84dbbff"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdjBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5df807b81b5f49dc31758eee75d16e89afca5d47/e635a5cc-6018-4ee6-bf9f-a50a8c51c7d5"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdjRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1c98cb8d1615d7db6a90630501a22de07d7cf2f4/8cc5339a-5e63-47c7-bb18-80ed9fc54017"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1007</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара HYUNDAI CRETA 16-21 RH</Title>
+    <Description><![CDATA[Хендай Крета / Hyundai Creta (Хундай, Хюндай Хёндэ) / Крета Грета / В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 года выпуска Артикул: 00130 Кросс номер: ]]></Description>
+    <Price>4700.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00130</Article>
+    <Oem>ST-121-1111R</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdjhCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f81adb51f9d67e5fef64106ef5c308f4461c4ad7/ca9e38e9-e17e-45e2-bbad-77a98340d7d7"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ0FDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3506d51368807e6c995a490d9166b9ced5e8f231/d696ce92-5525-422c-a04a-48ded651b2f0"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ0VDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ab38ab3f5f9ac3b55bffdd41d59c9516b63b2377/8905740e-1ec7-4c82-9761-74f6eaf0a2a3"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1022</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара BMW 3-SERIES F30 15-19 LH LED</Title>
+    <Description><![CDATA[BMW 3er F30/ F31/ F80 / BMW 3er F30 F31 F80 / БМВ 3 er Ф30 / Ф31 / Ф80 (Ф f 30 31 80) РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 2019 2020 Артикул: 00115 Кросс номер: ]]></Description>
+    <Price>19000.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00115</Article>
+    <Oem>ST-13-0007</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2tDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--277bf652b6c4076b700ee762d0a89a6d4c4bc4d3/238892ed-ac54-4698-8771-5af4cfc0fc6a"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ29DIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c6ff31d44e0e94ffd4f3b146d30b21096b3a6ccb/bbd63cec-1e5e-4b46-ad07-739623be454d"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3NDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d3a767655d6e8c04fb45e5448e7364a47065b26c/a13d4690-b0ae-42ed-bd36-fd807dda50fb"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1041</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний VW TIGUAN 11-16 LH</Title>
+    <Description><![CDATA[VW Tiguan / Фольксваген Тигуан 1 / Volkswagen Tiguan / Фольцваген Фольксваген (Фольсваген) Тигуан 1 РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2011 2012 2013 2014 2015 2016 года выпуска Артикул: 00203 Кросс номер: ]]></Description>
+    <Price>9100.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Depo</Brand>
+    <Article>00203</Article>
+    <Oem>441-19D2L-UE</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDhDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--96926f5315df5fd6646b15ec7a6605c5c3fc86ac/ff329059-8451-4931-88ed-2e3df2098a38"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaUFDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8562e75236b81621a9ecfb4292a5b28cafad2328/79ec0262-4ffb-4214-8436-241692818eb6"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1034</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара RENAULT LOGAN/SANDERO 14-18 RH</Title>
+    <Description><![CDATA[Рено Логан 2 поколение / Renault Logan / Рено Логан / Рено Сандеро 2 / Renault Sandero / Рено Сандеро 2 /ДО РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2014 2015 2016 2017 2018 года выпуска Артикул: 00131 Кросс номер: ]]></Description>
+    <Price>3200.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00131</Article>
+    <Oem>ST-551-11L5R</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaElDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1f44fa66bedad7d303aaaa5134edabd871f5c397/261d5e01-80aa-40e8-a0b3-4ff64e898bf2"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaE1DIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ccad4ae1dad8f71677878e297514ee621c02118e/0485adf8-e5e8-48c7-9759-ee31a4dd38bf"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaFFDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bf6613700aeaca7644f7206fed54390d8caab5d0/9ebbf20a-ac47-462b-b3b6-dbf90b7d8df6"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1037</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара VW PASSAT 14- LH с электрокорректором</Title>
+    <Description><![CDATA[VW Passat B8 / Фольксваген Пассат В8 Б8 / Volkswagen Passat Фольцваген Фольксваген (Фольсваген) Пассат (Пасат) B8 / ДОРЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2014 2015 2016 2017 2018 2019 2020 года выпуска Артикул: 00246 Кросс номер: ]]></Description>
+    <Price>8900.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Depo</Brand>
+    <Article>00246</Article>
+    <Oem>441-11M1LMLDEM2</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaFVDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3115024b57b189786b8e3a7628ee50cc5efc60e9/35a9eec6-55f8-4306-897c-63f993760861"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaFlDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7dce68f2de148f9ae7a72c4da568b7577a60da9f/fa436821-ccc5-4c64-91db-0f22ef131bb5"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGNDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dc576d2f71e5a085b94f4b9e137055a1d28dce3d/771aeaf7-aa4f-425a-814f-56feb22c59cc"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGdDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0f820d44bac43c5ebe38a7214768e4e0e1755f4f/6ba24678-fc21-4ec4-902a-06b3f92a398d"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1055</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара BMW 3-SERIES F30/F31 12-16 LH с электрокорректором, ксенон, LED</Title>
+    <Description><![CDATA[BMW 3er F30/ F31/ F80 / BMW 3er F30 F31 F80 / БМВ 3 er Ф30 / Ф31 / Ф80 (Ф f 30 31 80) ДО РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2011 2012 2013 2014 2015 2016 Артикул: 00280 Кросс номер: ]]></Description>
+    <Price>19000.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>TYC</Brand>
+    <Article>00280</Article>
+    <Oem>TG-444-1183LMLEHM2</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaU1DIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3bf6e8097eb3ef4c277add44b8f53df789115ed8/17ac5bc9-0ade-4b3b-94a2-3f8373468e7c"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVFDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5b11e7bb7c577c1ca2e624234732bf3211b80c23/90bad882-f5e2-439f-b429-e77dae7973ef"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVVDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1315c58415b4c45640ab4c043fe01bf83a297aa6/32bbe610-353f-4e4e-af4d-5264fc0b2e12"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVlDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b242b3cb6eaa7a34536f5c24aa93dcd78e058c3f/a2cbc28e-2a6e-4695-81b6-601ce52642a0"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1053</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара VW POLO 15-20 RH</Title>
+    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 до рестайлинг / рестайлинг /В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска Артикул: 00128 Кросс номер: ]]></Description>
+    <Price>4250.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00128</Article>
+    <Oem>ST-441-11K5MR</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaUVDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f81d21aab7436d1e7a2f321c862bd0c3da62e436/a25dfbae-8107-4de1-9897-934fc49a2463"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaUlDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f2e93a5ea3f5afbd8797e35a2af0632b7d506e55/805ab5cf-7ced-4906-bb3f-caff2c12ee65"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1056</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара VW POLO 15-20 SEDAN/POLO 09-13 HBK LH</Title>
+    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 до рестайлинг / рестайлинг /В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска Артикул: 00104 Кросс номер: ]]></Description>
+    <Price>4550.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00104</Article>
+    <Oem>ST-441-11D6L</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWNDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f141d91160c1632b70305ac9dfc0f66a367eadd4/417e6a9f-09a7-431c-9d5c-0554f584e8b5"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWdDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--edc9873a321c03ae0cfb2ab2ddba533b68aa76e0/53a6e300-0b4c-4fc4-98af-dfba50dfd664"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1067</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
     <Title>Фонарь задний HYUNDAI SOLARIS 17- LH</Title>
-    <Description><![CDATA[Хендай Соларис 2 / Hyundai Solaris Хендай (Хундай, Хюндай Хёндэ) / Соларис (Солярис) / РЕСТАЙЛИНГ/ ДО РЕСТАЙЛИНГ/ В зависимости от комплектации деталь может подойти на автомобили: 2017 2018 2019 2020 2021 2022 2023 года выпуска]]></Description>
+    <Description><![CDATA[Хендай Соларис 2 / Hyundai Solaris Хендай (Хундай, Хюндай Хёндэ) / Соларис (Солярис) / РЕСТАЙЛИНГ/ ДО РЕСТАЙЛИНГ/ В зависимости от комплектации деталь может подойти на автомобили: 2017 2018 2019 2020 2021 2022 2023 года выпуска Артикул: 00216 Кросс номер: ]]></Description>
     <Price>2000.0</Price>
-    <OEM>2000000002170</OEM>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00216</Article>
+    <Oem>ST-221-19S7L</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamdDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e80cc07521420b4c80f653278f2667415fb6813c/15eed2f4-30b0-4e8c-b6b4-d61f11a80945"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamtDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f612ba6abcc0e035cf90498f96134de08391c655/d7ed01ab-0d2c-4314-a7d7-03de796a2f0e"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBam9DIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--622d54beabddee29ef715a10a9d796693f6bb1b9/75697d8c-58c8-42ee-b243-7244a2acf373"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1062</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний HYUNDAI TUCSON 15-19 LH LED</Title>
+    <Description><![CDATA[Хендай Туксон 3 / Hyundai Tucson Хендай (Хундай, Хюндай) Туксон 3 / ДО РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 года выпуска Артикул: 00272 Кросс номер: ]]></Description>
+    <Price>6750.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00272</Article>
+    <Oem>ST-221-1993L-UE</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaThDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ac5ba80eaca51e3266535f445a1b20f393d503ef/5513d308-2c0b-4a1a-8363-6cbdc6ba2739"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBakFDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ac7b2bc21cfd3b568fc16b6459dfc31f87a57392/05c8c4ad-75e0-4c93-afc8-26982cb62b59"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1066</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний HYUNDAI TUCSON 15-19 RH LED</Title>
+    <Description><![CDATA[Хендай Туксон 3 / Hyundai Tucson Хендай (Хундай, Хюндай) Туксон 3 / ДО РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 года выпуска Артикул: 00116 Кросс номер: ]]></Description>
+    <Price>6750.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00116</Article>
+    <Oem>ST-221-1993R-UE</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBalFDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1da68eb4183e26724b11dc03df2466a5319b8b8c/31a7adc7-b636-4d45-8172-40a25a0e230d"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBalVDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6160aee6b4c03cdd2b886993142ff1d41075dcb9/17ec27c9-6663-4f16-acb3-6a836d84ac7b"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBallDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--346dab52bf5fdd13a07bfd47b8eadef8c341dcaa/7f2f35fb-a7ff-448f-a5c7-b25db761d63a"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamNDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--50ad03339c23c90afd35aa99f1bbf3ae8876fa25/08ea98bc-a55c-454a-8df2-d9897df69298"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1061</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний SKODA RAPID 12-20 LH</Title>
+    <Description><![CDATA[Шкода Рапид / Skoda Rapid / Шкода Рапид / РЕСТАЙЛИНГ / ДО РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска Артикул:  Кросс номер: ]]></Description>
+    <Price>3000.0</Price>
     <Category>Запчасти и аксессуары</Category>
     <Typeid>11-618</Typeid>
     <Brand>Sat</Brand>
     <Condition>Новое</Condition>
     <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbm9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c8e02a8f6c7e43b4517b453bd7032d6021e3ffe3/2660368d-0c9e-4d82-ab54-f35ae9455d5a"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbnNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--aa8f0848081240f1f4661812f60f49c21fc02b97/f34ec944-e441-47d5-aca3-25f673350bc3"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbndCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f71228b435e602b115586158a7b7706f8a9f0ad1/463702dd-3de9-43fc-80cd-132994d4f633"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaTRDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--87ee7e65dc5ca4c2a2b211587c25f99b8cd6bb8a/0c732c61-7acd-4ed8-b092-1b84db63f134"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>832</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара HYUNDAI CRETA 16-21 RH диодная, линза</Title>
+    <Description><![CDATA[Хендай Крета / Hyundai Creta (Хундай, Хюндай Хёндэ) / Крета Грета / В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 года выпуска Артикул: 00190 Кросс номер: ]]></Description>
+    <Price>17550.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00190</Article>
+    <Oem>ST-121-1112R</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcWdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--083b53d41fb65a7b0e89d2e2237e2c1be6252798/f925cdc3-3e34-4cf0-a201-96f5eb1e8bab"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcWtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e733853721d0354d691f79de1a4c10d12aed4857/33edfb17-f52a-416e-b409-de513df92d21"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcW9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ae5e8fe65bee2e93dc718baf08c757cf8cf55dc3/7f9d0c08-ba99-42b4-81a6-315e2e66a0a9"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>830</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Решетка радиатора VW POLO 10-14 4D</Title>
+    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 / рестайлинг /В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 года выпуска Артикул:  Кросс номер: ]]></Description>
+    <Price>1100.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>16-825</Typeid>
+    <Brand>Sat</Brand>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcWNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--18fcb3d423ea9ac0eff940f0f129a0d9db4aa8d1/d3af66a3-9b3e-4bda-a491-cd3c933d3900"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>859</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний VW PASSAT 14- LH диодный</Title>
+    <Description><![CDATA[VW Passat B8 / Фольксваген Пассат В8 Б8 / Volkswagen Passat Фольцваген Фольксваген (Фольсваген) Пассат (Пасат) B8 / ДОРЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2014 2015 2016 2017 2018 2019 2020 года выпуска Артикул: 00158 Кросс номер: ]]></Description>
+    <Price>5750.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Depo</Brand>
+    <Article>00158</Article>
+    <Oem>441-19G7L-AE</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d0a81387a651b0a2776445dd7605503c26a3fa24/f228032f-e74d-4f1c-ae15-3cfcb78bdec5"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--010079b2b5b9d7a60e739be1353cb436883b9f1b/7cb7a91d-b594-487b-9c97-05cf8e3192f2"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>807</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара NISSAN X-TRAIL 14-17 RH галоген, ДХО, с электрокорректором</Title>
+    <Description><![CDATA[Ниссан Х Трейл 3 Т32 / Nissan X-Trail Ниссан (Нисан) Х-Трейл (Х Трейл X Trail) 3 Т32 T32 / ДО РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2013 2014 2015 2016 2017 года выпуска Артикул: 00237 Кросс номер: ]]></Description>
+    <Price>12800.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00237</Article>
+    <Oem>ST-115-1136RMLD-M2</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcE1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d2d0ccc268ee0bc9f302d19e31de019ef37f674d/8d35e917-8b4b-4f90-9553-814a8267566c"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcFFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b16344e573c5014c6326eb33a57a3ec9d83a4780/bdbb4409-e799-4fd4-b8b0-f53918601f78"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcFVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f36cf7f058af3989f483758be5d08ec32d22b92a/e9d34a20-28a1-4d22-9b2d-e82a759ff559"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcFlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8194c03d86938949c86c1305c06b8e30ba0bd5f3/3cf51cb8-1488-4444-a727-dba8e40f3a3d"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>890</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний HYUNDAI SOLARIS 14-17 RH 4D</Title>
+    <Description><![CDATA[Хендай Соларис 1 / Hyundai Solaris Хендай (Хундай, Хюндай) / Соларис (Солярис) 1 / РЕСТАЙЛИНГ /В зависимости от комплектации деталь может подойти на автомобили:2014 2015 2016 2017 года выпуска Артикул: 00017 Кросс номер: ]]></Description>
+    <Price>2250.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00017</Article>
+    <Oem>ST-221-19S3R</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc1lCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--93918f26f8c14196e312bb83a37f83ca0a4de74b/24b1d752-385b-42a4-b2b8-76b9a60dbf88"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc2NCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0e983b4f93b24df4fd57271d94f302ee1cb8e34d/6ebda341-c617-4430-961f-58ca1e3a4211"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc2dCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6c2ac056a78a1f68a2d3c688ad3e26e47523dd91/f5fe3c10-81dc-4995-a9fb-a2dea8c7fb7d"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>932</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара BMW 3-SERIES F30 15-19 RH LED</Title>
+    <Description><![CDATA[BMW 3er F30/ F31/ F80 / BMW 3er F30 F31 F80 / БМВ 3 er Ф30 / Ф31 / Ф80 (Ф f 30 31 80) РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 2019 2020 Артикул: 00156 Кросс номер: ]]></Description>
+    <Price>19000.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00156</Article>
+    <Oem>ST-13-0008</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdGtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--705c5b6a4d427fd1d1414ff6e2e06ea3f019fc3c/9bc845a9-f2ac-4bb5-96da-d5b9d8ec527f"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdG9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--53768789ecceb26a2f2d267cd15b0daf64a6d1b8/18970c6a-8aee-469b-b1d4-b18336568b09"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdHNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6be93bc5d590b0d19d0b46d8590d61e6b840ae86/b1ffb9c7-9ca3-4c77-bc25-a998a95cf60a"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdHdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--76c5dd2060361707d938c18968037dec9a15724b/f10e636b-9909-4876-99fb-b1944f24a8f1"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>937</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний RENAULT KAPTUR 16- RH</Title>
+    <Description><![CDATA[Рено Каптур 1 поколение / Renault Kaptur / Рено Каптюр / РЕСТАЙЛИНГ / ДОРЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 2021 2022 2023 года выпуска Артикул: 00123 Кросс номер: ]]></Description>
+    <Price>6400.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>TYC</Brand>
+    <Article>00123</Article>
+    <Oem>11-E427-06-2B</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdDBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--28aefd3d65bba5d188324db4daffd87908a4d317/eb525d46-187f-4b85-8358-a53de05285b5"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdDRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--49332cfd3c51a9a862768bf45db1b1a06db55890/052f2002-c0d8-4b80-b19e-b52e65e21dec"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdDhCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a808f3bc9e17321d68cb9fde1a44ae5b5d6ea4d0/8fe6d6a0-a0ea-4210-996d-3d3a72fe88c8"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>942</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара VW TRANSPORTER T5 10-15 RH под корректор</Title>
+    <Description><![CDATA[VW Transporter / Volkswagen Transporter T5 / Volkswagen Transporter T5 / Фольцваген Фольксваген (Фольсваген) Транспортер Т5 (Т T 5) Рестайлинг / В зависимости от комплектации деталь может подойти на автомобили: 2009 2010 2011 2012 2013 2014 2015 года выпуска Артикул: 00049 Кросс номер: ]]></Description>
+    <Price>12900.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Depo</Brand>
+    <Article>00049</Article>
+    <Oem>441-11F2RMLDEM2</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ac371a5a682ef10c8b6ef5eb35a93593107d7163/8ec07a43-5b56-4223-adc9-735234fde36c"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8b49e612a94fa5dfd4171031b8e0b7a265e06450/76e942cc-4dbc-46e7-aedc-837b4f492131"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>975</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний VW PASSAT 14- RH диодный</Title>
+    <Description><![CDATA[VW Passat B8 / Фольксваген Пассат В8 Б8 / Volkswagen Passat Фольцваген Фольксваген (Фольсваген) Пассат (Пасат) B8 / ДОРЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2014 2015 2016 2017 2018 2019 2020 года выпуска Артикул: 00236 Кросс номер: ]]></Description>
+    <Price>5750.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Depo</Brand>
+    <Article>00236</Article>
+    <Oem>441-19G7R-AE</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdlFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--78bb84fe9438a4ff3a89be14a6cb6000acd338d4/8cbc7241-60f3-4393-b17b-d0119aea8923"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdlVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--aaa94984026bec411f6ca3001ddc19ae8282b30e/4f1e196c-3068-4c6a-bc4f-dcbaddf670b2"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1002</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара VW POLO 15-20 LH</Title>
+    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 до рестайлинг / рестайлинг /В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска Артикул: 00188 Кросс номер: ]]></Description>
+    <Price>4250.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00188</Article>
+    <Oem>ST-441-11K5ML</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdmtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a947aec81bdf69b9cc1aa741cb07974729da7e3b/33914ae5-5097-48fa-9f86-d225a9aca8e7"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdm9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--76569e75e8cf8b1a0099db3dd5d0194e6e0c61d9/5b9462ca-c82c-4d71-b19b-822e5169b0ea"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>963</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний W TRANSPORTER T6 15-19 RH (распашные двери)</Title>
+    <Description><![CDATA[VW Transporter / Volkswagen Transporter T6 / Volkswagen Transporter T6 / Фольцваген Фольксваген (Фольсваген) Транспортер Т6 (Т T 6) / ДОРЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 2019 года выпуска Артикул: 00162 Кросс номер: ]]></Description>
+    <Price>6900.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>TYC</Brand>
+    <Article>00162</Article>
+    <Oem>11-E007-01-2B</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdVFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ccf20aa470fe7e670ade36ddafec8f40a28952a/51865e0a-f8c5-41cb-a59c-cfa9fd4b041d"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdVVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a7a9521800421154fc181cba263a071db2138134/35d173c1-223d-48f0-b201-16a730c350b6"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1009</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний HYUNDAI SOLARIS 17- RH</Title>
+    <Description><![CDATA[Хендай Соларис 2 / Hyundai Solaris Хендай (Хундай, Хюндай Хёндэ) / Соларис (Солярис) / РЕСТАЙЛИНГ/ ДО РЕСТАЙЛИНГ/ В зависимости от комплектации деталь может подойти на автомобили: 2017 2018 2019 2020 2021 2022 2023 года выпуска Артикул: 00091 Кросс номер: ]]></Description>
+    <Price>2000.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00091</Article>
+    <Oem>ST-221-19S7R</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ0lDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--118173c64f8ee36feaad8b6e65015b07be4cf39a/ffdd1526-38a2-40d6-95c8-77896d07729a"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ01DIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4423d56fc46bab41db14ccb226337bfe0dbd3b32/9ea45f83-014b-4fb5-b8b0-4ba14bb9f627"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1FDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8250000651f298fb36433264ff946dbd4e772bd4/78e96781-ce23-430b-becf-bf23ee25df09"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>971</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний BMW 3-SERIES F30 12-16 RH 4D LED</Title>
+    <Description><![CDATA[BMW 3er F30/ F31/ F80 / BMW 3er F30 F31 F80 / БМВ 3 er Ф30 / Ф31 / Ф80 (Ф f 30 31 80) ДО РЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2011 2012 2013 2014 2015 2016 Артикул: 00157 Кросс номер: ]]></Description>
+    <Price>10350.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Depo</Brand>
+    <Article>00157</Article>
+    <Oem>444-1967R-UE</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdTRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--608e1ed0a84751f87a63e42148b9305f809a3903/aceae149-035b-4bf0-8815-3b43a6d58afa"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdThCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--21b269282152e7287557aa6fbaa24b1cf7f6470b/f1232d54-f288-44b4-bd82-cc608dd49640"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1038</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний VW POLO 15-20 4D RH</Title>
+    <Description><![CDATA[VW Polo / Фольксваген Поло седан 5 / Volkswagen Polo sedan / Фольцваген Фольксваген / Фольсваген Поло седан 5 до рестайлинг / рестайлинг /В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 года выпуска Артикул: 00122 Кросс номер: ]]></Description>
+    <Price>2150.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00122</Article>
+    <Oem>ST-441-19DDR</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGtDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--92f3e4afba4d5308ed1965fd127de4178ed8dfdf/e48fb193-9156-48fd-8a1f-77cac93cd892"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaG9DIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--aaf3112c74f276ec7a21dcd07fa3724bf1d4fd5c/d02f77a7-1ad0-4729-a471-00eaad859512"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1059</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний HYUNDAI CRETA 16-21 RH</Title>
+    <Description><![CDATA[Хендай Крета / Hyundai Creta (Хундай, Хюндай Хёндэ) / Крета Грета / В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 года выпуска Артикул: 00124 Кросс номер: ]]></Description>
+    <Price>2750.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00124</Article>
+    <Oem>ST-121-1912R</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaXNDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f20e9a9184ff24fbcfbaf9da4b344c5b2afd46f7/6676ebc6-fd69-4002-a984-cb3bdc6889c4"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaXdDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d2fafcdc1fc243da1bbe486c3369a5e08cdccbad/e604c95c-b286-48b8-977c-03495fd9408a"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaTBDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--536c4e98c901e8732ec453e0810c843576d222da/8e480dd4-268b-437d-b0aa-a7aeee28d310"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1063</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний HYUNDAI SANTA FE 18-21 LH</Title>
+    <Description><![CDATA[Hyundai Santa Fe 4 TM / Hyundai Santa Fe 4 TM / Хендай (Хундай, Хюндай) Санта Фе (SantaFe СантаФе) ТМ / ДОРЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2018 2019 2020 2021 года выпуска Артикул: 00200 Кросс номер: ]]></Description>
+    <Price>7000.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00200</Article>
+    <Oem>ST-18-0020</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBakVDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7572c777813d3f2adf5bf0b55c92647653228b88/ff098030-1c62-4134-9603-36e9147c5f38"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaklDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--452972084e3c66bf31e0f71898f611ff3ecc126b/a640dac1-567d-4234-8815-946589b3b483"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBak1DIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4a8b51c377725783ca97b6770b973159317a78b7/a426de8b-f553-4648-a333-8efa438d7199"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1029</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара VW PASSAT 14- RH с электрокорректором</Title>
+    <Description><![CDATA[VW Passat B8 / Фольксваген Пассат В8 Б8 / Volkswagen Passat Фольцваген Фольксваген (Фольсваген) Пассат (Пасат) B8 / ДОРЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2014 2015 2016 2017 2018 2019 2020 года выпуска Артикул: 00009 Кросс номер: ]]></Description>
+    <Price>8900.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Depo</Brand>
+    <Article>00009</Article>
+    <Oem>441-11M1RMLDEM2</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3dDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--08bbf0896264cae70ac58994257c84bccadd4080/0b2c00e4-2f13-4333-b6af-33e387b9484d"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzBDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fdd7d6021a73b60ccef28abdeea6d9172f35c2af/41ef00a6-e996-4e89-a42e-76abebf71ca6"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzRDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6df9ed6b8020d6e989b5ba423fefeb72fde629a2/f1aa8d70-8a1a-4dc0-96bc-dd5933aca554"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzhDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b61752acc8cc33eeaa36b615151c954f1e413052/9dfa5ba9-c7e0-4a7a-9736-fa080a5d2108"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1030</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара W TRANSPORTER T6 15-19 LH 2 секции</Title>
+    <Description><![CDATA[VW Transporter / Volkswagen Transporter T6 / Volkswagen Transporter T6 / Фольцваген Фольксваген (Фольсваген) Транспортер Т6 (Т T 6) / ДОРЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 2019 года выпуска Артикул: 00195 Кросс номер: ]]></Description>
+    <Price>15650.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00195</Article>
+    <Oem>TG-441-11ADL-EMN2</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaEFDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f2946563c7a1717a44fbb3e65cbbe2d058185878/0601dc25-901f-47bf-9797-8fb3a45d2f17"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaEVDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d86128ca98c497a4963583e79c151b907b89307/7001af32-0402-4998-a51d-b285aac8539b"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1040</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара RENAULT LOGAN/SANDERO 18- RH</Title>
+    <Description><![CDATA[Рено Логан 2 поколение / Renault Logan / Рено Логан / рестайлинг В зависимости от комплектации деталь может подойти на автомобили: 2018 2019 2020 2021 2022 года выпуска / Рено Сандеро 2 / поколение / Renault Sandero / Рено Сандеро 2 рестайлинг / В зависимости от комплектации деталь может подойти на автомобили: 2018 2019 2020 2021 2022 года выпуска Артикул: 00224 Кросс номер: ]]></Description>
+    <Price>6250.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00224</Article>
+    <Oem>ST-551-11R8R</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaHNDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ba7ce9155e1034688ee1dffcd39d8e96e319559/dc63ef5b-84ab-4869-a35f-fd8abb678488"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaHdDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1b13203117e78b793aaa1403587e6f468dc5afa7/71fa1f43-e060-466a-a6cf-81d2585c210d"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDBDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--34ada37f6ccf5c205c49adfb57aa791aa4a69450/8bd0e71d-69d5-47c1-bd17-3d6f5d7f1fbc"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDRDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--309e64dfc368f859210f50a1222d4e55495dc2ab/dfcc19f5-d449-49ea-b857-302002424b55"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1057</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний RENAULT DUSTER 10-15 RH</Title>
+    <Description><![CDATA[Рено Дастер 1 поколение / Renault Duster / Рено Дустер 1 / ДО РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 года выпуска Артикул: 00186 Кросс номер: ]]></Description>
+    <Price>1900.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00186</Article>
+    <Oem>ST-551-1996R-LD</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWtDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bd108cad8f58cf8e2491ca7d85c992dd7ec01ac0/656202bf-4952-4d68-b37b-377375175268"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaW9DIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a0f13fbfe99246a0d46975db5f7877fd5b3d8144/722714ab-cbdd-4142-bfc7-fc5d53815f17"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>791</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний RENAULT DUSTER 10-15 LH</Title>
+    <Description><![CDATA[Рено Дастер 1 поколение / Renault Duster / Рено Дустер 1 / ДО РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2010 2011 2012 2013 2014 2015 года выпуска Артикул: 00089 Кросс номер: ]]></Description>
+    <Price>1900.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00089</Article>
+    <Oem>ST-551-1996L-LD</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb29CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d874995fe4c574909d16fa39267fc9271339d015/59c3902f-f89e-43b8-89fe-39896631c24d"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3NCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--705c060e3074c6e8ad660dd9321ca97cb413e21d/9195cd8d-ff53-4744-bca8-88d7ffbb3e7f"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>833</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара RENAULT KAPTUR 16- LH (чёрная) с электрокорректором</Title>
+    <Description><![CDATA[Рено Каптур 1 поколение / Renault Kaptur / Рено Каптюр / РЕСТАЙЛИНГ / ДОРЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 2021 2022 2023 года выпуска Артикул: 00095 Кросс номер: ]]></Description>
+    <Price>14150.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>TYC</Brand>
+    <Article>00095</Article>
+    <Oem>20-E696-05-2B</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcXNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b190aee3b54e3573db2686cf0974a9c120d51a96/06bd23bf-caad-4b0e-9b83-7a31a00cc8db"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcXdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6cfb66cecf4d61bbf435226def53c3efc073e358/0192fb80-a225-416b-9ed5-b8a23235cc29"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcTBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5ac23427141cf62a5daa1da5da3e277650987df1/ff07189c-a6e6-494f-8117-75aabd5f2c99"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>874</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний W TRANSPORTER T6 15-19 LH (распашные двери)</Title>
+    <Description><![CDATA[VW Transporter / Volkswagen Transporter T6 / Volkswagen Transporter T6 / Фольцваген Фольксваген (Фольсваген) Транспортер Т6 (Т T 6) / ДОРЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 2019 года выпуска Артикул: 00218 Кросс номер: ]]></Description>
+    <Price>6900.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>TYC</Brand>
+    <Article>00218</Article>
+    <Oem>11-E008-01-2B</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcjRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9f91deb1a7f5370e29ff6ece644cbfb6e2ac84c7/2d6aa199-46b2-4e66-879b-9abd3d4630c4"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcjhCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--61c3c7a7d5696a1acd99b099d96ec2d0167e0478/5f6a1c72-205d-49ff-a564-c6d949044419"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>952</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фара W TRANSPORTER T6 15-19 RH 2 секции</Title>
+    <Description><![CDATA[VW Transporter / Volkswagen Transporter T6 / Volkswagen Transporter T6 / Фольцваген Фольксваген (Фольсваген) Транспортер Т6 (Т T 6) / ДОРЕСТАЙЛИНГ / В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 2019 года выпуска 20-F239-05-9B Артикул: 00036 Кросс номер: ]]></Description>
+    <Price>15650.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>TYC</Brand>
+    <Article>00036</Article>
+    <Oem>TG-441-11ADR-EMN2</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--851c6e670e5a0e3f5db6608b126549f439f33ac8/28379361-e9e0-49f1-a9c8-f4f2de2a43a4"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdU1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--049164de14170bc8ea23812494b87f4c0a33a3b3/decee0b2-ff75-435d-b35a-9f43fd8f47f2"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>1020</Id>
+    <DateBegin>2023-02-04</DateBegin>
+    <DateEnd>2023-03-04</DateEnd>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний HYUNDAI TUCSON 15-19 RH</Title>
+    <Description><![CDATA[Хендай Туксон 3 / Hyundai Tucson Хендай (Хундай, Хюндай) Туксон 3 / ДО РЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2015 2016 2017 2018 года выпуска Артикул: 00181 Кросс номер: ]]></Description>
+    <Price>4550.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00181</Article>
+    <Oem>ST-121-1916R</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2NDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2c83ab7c0a15b78f0486e3b22f07c13a582779f7/29ed0b40-6c36-4b27-a1f2-24d90db474af"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2dDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0fefc3074a8ea5eeb064646bc18183b582eb40b1/2916c091-4627-4eed-8e4a-eae446c54cb3"/>
     </Images>
   </Ad>
 </Ads>

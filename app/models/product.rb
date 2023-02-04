@@ -6,6 +6,7 @@ class Product < ApplicationRecord
     has_many_attached :images, dependent: :destroy
     validates :images, size: { less_than: 10.megabytes , message: 'размер файла должен быть меньше 10Мб' }
     validates :title, presence: true
+    before_save :normalize_data_white_space
     # scope :with_images, -> { joins(:images_attachments).uniq }
     scope :without_images, -> { left_joins(:images_attachments).where(active_storage_attachments: { id: nil }) }
 
@@ -35,4 +36,13 @@ class Product < ApplicationRecord
         rails_blob_path(image, only_path: true)
     end
 
+    
+    private
+
+    def normalize_data_white_space
+        self.attributes.each do |key, value|
+            self[key] = value.squish if value.respond_to?("squish")
+        end
+      end
+  
 end
