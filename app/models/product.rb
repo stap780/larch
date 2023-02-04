@@ -9,7 +9,8 @@ class Product < ApplicationRecord
     # scope :with_images, -> { joins(:images_attachments).uniq }
     scope :without_images, -> { left_joins(:images_attachments).where(active_storage_attachments: { id: nil }) }
 
-    ImageBackground = ['red','green','blue','yellow'].freeze
+
+    ImageBackground = [['1','#b10ced'],['2','#8c0ced'],['3','#6d0ced'],['4','#2a0ced'],['5','#0c4ced'],['6','#052d7d'],['7','#054b7d'],['8','#057d61'],['9','#5d7d05'],['10','#7d5b05']].freeze
     ImageSize = ['600x600','800x800','1200x1200','1600x1600'].freeze
 
     
