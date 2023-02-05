@@ -3,7 +3,7 @@ class Services::Export
     def self.avito
         puts "Формируем avito "+"#{Time.zone.now}"  
         file_name =  "avito.xml"  
-        products = Product.with_images
+        products = Product.not_nill.with_images
         xml = Nokogiri::XML::Builder.new(:encoding => 'UTF-8'){ |xml|
         
             xml.send(:'Ads', :formatVersion => '3', :target => "Avito.ru") { 

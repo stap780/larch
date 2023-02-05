@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Ads formatVersion="3" target="Avito.ru">
   <Ad>
+    <Id>797</Id>
+    <DateBegin>2023-02-06</DateBegin>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>Фонарь задний RENAULT KAPTUR 16- LH</Title>
+    <Description><![CDATA[Рено Каптур 1 поколение / Renault Kaptur / Рено Каптюр / РЕСТАЙЛИНГ / ДОРЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 2021 2022 2023 года выпуска Артикул: 00241 Кросс номер: ]]></Description>
+    <Price>6400.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>TYC</Brand>
+    <Article>00241</Article>
+    <Oem>11-E428-06-2B</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3dCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b85d13e20583bbafc6cd2af9fbb9abad7ef03775/2328dd95-0893-416d-91b0-565d99381341"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--54acd81e8806808216f397674f2162a5853f0b66/40420b5f-615b-4830-93f4-6ab0a9dc56c4"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6e1a195a9d9ed86a06160098b2f656b3c6c33e19/446283fa-c13a-4042-a06d-454302bda864"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>797_13</Id>
+    <DateBegin>2023-02-10</DateBegin>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>test</Title>
+    <Description><![CDATA[test Артикул:  Кросс номер: ]]></Description>
+    <Price>6400.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>TYC</Brand>
+    <Article>00241</Article>
+    <Oem>11-E428-06-2B</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa1FDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--892f4aad34f100c9a3096270c48fca03a554f276/2328dd95-0893-416d-91b0-565d99381341_13"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa1VDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--382fa79c2b1c1fd75e47d61ce5b0b8debcca30fc/40420b5f-615b-4830-93f4-6ab0a9dc56c4_13"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa1lDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1ab2a22da80f5a41850af055deb2b8d2a70d6d4a/446283fa-c13a-4042-a06d-454302bda864_13"/>
+    </Images>
+  </Ad>
+  <Ad>
     <Id>798</Id>
     <DateBegin>2023-02-05</DateBegin>
     <ListingFee>Package</ListingFee>
@@ -66,29 +112,6 @@
     <Images>
       <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBajRDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a27e193fdf44dcdc33232e61146c11981ab7f4db/ae8d3a07-be0a-4d7b-9ad8-ccf771e3cdd8_11"/>
       <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBajhDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--512f11b8449e32cb812f7f3faf645c2684abc759/81be43ca-d2d5-4d38-99ce-828ca891196e_11"/>
-    </Images>
-  </Ad>
-  <Ad>
-    <Id>797</Id>
-    <DateBegin>2023-02-05</DateBegin>
-    <ListingFee>Package</ListingFee>
-    <AdStatus>Free</AdStatus>
-    <ContactPhone>7 (499) 110-67-24</ContactPhone>
-    <Region>Москва</Region>
-    <Address>Россия, Москва, Люблинская 78к2</Address>
-    <Title>Фонарь задний RENAULT KAPTUR 16- LH</Title>
-    <Description><![CDATA[Рено Каптур 1 поколение / Renault Kaptur / Рено Каптюр / РЕСТАЙЛИНГ / ДОРЕСТАЙЛИНГ В зависимости от комплектации деталь может подойти на автомобили: 2016 2017 2018 2019 2020 2021 2022 2023 года выпуска Артикул: 00241 Кросс номер: ]]></Description>
-    <Price>6400.0</Price>
-    <Category>Запчасти и аксессуары</Category>
-    <Typeid>11-618</Typeid>
-    <Brand>TYC</Brand>
-    <Article>00241</Article>
-    <Oem>11-E428-06-2B</Oem>
-    <Condition>Новое</Condition>
-    <Images>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3dCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b85d13e20583bbafc6cd2af9fbb9abad7ef03775/2328dd95-0893-416d-91b0-565d99381341"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzBCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--54acd81e8806808216f397674f2162a5853f0b66/40420b5f-615b-4830-93f4-6ab0a9dc56c4"/>
-      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6e1a195a9d9ed86a06160098b2f656b3c6c33e19/446283fa-c13a-4042-a06d-454302bda864"/>
     </Images>
   </Ad>
   <Ad>
@@ -1429,7 +1452,7 @@
   </Ad>
   <Ad>
     <Id>791</Id>
-    <DateBegin>2023-02-05</DateBegin>
+    <DateBegin>2023-02-06</DateBegin>
     <ListingFee>Package</ListingFee>
     <AdStatus>Free</AdStatus>
     <ContactPhone>7 (499) 110-67-24</ContactPhone>
@@ -1447,6 +1470,28 @@
     <Images>
       <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb29CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d874995fe4c574909d16fa39267fc9271339d015/59c3902f-f89e-43b8-89fe-39896631c24d"/>
       <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3NCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--705c060e3074c6e8ad660dd9321ca97cb413e21d/9195cd8d-ff53-4744-bca8-88d7ffbb3e7f"/>
+    </Images>
+  </Ad>
+  <Ad>
+    <Id>791_12</Id>
+    <DateBegin>2023-02-12</DateBegin>
+    <ListingFee>Package</ListingFee>
+    <AdStatus>Free</AdStatus>
+    <ContactPhone>7 (499) 110-67-24</ContactPhone>
+    <Region>Москва</Region>
+    <Address>Россия, Москва, Люблинская 78к2</Address>
+    <Title>test</Title>
+    <Description><![CDATA[test Артикул:  Кросс номер: ]]></Description>
+    <Price>1900.0</Price>
+    <Category>Запчасти и аксессуары</Category>
+    <Typeid>11-618</Typeid>
+    <Brand>Sat</Brand>
+    <Article>00089</Article>
+    <Oem>ST-551-1996L-LD</Oem>
+    <Condition>Новое</Condition>
+    <Images>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0lDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--554c6023a4d152d351d1fcd5ddf91b17d61a3ad6/59c3902f-f89e-43b8-89fe-39896631c24d_12"/>
+      <Image url="http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa01DIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--184cce98db97075825d85b4e482bb000810d40db/9195cd8d-ff53-4744-bca8-88d7ffbb3e7f_12"/>
     </Images>
   </Ad>
   <Ad>
