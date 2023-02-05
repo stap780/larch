@@ -33,12 +33,12 @@ $(document).ready(function() {
       $(':checkbox').each(function() {
         this.checked = true;
       });
-      $('#deleteAll').show();
+      //$('#deleteAll').show();
     } else {
       $(':checkbox').each(function() {
         this.checked = false;
       });
-      $('#deleteAll').hide();
+      //$('#deleteAll').hide();
     }
   });
   // SELECT ALL //

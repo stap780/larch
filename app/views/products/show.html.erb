@@ -6,6 +6,7 @@
 <p><strong>Quantity:</strong> <%= @product.quantity %></p>
 <p><strong>Costprice:</strong> <%= @product.costprice %></p>
 <p><strong>Price:</strong> <%= @product.price %></p>
+<p><strong>Date Begin:</strong> <%= @product.avito_date_begin %></p>
 </div>
 <div class="col-6">
   <%= render '/layouts/image_form', f: @product, size: '200x200', col: "col-4" %>
@@ -21,6 +22,7 @@
           <th >Sku</th>
           <th >Название</th>
           <th >Описание</th>
+          <th >Период</th>
           <th ></th>
           <th >Картинки</th>
         </tr>
@@ -32,6 +34,7 @@
           <td><%= variant.sku%></td>
           <td><%= variant.title%></td>
           <td><%= variant.desc%></td>
+          <td><%= variant.period%></td>
           <td style="max-width:170px;"> 
           <%= form_tag create_images_variants_path(variant), method: :post do %>
             <p><label>Color</label>

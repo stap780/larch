@@ -92,6 +92,6 @@ class VariantsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def variant_params
-      params.require(:variant).permit(:sku, :title, :desc, :product_id)
+      params.require(:variant).permit(:sku, :title, :desc, :product_id, :period)
     end
 end

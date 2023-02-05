@@ -25,6 +25,8 @@ ru:
   item_quantity: 'Кол-во'
   item_price: 'Цена'
   item_sum: 'Сумма'
+  date:
+    order: ["day", "month", "year"]
   helpers:
     submit:
       create: "Сохранить"

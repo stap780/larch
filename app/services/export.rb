@@ -10,7 +10,7 @@ class Services::Export
             
                 products.each do |product|
                     id = product.id.to_s
-                    time_begin = (Time.now.in_time_zone.strftime("%Y-%m-%d")).to_s
+                    time_begin = product.avito_date_begin.present? ? product.avito_date_begin.strftime("%Y-%m-%d").to_s : (Time.now.in_time_zone.strftime("%Y-%m-%d")).to_s
                     time_end = (Time.now.in_time_zone+1.month).strftime("%Y-%m-%d").to_s
                     sku = product.sku.to_s
                     title = product.title.to_s
@@ -31,7 +31,7 @@ class Services::Export
                     xml.send(:'Ad') {
                         xml.Id id
                         xml.DateBegin time_begin
-                        xml.DateEnd time_end
+                        # xml.DateEnd time_end
                         xml.ListingFee 'Package'
                         xml.AdStatus 'Free'
                         xml.ContactPhone contactphone
@@ -59,11 +59,14 @@ class Services::Export
                                 var_images = var.image_urls.map{|h| host+h[:url]}
                                 sku = var.sku.to_s
                                 var_desc = var.desc.to_s+" Артикул: "+sku+" Кросс номер: "+cross.to_s
+                                var_time_begin = product.avito_date_begin.present? && var.period.present? ? 
+                                                    (product.avito_date_begin + "#{var.period}".to_i.day).strftime("%Y-%m-%d").to_s : 
+                                                    (Time.now.in_time_zone.strftime("%Y-%m-%d")).to_s
                             
                                 xml.send(:'Ad') {
                                     xml.Id id+"_"+var.id.to_s
-                                    xml.DateBegin time_begin
-                                    xml.DateEnd time_end
+                                    xml.DateBegin var_time_begin
+                                    # xml.DateEnd time_end
                                     xml.ListingFee 'Package'
                                     xml.AdStatus 'Free'
                                     xml.ContactPhone contactphone

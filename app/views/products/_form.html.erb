@@ -9,6 +9,7 @@
       <%= f.input :title, label: "Название", wrapper_html: { class: "col-12" }  %>
       <%= f.input :sku, wrapper_html: { class: "col-3" }  %>
       <%= f.input :barcode, wrapper_html: { class: "col-4" }  %>
+      <%= f.input :avito_date_begin, label: "Дата авито", as: :date, html5: true, wrapper_html: { class: "col-3" }  %>
       <%= f.input :desc, label: "Описание", as: :text, wrapper_html: { class: "col-12" } , input_html: { rows: "5" } %> 
       <%= f.input :avito_param, as: :text, label: "Avito параметры", wrapper_html: { class: "col-12" }   %>
       <%= f.input :quantity, label: "К-во", wrapper_html: { class: "col-3" }   %>
@@ -34,6 +35,7 @@
           <th>sku</th>
           <th>название</th>
           <th>описание</th>
+          <th>период</th>
           <th colspan="1"></th>
           <th>image</th>
         </tr>

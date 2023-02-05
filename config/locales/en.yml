@@ -26,3 +26,5 @@ en:
       create: "Create %{model}"
       submit: "Save %{model}"
       update: "Update %{model}"
+  date:
+    order: ["day", "month", "year"]
