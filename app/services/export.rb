@@ -22,7 +22,7 @@ class Services::Export
                     avito_params = product.avito_param.split('---')
                     cross = avito_params.present? && avito_params.any?{|a| a.include?('cross')} ? 
                                     avito_params.select{|p| p.split(':')[1] if p.split(':')[0] == 'cross'}[0].split(':').last : ''
-                    desc = product.desc.to_s+" Артикул: "+sku+" Кросс номер: "+cross.to_s
+                    desc = "<p>Артикул: #{sku}</p><p>Доставка по Москве в пределах МКАД – 800р</p><p>Доставка в регионы транспортной компанией Деловые Линии.</p><p>Звоните перед выездом для уточнения наличия.</p><p>Кросс номер: #{cross.to_s}</p><p>#{product.desc.to_s}</p>"
                     contactphone = '7 (499) 110-67-24'
                     region = 'Москва'
                     address = "Россия, Москва, Люблинская 78к2"
@@ -58,7 +58,7 @@ class Services::Export
                                 host = Rails.env.development? ? 'http://localhost:3000' : 'http://95.163.236.170'
                                 var_images = var.image_urls.map{|h| host+h[:url]}
                                 sku = var.sku.to_s
-                                var_desc = var.desc.to_s+" Артикул: "+sku+" Кросс номер: "+cross.to_s
+                                var_desc = "<p>Артикул: #{sku}</p><p>Доставка по Москве в пределах МКАД – 800р</p><p>Доставка в регионы транспортной компанией Деловые Линии.</p><p>Звоните перед выездом для уточнения наличия.</p><p>Кросс номер: #{cross.to_s}</p><p>#{var.desc.to_s}</p>"
                                 var_time_begin = product.avito_date_begin.present? && var.period.present? ? 
                                                     (product.avito_date_begin + "#{var.period}".to_i.day).strftime("%Y-%m-%d").to_s : 
                                                     (Time.now.in_time_zone.strftime("%Y-%m-%d")).to_s

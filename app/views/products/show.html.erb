@@ -40,7 +40,7 @@
             <p><label>Color</label>
             <%= select_tag "background", options_for_select(Product::ImageBackground) %>
             <label>Size</label>
-            <%= select_tag "size", options_for_select(Product::ImageSize) %></p>
+            <%= select_tag "size", options_for_select(Product::ImageSize, '1200x1200') %></p>
             <p><%= submit_tag "Create image", class: "btn btn-primary btn-sm" %></p>
           <% end %>
           </td>
