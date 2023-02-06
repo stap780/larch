@@ -2,7 +2,7 @@
 <div class="row" <%= f %> >
   <% f.images.each do |image| %>
   <div class="<%= col %> row align-items-center mt-1 image-item">
-    <a class="img-thumbnail" data-image="<%= image.metadata %>" href="<%= url_for(image)%>" target="_blank">
+    <a class="img-thumbnail p-1" data-image="<%= image.metadata %>" href="<%= url_for(image)%>" target="_blank">
       <%= image_tag image.variant(resize: size) %>
     </a>
     <div class="col-12 text-center">
