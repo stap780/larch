@@ -10,7 +10,7 @@ class Services::Export
             
                 products.each do |product|
                     id = product.id.to_s
-                    time_begin = product.avito_date_begin.present? ? product.avito_date_begin.strftime("%Y-%m-%d %H:%M").to_s : (Time.now.in_time_zone.strftime("%Y-%m-%d %H:%M")).to_s
+                    time_begin = product.avito_date_begin.present? ? product.avito_date_begin.strftime("%Y-%m-%d 09:00").to_s : (Time.now.in_time_zone.strftime("%Y-%m-%d %H:%M")).to_s
                     time_end = (Time.now.in_time_zone+1.month).strftime("%Y-%m-%d").to_s
                     sku = product.sku.to_s
                     title = product.title.to_s
@@ -66,7 +66,7 @@ class Services::Export
                                 <p>Отправка в регионы транспортными компаниями ПЭК, Деловые Линии, СДЭК, DPD, Авито Доставка</p>
                                 <p>Звоните перед выездом для уточнения наличия.</p><p></p><p></p><p>Кросс номер: #{cross.to_s}</p><p>#{var.desc.to_s}</p>"
                                 var_time_begin = product.avito_date_begin.present? && var.period.present? ? 
-                                                    (product.avito_date_begin + "#{var.period}".to_i.day).strftime("%Y-%m-%d %H:%M").to_s : 
+                                                    (product.avito_date_begin + "#{var.period}".to_i.day).strftime("%Y-%m-%d 09:00").to_s : 
                                                     (Time.now.in_time_zone.strftime("%Y-%m-%d %H:%M")).to_s
                             
                                 xml.send(:'Ad') {
