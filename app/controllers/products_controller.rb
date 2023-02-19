@@ -95,7 +95,7 @@ class ProductsController < ApplicationController
   end
 
   def create_variants
-    Rails.env.development? ? Services::Product.create_variants(@product) : ProductVariantJob.perform_later(@product)
+    Rails.env.development? ? Services::Import.create_variants(@product) : ProductVariantJob.perform_later(@product)
     redirect_to @product, notice: 'Запущен процесс создания вариантов. Дождитесь выполнении'
   end
 
