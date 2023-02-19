@@ -1,6 +1,8 @@
 class Services::Product
 
-    @image_convert_rules = {
+    def self.create_variants(product)
+
+    image_convert_rules = {
         1 => {"-rotate" => "2", "-background" => "transparent", "-quality" => "92"},
         2 => {"-rotate" => "-2", "-background" => "transparent", "-quality" => "92"},
         3 => {"-crop" => "900x900+50+200"},
@@ -32,7 +34,6 @@ class Services::Product
         29 => {"-rotate" => "2", "-background" => "transparent", "-quality" => "92","-crop" => "980x980+130+130","-unsharp" => "95%"}
     }
 
-    def self.create_variants(product)
         var_count = 29
 
         if product.variants.size < var_count
@@ -48,7 +49,7 @@ class Services::Product
             product.variants.order(:id).each_with_index do |variant, index|
                 if variant.present?
                     puts "===variant.present create_convert_images ==="
-                    options = @image_convert_rules[index+1]
+                    options = image_convert_rules[index+1]
                     variant.create_convert_images(options)
                 end
             end
