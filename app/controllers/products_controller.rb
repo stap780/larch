@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   before_action :authenticate_user!
   authorize_resource
-  before_action :set_product, only: [:show, :edit, :update, :destroy]
+  before_action :set_product, only: [:show, :edit, :update, :destroy, :create_variants]
 
   # GET /products
   def index
@@ -92,6 +92,11 @@ class ProductsController < ApplicationController
   def avito
     Rails.env.development? ? Services::Export.avito : ExportAvitoJob.perform_later
     redirect_to products_path, notice: 'Запущен процесс создания файла авито. Дождитесь выполнении'
+  end
+
+  def create_variants
+    Rails.env.development? ? Services::Product.create_variants(@product) : ProductVariantJob.perform_later(@product)
+    redirect_to @product, notice: 'Запущен процесс создания файла авито. Дождитесь выполнении'
   end
 
   private

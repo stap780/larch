@@ -37,6 +37,7 @@ class Product < ApplicationRecord
         rails_blob_path(image, only_path: true)
     end
 
+
     
     private
 

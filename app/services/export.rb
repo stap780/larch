@@ -47,7 +47,7 @@ class Services::Export
                         avito_params.each do |a_p|
                             key = a_p.split(':')[0]
                             value = a_p.split(':')[1]
-                            xml.send(key.camelize, value)
+                            xml.send(key.camelize, value) if key != 'Article'
                         end
                         xml.send(:'Images') {
                                         images.each do |image|
@@ -85,7 +85,7 @@ class Services::Export
                                     avito_params.each do |a_p|
                                         key = a_p.split(':')[0]
                                         value = a_p.split(':')[1]
-                                        xml.send(key.camelize, value)
+                                        xml.send(key.camelize, value) if key != 'Article'
                                     end
                                     xml.send(:'Images') {
                                                     var_images.each do |image|
