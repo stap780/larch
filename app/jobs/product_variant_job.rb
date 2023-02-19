@@ -4,7 +4,7 @@ class ProductVariantJob < ApplicationJob
 
   def perform(product)
     # Do something later
-    # Services::Product.create_variants(product)
+    
     Services::Import.create_variants(product)
   end
 
