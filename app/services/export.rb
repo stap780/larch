@@ -28,7 +28,7 @@ class Services::Export
                     <p>Звоните перед выездом для уточнения наличия.</p><p></p><p></p><p>Кросс номер: #{cross.to_s}</p><p>#{product.desc.to_s}</p>"
                     contactphone = '7 (499) 110-67-24'
                     region = 'Москва'
-                    address = "Россия, Москва, Люблинская 78к2"
+                    address = "Россия, Москва, Люблинская 76к2"
                     host = Rails.env.development? ? 'http://localhost:3000' : 'http://95.163.236.170'
                     images = product.image_urls.map{|h| host+h[:url]}
                     xml.send(:'Ad') {
