@@ -13,8 +13,8 @@
     <header>
     <% if user_signed_in? && current_user.role.name != 'registered' %>  <%= render 'layouts/navigation' %> <% end %>
     </header>
-    <main role="main" class="container-fluid mb-5">
-       <%= render 'layouts/messages' %>
+    <main role="main" id="main-content" class="container-fluid mb-5">
+       <%= render 'layouts/notice_messages' %>
        <%= yield %>
     </main>
     <footer class="footer d-flex">

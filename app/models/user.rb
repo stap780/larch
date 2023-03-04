@@ -26,6 +26,10 @@ class User < ApplicationRecord
     role.name.include?('bookkeeper')
   end
 
+  def registered?
+    role.name == 'registered'
+  end
+
 
   def avatar_thumbnail
     if avatar.attached?

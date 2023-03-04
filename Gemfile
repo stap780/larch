@@ -9,7 +9,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'jbuilder', '~> 2.5'
-gem 'bootstrap', '~> 5.1.0'
+gem 'bootstrap', '~> 5.2.0'
 
 gem 'devise'
 gem 'high_voltage'
@@ -42,6 +42,7 @@ gem 'caxlsx_rails'
 gem 'rubyzip'
 gem 'delayed_job_web'
 gem 'rack-protection'
+gem 'insales_api'
 
 
 gem 'bcrypt_pbkdf', '< 2.0', :require => false

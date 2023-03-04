@@ -1,9 +1,6 @@
-<% if current_user.role.name != 'registered'%>
 <%# if can? :index , Order %><%# link_to 'Заказы', orders_path, class: 'nav-link' %><%# end %>
 <%# if can? :index , Client %><%# link_to 'Контакт', clients_path, class: 'nav-link' %><%# end %>
-<% if can? :index , Product %>
-<li class="nav-item <%= 'active' if current_page?(clients_path) %>"><%= link_to 'Товары', products_path, class: 'nav-link' %></li>
-<% end %>
+<li class="nav-item <%= 'active' if current_page?(excel_prices_path) %>'"><%= link_to 'Excel', excel_prices_path, class: 'nav-link' %></li>
 <% if can? :index , User %>
 <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">Настройки</a>
@@ -14,4 +11,3 @@
 </li>
 <% end %>
 <!-- <li class="nav-item <%# 'active' if current_page?(page_path('about')) %>'"><%# link_to 'About', page_path('about'), class: 'nav-link' %></li> -->
-<% end %>

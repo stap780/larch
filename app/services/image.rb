@@ -4,7 +4,7 @@ class Services::Image
   attr_reader :image_path, :background, :size, :temp_image_path
 
   def initialize(image, background, size, options={})
-    # host = Rails.env.development? ? 'http://localhost:3000' : 'http://95.163.236.170'
+    # host = Rails.env.development? ? 'http://localhost:3000' : 'http://194.58.108.94'
     # img_link = host+Rails.application.routes.url_helpers.rails_blob_path(image, only_path: true)
 
     puts "initialize Services::Image"
@@ -97,5 +97,5 @@ class Services::Image
 end
 
 
-# convert '/Users/administrator/Documents/rails_projects/alexproduct/public/test.jpg' 
-# -resize 300x300 -negate -rotate 90 '/Users/administrator/Documents/rails_projects/alexproduct/public/convert/temp_image.jpg'
+# convert '/Users/administrator/Documents/rails_projects/larch/public/test.jpg' 
+# -resize 300x300 -negate -rotate 90 '/Users/administrator/Documents/rails_projects/larch/public/convert/temp_image.jpg'

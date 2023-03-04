@@ -2,7 +2,7 @@
 lock "~> 3.17.0"
 
 set :branch, 'main'
-set :application, "alexproduct"
+set :application, "larch"
 set :repo_url, "git@github.com:stap780/#{fetch(:application)}.git"
 set :deploy_to, "/var/www/#{fetch(:application)}"
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')

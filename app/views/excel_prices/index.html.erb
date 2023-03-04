@@ -1,0 +1,84 @@
+<div class="row justify-content-center align-items-center mt-3 mb-3">
+  <div class="col-2 row">
+    <div class="col-md-12 p-0">
+      <div class="h3">Прайсы Excel</div>
+      <div class="h6">Всего - <%= ExcelPrice.count %></div>
+    </div>
+  </div>
+  <div class="col-10 pl-0 pr-0 row">
+    <div class="col-2">
+      <div class="btn-group p-0" role="group" aria-label="Button group with nested dropdown">
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Действия</button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <%= link_to 'Создать', new_excel_price_path, class: 'dropdown-item' %>
+            <%# link_to 'Обновить файл с полным каталогом', get_full_catalog_excel_prices_path, class: 'dropdown-item' %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= search_form_for @search, {class: 'form-inline col-10 pl-0 pr-0'} do |f| %>
+    <div class="input-group input-group-sm">
+            <%= f.search_field :title_cont , placeholder: 'title', class: "form-control", style: "max-width: 180px;" %>
+            <%= f.search_field :link_cont , placeholder: 'link', class: "form-control", style: "max-width: 180px;" %>
+            <%# f.search_field :price_move_eq , placeholder: 'price_move', class: "form-control", style: "max-width: 180px;" %>
+            <%# f.search_field :price_shift_eq , placeholder: 'price_shift', class: "form-control", style: "max-width: 180px;" %>
+            <%# f.search_field :price_points_eq , placeholder: 'price_points', class: "form-control", style: "max-width: 180px;" %>
+            <%= f.search_field :comment_cont , placeholder: 'comment', class: "form-control", style: "max-width: 180px;" %>
+            <%= button_tag(type: 'submit', :class => "btn btn-info") do %>
+        <span class="oi oi-magnifying-glass"></span>
+      <% end %>
+      <%= link_to '<span class="oi oi-reload"></span>'.html_safe, excel_prices_path, class: 'btn btn-outline-dark ' %>
+      <%= link_to '<span class="oi oi-trash"></span>'.html_safe, delete_selected_excel_prices_path, class: 'btn btn-secondary', id: 'deleteAll', remote: true %>
+    </div>
+    <% end %>
+</div>
+</div>
+
+<div class="card card-body border-light shadow-sm table-wrapper table-responsive pt-0">
+  <table class="table table-hover table-condensed">
+  <thead>
+    <tr class="text-secondary">
+      <th><%= check_box_tag 'selectAll', 'selectAll'%></th>
+      <th>Название</th>
+      <th>Ссылка</th>
+      <th>Комментарий</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody id="items_table" class="border-0">
+    <% @excel_prices.each do |excel_price| %>
+      <tr>
+        <td><%= check_box_tag "excel_price_ids[]", excel_price.id %></td>
+        <td><%= excel_price.title %></td>
+        <td><%= excel_price.link %></td>
+        <td><%= excel_price.comment %></td>
+        <td>
+        <% if excel_price.file_status == 'not start' || excel_price.file_status == 'end' %>
+        <%= link_to "Создать", import_excel_price_path(excel_price), id: "import_#{excel_price.id}", class: "btn btn-light btn-sm", role: "button", remote: true %>
+        <% else %>
+        <%= link_to "Создать", import_excel_price_path(excel_price), id: "import_#{excel_price.id}", class: "btn btn-light btn-sm disabled", role: "button", remote: true %>
+        </td>
+        <% end %>
+        <% file = "#{Rails.public_path}/#{excel_price.id.to_s}_file.xlsx" %>
+        <td>
+        <% if File.file?(file) %>
+          <%= link_to '<span class="oi oi-cloud-download"></span>'.html_safe, file_export_excel_price_path(excel_price), id: "file_export_#{excel_price.id}", class: "btn btn-light btn-sm", title: "file export" %>
+          <br><% size = File.size(file) %><%= number_to_human_size(size) %>
+        <% else %>
+          <%= link_to '<span class="oi oi-cloud-download"></span>'.html_safe, file_export_excel_price_path(excel_price), id: "file_export_#{excel_price.id}", class: "btn btn-light btn-sm disabled", title: "file export" %>
+        <% end %>
+        </td>
+        <td><%= link_to '<span class="oi oi-pencil"></span>'.html_safe, edit_excel_price_path(excel_price) %></td>
+        <td><%= link_to '<span class="oi oi-trash"></span>'.html_safe, excel_price, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+
+<div class="apple_pagination">
+<%= will_paginate @excel_prices %>
+</div>

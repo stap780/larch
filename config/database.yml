@@ -2,7 +2,7 @@ development:
   adapter: postgresql
   host: localhost
   encoding: unicode
-  database: 'alexproduct_development'
+  database: 'larch_development'
   pool: 5
   username: administrator
   password:
@@ -12,7 +12,7 @@ test:
   adapter: postgresql
   host: localhost
   encoding: unicode
-  database: 'alexproduct_test'
+  database: 'larch_test'
   pool: 5
   username: administrator
   password:

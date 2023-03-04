@@ -1,31 +1,14 @@
 Rails.application.routes.draw do
-  resources :variants do
+  get '/excel_prices/:id/import', to: 'excel_prices#import', as: 'import_excel_price'
+  get '/excel_prices/:id/file_export', to: 'excel_prices#file_export', as: 'file_export_excel_price'
+  resources :excel_prices do
     collection do
-      post '/:id/create_images', action: 'create_images', as: 'create_images'
-    end
-  end
-
-  resources :products do
-    collection do
+      get :check_file_status
       post :delete_selected
-      get :import
-      get :avito
-      post '/:id/create_variants', action: 'create_variants', as: 'create_variants'
-      delete '/:id/images/:image_id', action: 'delete_image', as: 'delete_image'
+      get :get_full_catalog
     end
   end
-
-  resources :orders do
-    collection do
-      post :delete_selected
-      get :download
-      post :webhook
-      get :autocomplete_company_title
-      get :autocomplete_client_name
-    end
-  end
-  resources :clients
-  root to: 'products#index'
+  root to: 'users#index'
   devise_for :users, controllers: {
     registrations: 'users/registrations',
     sessions: 'users/sessions',

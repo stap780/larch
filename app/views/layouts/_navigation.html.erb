@@ -6,7 +6,7 @@
 
   <div class="collapse navbar-collapse" id="navbarColor02">
     <ul class="navbar-nav mr-auto">
-      <%= render 'layouts/navigation_links' %>
+      <%= render 'layouts/navigation_links' if !current_user.registered? %>
     </ul>
     <ul class="navbar-nav ms-auto">
       <li class="nav-item  dropdown">

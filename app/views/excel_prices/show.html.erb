@@ -1,0 +1,40 @@
+
+<div class="row">
+<div class="col-6">
+  <strong>Title:</strong>
+  <%= @excel_price.title %>
+</div>
+
+<div class="col-6">
+  <strong>Link:</strong>
+  <%= @excel_price.link %>
+</div>
+
+<div class="col-6">
+  <strong>Price move:</strong>
+  <%= @excel_price.price_move %>
+</div>
+
+<div class="col-6">
+  <strong>Price shift:</strong>
+  <%= @excel_price.price_shift %>
+</div>
+
+<div class="col-6">
+  <strong>Price points:</strong>
+  <%= @excel_price.price_points %>
+</div>
+
+<div class="col-6">
+  <strong>Comment:</strong>
+  <%= @excel_price.comment %>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-3 btn-group mt-5">
+<%= link_to 'Edit', edit_excel_price_path(@excel_price) , class: 'btn btn-success' %> |
+<%= link_to 'Back', excel_prices_path, class: 'btn btn-outline-primary' %>
+</div>
+</div>
