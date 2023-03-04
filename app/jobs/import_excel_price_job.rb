@@ -1,6 +1,6 @@
 class ImportExcelPriceJob < ApplicationJob
     queue_as :excel
-    
+
     rescue_from(StandardError) do |exception|
       puts 'ImportExcelPriceJob rescuing standard error: ' + exception.message
     end
