@@ -20,6 +20,6 @@ class ImportExcelPriceJob < ApplicationJob
       # Do something later
       # puts "during ImportExcelPriceJob perform"
       Services::Import.excel_create(excel_price)
-      # raise StandardError, "error during ImportExcelPriceJob perform"
+      raise StandardError, "error during ImportExcelPriceJob perform"
     end
   end

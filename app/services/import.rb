@@ -196,7 +196,9 @@ class Services::Import
     end
     
     def self.collect_product_data_from_xml(pr, excel_price)
-      picture_link = pr.css('picture').size > 1 ? pr.css('picture').first.text : pr.css('picture').text
+      picture_link = pr.css('picture').present? && !pr.css('picture').first.text.include?('no_image_original') ? 
+                                                            pr.css('picture').first.text : 
+                                                            'https://static.insales-cdn.com/files/1/5861/19936997/original/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF2__2_.png'
       file_ext = picture_link.present? ? picture_link.split('.').last : ''
       brend = pr.xpath("param [@name='Бренд']").present? ? pr.xpath("param [@name='Бренд']").text : ''
       brutto = pr.xpath("param [@name='Вес брутто / шт / кг']").present? ? pr.xpath("param [@name='Вес брутто / шт / кг']").text : ''
@@ -242,27 +244,7 @@ class Services::Import
     def self.collect_product_ids(cat_id)
       pr_ids = InsalesApi::Collect.find(:all, :params => { collection_id: cat_id, limit: 1000 }).map(&:product_id)
     end
-  
-    # def self.load_all_catalog_xml
-    #   input_path = "https://adventer.su/marketplace/1923917.xml"
-    #   # puts "input_path - "+input_path.to_s
-    #   # puts "file_name - "+file_name.to_s
-    #   download_path = Services::Import::DownloadPath+"/public/1923917.xml"
-    #   File.delete(download_path) if File.file?(download_path).present?
-  
-    #   RestClient.get( input_path ) { |response, request, result, &block|
-    #     case response.code
-    #     when 200
-    #       f = File.new(download_path, "wb")
-    #       f << response.body
-    #       f.close
-    #       puts "load_all_catalog_xml load and write"
-    #     else
-    #       response.return!(&block)
-    #     end
-    #     }
-    # end
-  
+    
     def self.group_yml_cat(all_cats)
       main_cat = all_cats.map{|c| c[:parent_id]}.all?(&:nil?) ? nil : all_cats.select{|c| c[:parent_id] == nil}
       main_cat_id = main_cat[0][:id]
