@@ -194,36 +194,7 @@ class Services::Import
       response = Net::HTTP.get_response(URI.parse(ascii_url))
       StringIO.new(response.body)
     end
-  
-    def self.load_convert_image(image_link, file_name, file_ext)
-      input_path = image_link.present? && !image_link.include?('no_image_original') ? image_link : "http://194.58.108.94/larch_logo.png"
-      RestClient.get( input_path ) { |response, request, result, &block|
-        case response.code
-        when 200
-          ##### this code for production because simple way (standart load file) not work and have problem with minimagick convert
-          temp_filename = "temp_#{file_name}.#{file_ext}"
-          # download = open(input_path)
-          download_path = Services::Import::DownloadPath+"/public/excel_price/"+temp_filename
-          # IO.copy_stream(download, download_path)
-          f = File.new(download_path, "wb")
-          f << response.body
-          f.close
-          new_image_link = Rails.env.development? ? "http://localhost:3000/excel_price/"+temp_filename : "http://194.58.108.94/excel_price/"+temp_filename
-          image = Services::Import.process_image(new_image_link, file_name, file_ext)
-        when 400
-          puts "image have 400 response"
-          link = "http://194.58.108.94/larch_logo.png"
-          image = Services::Import.process_image(link, file_name, file_ext)
-        when 404
-          puts "image have 404 response"
-          link = "http://194.58.108.94/larch_logo.png"
-          image = Services::Import.process_image(link, file_name, file_ext)
-        else
-          response.return!(&block)
-        end
-        }
-    end
-  
+    
     def self.collect_product_data_from_xml(pr, excel_price)
       picture_link = pr.css('picture').size > 1 ? pr.css('picture').first.text : pr.css('picture').text
       file_ext = picture_link.present? ? picture_link.split('.').last : ''
@@ -240,27 +211,14 @@ class Services::Import
               brend: brend,
               brutto: brutto,
               url: pr.css('url').text,
-              image: Services::Import.load_convert_image(picture_link, pr['id'], file_ext)
+              image: Services::Import.process_image(picture_link, pr['id'], file_ext)
             }
       data
     end
     
     def self.process_image(link, file_name, file_ext)
-      # image_process = ImageProcessing::MiniMagick.source(link)
-      # result = image_process.resize_and_pad!(100, 100, background: "#FFFFFF").path
       result = ImageProcessing::MiniMagick.source(link).resize_and_pad(100, 100, background: "#FFFFFF", gravity: 'center').convert('jpg').call
       image_magic = MiniMagick::Image.open(result.path)
-      # image_magic.combine_options do |c|
-      #   c.background '#FFFFFF'
-      #   c.alpha 'remove'
-      # end
-      # image_magic.format 'jpg'
-      # convert_image = image_magic.format("jpg")
-      # convert_image.write(Services::Import::DownloadPath+"/public/excel_price/#{file_name}.jpg")
-
-      # image_magic.write(Services::Import::DownloadPath+"/public/excel_price/#{file_name}.#{file_ext}")
-      # image = File.expand_path(Services::Import::DownloadPath+"/public/excel_price/#{file_name}.#{file_ext}")
-
       image_magic.write(Services::Import::DownloadPath+"/public/excel_price/#{file_name}.jpg")
       image = File.expand_path(Services::Import::DownloadPath+"/public/excel_price/#{file_name}.jpg")
     end
