@@ -299,7 +299,7 @@ class Services::Import
         sheet.merge_cells('B4:H4')
         sheet.merge_cells('B5:H5')
         sheet.merge_cells('J6:J11')
-        logo_image = Services::Import.load_convert_image('http://157.245.114.19/adventer_logo_excel.jpg', 'logo')
+        logo_image = Services::Import.load_convert_image('http://194.58.108.94/adventer_logo_excel.jpg', 'logo')
         sheet.add_image(image_src: logo_image, start_at: 'A1', end_at: 'L4')
         sheet['J6'].value = Services::Import::MainText
         sheet['J6'].style = but_rekv
@@ -432,7 +432,7 @@ class Services::Import
     end
   
     def self.load_convert_image(image_link, file_name, file_ext)
-      input_path = image_link.present? && !image_link.include?('no_image_original') ? image_link : "http://157.245.114.19/kp_logo_footer.png"
+      input_path = image_link.present? && !image_link.include?('no_image_original') ? image_link : "http://194.58.108.94/kp_logo_footer.png"
       RestClient.get( input_path ) { |response, request, result, &block|
         case response.code
         when 200
@@ -444,15 +444,15 @@ class Services::Import
           f = File.new(download_path, "wb")
           f << response.body
           f.close
-          new_image_link = Rails.env.development? ? "http://localhost:3000/excel_price/"+temp_filename : "http://157.245.114.19/excel_price/"+temp_filename
+          new_image_link = Rails.env.development? ? "http://localhost:3000/excel_price/"+temp_filename : "http://194.58.108.94/excel_price/"+temp_filename
           image = Services::Import.process_image(new_image_link, file_name, file_ext)
         when 400
           puts "image have 400 response"
-          link = "http://157.245.114.19/kp_logo_footer.png"
+          link = "http://194.58.108.94/kp_logo_footer.png"
           image = Services::Import.process_image(link, file_name, file_ext)
         when 404
           puts "image have 404 response"
-          link = "http://157.245.114.19/kp_logo_footer.png"
+          link = "http://194.58.108.94/kp_logo_footer.png"
           image = Services::Import.process_image(link, file_name, file_ext)
         else
           response.return!(&block)
