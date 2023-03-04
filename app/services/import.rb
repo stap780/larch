@@ -263,7 +263,6 @@ class Services::Import
 
       image_magic.write(Services::Import::DownloadPath+"/public/excel_price/#{file_name}.jpg")
       image = File.expand_path(Services::Import::DownloadPath+"/public/excel_price/#{file_name}.jpg")
-
     end
   
     def self.price_shift(excel_price, price)
