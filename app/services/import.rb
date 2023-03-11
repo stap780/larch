@@ -39,15 +39,16 @@ class Services::Import
       back_button = s.add_style alignment: { horizontal: :center , vertical: :center, wrap_text: true }, bg_color: 'B4D5D5', sz: 14
       bg_w = s.add_style bg_color: 'FFFFFF'
       bg_gr = s.add_style bg_color: '00FF00'
+      fnt_w = s.add_style fg_color: 'FFFFFF'
       but_rekv = s.add_style bg_color: 'FFFFFF', alignment: { horizontal: :left , vertical: :top, indent: 1, wrap_text: true }, fg_color: '7F7F7F'
       notice_main_label = s.add_style bg_color: 'FFFFFF', alignment: { horizontal: :center , vertical: :top }
       notice_label = s.add_style bg_color: 'FDE9D9', alignment: { horizontal: :center , vertical: :center}, b: true, sz: 12
       notice_b = s.add_style bg_color: 'FDE9D9', alignment: { horizontal: :center , vertical: :center }, sz: 12
       unlocked = s.add_style alignment: { horizontal: :left , vertical: :center, wrap_text: true }, border: Axlsx::STYLE_THIN_BORDER, sz: 10, locked: false
       
-      first_line = [nil,bg_gr,bg_gr,bg_gr,bg_gr,bg_gr,bg_gr,bg_gr,bg_gr,bg_gr,bg_gr,bg_gr,nil]
-      notice = [nil,notice_b,notice_label,notice_b,notice_b,notice_b,notice_b,notice_b,notice_b,notice_b,notice_b,notice_b,nil]
-      pr_style = [nil,pr_index,pr_pict,pr_title,pr_sku,pr_descr,money,money,unlocked,pr_descr,pr_descr,pr_descr,pr_descr,nil]
+      first_line = [bg_gr,bg_gr,bg_gr,bg_gr,bg_gr,bg_gr,bg_gr,bg_gr,bg_gr,bg_gr,bg_gr,bg_gr]
+      notice = [notice_b,notice_label,notice_b,notice_b,notice_b,notice_b,notice_b,notice_b,notice_b,notice_b,notice_b,nil]
+      pr_style = [pr_index,pr_pict,pr_title,pr_sku,pr_descr,money,money,unlocked,pr_descr,pr_descr,pr_descr,pr_descr,fnt_w]
 
       puts "start create main sheet"
       notice_text = Axlsx::RichText.new
@@ -57,16 +58,15 @@ class Services::Import
       row_index_for_titles_array = []
 
       wb.add_worksheet do |sheet|
-        sheet.add_row ['',date_text,'','','','','','','','','','','',''], height: 30, style: first_line
-        sheet.add_row ['','','','','','','','','','','','','',''], height: 30, style: first_line
-        sheet.add_row ['','Артикул','Фото','Наименование','Бренд','Производитель','Старая цена','Стоимость','Кол-во','Сумма Заказа','Автоскидка','Вес Брутто, кг','Подробнее',''], style: tbl_header, height: 20  
+        sheet.add_row [date_text,'','','','','','','','','','','',''], height: 30, style: first_line
+        sheet.add_row ['','','','','','','','','','','','',''], height: 30, style: first_line
+        sheet.add_row ['Артикул','Фото','Наименование','Бренд','Производитель','Старая цена','Стоимость','Кол-во','Сумма Заказа','Автоскидка','Общий вес Брутто, кг','Подробнее',''], style: tbl_header, height: 20  
         level1 = cats_array[0]
         level2 = cats_array[1]
         level3 = cats_array[2]
         level1.each do |level1_sub|
           search_level2 = level2.select{|l| l[level1_sub[:id]]}
           if search_level2.present?
-            # puts 'search_level2[0] => '+search_level2[0].to_s
             search_level2[0].each do |key, level2_sub|
               search_level3 = level3.select{|l| l[level2_sub[:id]]}
               if search_level3.present?
@@ -75,23 +75,27 @@ class Services::Import
               end
               if !search_level3.present?
                 level2_sub.each do |s_cat|
-                  # puts 'level2_sub s_cat[:title] => '+s_cat[:title].to_s
-                  # puts 'level2_sub s_cat[:id] => '+s_cat[:id].to_s
-                  #cat_products =  Rails.env.development? ? Services::Import.collect_product_ids(s_cat[:id]).take(2) : Services::Import.collect_product_ids(s_cat[:id])
                   cat_products =  all_offers.map{|offer| offer['id'] if offer.css('categoryId').text == s_cat[:id].to_s }.reject!(&:blank?)
                   if cat_products.present? && cat_products.count > 0
-                    # puts 'cat_products count => '+cat_products.count.to_s
-                    cat_title_row = sheet.add_row ['',s_cat[:title]], style: [nil,header_second], height: 30
+                    puts 'level2_sub cat_products count => '+cat_products.count.to_s
+                    cat_title_row = sheet.add_row [s_cat[:title]], style: [header_second], height: 30
                     row_index_for_titles_array.push(cat_title_row.row_index+1)
-                    #sheet.add_row ['','№','Фото','Наименование','Артикул','Описание','Цена','','','','',''], style: tbl_header, height: 20                  
                     cat_products.each_with_index do |pr_id, index|
-                      # puts "pr_id => "+pr_id.to_s
                       pr = all_offers.select{|offer| offer if offer["id"] == pr_id.to_s}[0]
                       if pr.present?
+                        v_ind = (cat_title_row.row_index+1+index+1).to_s
+                        sum_val = "=ROUND(IF(H#{v_ind}>4,((G#{v_ind}*H#{v_ind})-(G#{v_ind}*H#{v_ind}*5/100)),G#{v_ind}*H#{v_ind}),0)"
+                        autoskid_val = "=IF(H#{v_ind}>4,5,0)" #"=IF(H#{v_ind}>4;5;0)" #"=IF(13+13=4,4,5)"
+                        calc_brutto_val = "=(H#{v_ind}*M#{v_ind})"
                         data = Services::Import.collect_product_data_from_xml(pr,excel_price)
-                        pr_data = ['',data[:sku],'',data[:title],data[:brend],data[:vendor],data[:oldprice],data[:price],'','','',data[:brutto],data[:url],'']
+                        brutto_val = data[:brutto].present? ? data[:brutto] : 0
+                        pr_data = [data[:sku],'',data[:title],data[:brend],data[:vendor],data[:oldprice],data[:price],'0',sum_val,autoskid_val,calc_brutto_val,data[:url],brutto_val]
                         pr_row = sheet.add_row pr_data, style: pr_style, height: 80
-                        hyp_ref = "D#{(pr_row.row_index+1).to_s}"
+                        ind = (pr_row.row_index+1).to_s
+                        hyp_ref = "C#{v_ind}"
+                        # cell_brutto = sheet["K#{v_ind}"]
+                        # cell_brutto.type = :string
+                        # cell_brutto.value = "=SUM(H#{ind}*M#{ind})"
                         sheet.add_hyperlink location: data[:url], ref: hyp_ref
                         sheet.add_image(image_src: data[:image], :noSelect => true, :noMove => true, hyperlink: data[:url]) do |image|
                           image.start_at 2, pr_row.row_index
@@ -100,7 +104,7 @@ class Services::Import
                           image.anchor.from.colOff = 10_000
                         end
                       end
-                      break if Rails.env.development? && index == 8
+                      break if Rails.env.development? && index == 1
                     end
                   end
                 end
@@ -110,21 +114,24 @@ class Services::Import
 
           if !search_level2.present?
             s_cat = level1_sub
-            # puts 'level1_sub s_cat[:title] => '+s_cat[:title].to_s
-            #cat_products =  Rails.env.development? ? Services::Import.collect_product_ids(s_cat[:id]).take(2) : Services::Import.collect_product_ids(s_cat[:id])
             cat_products =  all_offers.map{|offer| offer['id'] if offer.css('categoryId').text == s_cat[:id].to_s }.reject!(&:blank?)
             if cat_products.present? && cat_products.count > 0
-              # puts 'cat_products count => '+cat_products.count.to_s
-              cat_title_row = sheet.add_row ['',s_cat[:title]], style: [nil,header_second], height: 30
+              puts 'level1_sub cat_products count => '+cat_products.count.to_s
+              cat_title_row = sheet.add_row [s_cat[:title]], style: [header_second], height: 30
               row_index_for_titles_array.push(cat_title_row.row_index+1)
-              #sheet.add_row ['','№','Фото','Наименование','Артикул','Описание','Цена','','','','',''], style: tbl_header, height: 20                  
               cat_products.each_with_index do |pr_id, index|
                 pr = all_offers.select{|offer| offer if offer["id"] == pr_id.to_s}[0]
                 if pr.present?
+                  v_ind = (cat_title_row.row_index+1+index+1).to_s
+                  sum_val = "=ROUND(IF(H#{v_ind}>4,((G#{v_ind}*H#{v_ind})-(G#{v_ind}*H#{v_ind}*5/100)),G#{v_ind}*H#{v_ind}),0)"
+                  autoskid_val = "=IF(H#{v_ind}>4,5,0)" #"=IF(H#{v_ind}>4;5;0)" #"=IF(13+13=4,4,5)"
+                  calc_brutto_val = "=(H#{v_ind}*M#{v_ind})"
                   data = Services::Import.collect_product_data_from_xml(pr,excel_price)
-                  pr_data = ['',data[:sku],'',data[:title],data[:brend],data[:vendor],data[:oldprice],data[:price],'','','',data[:brutto],data[:url],'']
+                  brutto_val = data[:brutto].present? ? data[:brutto] : 0
+                  pr_data = [data[:sku],'',data[:title],data[:brend],data[:vendor],data[:oldprice],data[:price],'0',sum_val,autoskid_val,calc_brutto_val,data[:url],brutto_val]
                   pr_row = sheet.add_row pr_data, style: pr_style, height: 80
-                  hyp_ref = "D#{(pr_row.row_index+1).to_s}"
+                  ind = (pr_row.row_index+1).to_s
+                  hyp_ref = "C#{v_ind}"
                   sheet.add_hyperlink location: data[:url], ref: hyp_ref
                   sheet.add_image(image_src: data[:image], :noSelect => true, :noMove => true, hyperlink: data[:url]) do |image|
                     image.start_at 2, pr_row.row_index
@@ -133,28 +140,36 @@ class Services::Import
                     image.anchor.from.colOff = 10_000
                   end
                 end
-                break if Rails.env.development? && index == 8
+                break if Rails.env.development? && index == 1
               end
             end
           end
         end
         
-          sheet.merge_cells("B1:M1")
-          sheet.merge_cells("B2:M2")
-          # sheet.add_hyperlink( location: "'Навигация по каталогу'!A7", target: :sheet, ref: 'B1' )
-          sheet.column_widths 2,10,15,18,18,18,13,13,10,13,18,18,20,2
-          #puts "row_index_for_titles_array => "+row_index_for_titles_array.to_s
-          merge_ranges = row_index_for_titles_array.map{|a| "B"+a.to_s+":"+"M"+a.to_s }
-          merge_ranges.uniq.each { |range| sheet.merge_cells(range) }
-          sheet.sheet_view.pane do |pane|
-            pane.state = :frozen
-            pane.x_split = 1
-            pane.y_split = 3
-          end
-          sheet.sheet_protection do |protection|
-            protection.password = 'fish'
-            protection.auto_filter = false
-          end
+        rows_count = sheet.rows.count.to_s
+        puts "rows_count => "+rows_count.to_s
+        cell_order_sum = sheet["I2"]
+        cell_order_sum.type = :string
+        cell_order_sum.value = "=SUM(I5:I#{rows_count})"
+        cell_britto_sum = sheet["K2"]
+        cell_britto_sum.type = :string
+        cell_britto_sum.value = "=SUM(K5:K#{rows_count})"
+
+        sheet.merge_cells("A1:L1")
+        sheet.merge_cells("A2:H2")
+        sheet.column_widths 10,15,18,18,18,13,13,10,13,18,20,23,2
+        sheet.auto_filter = "A3:L#{rows_count}"
+        merge_ranges = row_index_for_titles_array.map{|a| "A"+a.to_s+":"+"L"+a.to_s }
+        merge_ranges.uniq.each { |range| sheet.merge_cells(range) }
+        sheet.sheet_view.pane do |pane|
+          pane.state = :frozen
+          pane.x_split = 1
+          pane.y_split = 3
+        end
+        sheet.sheet_protection do |protection|
+          protection.password = ' '
+          protection.auto_filter = false
+        end
       end
       puts "finish create main sheet"
       stream = p.to_stream
