@@ -98,8 +98,8 @@ class Services::Import
                         # cell_brutto.value = "=SUM(H#{ind}*M#{ind})"
                         sheet.add_hyperlink location: data[:url], ref: hyp_ref
                         sheet.add_image(image_src: data[:image], :noSelect => true, :noMove => true, hyperlink: data[:url]) do |image|
-                          image.start_at 2, pr_row.row_index
-                          image.end_at 3, pr_row.row_index+1
+                          image.start_at 1, pr_row.row_index
+                          image.end_at 2, pr_row.row_index+1
                           image.anchor.from.rowOff = 10_000
                           image.anchor.from.colOff = 10_000
                         end
@@ -134,8 +134,8 @@ class Services::Import
                   hyp_ref = "C#{v_ind}"
                   sheet.add_hyperlink location: data[:url], ref: hyp_ref
                   sheet.add_image(image_src: data[:image], :noSelect => true, :noMove => true, hyperlink: data[:url]) do |image|
-                    image.start_at 2, pr_row.row_index
-                    image.end_at 3, pr_row.row_index+1
+                    image.start_at 1, pr_row.row_index
+                    image.end_at 2, pr_row.row_index+1
                     image.anchor.from.rowOff = 10_000
                     image.anchor.from.colOff = 10_000
                   end
