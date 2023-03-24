@@ -28,7 +28,7 @@ every 1.day, :at => '22:30' do #
   rake "file:create_excel_file"
 end
 
-every 1.day, :at => '12:50' do #
+every 1.day, :at => '12:55' do #
   rake "file:create_excel_file"
 end
 
