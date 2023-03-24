@@ -85,7 +85,7 @@ class Services::Import
                       if pr.present?
                         v_ind = (cat_title_row.row_index+1+index+1).to_s
                         sum_val = "=ROUND(IF(H#{v_ind}>4,((G#{v_ind}*H#{v_ind})-(G#{v_ind}*H#{v_ind}*5/100)),G#{v_ind}*H#{v_ind}),0)"
-                        autoskid_val = "=IF(H#{v_ind}>4,5,0)" #"=IF(H#{v_ind}>4;5;0)" #"=IF(13+13=4,4,5)"
+                        autoskid_val = "=IF(H#{v_ind}>4,5,0)"
                         calc_brutto_val = "=(H#{v_ind}*M#{v_ind})"
                         data = Services::Import.collect_product_data_from_xml(pr,excel_price)
                         brutto_val = data[:brutto].present? ? data[:brutto] : 0
@@ -93,9 +93,6 @@ class Services::Import
                         pr_row = sheet.add_row pr_data, style: pr_style, height: 80
                         ind = (pr_row.row_index+1).to_s
                         hyp_ref = "C#{v_ind}"
-                        # cell_brutto = sheet["K#{v_ind}"]
-                        # cell_brutto.type = :string
-                        # cell_brutto.value = "=SUM(H#{ind}*M#{ind})"
                         sheet.add_hyperlink location: data[:url], ref: hyp_ref
                         sheet.add_image(image_src: data[:image], :noSelect => true, :noMove => true, hyperlink: data[:url]) do |image|
                           image.start_at 1, pr_row.row_index
@@ -124,7 +121,7 @@ class Services::Import
                 if pr.present?
                   v_ind = (cat_title_row.row_index+1+index+1).to_s
                   sum_val = "=ROUND(IF(H#{v_ind}>4,((G#{v_ind}*H#{v_ind})-(G#{v_ind}*H#{v_ind}*5/100)),G#{v_ind}*H#{v_ind}),0)"
-                  autoskid_val = "=IF(H#{v_ind}>4,5,0)" #"=IF(H#{v_ind}>4;5;0)" #"=IF(13+13=4,4,5)"
+                  autoskid_val = "=IF(H#{v_ind}>4,5,0)"
                   calc_brutto_val = "=(H#{v_ind}*M#{v_ind})"
                   data = Services::Import.collect_product_data_from_xml(pr,excel_price)
                   brutto_val = data[:brutto].present? ? data[:brutto] : 0
