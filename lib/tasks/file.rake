@@ -27,7 +27,7 @@ namespace :file do
   # end
 
   task create_production_log_zip_every_day: :environment do
-    puts "start copy_production_log_every_day #{Time.zone.now.strftime("%d_%m_%Y_%I_%M")}"
+    puts "start copy_production_log_every_day #{Time.zone.now.strftime("%d_%m_%Y %I_%M")}"
       zipfile_name = "#{Rails.root}/log/production_#{Time.zone.now.strftime("%d_%m_%Y_%I_%M")}.zip"
       filename = "production.log"
       folder = "#{Rails.root}/log/"
@@ -42,26 +42,26 @@ namespace :file do
         f.write("Time - #{Time.zone.now}")
       end
 
-    puts "finish copy_production_log_every_day #{Time.zone.now.strftime("%d_%m_%Y_%I_%M")}"
+    puts "finish copy_production_log_every_day #{Time.zone.now.strftime("%d_%m_%Y %I_%M")}"
   end
 
   task create_excel_file: :environment do
-    puts "<==> start task create_excel_file #{Time.zone.now.strftime("%d_%m_%Y_%I_%M")}"
+    puts "<==> start task create_excel_file #{Time.zone.now.strftime("%d_%m_%Y %I_%M")}"
     excel_prices = ExcelPrice.order(:id)
     excel_prices.each do |excel_price|
       Services::Import.excel_create(excel_price)
     end
-    puts "<==> finish task create_excel_file #{Time.zone.now.strftime("%d_%m_%Y_%I_%M")}"
+    puts "<==> finish task create_excel_file #{Time.zone.now.strftime("%d_%m_%Y %I_%M")}"
     Rake::Task["file:copy_cron_file"].invoke
 		Rake::Task["file:copy_cron_file"].reenable
   end
 
   task copy_cron_file: :environment do
-    puts "== start task copy_cron_file #{Time.zone.now.strftime("%d_%m_%Y_%I_%M")}"
+    puts "== start task copy_cron_file #{Time.zone.now.strftime("%d_%m_%Y %I_%M")}"
     log_file_path = "#{Rails.root}/log/cron.log"
     copy_log_file_path = Services::Import::DownloadPath+"/public/cron_copy.log"
     FileUtils.cp(log_file_path, copy_log_file_path)
-    puts "== finish task copy_cron_file #{Time.zone.now.strftime("%d_%m_%Y_%I_%M")}"
+    puts "== finish task copy_cron_file #{Time.zone.now.strftime("%d_%m_%Y %I_%M")}"
   end
 
 end
