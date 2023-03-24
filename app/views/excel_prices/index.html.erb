@@ -72,7 +72,7 @@
         <% if File.file?(file) %>
           <%= link_to '<span class="oi oi-cloud-download"></span>'.html_safe, file_export_excel_price_path(excel_price), id: "file_export_#{excel_price.id}", class: "btn btn-light btn-sm", title: "file export" %>
           <% size = File.size(file) %><%= number_to_human_size(size) %>
-          <br><%= File.ctime(file).in_time_zone.strftime("%d/%m/%Y %H:%M" ) %>
+          <br><%= File.ctime(file).strftime("%d/%m/%Y %H:%M" ) %>
         <% else %>
           <%= link_to '<span class="oi oi-cloud-download"></span>'.html_safe, file_export_excel_price_path(excel_price), id: "file_export_#{excel_price.id}", class: "btn btn-light btn-sm disabled", title: "file export" %>
         <% end %>
