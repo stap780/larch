@@ -45,4 +45,13 @@ namespace :file do
     puts "finish copy_production_log_every_day"
   end
 
+  task create_excel_file: :environment do
+    puts "start task create_excel_file"
+    excel_prices = EscelPrice.order(:id)
+    excel_prices.each do |excel_prices|
+      Services::Import.excel_create(excel_price)
+    end
+    puts "finish task create_excel_file"
+  end
+
 end

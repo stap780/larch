@@ -1,11 +1,15 @@
 <div class="row justify-content-center align-items-center mt-3 mb-3">
   <div class="col-2 row">
     <div class="col-md-12 p-0">
-      <div class="h3">Прайсы Excel</div>
+      <div class="h3">Excel</div>
       <div class="h6">Всего - <%= ExcelPrice.count %></div>
     </div>
   </div>
   <div class="col-10 pl-0 pr-0 row">
+      <div class="col-2">
+    <% file_cron = Services::Import::DownloadPath+'/log/cron.log'%>
+    <% if File.file?(file_cron) %><%= link_to 'Скачать файл заданий', file_cron, target: '_blank', class:"btn btn-outline-secondary btn-sm" %><% end %>
+</div>
     <div class="col-2">
       <div class="btn-group p-0" role="group" aria-label="Button group with nested dropdown">
         <div class="btn-group" role="group">
@@ -17,7 +21,7 @@
         </div>
       </div>
     </div>
-    <%= search_form_for @search, {class: 'form-inline col-10 pl-0 pr-0'} do |f| %>
+    <%= search_form_for @search, {class: 'form-inline col-8 pl-0 pr-0'} do |f| %>
     <div class="input-group input-group-sm">
             <%= f.search_field :title_cont , placeholder: 'title', class: "form-control", style: "max-width: 180px;" %>
             <%= f.search_field :link_cont , placeholder: 'link', class: "form-control", style: "max-width: 180px;" %>
@@ -40,6 +44,7 @@
   <thead>
     <tr class="text-secondary">
       <th><%= check_box_tag 'selectAll', 'selectAll'%></th>
+      <th></th>
       <th>Название</th>
       <th>Ссылка</th>
       <th>Комментарий</th>
@@ -51,6 +56,7 @@
     <% @excel_prices.each do |excel_price| %>
       <tr>
         <td><%= check_box_tag "excel_price_ids[]", excel_price.id %></td>
+        <td><%= link_to '<span class="oi oi-pencil"></span>'.html_safe, edit_excel_price_path(excel_price) %></td>
         <td><%= excel_price.title %></td>
         <td><%= excel_price.link %></td>
         <td><%= excel_price.comment %></td>
@@ -65,12 +71,13 @@
         <td>
         <% if File.file?(file) %>
           <%= link_to '<span class="oi oi-cloud-download"></span>'.html_safe, file_export_excel_price_path(excel_price), id: "file_export_#{excel_price.id}", class: "btn btn-light btn-sm", title: "file export" %>
-          <br><% size = File.size(file) %><%= number_to_human_size(size) %>
+          <% size = File.size(file) %><%= number_to_human_size(size) %>
+          <br><%= File.ctime(file).in_time_zone.strftime("%d/%m/%Y %H:%M" ) %>
         <% else %>
           <%= link_to '<span class="oi oi-cloud-download"></span>'.html_safe, file_export_excel_price_path(excel_price), id: "file_export_#{excel_price.id}", class: "btn btn-light btn-sm disabled", title: "file export" %>
         <% end %>
         </td>
-        <td><%= link_to '<span class="oi oi-pencil"></span>'.html_safe, edit_excel_price_path(excel_price) %></td>
+        <td><% if File.file?(file) %><%= link_to 'Ссылка на файл', '/'+excel_price.id.to_s+'_file.xlsx', target: '_blank' %><% end %></td>
         <td><%= link_to '<span class="oi oi-trash"></span>'.html_safe, excel_price, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
