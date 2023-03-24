@@ -7,7 +7,7 @@
   </div>
   <div class="col-10 pl-0 pr-0 row">
     <div class="col-2">
-    <% file_cron = Services::Import::DownloadPath+'/log/cron.log'%>
+    <% file_cron = '/cron_copy.log'%>
     <% if File.file?(file_cron) %><%= link_to 'Скачать файл заданий', file_cron, target: '_blank', class:"btn btn-outline-secondary btn-sm" %><% end %>
 </div>
     <div class="col-2">

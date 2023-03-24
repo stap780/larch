@@ -47,11 +47,18 @@ namespace :file do
 
   task create_excel_file: :environment do
     puts "start task create_excel_file"
-    excel_prices = EscelPrice.order(:id)
+    excel_prices = ExcelPrice.order(:id)
     excel_prices.each do |excel_prices|
       Services::Import.excel_create(excel_price)
     end
     puts "finish task create_excel_file"
+  end
+
+  task copy_cron_file: :environment do
+    puts "start task copy_cron_file"
+    log_file = "#{Rails.root}/log/cron.log"
+    copy_log_file = Services::Import::DownloadPath+"/public/cron_copy.log"
+    puts "finish task copy_cron_file"
   end
 
 end
